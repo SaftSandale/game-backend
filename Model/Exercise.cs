@@ -1,5 +1,5 @@
-﻿using LearningGame.Controllers.Enums;
-using LearningGame.Controllers.Model;
+﻿using LearningGame.Backend.Enums;
+using LearningGame.Backend.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;

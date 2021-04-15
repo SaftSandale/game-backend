@@ -1,14 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LearningGame.Controllers.Enums
+namespace LearningGame.Backend.Enums
 {
     public enum Subjects
     {
+        [Display(Name = "AE")]
         SoftwareDevelopment  = 10,
-        TelecommunicationSystems = 20
+        ITS = 20
     }
 }

@@ -7,8 +7,8 @@
     <ProjectGuid>{54DD32A1-2569-45E2-8FD9-8F5A894167BB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>LearningGame.Controllers</RootNamespace>
-    <AssemblyName>LearningGame.Controllers</AssemblyName>
+    <RootNamespace>LearningGame.Backend</RootNamespace>
+    <AssemblyName>LearningGame.Backend</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -32,6 +32,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -41,8 +42,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BackgroundWorkers\ListOfExercises.cs" />
+    <Compile Include="BackgroundWorkers\FileHandler.cs" />
     <Compile Include="Controllers\ExerciseController.cs" />
+    <Compile Include="Enums\Difficulty.cs" />
+    <Compile Include="Enums\Subjects.cs" />
+    <Compile Include="Model\Answer.cs" />
     <Compile Include="Model\Exercise.cs" />
     <Compile Include="Model\Player.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

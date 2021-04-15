@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LearningGame.Controllers.Model
+namespace LearningGame.Backend.Model
 {
     public class Answer
     {
