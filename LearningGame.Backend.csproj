@@ -49,6 +49,7 @@
     <Compile Include="Model\Answer.cs" />
     <Compile Include="Model\Exercise.cs" />
     <Compile Include="Model\Player.cs" />
+    <Compile Include="Model\Subject.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

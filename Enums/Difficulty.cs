@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LearningGame.Backend.Enums
 {
-    public enum Difficultys
+    public enum Difficulty
     {
         Easy = 10,
         Medium = 20,
