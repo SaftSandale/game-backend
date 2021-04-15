@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using LearningGame.Backend.BackgroundWorkers;
 using LearningGame.Backend.Enums;
 
 namespace LearningGame.Backend.Model
@@ -24,9 +25,10 @@ namespace LearningGame.Backend.Model
         public Dictionary<Difficulty, List<Exercise>> Exercises { get; set; }
 
 
-        public void FillExercises(Difficulty difficulty)
+        public void FillExercises(Difficulty difficulty, int amountOfExercises)
         {
-
+            var exercises = FileHandler.getRandomExercises(this, difficulty, amountOfExercises);
+            Exercises.Add(difficulty, exercises);
         }
     }
 }
