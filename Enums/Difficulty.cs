@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LearningGame.Controllers.Enums
+namespace LearningGame.Backend.Enums
 {
-    public enum Difficulty
+    enum Difficulty
     {
         Easy = 10,
         Medium = 20,
