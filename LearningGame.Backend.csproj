@@ -46,7 +46,6 @@
     <Compile Include="Controllers\ExerciseController.cs" />
     <Compile Include="Enums\Difficulty.cs" />
     <Compile Include="Enums\Subjects.cs" />
-    <Compile Include="Model\Answer.cs" />
     <Compile Include="Model\Exercise.cs" />
     <Compile Include="Model\Player.cs" />
     <Compile Include="Model\Subject.cs" />
