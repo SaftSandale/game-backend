@@ -18,7 +18,7 @@ namespace LearningGame.Backend.BackgroundWorkers
         private static readonly string mExercisePath = Path.Combine(mBaseDirectory, @"\Exercises");
 
         //Lädt aktuell alle Aufgaben und nicht nur random Aufgaben.
-        public IEnumerable<Exercise> fillExerciseList(Subject subject, Difficulty difficulty)
+        public static IEnumerable<Exercise> fillExerciseList(Subject subject, Difficulty difficulty)
         {
             IEnumerable<Exercise> records;
             var csvConfig = new CsvConfiguration(CultureInfo.InvariantCulture)

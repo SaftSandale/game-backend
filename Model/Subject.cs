@@ -7,7 +7,7 @@ using LearningGame.Backend.Enums;
 
 namespace LearningGame.Backend.Model
 {
-    class Subject
+    public class Subject
     {
         public Subject(string name)
         {
