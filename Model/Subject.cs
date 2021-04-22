@@ -48,6 +48,18 @@ namespace LearningGame.Backend.Model
             // fill exercise list by subject name
         }
 
+        public void AddExercises(IEnumerable<Exercise> exercises)
+        {
+            Exercises.AddRange(exercises);
+            //add Exercises To json
+        }
+        public void RemoveExercises(IEnumerable<int> exerciseids)
+        {
+            foreach (int id in exerciseids)
+                Exercises.RemoveAll(e => e.ID == id);
+            //remove Exercises from json
+        }
+
         //public void FillExercises(Difficulty difficulty, int amountOfExercises)
         //{
         //    var exercises = FileHandler.getRandomExercises(this, difficulty, amountOfExercises);
