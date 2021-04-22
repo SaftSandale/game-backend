@@ -29,14 +29,7 @@ namespace LearningGame.Backend.BackgroundWorkers
 
         public bool checkContains(int ID)
         {
-            foreach(Object ob in cache)
-            {
-                if(ob == ID)
-                {
-                    return true;
-                }
-            }
-            return false;
+            return cache.Contains(ID);
         }
     }
 }
