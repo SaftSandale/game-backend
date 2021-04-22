@@ -14,7 +14,7 @@ namespace LearningGame.Backend.Model
         {
             SubjectName = name;
         }
-        public Subject(string name, Dictionary<Difficulty, List<Exercise>> exercises)
+        public Subject(string name, List<Exercise> exercises)
         {
             SubjectName = name;
             Exercises = exercises;
@@ -22,13 +22,36 @@ namespace LearningGame.Backend.Model
 
 
         public string SubjectName { get; set; }
-        public Dictionary<Difficulty, List<Exercise>> Exercises { get; set; }
-
-
-        public void FillExercises(Difficulty difficulty, int amountOfExercises)
+        public List<Exercise> Exercises { get; set; }
+        public Dictionary<Difficulty, List<Exercise>> ExercisesByDifficulty
         {
-            var exercises = FileHandler.getRandomExercises(this, difficulty, amountOfExercises);
-            Exercises.Add(difficulty, exercises);
+            get
+            {
+                if (Exercises != null && Exercises.Count() != 0)
+                {
+                    Dictionary<Difficulty, List<Exercise>> res = new Dictionary<Difficulty, List<Exercise>>();
+                    foreach (Exercise e in Exercises)
+                    {
+                        if (!res.ContainsKey(e.Difficulty))
+                            res.Add(e.Difficulty, new List<Exercise>() { e });
+                        else
+                            res[e.Difficulty].Add(e);
+                    }
+                    return res;
+                }
+                else return null;
+            }
         }
+
+        public void FillExercises()
+        {
+            // fill exercise list by subject name
+        }
+
+        //public void FillExercises(Difficulty difficulty, int amountOfExercises)
+        //{
+        //    var exercises = FileHandler.getRandomExercises(this, difficulty, amountOfExercises);
+        //    Exercises.Add(difficulty, exercises);
+        //}
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LearningGame.Backend.Enums;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,42 +9,44 @@ namespace LearningGame.Backend.Model
 {
     public class Exercise
     {
-        public Exercise(int id, string text, int amountcorrectanswers, List<string> answers)
+        public Exercise(int id, string text, string topic, int difficulty, Dictionary<string, bool> answers)
         {
             ID = id;
             ExerciseText = text;
-            AmountCorrectAnswers = amountcorrectanswers;
+            ExerciseTopic = topic;
+            Difficulty = (Difficulty)difficulty;
             Answers = answers;
         }
 
 
         public int ID { get; set; }
         public string ExerciseText { get; set; }
-        public List<string> Answers { get; set; }
-        private int AmountCorrectAnswers { get; set; }
-        private List<string> CorrectAnswers
-        { 
+        public string ExerciseTopic { get; set; }
+        public Difficulty Difficulty { get; set; }
+        public Dictionary<string, bool> Answers { get; set; }
+        private IEnumerable<string> CorrectAnswers
+        {
             get
             {
-                List<string> res = new List<string>();
-                if (Answers != null)
+                if (Answers != null && Answers.Count() != 0)
                 {
-                    return Answers.Take(AmountCorrectAnswers).ToList();
+                    List<string> res = new List<string>();
+                    foreach (KeyValuePair<string, bool> ans in Answers)
+                    {
+                        if (ans.Value == true)
+                            res.Add(ans.Key);
+                    }
+                    return res;
                 }
-                else return null;
+                return null;
             }
         }
+        
 
-
-        public bool CheckAnswers(List<string> givenanswers)
+        public bool CheckAnswers(IEnumerable<string> givenanswers)
         {
-            givenanswers.Sort();
-            List<string> correctanswers = new List<string>(CorrectAnswers);
-            correctanswers.Sort();
-            if (givenanswers.SequenceEqual(correctanswers))
-                return true;
-            else
-                return false;
+            bool equal = givenanswers.OrderBy(x => x).SequenceEqual(CorrectAnswers.OrderBy(x => x));
+            return equal;
         }
     }
 }
