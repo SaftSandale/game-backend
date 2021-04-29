@@ -42,6 +42,30 @@ namespace LearningGame.Backend.Model
                 else return null;
             }
         }
+        public Dictionary<string, Dictionary<Difficulty, List<Exercise>>> ExercisesByTopicAndDifficulty
+        {
+            get
+            {
+                if (Exercises != null && Exercises.Count() != 0)
+                {
+                    Dictionary<string, Dictionary<Difficulty, List<Exercise>>> res = new Dictionary<string, Dictionary<Difficulty, List<Exercise>>>();
+                    foreach (Exercise e in Exercises)
+                    {
+                        if (!res.ContainsKey(e.ExerciseTopic))
+                            res.Add(e.ExerciseTopic, new Dictionary<Difficulty, List<Exercise>>( ) { { e.Difficulty, new List<Exercise>() { e } } });
+                        else if (!res[e.ExerciseTopic].ContainsKey(e.Difficulty))
+                            res[e.ExerciseTopic].Add(e.Difficulty, new List<Exercise>() { e });
+                        else
+                        {
+                            res[e.ExerciseTopic][e.Difficulty].Add(e);
+                        }
+                    }
+                    return res;
+                }
+                else return null;
+            }
+        }
+
 
         public void FillExercises()
         {
