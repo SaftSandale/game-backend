@@ -84,6 +84,7 @@ namespace LearningGame.Backend.Model
             //remove Exercises from json
         }
 
+
         //public void FillExercises(Difficulty difficulty, int amountOfExercises)
         //{
         //    var exercises = FileHandler.getRandomExercises(this, difficulty, amountOfExercises);

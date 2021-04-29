@@ -48,5 +48,15 @@ namespace LearningGame.Backend.Model
             bool equal = givenanswers.OrderBy(x => x).SequenceEqual(CorrectAnswers.OrderBy(x => x));
             return equal;
         }
+
+        public void EditExercise(string newText, string newTopic, Difficulty newDifficulty, Dictionary<string, bool> newAnswers)
+        {
+            ExerciseText = newText;
+            ExerciseTopic = newTopic;
+            Difficulty = newDifficulty;
+            Answers = newAnswers;
+
+            //edit in Json (edit old or delete and replace with new) (json file bei jedem editieren/löschen/hinzufügen abändern oder bei start einmal umwandeln und json file beim beenden mit neu umgewandelten objekten überschreiben?)
+        }
     }
 }
