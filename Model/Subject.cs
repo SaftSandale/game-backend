@@ -45,7 +45,7 @@ namespace LearningGame.Backend.Model
 
         public void FillExercises()
         {
-            // fill exercise list by subject name
+            // fill exercise list by subject name##
         }
 
         public void AddExercises(IEnumerable<Exercise> exercises)

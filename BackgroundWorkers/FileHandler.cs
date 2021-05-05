@@ -17,9 +17,9 @@ namespace LearningGame.Backend.BackgroundWorkers
         private static readonly string mBaseDirectory = AppDomain.CurrentDomain.BaseDirectory;
         private static readonly string mExercisePath = Path.Combine(mBaseDirectory, @"\Exercises");
 
-        public string ReadJSON(string filePath)
+        public static string ReadJSON()
         {
-            var jsonString = File.ReadAllText(filePath);
+            var jsonString = File.ReadAllText(mExercisePath);
             return jsonString;
         }
     }
