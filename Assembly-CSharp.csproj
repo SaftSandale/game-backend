@@ -8,8 +8,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace>
-    </RootNamespace>
+    <RootNamespace></RootNamespace>
     <ProjectGuid>{99066553-724E-F3B7-AA47-976CCB6DFBA4}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -57,18 +56,21 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\BackgroundWorkers\HelperFunctions.cs" />
-    <Compile Include="Assets\Enums\Difficulty.cs" />
+    <Compile Include="Assets\Scripts\AnswerPress.cs" />
     <Compile Include="Assets\Scripts\Interactable.cs" />
-    <Compile Include="Assets\Controllers\ExerciseController.cs" />
-    <Compile Include="Assets\Model\Exercise.cs" />
-    <Compile Include="Assets\Scripts\CameraFollower.cs" />
-    <Compile Include="Assets\Scripts\PlayerController.cs" />
-    <Compile Include="Assets\BackgroundWorkers\FileHandler.cs" />
-    <Compile Include="Assets\Model\Subject.cs" />
-    <Compile Include="Assets\Scripts\Question.cs" />
     <Compile Include="Assets\BackgroundWorkers\Cache.cs" />
     <Compile Include="Assets\Model\Answer.cs" />
+    <Compile Include="Assets\Model\Exercise.cs" />
+    <Compile Include="Assets\Scripts\CameraFollower.cs" />
+    <Compile Include="Assets\BackgroundWorkers\FileHandler.cs" />
+    <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\BackgroundWorkers\HelperFunctions.cs" />
+    <Compile Include="Assets\Enums\Difficulty.cs" />
+    <Compile Include="Assets\Model\Subject.cs" />
+    <Compile Include="Assets\Scripts\QuestionAnswer.cs" />
+    <Compile Include="Assets\Controllers\ExerciseController.cs" />
+    <Compile Include="Assets\Scripts\QuizManager.cs" />
+    <Compile Include="Assets\Scripts\Question.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

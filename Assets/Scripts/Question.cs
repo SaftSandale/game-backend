@@ -1,12 +1,11 @@
-using PokAEmon.Controllers;
-using PokAEmon.Enums;
-using PokAEmon.Model;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Question : Interactable
 {
+    public QuizManager quizManager;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -15,13 +14,7 @@ public class Question : Interactable
 
     public override void interact()
     {
-        Subject subject = new Subject("Anwendungsentwicklung");
-        var topic = "OOP";
-        var difficulty = Difficulty.Easy;
-        var exerciseController = new ExerciseController();
-        var exercise = ExerciseController.GetRandomSuitableExercise(subject, topic, difficulty);
-
-        Debug.Log(exercise.ExerciseText);
+        quizManager.wakeQuizManager();
     }
 
     public override string getDescription()

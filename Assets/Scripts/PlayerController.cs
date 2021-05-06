@@ -14,39 +14,47 @@ public class PlayerController : MonoBehaviour
     public float moveLimiter = 0.7f;
     public Transform trans;
     private Quaternion rotation;
+    private bool controlallowed;
 
     private Vector2 boxSize = new Vector2(0.1f, 0.1f);
-    
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        controlallowed = true;
+    }
 
     // Update is called once per frame
     void Update()
     {
-        movement.x = Input.GetAxisRaw("Horizontal");
-        movement.y = Input.GetAxisRaw("Vertical");
-        Vector3 lookVec = new Vector3(movement.x, movement.y, 360);
-
-        // Check for diagonal movement and limit it
-        if(movement.x != 0 && movement.y != 0)
+        if (controlallowed)
         {
-            movement.x *= moveLimiter;
-            movement.y *= moveLimiter;
-        }
+            movement.x = Input.GetAxisRaw("Horizontal");
+            movement.y = Input.GetAxisRaw("Vertical");
+            Vector3 lookVec = new Vector3(movement.x, movement.y, 360);
 
-        // Check for player rotation after movement stopped never change anything
-        if (movement.x != 0 || movement.y != 0)
-        {
-            trans.rotation = Quaternion.Euler(0, 0, Mathf.Atan2(movement.x, -movement.y) * Mathf.Rad2Deg);
-            //trans.rotation = Quaternion.Euler(0, 0, Mathf.Atan2(movement.y, movement.x) * Mathf.Rad2Deg); Funktioniert
-        }
+            // Check for diagonal movement and limit it
+            if (movement.x != 0 && movement.y != 0)
+            {
+                movement.x *= moveLimiter;
+                movement.y *= moveLimiter;
+            }
 
-        animator.SetFloat("Horizontal", movement.x);
-        animator.SetFloat("Vertical", movement.y);
-        animator.SetFloat("Speed", movement.sqrMagnitude);
-        animator.SetFloat("Rotation_Z", trans.rotation.z);
+            // Check for player rotation after movement stopped never change anything
+            if (movement.x != 0 || movement.y != 0)
+            {
+                trans.rotation = Quaternion.Euler(0, 0, Mathf.Atan2(movement.x, -movement.y) * Mathf.Rad2Deg);
+            }
 
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            checkInteraction();
+            animator.SetFloat("Horizontal", movement.x);
+            animator.SetFloat("Vertical", movement.y);
+            animator.SetFloat("Speed", movement.sqrMagnitude);
+            animator.SetFloat("Rotation_Z", trans.rotation.z);
+
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                checkInteraction();
+            }
         }
     }
 
@@ -80,5 +88,15 @@ public class PlayerController : MonoBehaviour
                 }
             }
         }
+    }
+
+    public void suspendMovement()
+    {
+        controlallowed = false;
+    }
+
+    public void resumeMovement()
+    {
+        controlallowed = true;
     }
 }
