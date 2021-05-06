@@ -1,0 +1,15 @@
+{
+	"SubjectName":"Anwendungsentwicklung",
+	"Exercises":[
+		{
+			"ID":1,
+			"ExerciseText":"a + b",
+			"ExerciseTopic":"SQL",
+			"Difficulty":10,
+			"Answers":{
+				"c":true,
+				"d":false
+				}
+			}
+		]
+}
