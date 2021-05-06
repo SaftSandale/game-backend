@@ -1,12 +1,12 @@
 # User-specific files
+bin
+obj
 *.rsuser
 *.suo
 *.user
 *.userosscache
 *.sln.docstates
 _ReSharper.*
-bin/**
-obj/**
 packages/**
 Assets/Animations/**
 Assets/Palettes/**
