@@ -1,11 +1,11 @@
-﻿using LearningGame.Backend.Enums;
+﻿using PokAEmon.Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LearningGame.Backend.Model
+namespace PokAEmon.Model
 {
     public class Exercise
     {

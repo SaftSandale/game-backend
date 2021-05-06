@@ -1,12 +1,11 @@
-﻿using System;
+﻿using PokAEmon.Enums;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using LearningGame.Backend.BackgroundWorkers;
-using LearningGame.Backend.Enums;
 
-namespace LearningGame.Backend.Model
+namespace PokAEmon.Model
 {
     public class Subject
     {

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LearningGame.Backend.Enums
+namespace PokAEmon.Enums
 {
     public enum Difficulty
     {

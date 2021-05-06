@@ -1,14 +1,14 @@
-﻿using LearningGame.Backend.BackgroundWorkers;
-using LearningGame.Backend.Enums;
-using LearningGame.Backend.Model;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
+using PokAEmon.BackgroundWorkers;
+using PokAEmon.Enums;
+using PokAEmon.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LearningGame.Backend.Controllers
+namespace PokAEmon.Controllers
 {
     public class ExerciseController
     {
