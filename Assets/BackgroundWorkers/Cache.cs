@@ -1,3 +1,4 @@
+using PokAEmon.Model;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -9,6 +10,7 @@ namespace PokAEmon.BackgroundWorkers
 {
     public class Cache
     {
+        public static List<Subject> AllSubjects { get; set; }
         private int maxElements { get; set; }
         private Queue<int> cache { get; set; }
 

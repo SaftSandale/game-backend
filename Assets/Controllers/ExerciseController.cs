@@ -12,12 +12,10 @@ namespace PokAEmon.Controllers
 {
     public class ExerciseController
     {
-        private static List<Subject> allSubjects;
-
         public ExerciseController()
         {
             var jsonString = FileHandler.ReadJSON();
-            allSubjects = DeserializeJSON(jsonString);
+            Cache.AllSubjects = DeserializeJSON(jsonString);
         }
 
         public List<Subject> DeserializeJSON(string jsonString)
@@ -28,7 +26,7 @@ namespace PokAEmon.Controllers
 
         public static Exercise GetRandomSuitableExercise(Subject subject, string topic, Difficulty difficulty)
         {
-            Subject suitableSubject = allSubjects.FirstOrDefault(s => s.SubjectName == subject.SubjectName);
+            Subject suitableSubject = Cache.AllSubjects.FirstOrDefault(s => s.SubjectName == subject.SubjectName);
             if (suitableSubject ==  null)
             {
                 return null;
