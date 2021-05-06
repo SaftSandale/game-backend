@@ -1,4 +1,6 @@
-﻿using PokAEmon.Enums;
+﻿using Assets.Model;
+using PokAEmon.BackgroundWorkers;
+using PokAEmon.Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +11,7 @@ namespace PokAEmon.Model
 {
     public class Exercise
     {
-        public Exercise(int id, string text, string topic, int difficulty, Dictionary<string, bool> answers)
+        public Exercise(int id, string text, string topic, int difficulty, List<Answer> answers)
         {
             ID = id;
             ExerciseText = text;
@@ -23,19 +25,14 @@ namespace PokAEmon.Model
         public string ExerciseText { get; set; }
         public string ExerciseTopic { get; set; }
         public Difficulty Difficulty { get; set; }
-        public Dictionary<string, bool> Answers { get; set; }
-        private IEnumerable<string> CorrectAnswers
+        public List<Answer> Answers { get; set; }
+        private IEnumerable<Answer> CorrectAnswers
         {
             get
             {
                 if (Answers != null && Answers.Count() != 0)
                 {
-                    List<string> res = new List<string>();
-                    foreach (KeyValuePair<string, bool> ans in Answers)
-                    {
-                        if (ans.Value == true)
-                            res.Add(ans.Key);
-                    }
+                    IEnumerable<Answer> res = Answers.Where(a => a.isCorrect == true);
                     return res;
                 }
                 return null;
@@ -43,13 +40,13 @@ namespace PokAEmon.Model
         }
         
 
-        public bool CheckAnswers(IEnumerable<string> givenanswers)
+        public bool CheckAnswers(IEnumerable<Answer> givenanswers)
         {
-            bool equal = givenanswers.OrderBy(x => x).SequenceEqual(CorrectAnswers.OrderBy(x => x));
+            bool equal = givenanswers.OrderBy(x => x.Text).SequenceEqual(CorrectAnswers.OrderBy(x => x.Text));
             return equal;
         }
 
-        public void EditExercise(string newText, string newTopic, Difficulty newDifficulty, Dictionary<string, bool> newAnswers)
+        public void EditExercise(string newText, string newTopic, Difficulty newDifficulty, List<Answer> newAnswers)
         {
             ExerciseText = newText;
             ExerciseTopic = newTopic;

@@ -1,0 +1,77 @@
+[
+  {
+    "SubjectName": "Anwendungsentwicklung",
+    "Exercises": [
+      {
+        "ID": 1,
+        "ExerciseTopic": "SQL",
+        "Difficulty": 10,
+        "ExerciseText": "Welcher der folgenden Befehle wird genutzt, um eine Spalte einer Tabelle zu bearbeiten?",
+        "Answers": [
+          {
+            "Text": "antwortext1",
+            "isCorrect": true
+          },
+          {
+            "Text": "antwortext2",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "ID": 2,
+        "ExerciseTopic": "SQL",
+        "Difficulty": 10,
+        "ExerciseText": "testquestion",
+        "Answers": [
+          {
+            "Text": "antwortext1",
+            "isCorrect": true
+          },
+          {
+            "Text": "antwortext2",
+            "isCorrect": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "SubjectName": "ITS",
+    "Exercises": [
+      {
+        "ID": 1,
+        "ExerciseTopic": "Netzwerke",
+        "Difficulty": 10,
+        "ExerciseText": "Welcher der folgenden Befehle wird genutzt, um eine Spalte einer Tabelle zu bearbeiten?",
+        "Answers": [
+          {
+            "Text": "antwortext1",
+            "isCorrect": true
+          },
+          {
+            "Text": "antwortext2",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "ID": 2,
+        "ExerciseTopic": "Netzwerke",
+        "Difficulty": 10,
+        "ExerciseText": "testquestion",
+        "Answers": [
+          {
+            "Text": "antwortext1",
+            "isCorrect": true
+          },
+          {
+            "Text": "antwortext2",
+            "isCorrect": false
+          }
+        ]
+      }
+    ]
+  }
+
+]
