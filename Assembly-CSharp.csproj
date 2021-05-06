@@ -8,8 +8,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace>
-    </RootNamespace>
+    <RootNamespace></RootNamespace>
     <ProjectGuid>{99066553-724E-F3B7-AA47-976CCB6DFBA4}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -57,16 +56,16 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\BackgroundWorkers\Cache.cs" />
-    <Compile Include="Assets\BackgroundWorkers\FileHandler.cs" />
-    <Compile Include="Assets\Controllers\ExerciseController.cs" />
     <Compile Include="Assets\Enums\Difficulty.cs" />
-    <Compile Include="Assets\Model\Exercise.cs" />
-    <Compile Include="Assets\Model\Subject.cs" />
     <Compile Include="Assets\Scripts\Interactable.cs" />
+    <Compile Include="Assets\Controllers\ExerciseController.cs" />
+    <Compile Include="Assets\Model\Exercise.cs" />
     <Compile Include="Assets\Scripts\CameraFollower.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\BackgroundWorkers\FileHandler.cs" />
+    <Compile Include="Assets\Model\Subject.cs" />
     <Compile Include="Assets\Scripts\Question.cs" />
+    <Compile Include="Assets\BackgroundWorkers\Cache.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -291,65 +290,8 @@
     <Reference Include="UnityEditor.UnityConnectModule">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.4f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
     </Reference>
-    <Reference Include="System.Threading.Overlapped">
-      <HintPath>Assets\Plugins\System.Threading.Overlapped.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Buffers">
-      <HintPath>Assets\Plugins\System.Buffers.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Xml.XPath.XDocument">
-      <HintPath>Assets\Plugins\System.Xml.XPath.XDocument.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Memory">
-      <HintPath>Assets\Plugins\System.Memory.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Runtime.Serialization.Primitives">
-      <HintPath>Assets\Plugins\System.Runtime.Serialization.Primitives.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Data.Common">
-      <HintPath>Assets\Plugins\System.Data.Common.dll</HintPath>
-    </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>Assets\Plugins\Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Diagnostics.StackTrace">
-      <HintPath>Assets\Plugins\System.Diagnostics.StackTrace.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Net.Sockets">
-      <HintPath>Assets\Plugins\System.Net.Sockets.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Security.SecureString">
-      <HintPath>Assets\Plugins\System.Security.SecureString.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Bcl.HashCode">
-      <HintPath>Assets\Plugins\Microsoft.Bcl.HashCode.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Numerics.Vectors">
-      <HintPath>Assets\Plugins\System.Numerics.Vectors.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Globalization.Extensions">
-      <HintPath>Assets\Plugins\System.Globalization.Extensions.dll</HintPath>
-    </Reference>
-    <Reference Include="System.IO.Compression">
-      <HintPath>Assets\Plugins\System.IO.Compression.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Security.Cryptography.Algorithms">
-      <HintPath>Assets\Plugins\System.Security.Cryptography.Algorithms.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Diagnostics.Tracing">
-      <HintPath>Assets\Plugins\System.Diagnostics.Tracing.dll</HintPath>
-    </Reference>
-    <Reference Include="CsvHelper">
-      <HintPath>Assets\Plugins\CsvHelper.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Threading.Tasks.Extensions">
-      <HintPath>Assets\Plugins\System.Threading.Tasks.Extensions.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Bcl.AsyncInterfaces">
-      <HintPath>Assets\Plugins\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Runtime.CompilerServices.Unsafe">
-      <HintPath>Assets\Plugins\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.4f1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>
@@ -784,7 +726,8 @@
       <HintPath>Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll</HintPath>
     </Reference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
