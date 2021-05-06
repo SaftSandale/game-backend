@@ -7,132 +7,132 @@
 				"ExerciseText": "Was bedeutet OOP?",
 				"ExerciseTopic": "OOP",
 				"Difficulty": 10,
-				"Answers": {
-					"Objektoriertierte Programmierung": true,
-					"Objektbedingte organische Programmierung": false,
-					"Offensichtlich organisierte Programmierung": false,
-					"Objektive Ordnungsprotokoll": false
-				}
+				"Answers":	[
+					{"Text": "Objektoriertierte Programmierung", "isCorrect": true},
+					{"Text": "Objektbedingte organische Programmierung", "isCorrect": false},
+					{"Text": "Offensichtlich organisierte Programmierung", "isCorrect": false},
+					{"Text": "Objektives Ordnungsprotokoll", "isCorrect": false}
+				]
 			},
 			{
 				"ID":2,
 				"ExerciseText": "Was sind die Grundlegende Konzepte von OOP?",
 				"ExerciseTopic": "OOP",
 				"Difficulty": 10,
-				"Answers": {
-					"Abstraktion, Verkapselung, Erbe, Polymorphismus": true,
-					"Abstraktion, Virtualisierung, Erbe, Polymorphismus": false,
-					"Erbe, Virtualisierung, Verkapselung, Abstraktion": false,
-					"Autonomität, Virtualisierung, Schutz, Erbe": false
-				}
+				"Answers":	[
+					{"Text": "Abstraktion, Verkapselung, Erbe, Polymorphismus", "isCorrect": true},
+					{"Text": "Abstraktion, Virtualisierung, Erbe, Polymorphismus", "isCorrect": false},
+					{"Text": "Erbe, Virtualisierung, Verkapselung, Abstraktion", "isCorrect": false},
+					{"Text": "Autonomität, Virtualisierung, Schutz, Erbe", "isCorrect": false}
+				]
 			},
 			{
 				"ID":3,
 				"ExerciseText": "Was ist eine Klasse?",
 				"ExerciseTopic": "OOP",
 				"Difficulty": 10,
-				"Answers": {
-					"Eine Klasse ist einfach eine Darstellung eines Objekttyps.": true,
-					"Eine Klasse sind mehrere Schüler die das gleiche Ziel haben.": false,
-					"Eine Klasse ist ein haufen von Leuten mit ähnlichem Wissens- & Finanziellen Stand.": false,
-					"Klasse ein Ausdruck, wenn eine Person etwas gut findet.": false
-				}
+				"Answers":	[
+					{"Text": "Eine Klasse ist einfach eine Darstellung eines Objekttyps.", "isCorrect": true},
+					{"Text": "Eine Klasse sind mehrere Schüler die das gleiche Ziel haben.", "isCorrect": false},
+					{"Text": "Eine Klasse ist ein haufen von Leuten mit ähnlichem Wissens- & Finanziellen Stand.", "isCorrect": false},
+					{"Text": "Klasse ein Ausdruck, wenn eine Person etwas gut findet.", "isCorrect": false}
+				]
 			},
 			{
 				"ID":4,
 				"ExerciseText": "Was ist ein Objekt?",
 				"ExerciseTopic": "OOP",
 				"Difficulty": 10,
-				"Answers": {
-					"Ein Objekt ist eine Methode.": false,
-					"Ein Objekt ist eine Instanz einer Klasse.": true,
-					"Ein Gegenstand welches eine Person anfassen kann.": false,
-					"Ein Objekt ist eine Instanz eines Datemtyps.": false
-				}
+				"Answers":	[
+					{"Text": "Ein Objekt ist eine Methode.", "isCorrect": false},
+					{"Text": "Ein Objekt ist eine Instanz einer Klasse.", "isCorrect": true},
+					{"Text": "Ein Gegenstand welches eine Person anfassen kann.", "isCorrect": false},
+					{"Text": "Ein Objekt ist eine Instanz eines Datentyps.", "isCorrect": false}
+				]
 			},
 			{
 				"ID":5,
 				"ExerciseText": "Was ist Verkapselung?",
 				"ExerciseTopic": "OOP",
 				"Difficulty": 10,
-				"Answers": {
-					"Verkapselung beschreibt wie viele geschweiften Klammern eine Methode hat.": false,
-					"Verkapselung ist eine organische Varianz der Klasse.": false,
-					"Verkapselung ist ein Attribut und beschreibt die Sichtbarkeit.": true,
-					"Verkapselung kapselt ein Datentyp an einer beliebigen Klasse.": false
-				}
+				"Answers":	[
+					{"Text": "Verkapselung beschreibt wie viele geschweifte Klammern eine Methode hat.", "isCorrect": false},
+					{"Text": "Verkapselung ist eine organische Varianz der Klasse.", "isCorrect": false},
+					{"Text": "Verkapselung ist ein Attribut und beschreibt die Sichtbarkeit.", "isCorrect": true},
+					{"Text": "Verkapselung kapselt ein Datentyp an einer beliebigen Klasse.", "isCorrect": false}
+				]
 			},
 			{
 				"ID":6,
 				"ExerciseText": "Was ist Polymorphismus?",
 				"ExerciseTopic": "OOP",
 				"Difficulty": 10,
-				"Answers": {
-					"Polymorphie beschreibt die Sichtbarkeit.": false,
-					"Polymorphie nimmt mehr als eine Form an.": true,
-					"Polymorphie ist eine Form einer Klasse.": false,
-					"Polymorphie beschreibt eine Prozedur.": false
-				}
+				"Answers":	[
+					{"Text": "Polymorphie beschreibt die Sichtbarkeit.", "isCorrect": false},
+					{"Text": "Polymorphie nimmt mehr als eine Form an.", "isCorrect": true},
+					{"Text": "Polymorphie ist eine Form einer Klasse.", "isCorrect": false},
+					{"Text": "Polymorphie beschreibt eine Prozedur.", "isCorrect": false}
+				]
 			},
 			{
 				"ID":7,
 				"ExerciseText": "Was ist Vererbung?",
 				"ExerciseTopic": "OOP",
 				"Difficulty": 10,
-				"Answers": {
-					"Vererbung teilt die Struktur eine Klasse, an anderen Klassen.": true,
-					"Vererbung erbt den Namen der Klasse.": false,
-					"Vererbung erbt den Datentyp der Klasse.": false,
-					"Vererbung erbt den Pfad des Projektes.": false
-				}
+				"Answers":	[
+					{"Text": "Vererbung teilt die Struktur eine Klasse, an anderen Klassen.", "isCorrect": true},
+					{"Text": "Vererbung erbt den Namen der Klasse.", "isCorrect": false},
+					{"Text": "Vererbung erbt den Datentyp der Klasse.", "isCorrect": false},
+					{"Text": "Vererbung erbt den Pfad des Projektes.", "isCorrect": false}
+				]
 			},
 			{
 				"ID":8,
 				"ExerciseText": "Was ist ein Konstruktor?",
 				"ExerciseTopic": "OOP",
 				"Difficulty": 10,
-				"Answers": {
-					"Ein Konstruktor ist eine Bezeichnung für ein Konstrukt.": false,
-					"Ein Konstruktor ist eine Person, welche etwas erbaut.": false,
-					"Ein Konstruktor ist die letzte Methode, welche vor der Löschung aufgerufen wird.": false,
-					"Ein Konstruktor ist eine Methode, die dazu dient, den Zustand eines Objekts zu initialisieren.": true
-				}
+				"Answers":	[
+					{"Text": "Ein Konstruktor ist eine Bezeichnung für ein Konstrukt.", "isCorrect": false},
+					{"Text": "Ein Konstruktor ist eine Person, welche etwas erbaut.", "isCorrect": false},
+					{"Text": "Ein Konstruktor ist die letzte Methode, welche vor der Löschung aufgerufen wird.", "isCorrect": false},
+					{"Text": "Ein Konstruktor ist eine Methode, die dazu dient, den Zustand eines Objekts zu initialisieren.", "isCorrect": true}
+				]
 			},
 			{
 				"ID":9,
 				"ExerciseText": "Was ist ein Destruktor?",
 				"ExerciseTopic": "OOP",
 				"Difficulty": 10,
-				"Answers": {
-					"Ein Destruktor ist die letzte Methode, welche vor der Löschung aufgerufen wird.": true,
-					"Ein Destruktor ist eine Methode, die dazu dient, den Zustand eines Objekts zu initialisieren.": false,
-					"Ein Destruktor ist eine Bezeichnung für ein Konstrukt.": false,
-					"Ein Destruktor wird immer vor dem Konstrukt aufgerufen.": false
-				}
+				"Answers":	[
+					{"Text": "Ein Destruktor ist die letzte Methode, welche vor der Löschung aufgerufen wird.", "isCorrect": true},
+					{"Text": "Ein Destruktor ist eine Methode, die dazu dient, den Zustand eines Objekts zu initialisieren.", "isCorrect": false},
+					{"Text": "Ein Destruktor ist eine Bezeichnung für ein Konstrukt.", "isCorrect": false},
+					{"Text": "Ein Destruktor wird immer vor dem Konstrukt aufgerufen.", "isCorrect": false}
+				]
 			},
 			{
 				"ID":10,
 				"ExerciseText": "Was ist eine Inline-Funktion?",
 				"ExerciseTopic": "OOP",
 				"Difficulty": 10,
-				"Answers": {
-					"Eine Inline-Funktion ist eine Optimierungsmethode von Compilern zur Steigerung der Ausführungsgeschwindigkeit.": true,
-					"Eine Inline-Funktion ist eine Funktion, welche in nur einer Zeile geschrieben wurde.": false,
-					"Eine Inline-Funktion ist eine virtuelle Funktion.": false,
-					"Eine Inline-Funktion ist eine Klasse.": false
-				}
+				"Answers":	[
+					{"Text": "Eine Inline-Funktion ist eine Optimierungsmethode von Compilern zur Steigerung der Ausführungsgeschwindigkeit.", "isCorrect": true},
+					{"Text": "Eine Inline-Funktion ist eine Funktion, welche in nur einer Zeile geschrieben wurde.", "isCorrect": false},
+					{"Text": "Eine Inline-Funktion ist eine virtuelle Funktion.", "isCorrect": false},
+					{"Text": "Eine Inline-Funktion ist eine Klasse.", "isCorrect": false}
+				]
 			},
 			{
 				"ID":11,
 				"ExerciseText": "Was ist eine virtuelle Funktion?",
 				"ExerciseTopic": "OOP",
 				"Difficulty": 10,
-				"Answers": {
-					"Eine virtuelle Funktion ist eine Funktion einer Klasse, deren Funktionalität in der abgeleiteten Klasse überschrieben werden kann.": true,
-					"Eine virtuelle Funktion kann nur in Konstruktoren aufgerufen werden.": false,
-					"Eine virtuelle Funktion kann nur im Destruktor aufgerufen werden.": false,
-					"Eine virtuelle Funktion ist eine Funktion, welche in einer anderen Programmiersprache geschrieben wurde.": false
-				}
+				"Answers":	[
+					{"Text": "Eine virtuelle Funktion ist eine Funktion einer Klasse, deren Funktionalität in der abgeleiteten Klasse überschrieben werden kann.", "isCorrect": true},
+					{"Text": "Eine virtuelle Funktion kann nur in Konstruktoren aufgerufen werden.", "isCorrect": false},
+					{"Text": "Eine virtuelle Funktion kann nur im Destruktor aufgerufen werden.", "isCorrect": false},
+					{"Text": "Eine virtuelle Funktion ist eine Funktion, welche in einer anderen Programmiersprache geschrieben wurde.", "isCorrect": false}
+				]
 			}
 		]
 	}
