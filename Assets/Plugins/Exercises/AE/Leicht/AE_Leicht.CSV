@@ -1,0 +1,8 @@
+ID, Thema, Aufgabe, Anzahl Richtige Antworten, A1, A2, A3, A4, A5, A6
+//SQL
+1, "SQL", "Welcher der folgenden Befehle wird genutzt, um eine Spalte einer Tabelle zu bearbeiten?", 1, "Alter Table", "Drop Table", "Select From Table", "Insert Into Table"
+2, "SQL", "Welcher der folgenden Befehle muss in der Reihenfolge als erstes aufgeführt werden?", 1, "Select From", "Where", "Order By", "Inner  Join"
+3, "SQL", "Was kann man mit Create Database erreichen?" 1, "Eine Datenbank erstellen", "Eine Spalte erstellen", "Ausgewählte Spalten löschen", "Einen Wert bearbeiten"
+4, "SQL", "Wofür wird der as-Befehl genutzt?", 2, "Ein Alias für eine Tabelle anlegen", "Die SQL Befehle verkürzen", "Es gibt keinen as-Befehl", "Spalte a bis s auslesen"
+5, "SQL", "Wofür steht SQL?" 1, "Structured Query Language", "Serial Queue Language", "Sexy Quotes Language", "Super Quick Latency"
+6, "SQL", "Wofür benutzt man SQL?" 1, "Arbeit mit Datenbanken", "Auslesen vom Prozessor Cache", "Anzeige auf Websites", 
