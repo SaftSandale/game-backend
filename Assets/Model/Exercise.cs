@@ -1,4 +1,5 @@
-﻿using PokAEmon.Enums;
+﻿using Assets.BackgroundWorkers;
+using PokAEmon.Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -37,6 +38,11 @@ namespace PokAEmon.Model
             }
         }
         
+        public List<Answer> GetShuffledAnswers()
+        {
+            Answers.Shuffle();
+            return Answers;
+        }
 
         public bool CheckAnswers(IEnumerable<Answer> givenanswers)
         {
@@ -50,8 +56,6 @@ namespace PokAEmon.Model
             ExerciseTopic = newTopic;
             Difficulty = newDifficulty;
             Answers = newAnswers;
-
-            //edit in Json (edit old or delete and replace with new) (json file bei jedem editieren/löschen/hinzufügen abändern oder bei start einmal umwandeln und json file beim beenden mit neu umgewandelten objekten überschreiben?)
         }
     }
 }
