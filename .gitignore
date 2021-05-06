@@ -1,6 +1,6 @@
 # User-specific files
-bin
 obj
+bin
 *.rsuser
 *.suo
 *.user
