@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Assets.BackgroundWorkers
+namespace PokAEmon.BackgroundWorkers
 {
     static class HelperFunctions
     {
