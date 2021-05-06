@@ -15,7 +15,7 @@ public class Question : Interactable
 
     public override void interact()
     {
-        Subject subject = new Subject("AE");
+        Subject subject = new Subject("Anwendungsentwicklung");
         var topic = "OOP";
         var difficulty = Difficulty.Easy;
         var exerciseController = new ExerciseController();

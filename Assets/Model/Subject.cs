@@ -1,4 +1,5 @@
-﻿using PokAEmon.Enums;
+﻿using Newtonsoft.Json;
+using PokAEmon.Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,9 +14,11 @@ namespace PokAEmon.Model
         {
             SubjectName = name;
         }
-        public Subject(string name, List<Exercise> exercises)
+
+        [JsonConstructor]
+        public Subject(string subjectname, List<Exercise> exercises)
         {
-            SubjectName = name;
+            SubjectName = subjectname;
             Exercises = exercises;
         }
 

@@ -29,7 +29,11 @@ namespace PokAEmon.Controllers
         public static Exercise GetRandomSuitableExercise(Subject subject, string topic, Difficulty difficulty)
         {
             Subject suitableSubject = allSubjects.FirstOrDefault(s => s.SubjectName == subject.SubjectName);
-            List<Exercise> suitableExercises = (List<Exercise>)suitableSubject.Exercises.Where(e => e.Difficulty == difficulty && e.ExerciseTopic == topic);
+            if (suitableSubject ==  null)
+            {
+                return null;
+            }
+            List<Exercise> suitableExercises = suitableSubject.ExercisesByTopicAndDifficulty.FirstOrDefault(e => e.Key == topic).Value.FirstOrDefault(ex => ex.Key == difficulty).Value;
 
             Random rnd = new Random();
             var randomNumber = rnd.Next(suitableExercises.Count());
