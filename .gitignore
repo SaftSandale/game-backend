@@ -10,7 +10,6 @@ _ReSharper.*
 packages/**
 Assets/Animations/**
 Assets/Palettes/**
-Assets/Plugins/**
 Assets/Scenes/**
 Assets/Sprites/**
 Assets/UI/**
@@ -20,7 +19,6 @@ Packages/**
 ProjectSettings/**
 Temp/**
 UserSettings/**
-*.dll
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
