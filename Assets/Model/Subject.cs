@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using PokAEmon.BackgroundWorkers;
 using PokAEmon.Enums;
 using System;
 using System.Collections.Generic;
@@ -70,9 +71,16 @@ namespace PokAEmon.Model
 
 
 
-        public void AddExercises(IEnumerable<Exercise> exercises)
+        public void CreateExercise(string text, string topic, Difficulty difficulty, List<Answer> answers)
         {
-            Exercises.AddRange(exercises);
+            List<int> allIDs = new List<int>();
+            foreach (Subject sub in Cache.AllSubjects)
+                foreach(Exercise ex in sub.Exercises)
+                    allIDs.Add(ex.ID);
+
+            //int lastID = Cache.AllSubjects.Last().Exercises.Last().ID;
+            Exercise newExercise = new Exercise(allIDs.Max() + 1, text, topic, (int)difficulty, answers);
+            Exercises.Add(newExercise);
         }
         public void RemoveExercises(IEnumerable<int> exerciseids)
         {
