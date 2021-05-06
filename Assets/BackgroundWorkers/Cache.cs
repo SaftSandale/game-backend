@@ -1,3 +1,4 @@
+using Newtonsoft.Json;
 using PokAEmon.Model;
 using System;
 using System.Collections;
@@ -10,14 +11,36 @@ namespace PokAEmon.BackgroundWorkers
 {
     public class Cache
     {
-        public static List<Subject> AllSubjects { get; set; }
         private int maxElements { get; set; }
-        private Queue<int> cache { get; set; }
+        private static Queue<int> cache { get; set; }
+        public static List<Subject> AllSubjects { get; set; }
+        public static List<Subject> AllSubjectsUnusedExercises 
+        { 
+            get
+            {
+                if (AllSubjects != null)
+                {
+                    List<Subject> res = new List<Subject>();
+                    foreach (Subject sub in AllSubjects)
+                    {
+                        res.Add(new Subject(sub.SubjectName));
+                        foreach(Exercise ex in sub.Exercises)
+                        {
+                            if (!cache.Contains(ex.ID))
+                                res.FirstOrDefault(s => s.SubjectName == sub.SubjectName).Exercises.Add(ex);
+                        }
+                    }
+                    return res;
+                }
+                return null;
+            } 
+        }
 
-        Cache(int anzElements)
+        public Cache(int anzElements)
         {
             maxElements = anzElements;
             cache = new Queue<int>();
+            AllSubjects = DeserializeJSON(FileHandler.ReadJSON());
         }
 
         public void addElement(int ID)
@@ -29,9 +52,11 @@ namespace PokAEmon.BackgroundWorkers
             cache.Enqueue(ID);
         }
 
-        public bool checkContains(int ID)
+
+        public List<Subject> DeserializeJSON(string jsonString)
         {
-            return cache.Contains(ID);
+            var subjects = JsonConvert.DeserializeObject<List<Subject>>(jsonString);
+            return subjects;
         }
     }
 }

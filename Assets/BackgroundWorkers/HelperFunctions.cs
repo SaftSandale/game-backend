@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PokAEmon.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,5 +23,6 @@ namespace PokAEmon.BackgroundWorkers
                 list[n] = value;
             }
         }
+
     }
 }

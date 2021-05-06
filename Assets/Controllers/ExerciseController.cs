@@ -14,19 +14,13 @@ namespace PokAEmon.Controllers
     {
         public ExerciseController()
         {
-            var jsonString = FileHandler.ReadJSON();
-            Cache.AllSubjects = DeserializeJSON(jsonString);
+
         }
 
-        public List<Subject> DeserializeJSON(string jsonString)
-        {
-            var subjects = JsonConvert.DeserializeObject<List<Subject>>(jsonString);
-            return subjects;
-        }
 
         public static Exercise GetRandomSuitableExercise(Subject subject, string topic, Difficulty difficulty)
         {
-            Subject suitableSubject = Cache.AllSubjects.FirstOrDefault(s => s.SubjectName == subject.SubjectName);
+            Subject suitableSubject = Cache.AllSubjectsUnusedExercises.FirstOrDefault(s => s.SubjectName == subject.SubjectName);
             if (suitableSubject ==  null)
             {
                 return null;
