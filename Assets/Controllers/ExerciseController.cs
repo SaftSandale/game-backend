@@ -17,7 +17,6 @@ namespace PokAEmon.Controllers
 
         }
 
-
         public static Exercise GetRandomSuitableExercise(Subject subject, string topic, Difficulty difficulty)
         {
             Subject suitableSubject = Cache.AllSubjectsUnusedExercises.FirstOrDefault(s => s.SubjectName == subject.SubjectName);

@@ -58,7 +58,6 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\AnswerPress.cs" />
     <Compile Include="Assets\Scripts\Interactable.cs" />
-    <Compile Include="Assets\BackgroundWorkers\Cache.cs" />
     <Compile Include="Assets\Model\Answer.cs" />
     <Compile Include="Assets\Model\Exercise.cs" />
     <Compile Include="Assets\Scripts\CameraFollower.cs" />
@@ -71,6 +70,7 @@
     <Compile Include="Assets\Controllers\ExerciseController.cs" />
     <Compile Include="Assets\Scripts\QuizManager.cs" />
     <Compile Include="Assets\Scripts\Question.cs" />
+    <Compile Include="Assets\BackgroundWorkers\Cache.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

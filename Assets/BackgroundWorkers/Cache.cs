@@ -27,7 +27,20 @@ namespace PokAEmon.BackgroundWorkers
                         foreach(Exercise ex in sub.Exercises)
                         {
                             if (!cache.Contains(ex.ID))
-                                res.FirstOrDefault(s => s.SubjectName == sub.SubjectName).Exercises.Add(ex);
+                            {
+                                if (res.FirstOrDefault(s => s.SubjectName == sub.SubjectName).Exercises != null)
+                                {
+                                    res.FirstOrDefault(s => s.SubjectName == sub.SubjectName).Exercises.Add(ex);
+                                }
+                                else
+                                {
+                                    res.FirstOrDefault(s => s.SubjectName == sub.SubjectName).Exercises = new List<Exercise>();
+                                    res.FirstOrDefault(s => s.SubjectName == sub.SubjectName).Exercises.Add(ex);
+                                }
+                            }
+                                
+                                
+                                
                         }
                     }
                     return res;

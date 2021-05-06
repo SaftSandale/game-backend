@@ -23,6 +23,5 @@ namespace PokAEmon.BackgroundWorkers
                 list[n] = value;
             }
         }
-
     }
 }
