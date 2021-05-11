@@ -32,5 +32,11 @@ namespace PokAEmon.Controllers
 
             return chosenExercise;
         }
+
+        public static bool CheckIfAnwerIsCorrect(Exercise exercise, string answer)
+        {
+            var pickedAnwer = exercise.Answers.FirstOrDefault(a => a.Text == answer);
+            return pickedAnwer.isCorrect;
+        }
     }
 }

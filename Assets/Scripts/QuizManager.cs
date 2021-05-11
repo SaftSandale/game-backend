@@ -14,14 +14,16 @@ public class QuizManager : MonoBehaviour
     public Exercise exercise;
     public GameObject[] abuttons;
     public GameObject questionText;
-    private GameObject test;
     public GameObject player;
+    private PokAEmon.BackgroundWorkers.Cache cache;
 
 
     // Start is called before the first frame update
     void Start()
     {
         ui.SetActive(false);
+        //The following line has to be inside of starup method!
+        cache = new PokAEmon.BackgroundWorkers.Cache(100);
     }
 
     public void wakeQuizManager()
@@ -31,31 +33,34 @@ public class QuizManager : MonoBehaviour
         ui.SetActive(true);
     }
 
-    public void respond(bool _isCorrect)
+    public void respond(bool isCorrect)
     {
+        if (isCorrect)
+        {
+            Debug.Log("Diese Antwort ist korrekt!");
+        }
+        else if (!isCorrect)
+        {
+            Debug.Log("FALSCH!");
+        }
+        else
+        {
+            Debug.Log("Ein Fehler ist aufgetreten.");
+        }
         ui.SetActive(false);
         player.GetComponent<PlayerController>().resumeMovement();
     }
 
     void getExercise()
     {
-        PokAEmon.BackgroundWorkers.Cache cache = new PokAEmon.BackgroundWorkers.Cache(100);
+        //This information should come from object or position
         Subject subject = new Subject("Anwendungsentwicklung");
         var topic = "OOP";
         var difficulty = Difficulty.Easy;
         var exerciseController = new ExerciseController();
-        var exercise = ExerciseController.GetRandomSuitableExercise(subject, topic, difficulty);
+        exercise = ExerciseController.GetRandomSuitableExercise(subject, topic, difficulty);
 
         questionText.GetComponent<Text>().text = exercise.ExerciseText;
-
-        //foreach(Answer answer in exercise.Answers)
-        //{
-        //    foreach (GameObject button in abuttons)
-        //    {
-        //        button.GetComponent<AnswerPress>().isCorrect = answer.isCorrect;
-        //        button.transform.GetChild(0).GetComponent<Text>().text = answer.Text;
-        //    }
-        //}
 
         var answers = exercise.GetShuffledAnswers();
         foreach (GameObject button in abuttons)
@@ -67,6 +72,7 @@ public class QuizManager : MonoBehaviour
                 answers.Remove(currentAnswer);
             }
         }
+        cache.addElement(exercise.ID);
 
         Debug.Log(exercise.ExerciseText);
     }
