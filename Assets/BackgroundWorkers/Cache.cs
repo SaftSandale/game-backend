@@ -13,6 +13,7 @@ namespace PokAEmon.BackgroundWorkers
     {
         private int maxElements { get; set; }
         private static Queue<int> cache { get; set; }
+        private Experience PlayerLvL { get; set; }
         public static List<Subject> AllSubjects { get; set; }
         public static List<Subject> AllSubjectsUnusedExercises 
         { 
@@ -50,7 +51,21 @@ namespace PokAEmon.BackgroundWorkers
         {
             maxElements = anzElements;
             cache = new Queue<int>();
-            AllSubjects = DeserializeJSON(FileHandler.ReadJSON());
+            GetAllSubjects();
+            GetPlayerLvl();
+        }
+
+        private void GetAllSubjects()
+        {
+            List<Subject> res = JsonConvert.DeserializeObject<List<Subject>>(FileHandler.ReadPlayerLevelJSON());
+            if (res != null) AllSubjects = res;
+            else AllSubjects = new List<Subject>();
+        }
+        private void GetPlayerLvl()
+        {
+            Experience res = JsonConvert.DeserializeObject<Experience>(FileHandler.ReadPlayerLevelJSON());
+            if (res != null) PlayerLvL = res;
+            else PlayerLvL = new Experience();
         }
 
         public void addElement(int ID)
@@ -63,18 +78,14 @@ namespace PokAEmon.BackgroundWorkers
         }
 
 
-        public List<Subject> DeserializeJSON(string jsonString)
+
+
+        public void SaveCacheToJson()
         {
-            var subjects = JsonConvert.DeserializeObject<List<Subject>>(jsonString);
-            return subjects;
-        }
-
-
-
-        public void SaveSubjectCacheToJson()
-        {
-            string jsonstring = JsonConvert.SerializeObject(AllSubjects);
-            FileHandler.WriteJson(jsonstring);
+            string subjectjsonstring = JsonConvert.SerializeObject(AllSubjects);
+            string leveljsonstring = JsonConvert.SerializeObject(PlayerLvL);
+            FileHandler.WriteExerciseJson(subjectjsonstring);
+            FileHandler.WritePlayerLevelJson(leveljsonstring);
         }
     }
 }

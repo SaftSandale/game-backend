@@ -1,8 +1,9 @@
-﻿using PokAEmon.Enums;
+﻿using Newtonsoft.Json;
+using PokAEmon.Enums;
 using System.Collections;
 
 
-namespace Assets.Model
+namespace PokAEmon.Model
 {
     public class Experience
     {
@@ -13,6 +14,14 @@ namespace Assets.Model
             Level = 1;
             Bonus = 1;
         }
+
+        [JsonConstructor]
+        public Experience(int xp, int lvl)
+        {
+            XP = xp;
+            Level = lvl;
+        }
+
         public float XP { get; private set; }
         public int Level { get; private set; }
         public float Bonus { get; private set; }
