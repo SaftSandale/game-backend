@@ -68,5 +68,13 @@ namespace PokAEmon.BackgroundWorkers
             var subjects = JsonConvert.DeserializeObject<List<Subject>>(jsonString);
             return subjects;
         }
+
+
+
+        public void SaveSubjectCacheToJson()
+        {
+            string jsonstring = JsonConvert.SerializeObject(AllSubjects);
+            FileHandler.WriteJson(jsonstring);
+        }
     }
 }

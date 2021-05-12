@@ -38,5 +38,7 @@ namespace PokAEmon.Controllers
             var pickedAnwer = exercise.Answers.FirstOrDefault(a => a.Text == answer);
             return pickedAnwer.isCorrect;
         }
+
+
     }
 }

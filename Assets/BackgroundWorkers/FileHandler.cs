@@ -19,5 +19,10 @@ namespace PokAEmon.BackgroundWorkers
             var jsonString = File.ReadAllText(mExercisePath);
             return jsonString;
         }
+
+        public static void WriteJson(string jsonstring)
+        {
+            File.WriteAllText(mExercisePath, jsonstring);
+        }
     }
 }
