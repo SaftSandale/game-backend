@@ -38,9 +38,6 @@ namespace PokAEmon.BackgroundWorkers
                                     res.FirstOrDefault(s => s.SubjectName == sub.SubjectName).Exercises.Add(ex);
                                 }
                             }
-                                
-                                
-                                
                         }
                     }
                     return res;
