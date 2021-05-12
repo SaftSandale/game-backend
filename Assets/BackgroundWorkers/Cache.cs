@@ -14,7 +14,7 @@ namespace PokAEmon.BackgroundWorkers
         private int maxElements { get; set; }
         private static Queue<int> cache { get; set; }
         public static List<Subject> AllSubjects { get; set; }
-        public static List<Subject> AllSubjectsUnusedExercises 
+        public static List<Subject> AllSubjectsUnusedExercises
         { 
             get
             {

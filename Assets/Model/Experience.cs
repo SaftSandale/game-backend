@@ -5,7 +5,6 @@ namespace Assets.Model
 {
     public class Experience
     {
-
         public Experience()
         {
             XP = 0;
@@ -25,7 +24,5 @@ namespace Assets.Model
                 Level++;
             }
         }
-
-        
     }
 }
