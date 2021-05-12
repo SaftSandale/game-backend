@@ -38,9 +38,6 @@ namespace PokAEmon.BackgroundWorkers
                                     res.FirstOrDefault(s => s.SubjectName == sub.SubjectName).Exercises.Add(ex);
                                 }
                             }
-                                
-                                
-                                
                         }
                     }
                     return res;
@@ -70,6 +67,14 @@ namespace PokAEmon.BackgroundWorkers
         {
             var subjects = JsonConvert.DeserializeObject<List<Subject>>(jsonString);
             return subjects;
+        }
+
+
+
+        public void SaveSubjectCacheToJson()
+        {
+            string jsonstring = JsonConvert.SerializeObject(AllSubjects);
+            FileHandler.WriteJson(jsonstring);
         }
     }
 }
