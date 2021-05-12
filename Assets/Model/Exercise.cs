@@ -40,8 +40,9 @@ namespace PokAEmon.Model
         
         public List<Answer> GetShuffledAnswers()
         {
-            Answers.Shuffle();
-            return Answers;
+            var rnd = new Random();
+            var randomizedAnswers = new List<Answer>(Answers.OrderBy(item => rnd.Next()));
+            return randomizedAnswers;
         }
 
         public bool CheckAnswers(IEnumerable<Answer> givenanswers)

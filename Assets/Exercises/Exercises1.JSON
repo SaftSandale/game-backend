@@ -64,7 +64,7 @@
 			},
 			{
 				"ID":6,
-				"ExerciseText": "Was ist Polymorphismus?",
+				"ExerciseText": "Was ist Polymorphie?",
 				"ExerciseTopic": "OOP",
 				"Difficulty": 10,
 				"Answers":	[
@@ -80,7 +80,7 @@
 				"ExerciseTopic": "OOP",
 				"Difficulty": 10,
 				"Answers":	[
-					{"Text": "Vererbung teilt die Struktur eine Klasse, an anderen Klassen.", "isCorrect": true},
+					{"Text": "Vererbung teilt die Struktur einer Klasse an anderen Klassen.", "isCorrect": true},
 					{"Text": "Vererbung erbt den Namen der Klasse.", "isCorrect": false},
 					{"Text": "Vererbung erbt den Datentyp der Klasse.", "isCorrect": false},
 					{"Text": "Vererbung erbt den Pfad des Projektes.", "isCorrect": false}
