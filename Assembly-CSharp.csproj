@@ -58,6 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Model\Experience.cs" />
+    <Compile Include="Assets\Model\Player.cs" />
     <Compile Include="Assets\Scripts\AnswerPress.cs" />
     <Compile Include="Assets\Scripts\Interactable.cs" />
     <Compile Include="Assets\Model\Answer.cs" />
