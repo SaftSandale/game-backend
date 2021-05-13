@@ -15,15 +15,12 @@ public class QuizManager : MonoBehaviour
     public GameObject[] abuttons;
     public GameObject questionText;
     public GameObject player;
-    private PokAEmon.BackgroundWorkers.Cache cache;
 
 
     // Start is called before the first frame update
     void Start()
     {
         ui.SetActive(false);
-        //The following line has to be inside of starup method!
-        cache = new PokAEmon.BackgroundWorkers.Cache(100);
     }
 
     public void wakeQuizManager()
@@ -72,7 +69,7 @@ public class QuizManager : MonoBehaviour
                 answers.Remove(currentAnswer);
             }
         }
-        cache.addElement(exercise.ID);
+        MainMenu.questionCache.addElement(exercise.ID);
 
         Debug.Log(exercise.ExerciseText);
     }
