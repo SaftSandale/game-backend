@@ -39,7 +39,7 @@ namespace PokAEmon.Model
         {
             this.XP += ((int)dif * Bonus );
 
-            int neededXP = Level * 150;
+            int neededXP = Level * 100;
 
             if(this.XP > neededXP)
             {

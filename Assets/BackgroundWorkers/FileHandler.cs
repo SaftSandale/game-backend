@@ -13,7 +13,7 @@ namespace PokAEmon.BackgroundWorkers
     {
         private static  string mBaseDirectory = Application.dataPath;
         private static readonly string mExercisePath = mBaseDirectory + "/Exercises/Exercises1.JSON";
-        private static readonly string mPlayerLevelPath = mBaseDirectory + "/SaveStates/PlayerLevel.JSON";
+        private static readonly string mPlayersPath = mBaseDirectory + "/SaveStates/Players.JSON";
 
         public static string ReadExerciseJSON()
         {
@@ -27,15 +27,15 @@ namespace PokAEmon.BackgroundWorkers
         }
 
 
-        public static string ReadPlayerLevelJSON()
+        public static string ReadPlayersJSON()
         {
-            var jsonString = File.ReadAllText(mPlayerLevelPath);
+            var jsonString = File.ReadAllText(mPlayersPath);
             return jsonString;
         }
 
-        public static void WritePlayerLevelJson(string jsonstring)
+        public static void WritePlayersJson(string jsonstring)
         {
-            File.WriteAllText(mPlayerLevelPath, jsonstring);
+            File.WriteAllText(mPlayersPath, jsonstring);
         }
     }
 }
