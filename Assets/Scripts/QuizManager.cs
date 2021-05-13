@@ -68,8 +68,12 @@ public class QuizManager : MonoBehaviour
                 button.transform.GetChild(0).GetComponent<Text>().text = currentAnswer.Text;
                 answers.Remove(currentAnswer);
             }
+            else if(answers.Count() == 0)
+            {
+                button.SetActive(false);
+            }
         }
-        MainMenu.questionCache.addElement(exercise.ID);
+        MainMenu.QuestionCache.addElement(exercise.ID);
 
         Debug.Log(exercise.ExerciseText);
     }

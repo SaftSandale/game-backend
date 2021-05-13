@@ -14,7 +14,7 @@ namespace PokAEmon.BackgroundWorkers
         private int maxElements { get; set; }
         private static Queue<int> cache { get; set; }
         //private List<Player> AllPlayers { get; set; }
-        //public Player CurrentPlayer { get; set; }
+        public static Player CurrentPlayer { get; set; }
         public static List<Subject> AllSubjects { get; set; }
         public static List<Subject> AllSubjectsUnusedExercises
         { 
@@ -84,12 +84,12 @@ namespace PokAEmon.BackgroundWorkers
             cache.Enqueue(ID);
         }
 
-        //public void SaveCacheToJson()
-        //{
-        //    string subjectjsonstring = JsonConvert.SerializeObject(AllSubjects);
-        //    string leveljsonstring = JsonConvert.SerializeObject(AllPlayers);
-        //    FileHandler.WriteExerciseJson(subjectjsonstring);
-        //    FileHandler.WritePlayersJson(leveljsonstring);
-        //}
+        public void SaveCacheToJson()
+        {
+            string subjectjsonstring = JsonConvert.SerializeObject(AllSubjects);
+            //string leveljsonstring = JsonConvert.SerializeObject(AllPlayers);
+            FileHandler.WriteExerciseJson(subjectjsonstring);
+            //FileHandler.WritePlayersJson(leveljsonstring);
+        }
     }
 }
