@@ -77,9 +77,6 @@ namespace PokAEmon.BackgroundWorkers
             cache.Enqueue(ID);
         }
 
-
-
-
         public void SaveCacheToJson()
         {
             string subjectjsonstring = JsonConvert.SerializeObject(AllSubjects);
