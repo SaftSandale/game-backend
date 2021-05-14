@@ -32,18 +32,7 @@ public class QuizManager : MonoBehaviour
 
     public void respond(bool isCorrect)
     {
-        if (isCorrect)
-        {
-            Debug.Log("Diese Antwort ist korrekt!");
-        }
-        else if (!isCorrect)
-        {
-            Debug.Log("FALSCH!");
-        }
-        else
-        {
-            Debug.Log("Ein Fehler ist aufgetreten.");
-        }
+        PokAEmon.BackgroundWorkers.Cache.CurrentPlayer.UpdateXP(exercise.Difficulty, isCorrect);
         ui.SetActive(false);
         player.GetComponent<PlayerController>().resumeMovement();
     }
