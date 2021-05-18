@@ -10,10 +10,8 @@ public class PlayerController : MonoBehaviour
     public Animator animator;
     public GameObject InteractIcon;
     public Vector2 movement;
-    public Vector3 test;
     public float moveLimiter = 0.7f;
     public Transform trans;
-    private Quaternion rotation;
     private bool controlallowed;
 
     private Vector2 boxSize = new Vector2(0.1f, 0.1f);

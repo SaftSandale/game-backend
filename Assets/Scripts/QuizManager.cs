@@ -57,7 +57,7 @@ public class QuizManager : MonoBehaviour
                 button.transform.GetChild(0).GetComponent<Text>().text = currentAnswer.Text;
                 answers.Remove(currentAnswer);
             }
-            else if(answers.Count() == 0)
+            else if (answers.Count() == 0)
             {
                 button.SetActive(false);
             }
