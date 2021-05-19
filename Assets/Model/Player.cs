@@ -52,7 +52,7 @@ namespace PokAEmon.Model
             QC = new QuestionCache(10);
         }
 
-        public void AddXP(Difficulty dif, bool answerStatus)
+        public void UpdateXP(Difficulty dif, bool answerStatus)
         {
             QC.AddElement(answerStatus);
             if(QC.CalcBonus() == 0)
@@ -63,11 +63,11 @@ namespace PokAEmon.Model
             {
                 PlayerExperience.setBonus((float)(0.05 * QC.CalcBonus()));
             }
-            PlayerExperience.addXP(dif);
-            
+
+            if (answerStatus)
+            {
+                PlayerExperience.addXP(dif);
+            }
         }
-
-
-
     }
 }

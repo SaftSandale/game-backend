@@ -35,10 +35,12 @@ public class QuizManager : MonoBehaviour
         if (isCorrect)
         {
             Debug.Log("Diese Antwort ist korrekt!");
+            PokAEmon.BackgroundWorkers.Cache.CurrentPlayer.UpdateXP(exercise.Difficulty, true);
         }
         else if (!isCorrect)
         {
             Debug.Log("FALSCH!");
+            PokAEmon.BackgroundWorkers.Cache.CurrentPlayer.UpdateXP(exercise.Difficulty, false);
         }
         else
         {
