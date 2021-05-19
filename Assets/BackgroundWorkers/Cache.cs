@@ -91,5 +91,12 @@ namespace PokAEmon.BackgroundWorkers
             FileHandler.WriteExerciseJson(subjectjsonstring);
             //FileHandler.WritePlayersJson(leveljsonstring);
         }
+
+
+        public static List<Subject> LoadAllSubjectsFromJson()
+        {
+            List<Subject> res = JsonConvert.DeserializeObject<List<Subject>>(FileHandler.ReadExerciseJSON());
+            return res != null ? res : new List<Subject>();
+        }
     }
 }

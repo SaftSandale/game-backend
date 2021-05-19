@@ -17,6 +17,9 @@ public class MainMenu : MonoBehaviour
     public GameObject infoMessage;
     public GameObject mainMenu;
     public GameObject playMenu;
+    public GameObject editorMenu;
+
+    private 
 
     // Start is called before the first frame update
     void Start()
@@ -28,8 +31,14 @@ public class MainMenu : MonoBehaviour
     {
         mainMenu.SetActive(false);
         playMenu.SetActive(true);
-        infoMessage.GetComponent<TextMeshProUGUI>().text = "Bitte gib einen namen ein";
     }
+    public void ChangeToEditorMenu()
+    {
+        mainMenu.SetActive(false);
+        editorMenu.SetActive(true);
+    }
+
+    
 
     public void PlayGame()
     {
