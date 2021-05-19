@@ -10,7 +10,7 @@ _ReSharper.*
 packages/**
 Assets/Animations/**
 Assets/Palettes/**
-Assets/Scenes/**
+Assets/Scenes/*.meta
 Assets/Sprites/**
 Assets/UI/**
 Assets/TextMesh Pro/**
