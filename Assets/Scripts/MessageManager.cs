@@ -11,25 +11,26 @@ public class MessageManager : MonoBehaviour
 
     public GameObject interactIcon;
 
-    //public TextAsset textFile;
-    //public string[] textLines;
+    //public TextAsset textfile;
+    //public string[] textlines;
 
     public float delay = 0.06f;
-    public string fullText = "Willkommen bei PokAEmon " + PokAEmon.BackgroundWorkers.Cache.CurrentPlayer.PlayerName + "! \n" +
+    private string fullText = "Willkommen bei PokAEmon " + PokAEmon.BackgroundWorkers.Cache.CurrentPlayer.PlayerName + "! \n" +
         "Nutze die Pfeiltasten oder WASD um dich zu bewegen. Drücke E, wenn du in meiner Nähe bist, um mit mir zu interagieren!";
     private string currentText = string.Empty;
 
     // Start is called before the first frame update
     void Start()
     {
-        //if (textFile != null)
+        //if (textfile != null)
         //{
-        //    textLines = (textFile.text.Split('\n'));
+        //    textlines = (textfile.text.Split('\n'));
         //}
         ui.SetActive(true);
         player.GetComponent<PlayerController>().suspendMovement();
         StartCoroutine(DisplayText());
         interactIcon.SetActive(true);
+        player.GetComponent<PlayerController>().resumeMovement();
     }
 
     private IEnumerator DisplayText()
