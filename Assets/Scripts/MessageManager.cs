@@ -30,7 +30,14 @@ public class MessageManager : MonoBehaviour
         player.GetComponent<PlayerController>().suspendMovement();
         StartCoroutine(DisplayText());
         interactIcon.SetActive(true);
-        player.GetComponent<PlayerController>().resumeMovement();
+    }
+
+    void Update()
+    {
+        if (messageText.GetComponent<Text>().text == fullText)
+        {
+            player.GetComponent<PlayerController>().resumeMovement();
+        }
     }
 
     private IEnumerator DisplayText()
