@@ -2,7 +2,9 @@ using PokAEmon.Model;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class PopulateList : MonoBehaviour
@@ -13,9 +15,13 @@ public class PopulateList : MonoBehaviour
 
 	public GameObject EditModeSelectionWindow;
 
+	public Tuple<string, Exercise> SelectedExercise;
+
+	private List<GameObject> ButtonList = new List<GameObject>();
+
 	void Start()
 	{
-		Subjects = PokAEmon.BackgroundWorkers.Cache.LoadAllSubjectsFromJson();
+		Subjects = PokAEmon.BackgroundWorkers.Cache.AllSubjects;
 		Populate();
 	}
 
@@ -28,23 +34,44 @@ public class PopulateList : MonoBehaviour
 	{
 		GameObject newObj; // Create GameObject instance
 
-		List<Tuple<string, string, string>> exerciseList = new List<Tuple<string, string, string>>();
 		foreach (Subject subject in Subjects)
         {
 			foreach (Exercise exercise in subject.Exercises)
-				exerciseList.Add(new Tuple<string, string, string>(subject.SubjectName, exercise.ExerciseTopic, exercise.ExerciseText));
+            {
+				newObj = (GameObject)Instantiate(prefab, transform);
+
+				newObj.GetComponent<Button>().onClick.AddListener(delegate () { EditModeSelectionWindow.SetActive(true); SelectedExercise = new Tuple<string, Exercise>(subject.SubjectName ,exercise); });
+				newObj.transform.GetChild(0).GetComponent<Text>().text = subject.SubjectName;
+				newObj.transform.GetChild(1).GetComponent<Text>().text = exercise.ExerciseTopic;
+				newObj.transform.GetChild(2).GetComponent<Text>().text = exercise.ExerciseText;
+
+				ButtonList.Add(newObj.gameObject);
+			}
         }
-		for (int i = 0; i < exerciseList.Count; i++)
-		{
-			// Create new instances of our prefab until we've created as many as we specified
-			newObj = (GameObject)Instantiate(prefab, transform);
 
-			// Randomize the color of our image
-			newObj.GetComponent<Button>().onClick.AddListener(delegate () { EditModeSelectionWindow.SetActive(true); });
-			newObj.transform.GetChild(0).GetComponent<Text>().text = exerciseList[i].Item1;
-			newObj.transform.GetChild(1).GetComponent<Text>().text = exerciseList[i].Item2;
-			newObj.transform.GetChild(2).GetComponent<Text>().text = exerciseList[i].Item3;
-		}
+	}
 
+	public void ReloadScrollView()
+    {
+		foreach (GameObject obj in ButtonList)
+        {
+			Destroy(obj.gameObject);
+        }
+		Subjects = PokAEmon.BackgroundWorkers.Cache.AllSubjects;
+		Populate();
+    }
+	public void EditSelectedExercise()
+    {
+		ExerciseEditor.SubjectName = SelectedExercise.Item1;
+		ExerciseEditor.EditedExercise = SelectedExercise.Item2;
+		ExerciseEditor.isNewExercise = false;
+		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+	}
+	public void DeleteSelectedExercise()
+    {
+		Subject currentSub = PokAEmon.BackgroundWorkers.Cache.AllSubjects.FirstOrDefault(s => s.SubjectName == SelectedExercise.Item1);
+		currentSub.RemoveExercise(SelectedExercise.Item2);
+		EditModeSelectionWindow.SetActive(false);
+		ReloadScrollView();
 	}
 }

@@ -19,12 +19,19 @@ public class MainMenu : MonoBehaviour
     public GameObject playMenu;
     public GameObject editorMenu;
 
-    private 
+
+    public static bool returnedFromEditor = false;
 
     // Start is called before the first frame update
     void Start()
     {
-        QuestionCache = new PokAEmon.BackgroundWorkers.Cache(100);
+        if (QuestionCache == null)
+            QuestionCache = new PokAEmon.BackgroundWorkers.Cache(100);
+        if (returnedFromEditor)
+        {
+            ChangeToEditorMenu();
+            returnedFromEditor = false;
+        }
     }
 
     public void ChangeToPlayMenu()
@@ -37,6 +44,13 @@ public class MainMenu : MonoBehaviour
         mainMenu.SetActive(false);
         editorMenu.SetActive(true);
     }
+    public void CreateNewExercise()
+    {
+        ExerciseEditor.SubjectName = "";
+        ExerciseEditor.EditedExercise = new Exercise();
+        ExerciseEditor.isNewExercise = true;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
 
     
 
@@ -46,7 +60,7 @@ public class MainMenu : MonoBehaviour
         if (userName != String.Empty)
         {
             PokAEmon.BackgroundWorkers.Cache.CurrentPlayer = new Player(userName, new Experience());
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
         }
         else
         {
@@ -56,6 +70,7 @@ public class MainMenu : MonoBehaviour
 
     public void QuitGame()
     {
+        PokAEmon.BackgroundWorkers.Cache.SaveCacheToJson();
         Application.Quit();
     }
 }

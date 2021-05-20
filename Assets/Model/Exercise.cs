@@ -1,4 +1,5 @@
-﻿using PokAEmon.BackgroundWorkers;
+﻿using Newtonsoft.Json;
+using PokAEmon.BackgroundWorkers;
 using PokAEmon.Enums;
 using System;
 using System.Collections.Generic;
@@ -10,6 +11,15 @@ namespace PokAEmon.Model
 {
     public class Exercise
     {
+        public Exercise()
+        {
+            ExerciseText = "";
+            ExerciseTopic = "";
+            Difficulty = Difficulty.Easy;
+            Answers = new List<Answer>();
+        }
+
+        [JsonConstructor]
         public Exercise(int id, string text, string topic, int difficulty, List<Answer> answers)
         {
             ID = id;

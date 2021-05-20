@@ -70,7 +70,6 @@ namespace PokAEmon.Model
         }
 
 
-
         public void CreateExercise(string text, string topic, Difficulty difficulty, List<Answer> answers)
         {
             List<int> allIDs = new List<int>();
@@ -82,10 +81,9 @@ namespace PokAEmon.Model
             Exercise newExercise = new Exercise(allIDs.Max() + 1, text, topic, (int)difficulty, answers);
             Exercises.Add(newExercise);
         }
-        public void RemoveExercises(IEnumerable<int> exerciseids)
+        public void RemoveExercise(Exercise exercise)
         {
-            foreach (int id in exerciseids)
-                Exercises.RemoveAll(e => e.ID == id);
+            Exercises.Remove(exercise);
         }
     }
 }

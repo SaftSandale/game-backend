@@ -84,7 +84,7 @@ namespace PokAEmon.BackgroundWorkers
             cache.Enqueue(ID);
         }
 
-        public void SaveCacheToJson()
+        public static void SaveCacheToJson()
         {
             string subjectjsonstring = JsonConvert.SerializeObject(AllSubjects);
             //string leveljsonstring = JsonConvert.SerializeObject(AllPlayers);
@@ -92,11 +92,5 @@ namespace PokAEmon.BackgroundWorkers
             //FileHandler.WritePlayersJson(leveljsonstring);
         }
 
-
-        public static List<Subject> LoadAllSubjectsFromJson()
-        {
-            List<Subject> res = JsonConvert.DeserializeObject<List<Subject>>(FileHandler.ReadExerciseJSON());
-            return res != null ? res : new List<Subject>();
-        }
     }
 }
