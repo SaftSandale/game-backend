@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CsvHelper;
+using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
@@ -14,6 +15,7 @@ namespace PokAEmon.BackgroundWorkers
         private static  string mBaseDirectory = Application.dataPath;
         private static readonly string mExercisePath = mBaseDirectory + "/Exercises/Exercises1.JSON";
         private static readonly string mPlayersPath = mBaseDirectory + "/SaveStates/Players.JSON";
+        private static readonly string mTextLinesPath = mBaseDirectory + "/Text/InteractionTexts.csv";
 
         public static string ReadExerciseJSON()
         {
@@ -26,7 +28,6 @@ namespace PokAEmon.BackgroundWorkers
             File.WriteAllText(mExercisePath, jsonstring);
         }
 
-
         public static string ReadPlayersJSON()
         {
             var jsonString = File.ReadAllText(mPlayersPath);
@@ -36,6 +37,14 @@ namespace PokAEmon.BackgroundWorkers
         public static void WritePlayersJson(string jsonstring)
         {
             File.WriteAllText(mPlayersPath, jsonstring);
+        }
+
+        public static string ReadTextLinesCSV()
+        {
+            using (TextReader reader = File.OpenText(mTextLinesPath))
+            {
+                CsvReader csvReader = new CsvReader(reader);
+            }
         }
     }
 }
