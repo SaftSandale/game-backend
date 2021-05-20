@@ -20,6 +20,5 @@ public class DoorOpener : Interactable
         animatorRight.SetBool("Open", true);
 
         gameObject.GetComponent<BoxCollider2D>().enabled = false;
-        
     }
 }
