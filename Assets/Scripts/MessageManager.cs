@@ -1,61 +1,115 @@
+using PokAEmon.Model;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class MessageManager : MonoBehaviour
 {
+    #region Unity Variables
     public GameObject ui;
     public GameObject messageText;
     public GameObject player;
-
     public GameObject interactIcon;
+    #endregion
 
-    //public TextAsset textfile;
-    //public string[] textlines;
+    #region Variables
+    private readonly float mTextDelay = 0.06f;
+    private string mFullText = string.Empty;
+    private string mCurrentText = string.Empty;
+    #endregion
 
-    public float delay = 0.06f;
-    private string fullText = "Willkommen bei PokAEmon " + PokAEmon.BackgroundWorkers.Cache.CurrentPlayer.PlayerName + "! \n" +
-        "Nutze die Pfeiltasten oder WASD um dich zu bewegen. Drücke E, wenn du in meiner Nähe bist, um mit mir zu interagieren!";
-    private string currentText = string.Empty;
-
-    // Start is called before the first frame update
+    #region Unity Methods
     void Start()
     {
-        //if (textfile != null)
-        //{
-        //    textlines = (textfile.text.Split('\n'));
-        //}
         ui.SetActive(true);
         player.GetComponent<PlayerController>().suspendMovement();
-        StartCoroutine(DisplayText());
+        var welcomeTextLine = PokAEmon.BackgroundWorkers.Cache.AllTextLines.First();
+        var welcomeText = welcomeTextLine.TextString;
+        mFullText = ReplacePlayerName(welcomeText);
+        StartCoroutine(DisplayText(ReplacePlayerName(mFullText)));
+        welcomeTextLine.AlreadyTold = true;
         interactIcon.SetActive(true);
     }
 
     void Update()
     {
-        if (messageText.GetComponent<Text>().text == fullText)
+        if (messageText.GetComponent<Text>().text == mFullText)
         {
             player.GetComponent<PlayerController>().resumeMovement();
+            if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.D) 
+                || Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.LeftArrow) 
+                || Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.RightArrow))
+            {
+                ui.SetActive(false);
+                mFullText = string.Empty;
+            }
         }
     }
+    #endregion
 
-    private IEnumerator DisplayText()
+    #region Methods
+    /// <summary>
+    /// Gibt Text im Schreibmaschinen Effekt aus.
+    /// </summary>
+    /// <param name="textToDisplay">Text, der ausgegeben werden soll.</param>
+    /// <returns></returns>
+    private IEnumerator DisplayText(string textToDisplay)
     {
-        for (int i = 0; i < fullText.Length + 1; i++)
+        for (int i = 0; i < textToDisplay.Length + 1; i++)
         {
-            currentText = fullText.Substring(0, i);
-            messageText.GetComponent<Text>().text = currentText;
-            yield return new WaitForSeconds(delay);
+            mCurrentText = textToDisplay.Substring(0, i);
+            messageText.GetComponent<Text>().text = mCurrentText;
+            yield return new WaitForSeconds(mTextDelay);
         }
     }
 
-    public void WakeMessageBox()
+    /// <summary>
+    /// Startet die Ausgabe eines Texts, zeigt die Textbox an und verbietet die Bewegung solange der Text angezeigt wird.
+    /// </summary>
+    /// <param name="textLine">Die aktuelle TextLine.</param>
+    public void DisplayMessage(TextLine textLine)
     {
         ui.SetActive(true);
         interactIcon.SetActive(false);
-        fullText = "Sehr gut, den ersten Schritt hast du geschafft! Im laufe des Spiels musst du Fragen beantworten, um aus der Schule zu entkommen..." +
-            "Die Schule ist in Bereiche unterteilt. Beantwortest du 10 Fragen zu einem Thema richtig, schaltest du den nächsten Bereich frei...";
-        StartCoroutine(DisplayText());
+        player.GetComponent<PlayerController>().suspendMovement();
+        var textToDisplay = ReplacePlayerName(textLine.TextString);
+        mFullText = textToDisplay;
+        StartCoroutine(DisplayText(mFullText));
+        textLine.AlreadyTold = true;
+        
     }
+
+    /// <summary>
+    /// Gibt eine Fehlernachricht aus.
+    /// </summary>
+    /// <param name="message">Die anzuzeigende Nachricht.</param>
+    public void DisplayWrongInteractionMessage(string message)
+    {
+        ui.SetActive(true);
+        interactIcon.SetActive(false);
+        player.GetComponent<PlayerController>().suspendMovement();
+        mFullText = message;
+        StartCoroutine(DisplayText(mFullText));
+    }
+
+    /// <summary>
+    /// Ersetzt PlayerName aus der JSON Datei mit dem eigentlichen Spielernamen.
+    /// </summary>
+    /// <param name="text"></param>
+    /// <returns></returns>
+    private string ReplacePlayerName(string text)
+    {
+        if (text.Contains("PlayerName"))
+        {
+            var textWithPlayerName = text.Replace("PlayerName", PokAEmon.BackgroundWorkers.Cache.CurrentPlayer.PlayerName);
+            return textWithPlayerName;
+        }
+        else
+        {
+            return text;
+        }
+    }
+    #endregion
 }

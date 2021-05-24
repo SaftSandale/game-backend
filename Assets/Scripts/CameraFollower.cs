@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class CameraFollower : MonoBehaviour
 {
-
+    #region Unity Variables
     public GameObject target;
     public Vector3 offset = new Vector3(0, 0, -1);
+    #endregion
 
+    #region Unity Methods
     void FixedUpdate()
     {
         if(target)
@@ -19,4 +21,5 @@ public class CameraFollower : MonoBehaviour
                 );
         }
     }
+    #endregion
 }

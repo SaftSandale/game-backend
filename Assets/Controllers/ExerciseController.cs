@@ -12,11 +12,14 @@ namespace PokAEmon.Controllers
 {
     public class ExerciseController
     {
-        public ExerciseController()
-        {
-
-        }
-
+        #region Methods
+        /// <summary>
+        /// Ermittelt aus dem Chache eine zufällige Frage, die das passende Fach, die passende Schwierigkeit und das passende Thema hat.
+        /// </summary>
+        /// <param name="subject">Das Fach, dem die Frage angehören soll.</param>
+        /// <param name="topic">Das Thema, dem die Frage angehören soll.</param>
+        /// <param name="difficulty">Die Schwierigkeit, die Frage haben soll.</param>
+        /// <returns>Gibt eine Exercise zurück.</returns>
         public static Exercise GetRandomSuitableExercise(Subject subject, string topic, Difficulty difficulty)
         {
             Subject suitableSubject = Cache.AllSubjectsUnusedExercises.FirstOrDefault(s => s.SubjectName == subject.SubjectName);
@@ -33,12 +36,17 @@ namespace PokAEmon.Controllers
             return chosenExercise;
         }
 
+        /// <summary>
+        /// Überprüft, ob die angegebene Antwort richtig ist.
+        /// </summary>
+        /// <param name="exercise">Die Aufgabe, die beantwortet wurde.</param>
+        /// <param name="answer">String der Antwort, die ausgewählt wurde.</param>
+        /// <returns>Gibt true oder false zurück.</returns>
         public static bool CheckIfAnwerIsCorrect(Exercise exercise, string answer)
         {
             var pickedAnwer = exercise.Answers.FirstOrDefault(a => a.Text == answer);
             return pickedAnwer.isCorrect;
         }
-
-
+        #endregion
     }
 }

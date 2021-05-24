@@ -1,0 +1,50 @@
+[
+	{
+		"ID":1,
+		"TextString": "Willkommen bei PokAEmon PlayerName.\nNutze die Pfeiltasten oder WASD um dich zu bewegen. Drücke E, wenn du in meiner Nähe bist, um mit mir zu interagieren!"
+	},
+	{
+		"ID":2,
+		"TextString": "Sehr gut, den ersten Schritt hast du geschafft! Die Schule ist in 3 Bereiche unterteilt. Beantworte Pro Bereich 50 Fragen richtig, um den nächsten Bereich freizuschalten. Ich gebe dir etwas Erfahrungspunkte, damit du den ersten Bereich freischaltest. Nun sieh dich etwas um!"
+	},
+	{
+		"ID":3,
+		"TextString": "Hallo PlayerName. Ich hoffe du bist bereit für die Herausforderung. In meinem Raum erhälst du leichte Fragen zum Thema Datenbanken. Suche einen Gegenstand in diesem Raum, mit dem du interagieren kannst, um Fragen zu erhalten."
+	},
+	{
+		"ID":4,
+		"TextString": "Da bist du ja PlayerName. Ich habe schon auf dich gewartet, um dir leichte Fragen über prozedurale Programmierung zu stellen. Gehe zur Pinwand, wenn du bereit bist."
+	},
+	{
+		"ID":5,
+		"TextString": "Moin PlayerName. Möchtest du in den nächsten Bereich gelangen? Na dann musst du wohl bei mir einige Fragen zur objektorientierten Programmierung beantworten. Setze dich an den richtigen Pc und du kannst direkt mit den Fragen anfangen. An welchen Pc? Das musst du herausfinden!"
+	},
+	{
+		"ID":6,
+		"TextString": "Um den nächsten Bereich freizuschalten musst du dich ins Zeug legen. Mal sehen ob du leichte Fragen zum Thema Software Tests richtig beantworten kannst. Du findest sie an der Tafel."
+	},
+	{
+		"ID":7,
+		"TextString": "Was fällt dir ein mich bei der Arbeit zu stören?! Als Strafe musst du einige leichte Fragen über Versionskontrolle beantworten. Wenn du es schaffst 5 Fragen richtig zu beantworten, lasse ich dich gehen."
+	},
+	{
+		"ID":8,
+		"TextString": "Wie ich sehe hast du die leichte Schwierigkeit bereits bewältigt. Starke leistung! Aber ob du es schaffst 10 mittelschwere Fragen zu Datenbanken zu beantworten werden wir sehen..."
+	},
+	{
+		"ID":9,
+		"TextString": "Wie bist du denn nach hier gekommen? Du scheinst ja echt schlau zu sein. 10 mittelschwere Fragen zur prozeduralen Programmierung sollten dir ja jetzt auch leicht fallen. Viel Spaß!"
+	},
+	{
+		"ID":10,
+		"TextString": "Anscheinend warst du bei meinen Kollegen bereits sehr Erfolgreich. Löse hier 10 mittelschwere Fragen zum Thema objektorientierte Programmierung um weiterzukommen."
+	},
+	{
+		"ID":11,
+		"TextString": "Den Ablauf kennst du ja bereits. Bei mir findest du mittelschwere Fragen zum Thema Software Tests."
+	},
+	{
+		"ID":12,
+		"TextString": "Hallo PlayerName. Hast du schon dicken Sonic im Gang gesehen? Wenn du bei mir 10 mittelschwere Fragen zum Thema Versionskontrolle bewältigst, macht er dir wahrscheinlich Platz."
+	},
+]

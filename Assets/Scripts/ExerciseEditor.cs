@@ -10,7 +10,7 @@ using UnityEngine.UI;
 
 public class ExerciseEditor : MonoBehaviour
 {
-
+    #region Unity Variables
     public GameObject SubjectInput;
     public GameObject TopicInput;
     public GameObject ExerciseTextInput;
@@ -18,24 +18,25 @@ public class ExerciseEditor : MonoBehaviour
     public GameObject AnswerPair1;
     public GameObject AnswerPair2;
     public GameObject AnswerPair3;
+    #endregion
 
+    #region Variables
     public static Exercise EditedExercise;
     public static string SubjectName;
     public static bool isNewExercise;
+    #endregion
 
-
-    // Start is called before the first frame update
+    #region Unity Methods
     void Start()
     {
         FillInputsByExercise();
     }
+    #endregion
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+    #region Methods
+    /// <summary>
+    /// Füllt die Textboxen bei der Bearbeitung einer Aufgabe, mit den aktuellen Daten der ausgewählten Aufgabe.
+    /// </summary>
     public void FillInputsByExercise()
     {
         if (EditedExercise != null)
@@ -89,7 +90,10 @@ public class ExerciseEditor : MonoBehaviour
         else EditedExercise = new Exercise();
     }
 
-
+    /// <summary>
+    /// Zeigt anhand der gewählten Schwierigkeit Eingabemöglichkeiten für die Antworten an.
+    /// </summary>
+    /// <param name="difficulty">Die ausgewählte Schwierigkeit.</param>
     public void OnDifficultySelect(int difficulty)
     {
         switch (difficulty)
@@ -121,13 +125,18 @@ public class ExerciseEditor : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Wechselt die Szene zur Editor Szene.
+    /// </summary>
     public void ReturnToEditorMenu()
     {
         MainMenu.returnedFromEditor = true;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
     }
 
-
+    /// <summary>
+    /// Speichert den aktuellen Stand der Aufgabe mit den eingegebenen Daten.
+    /// </summary>
     public void SaveExercise()
     {
         string subjectname = SubjectInput.GetComponent<InputField>().text;
@@ -147,7 +156,10 @@ public class ExerciseEditor : MonoBehaviour
         ReturnToEditorMenu();
     }
 
-
+    /// <summary>
+    /// Erstellt eine Liste an Antworten für eine Aufgabe.
+    /// </summary>
+    /// <returns>Eine Liste mit Antworten.</returns>
     private List<Answer> CreateAnswerList()
     {
         List<Answer> res = new List<Answer>();
@@ -159,5 +171,5 @@ public class ExerciseEditor : MonoBehaviour
         res.Add(new Answer(AnswerPair3.transform.GetChild(1).transform.GetChild(0).GetComponent<InputField>().text, AnswerPair3.transform.GetChild(1).transform.GetChild(1).GetComponent<Toggle>().isOn));
         return res;
     }
-
+    #endregion
 }

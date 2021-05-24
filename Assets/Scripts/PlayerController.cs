@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-
+    #region Unity Variables
     public float moveSpeed = 5f;
     public Rigidbody2D rb;
     public Animator animator;
@@ -13,16 +13,15 @@ public class PlayerController : MonoBehaviour
     public float moveLimiter = 0.7f;
     public Transform trans;
     private bool controlallowed;
-
     private Vector2 boxSize = new Vector2(0.1f, 0.1f);
+    #endregion
 
-    // Start is called before the first frame update
+    #region Unity Methods
     void Start()
     {
         controlallowed = true;
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (controlallowed)
@@ -55,22 +54,33 @@ public class PlayerController : MonoBehaviour
             }
         }
     }
-
+   
     void FixedUpdate()
     {
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
     }
+    #endregion
 
+    #region Methods
+    /// <summary>
+    /// Zeigt das Interact Icon an.
+    /// </summary>
     public void openInteractableIcon()
     {
         InteractIcon.SetActive(true);
     }
 
+    /// <summary>
+    /// Blendet das Interact Icon aus.
+    /// </summary>
     public void closeInteractableIcon()
     {
         InteractIcon.SetActive(false);
     }
 
+    /// <summary>
+    /// Prüft, ob aktuell interagiert werden kann.
+    /// </summary>
     private void checkInteraction()
     {
         RaycastHit2D[] hits = Physics2D.BoxCastAll(transform.position, boxSize, 0, Vector2.zero);
@@ -88,13 +98,20 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Sperrt die Bewegung des Spielers.
+    /// </summary>
     public void suspendMovement()
     {
         controlallowed = false;
     }
 
+    /// <summary>
+    /// Aktiviert die Bewegung des Spielers.
+    /// </summary>
     public void resumeMovement()
     {
         controlallowed = true;
     }
+    #endregion
 }

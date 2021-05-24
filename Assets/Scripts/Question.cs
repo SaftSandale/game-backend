@@ -4,21 +4,17 @@ using UnityEngine;
 
 public class Question : Interactable
 {
+    #region Unity Variables
     public QuizManager quizManager;
+    #endregion
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
+    #region Overwritten Methods
+    /// <summary>
+    /// Zeigt die UI für Aufgaben an.
+    /// </summary>
     public override void interact()
     {
         quizManager.wakeQuizManager();
     }
-
-    public override string getDescription()
-    {
-        return "What is ITS?";
-    }
+    #endregion
 }

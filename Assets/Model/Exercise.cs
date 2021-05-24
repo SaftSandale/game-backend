@@ -11,30 +11,35 @@ namespace PokAEmon.Model
 {
     public class Exercise
     {
-        public Exercise()
-        {
-            ExerciseText = "";
-            ExerciseTopic = "";
-            Difficulty = Difficulty.Easy;
-            Answers = new List<Answer>();
-        }
-
-        [JsonConstructor]
-        public Exercise(int id, string text, string topic, int difficulty, List<Answer> answers)
-        {
-            ID = id;
-            ExerciseText = text;
-            ExerciseTopic = topic;
-            Difficulty = (Difficulty)difficulty;
-            Answers = answers;
-        }
-
-
+        #region Properties
+        /// <summary>
+        /// ID, um eine Aufgabe unverwechselbar zu unterscheiden.
+        /// </summary>
         public int ID { get; set; }
+
+        /// <summary>
+        /// Text der Aufgabe.
+        /// </summary>
         public string ExerciseText { get; set; }
+
+        /// <summary>
+        /// Thema der Aufgabe.
+        /// </summary>
         public string ExerciseTopic { get; set; }
+
+        /// <summary>
+        /// Schwierigkeit der Aufgabe.
+        /// </summary>
         public Difficulty Difficulty { get; set; }
+
+        /// <summary>
+        /// Liste von Antworten der Aufgabe.
+        /// </summary>
         public List<Answer> Answers { get; set; }
+
+        /// <summary>
+        /// Liste aller richtigen Aufgaben.
+        /// </summary>
         private IEnumerable<Answer> CorrectAnswers
         {
             get
@@ -47,7 +52,44 @@ namespace PokAEmon.Model
                 return null;
             }
         }
-        
+        #endregion
+
+        #region Constructor
+        /// <summary>
+        /// Konstruktor um neue Aufgabe anzulegen, wenn der Nutzer eine Aufgabe hinzufügt.
+        /// </summary>
+        public Exercise()
+        {
+            ExerciseText = "";
+            ExerciseTopic = "";
+            Difficulty = Difficulty.Easy;
+            Answers = new List<Answer>();
+        }
+
+        /// <summary>
+        /// JSON Konstruktor, der genutzt wird, um JSON String in Exercise Model zu parsen.
+        /// </summary>
+        /// <param name="id">ID der Aufgabe.</param>
+        /// <param name="text">Text der Aufgabe.</param>
+        /// <param name="topic">Thema der Aufgabe.</param>
+        /// <param name="difficulty">Schwierigkeit der Aufgabe.</param>
+        /// <param name="answers">Liste aller Antworten der Aufgabe.</param>
+        [JsonConstructor]
+        public Exercise(int id, string text, string topic, int difficulty, List<Answer> answers)
+        {
+            ID = id;
+            ExerciseText = text;
+            ExerciseTopic = topic;
+            Difficulty = (Difficulty)difficulty;
+            Answers = answers;
+        }
+        #endregion
+
+        #region Methods
+        /// <summary>
+        /// Mischt alle Anwtorten in zufällige Reihenfolge.
+        /// </summary>
+        /// <returns>Liste der zufällig gemischten Antworten.</returns>
         public List<Answer> GetShuffledAnswers()
         {
             var rnd = new Random();
@@ -55,12 +97,19 @@ namespace PokAEmon.Model
             return randomizedAnswers;
         }
 
-        public bool CheckAnswers(IEnumerable<Answer> givenanswers)
-        {
-            bool equal = givenanswers.OrderBy(x => x.Text).SequenceEqual(CorrectAnswers.OrderBy(x => x.Text));
-            return equal;
-        }
+        //public bool CheckAnswers(IEnumerable<Answer> givenanswers)
+        //{
+        //    bool equal = givenanswers.OrderBy(x => x.Text).SequenceEqual(CorrectAnswers.OrderBy(x => x.Text));
+        //    return equal;
+        //}
 
+        /// <summary>
+        /// Bearbeitet eine Aufgabe mit übergebenen Werten.
+        /// </summary>
+        /// <param name="newText">Neuer Text der Aufgabe.</param>
+        /// <param name="newTopic">Neues Thema der Aufgabe.</param>
+        /// <param name="newDifficulty">Neue Schwierigkeit der Aufgabe.</param>
+        /// <param name="newAnswers">Neue Liste an möglichen Antworten der Aufgabe.</param>
         public void EditExercise(string newText, string newTopic, Difficulty newDifficulty, List<Answer> newAnswers)
         {
             ExerciseText = newText;
@@ -68,5 +117,6 @@ namespace PokAEmon.Model
             Difficulty = newDifficulty;
             Answers = newAnswers;
         }
+        #endregion
     }
 }

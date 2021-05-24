@@ -4,9 +4,12 @@ using UnityEngine;
 
 public class SortingOrderScript : MonoBehaviour
 {
+    #region Unity Variables
     public GameObject player;
     private SpriteRenderer sprite;
+    #endregion
 
+    #region Unity Methods
     void Start()
     {
         sprite = GetComponent<SpriteRenderer>();
@@ -22,6 +25,6 @@ public class SortingOrderScript : MonoBehaviour
         {
             sprite.sortingOrder = 0;
         }
-            
     }
+    #endregion
 }
