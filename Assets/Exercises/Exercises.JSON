@@ -161,7 +161,7 @@
           }
         ]
       },
-	  {
+      {
         "ExerciseText": "Mit Git kann man mehrere Zweige in einem Repository erstellen",
         "ExerciseTopic": "VC",
         "Difficulty": 10,
@@ -176,7 +176,7 @@
           }
         ]
       },
-	  {
+      {
         "ExerciseText": "Git erschien 1997",
         "ExerciseTopic": "VC",
         "Difficulty": 10,
@@ -192,21 +192,21 @@
         ]
       },
       {
-      "ExerciseText": "Git ist nicht für Teams",
-      "ExerciseTopic": "VC",
-      "Difficulty": 10,
-      "Answers": [
-        {
-          "Text": "Falsch",
-          "isCorrect": true
-        },
-        {
-          "Text": "Wahr",
-          "isCorrect": false
-        }
-      ]
-    }, 
-	  {
+        "ExerciseText": "Git ist nicht für Teams",
+        "ExerciseTopic": "VC",
+        "Difficulty": 10,
+        "Answers": [
+          {
+            "Text": "Falsch",
+            "isCorrect": true
+          },
+          {
+            "Text": "Wahr",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
         "ExerciseText": "Ist Git und Github das selbe?",
         "ExerciseTopic": "VC",
         "Difficulty": 10,
@@ -221,21 +221,21 @@
           }
         ]
       },
-{
-      "ExerciseText": "Git erschien 1997",
-      "ExerciseTopic": "VC",
-      "Difficulty": 10,
-      "Answers": [
-        {
-          "Text": "Falsch",
-          "isCorrect": true
-        },
-        {
-          "Text": "Wahr",
-          "isCorrect": false
-        }
-      ]
-    },
+      {
+        "ExerciseText": "Git erschien 1997",
+        "ExerciseTopic": "VC",
+        "Difficulty": 10,
+        "Answers": [
+          {
+            "Text": "Falsch",
+            "isCorrect": true
+          },
+          {
+            "Text": "Wahr",
+            "isCorrect": false
+          }
+        ]
+      },
       {
         "ExerciseText": "Was ist GIT?",
         "ExerciseTopic": "VC",
@@ -259,7 +259,7 @@
           }
         ]
       },
-	  {
+      {
         "ExerciseText": "Was ist ein Branch",
         "ExerciseTopic": "VC",
         "Difficulty": 20,
@@ -533,557 +533,557 @@
           }
         ]
       },
+      {
+        "ExerciseText": "Was ist Exception Handing?",
+        "ExerciseTopic": "OOP",
+        "Difficulty": 20,
+        "Answers": [
           {
-            "ExerciseText": "Was ist Exception Handing?",
-            "ExerciseTopic": "OOP",
-            "Difficulty": 20,
-            "Answers": [
-              {
-                "Text": "Exceptions gibt es in objektorientierten Sprachen nicht.",
-                "isCorrect": false
-              },
-              {
-                "Text": "Exceptions sind nicht mehr aktuell, heute wird Troubleshooting genutzt.",
-                "isCorrect": false
-              },
-              {
-                "Text": "Eine Exception ist ein Ereignis, das während der Ausführung eines Programms auftritt. Exceptions können von jedem Typ sein - Runtime exception, Error exceptions.",
-                "isCorrect": true
-              },
-              {
-                "Text": "Eine Exception darf nur in Unit Tests verwendet werden.",
-                "isCorrect": false
-              }
-            ]
+            "Text": "Exceptions gibt es in objektorientierten Sprachen nicht.",
+            "isCorrect": false
           },
           {
-            "ExerciseText": "Was sind Token?",
-            "ExerciseTopic": "OOP",
-            "Difficulty": 20,
-            "Answers": [
-              {
-                "Text": "Tokens ist ein anderer Begiff für Strings.",
-                "isCorrect": false
-              },
-              {
-                "Text": "Ein Compiler erkennt ein Token, und es kann nicht in Komponentenelemente zerlegt werden.",
-                "isCorrect": true
-              },
-              {
-                "Text": "Alle Variablen im Konstruktor werden Tokens genannt.",
-                "isCorrect": false
-              },
-              {
-                "Text": "Übergabeparamter von Methoden werden auch Token genannt.",
-                "isCorrect": false
-              }
-            ]
+            "Text": "Exceptions sind nicht mehr aktuell, heute wird Troubleshooting genutzt.",
+            "isCorrect": false
           },
           {
-            "ExerciseText": "Was ist der Hauptunterschied zwischen Overloading und Overriding?",
-            "ExerciseTopic": "OOP",
-            "Difficulty": 20,
-            "Answers": [
-              {
-                "Text": "Es gibt prin­zi­pi­ell keinen Unterschied. Overloading heißt es bei Variablen und Overriding bei Methoden.",
-                "isCorrect": false
-              },
-              {
-                "Text": "Overriding gibt es nur bei prozedualen Programmiersprachen.",
-                "isCorrect": false
-              },
-              {
-                "Text": "Overloading und Overriding gibt es nur in Java.",
-                "isCorrect": false
-              },
-              {
-                "Text": "Overloading ist eine statische Bindung, während Overriding eine dynamische Bindung ist.",
-                "isCorrect": true
-              }
-            ]
+            "Text": "Eine Exception ist ein Ereignis, das während der Ausführung eines Programms auftritt. Exceptions können von jedem Typ sein - Runtime exception, Error exceptions.",
+            "isCorrect": true
           },
           {
-            "ExerciseText": "Was ist der Hauptunterschied zwischen einer Klasse und einem Objekt?",
-            "ExerciseTopic": "OOP",
-            "Difficulty": 20,
-            "Answers": [
-              {
-                "Text": "Ein Objekt ist eine Instanz einer Klasse. Eine Klasse kann Unterklassen haben, während ein Objekt keine Unterobjekte hat.",
-                "isCorrect": true
-              },
-              {
-                "Text": "Ein Objekt ist eine Instanz einer Klasse. Eine Klasse kann keine Unterklassen haben, während ein Objekt Unterobjekte hat.",
-                "isCorrect": false
-              },
-              {
-                "Text": "Ein Objekt ist keine Instanz einer Klasse. Eine Klasse kann Unterklassen haben, während ein Objekt nur ein Unterobjekte hat.",
-                "isCorrect": false
-              },
-              {
-                "Text": "Ein Objekt ist eine Instanz einer Klasse. Eine Klasse kann nur fünf Unterklassen haben, während ein Objekt keine Unterobjekte hat.",
-                "isCorrect": false
-              }
-            ]
-          },
-          {
-            "ExerciseText": "Was ist Abstraktion?",
-            "ExerciseTopic": "OOP",
-            "Difficulty": 20,
-            "Answers": [
-              {
-                "Text": "Abstraktion gibt es nicht in objektorierntierten Programmiersprachen.",
-                "isCorrect": false
-              },
-              {
-                "Text": "Abstraktion ist ein nützliches Merkmal von objektorierntierten Programmiersprachen, das dem Anwender eines Objekts nur die notwendigen Details zeigt.",
-                "isCorrect": true
-              },
-              {
-                "Text": "Abstraktion gibt es nur in Java.",
-                "isCorrect": false
-              },
-              {
-                "Text": "Abstraktion werden nur in Enmus verwendet.",
-                "isCorrect": false
-              }
-            ]
-          },
-          {
-            "ExerciseText": "Was sind die Zugriffsmodifikatoren?",
-            "ExerciseTopic": "OOP",
-            "Difficulty": 20,
-            "Answers": [
-              {
-                "Text": "Private, Profected, Public, Friend und Protected Friend",
-                "isCorrect": false
-              },
-              {
-                "Text": "Private, Protected, Publicize, Friend und Protected Friend",
-                "isCorrect": false
-              },
-              {
-                "Text": "Private, Defended, Puplic, Friend und Defended Friend",
-                "isCorrect": false
-              },
-              {
-                "Text": "Private, Protected, Public, Friend und Protected Friend",
-                "isCorrect": true
-              }
-            ]
-          },
-          {
-            "ExerciseText": "Wie können die Basismethode aufgerufen werden, ohne eine Instanz zu erzeugen?",
-            "ExerciseTopic": "OOP",
-            "Difficulty": 20,
-            "Answers": [
-              {
-                "Text": "Dies ist nur in abstrakten Klassen möglich.",
-                "isCorrect": false
-              },
-              {
-                "Text": "Wenn die Methode statisch ist kann diese ohne Instanz aufgerufen werden.",
-                "isCorrect": true
-              },
-              {
-                "Text": "Jede Methode einer Klasse kann ohne Instanz nicht aufgerufen werden.",
-                "isCorrect": false
-              },
-              {
-                "Text": "Dies ist nur in C++ möglich.",
-                "isCorrect": false
-              }
-            ]
-          },
-          {
-            "ExerciseText": "Was sind die verschiedenen Arten von Konstruktoren?",
-            "ExerciseTopic": "OOP",
-            "Difficulty": 20,
-            "Answers": [
-              {
-                "Text": "Default Konstruktor, Parameter-Konstruktor, Copy Konstruktor und Destruktor.",
-                "isCorrect": false
-              },
-              {
-                "Text": "Default Konstruktor und Copy Konstruktor.",
-                "isCorrect": false
-              },
-              {
-                "Text": "Default Konstruktor, Parameter-Konstruktor und Copy Konstruktor.",
-                "isCorrect": true
-              },
-              {
-                "Text": "Konstruktor und Destruktor.",
-                "isCorrect": false
-              }
-            ]
-          },
-          {
-            "ExerciseText": "Was ist ein \"this\" Zeiger?",
-            "ExerciseTopic": "OOP",
-            "Difficulty": 20,
-            "Answers": [
-              {
-                "Text": "THIS-Zeiger verweist auf das aktuelle Objekt einer Klasse.",
-                "isCorrect": true
-              },
-              {
-                "Text": "Diesen Zeiger gibt es nur in C++.",
-                "isCorrect": false
-              },
-              {
-                "Text": "Zeiger gibt es nur in prozudualen Programmiersprachen.",
-                "isCorrect": false
-              },
-              {
-                "Text": "THIS-Zeiger verweisen auf die Klasse des Objektes.",
-                "isCorrect": false
-              }
-            ]
-          },
-          {
-            "ExerciseText": "Was ist der Unterschied zwischen einer Struktur und einer Klasse?",
-            "ExerciseTopic": "OOP",
-            "Difficulty": 20,
-            "Answers": [
-              {
-                "Text": "Eine Struktur ist ein Teil einer Klasse.",
-                "isCorrect": false
-              },
-              {
-                "Text": "Strukturen gibt es nur in Java.",
-                "isCorrect": false
-              },
-              {
-                "Text": "Strukturen bestehen nur aus Methoden.",
-                "isCorrect": false
-              },
-              {
-                "Text": "Eine Struktur wird zur Gruppierung von Daten verwendet, während eine Klasse zur Gruppierung von Daten und Methoden verwendet werden kann.",
-                "isCorrect": true
-              }
-            ]
-          },
-          {
-            "ExerciseText": "Der Programmierer führt den Blackbox Test durch.",
-            "ExerciseTopic": "Testing",
-            "Difficulty": 10,
-            "Answers": [
-              {
-                "Text": "Falsch",
-                "isCorrect": true
-              },
-              {
-                "Text": "Wahr",
-                "isCorrect": false
-              }
-            ]
-          },
-          {
-            "ExerciseText": "Der Programmierer führt den Whitebox Test durch.",
-            "ExerciseTopic": "Testing",
-            "Difficulty": 10,
-            "Answers": [
-              {
-                "Text": "Falsch",
-                "isCorrect": false
-              },
-              {
-                "Text": "Wahr",
-                "isCorrect": true
-              }
-            ]
-          },
-          {
-            "ExerciseText": "JUnit bietet sich für das Regressionstesten an.",
-            "ExerciseTopic": "Testing",
-            "Difficulty": 10,
-            "Answers": [
-              {
-                "Text": "Falsch",
-                "isCorrect": false
-              },
-              {
-                "Text": "Wahr",
-                "isCorrect": true
-              }
-            ]
-          },
-          {
-            "ExerciseText": "Was ist das Besondere am Test-Driven Development(TDD)?",
-            "ExerciseTopic": "Testing",
-            "Difficulty": 20,
-            "Answers": [
-              {
-                "Text": "Es wird der Hauptfokus auf die Tests gelegt",
-                "isCorrect": false
-              },
-              {
-                "Text": "Das sogenannte Test-Driven ist ein eigenes Framework",
-                "isCorrect": false
-              },
-              {
-                "Text": "Dieses Verfahren ist ein Teil der Prozeduralen Programmierung ",
-                "isCorrect": false
-              },
-              {
-                "Text": "Es wird erst der Test geschrieben und dann der eigentliche Code.",
-                "isCorrect": true
-              }
-            ]
-          },
-          {
-            "ExerciseText": "Was testet der Unit-Test?",
-            "ExerciseTopic": "Testing",
-            "Difficulty": 20,
-            "Answers": [
-              {
-                "Text": "explizit die Konstruktoren",
-                "isCorrect": false
-              },
-              {
-                "Text": "einzelne Variablen",
-                "isCorrect": false
-              },
-              {
-                "Text": "Den kompletten Code",
-                "isCorrect": false
-              },
-              {
-                "Text": "Kleinere Abschnitte eines Codes z.B einzelne Funktionen.",
-                "isCorrect": true
-              }
-            ]
-          },
-          {
-            "ExerciseText": "Was testet der Intergrations-Test?",
-            "ExerciseTopic": "Testing",
-            "Difficulty": 20,
-            "Answers": [
-              {
-                "Text": "Explizit die Konstruktoren",
-                "isCorrect": false
-              },
-              {
-                "Text": "Einzelne Variablen",
-                "isCorrect": false
-              },
-              {
-                "Text": "Testet ob ein Integrationshintergrund vorliegt",
-                "isCorrect": false
-              },
-              {
-                "Text": "Der Integrations-Test testet Code im zusammenspiel.",
-                "isCorrect": true
-              }
-            ]
-          },
-          {
-            "ExerciseText": "Was ist ein Beta-Test?",
-            "ExerciseTopic": "Testing",
-            "Difficulty": 20,
-            "Answers": [
-              {
-                "Text": "Ist das gleiche wie der Whitebox-Test",
-                "isCorrect": false
-              },
-              {
-                "Text": "Dieser Test existiert nicht.",
-                "isCorrect": false
-              },
-              {
-                "Text": "Keine dieser Aussagen trifft zu.",
-                "isCorrect": false
-              },
-              {
-                "Text": "Es wird eine Beta-Version entwickelt diese wird dann vom Endbenutzer getestet.",
-                "isCorrect": true
-              }
-            ]
-          },
-          {
-            "ExerciseText": "Welcher Software-Test exisitiert nicht",
-            "ExerciseTopic": "Testing",
-            "Difficulty": 20,
-            "Answers": [
-              {
-                "Text": "Komponententest",
-                "isCorrect": false
-              },
-              {
-                "Text": "Systemtest",
-                "isCorrect": false
-              },
-              {
-                "Text": "Schreibtisch-Test",
-                "isCorrect": false
-              },
-              {
-                "Text": "RT-PCR-Test",
-                "isCorrect": true
-              }
-            ]
-          },
-          {
-            "ExerciseText": "Vom Anwender gefundene Fehler sind zurückzuführen auf",
-            "ExerciseTopic": "Testing",
-            "Difficulty": 20,
-            "Answers": [
-              {
-                "Text": "Pech",
-                "isCorrect": false
-              },
-              {
-                "Text": "einen schlechten Programmierer",
-                "isCorrect": false
-              },
-              {
-                "Text": "schlechte qualität der Software",
-                "isCorrect": false
-              },
-              {
-                "Text": "nicht ausreichend getestet",
-                "isCorrect": true
-              }
-            ]
-          },
-          {
-            "ExerciseText": "Wann sollte man aufhören zu testen",
-            "ExerciseTopic": "Testing",
-            "Difficulty": 20,
-            "Answers": [
-              {
-                "Text": "Wenn die eingeplante Zeit zu Ende ist",
-                "isCorrect": false
-              },
-              {
-                "Text": "wenn alle Tests durchgelaufen sind",
-                "isCorrect": false
-              },
-              {
-                "Text": "Wenn man keine Lust mehr hat",
-                "isCorrect": false
-              },
-              {
-                "Text": "wenn alle Tests durchgelaufen sind und sie keine Fehler ausgegben haben",
-                "isCorrect": true
-              }
-            ]
-          },
-          {
-            "ExerciseText": "Was ist der Unterschied zwischen re-testing und Regressions-Test",
-            "ExerciseTopic": "Testing",
-            "Difficulty": 20,
-            "Answers": [
-              {
-                "Text": "re-testing is done after faults are fixed; regression testing is done earlier",
-                "isCorrect": false
-              },
-              {
-                "Text": "re-testing looks for unexcpected side effects; regression testing is repeating those tests",
-                "isCorrect": false
-              },
-              {
-                "Text": "re-testing is done by developers; regression testing is done by independent",
-                "isCorrect": false
-              },
-              {
-                "Text": " re-testing is running a test againg; regressions testing looks for unexpet side effects ",
-                "isCorrect": true
-              }
-            ]
-          },
-          {
-            "ExerciseText": "Die Norm, die Definitionen von Prüfbegriffen enthält, ist",
-            "ExerciseTopic": "Testing",
-            "Difficulty": 20,
-            "Answers": [
-              {
-                "Text": "ISO/IEC 12207",
-                "isCorrect": false
-              },
-              {
-                "Text": "BS7925-2",
-                "isCorrect": false
-              },
-              {
-                "Text": "ANSI/IEEE 829",
-                "isCorrect": false
-              },
-              {
-                "Text": "BS7925-1",
-                "isCorrect": true
-              }
-            ]
-          },
-          {
-            "ExerciseText": "Ein Tool, das die Rückverfolgbarkeit, die Aufzeichnung von Fehlern von Tests unterstützt, heißt",
-            "ExerciseTopic": "Testing",
-            "Difficulty": 20,
-            "Answers": [
-              {
-                "Text": "a dynamic analysis tool",
-                "isCorrect": false
-              },
-              {
-                "Text": "a test execution tool",
-                "isCorrect": false
-              },
-              {
-                "Text": "a test management tool",
-                "isCorrect": false
-              },
-              {
-                "Text": "a debugging tool",
-                "isCorrect": true
-              }
-            ]
-          },
-          {
-            "ExerciseText": "Welche der folgenden Antwortmöglichkeiten ist kein Teil des perfomance tests?",
-            "ExerciseTopic": "Testing",
-            "Difficulty": 20,
-            "Answers": [
-              {
-                "Text": "response time",
-                "isCorrect": false
-              },
-              {
-                "Text": "transaction rates",
-                "isCorrect": false
-              },
-              {
-                "Text": "simulating many users",
-                "isCorrect": false
-              },
-              {
-                "Text": "recovery test",
-                "isCorrect": true
-              }
-            ]
-          },
-          {
-            "ExerciseText": "Welche Informationen sollte in einem incident report stehen?",
-            "ExerciseTopic": "Testing",
-            "Difficulty": 20,
-            "Answers": [
-              {
-                "Text": "Details zur Testumgebung",
-                "isCorrect": false
-              },
-              {
-                "Text": "Schwere und Vorrangigkeit",
-                "isCorrect": false
-              },
-              {
-                "Text": "Wie der Fehler reproduziert werden kann.",
-                "isCorrect": false
-              },
-              {
-                "Text": "Ein Lösungsvorschlag für den Fehler.",
-                "isCorrect": true
-              }
-            ]
+            "Text": "Eine Exception darf nur in Unit Tests verwendet werden.",
+            "isCorrect": false
           }
+        ]
+      },
+      {
+        "ExerciseText": "Was sind Token?",
+        "ExerciseTopic": "OOP",
+        "Difficulty": 20,
+        "Answers": [
+          {
+            "Text": "Tokens ist ein anderer Begiff für Strings.",
+            "isCorrect": false
+          },
+          {
+            "Text": "Ein Compiler erkennt ein Token, und es kann nicht in Komponentenelemente zerlegt werden.",
+            "isCorrect": true
+          },
+          {
+            "Text": "Alle Variablen im Konstruktor werden Tokens genannt.",
+            "isCorrect": false
+          },
+          {
+            "Text": "Übergabeparamter von Methoden werden auch Token genannt.",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "ExerciseText": "Was ist der Hauptunterschied zwischen Overloading und Overriding?",
+        "ExerciseTopic": "OOP",
+        "Difficulty": 20,
+        "Answers": [
+          {
+            "Text": "Es gibt prin­zi­pi­ell keinen Unterschied. Overloading heißt es bei Variablen und Overriding bei Methoden.",
+            "isCorrect": false
+          },
+          {
+            "Text": "Overriding gibt es nur bei prozedualen Programmiersprachen.",
+            "isCorrect": false
+          },
+          {
+            "Text": "Overloading und Overriding gibt es nur in Java.",
+            "isCorrect": false
+          },
+          {
+            "Text": "Overloading ist eine statische Bindung, während Overriding eine dynamische Bindung ist.",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "ExerciseText": "Was ist der Hauptunterschied zwischen einer Klasse und einem Objekt?",
+        "ExerciseTopic": "OOP",
+        "Difficulty": 20,
+        "Answers": [
+          {
+            "Text": "Ein Objekt ist eine Instanz einer Klasse. Eine Klasse kann Unterklassen haben, während ein Objekt keine Unterobjekte hat.",
+            "isCorrect": true
+          },
+          {
+            "Text": "Ein Objekt ist eine Instanz einer Klasse. Eine Klasse kann keine Unterklassen haben, während ein Objekt Unterobjekte hat.",
+            "isCorrect": false
+          },
+          {
+            "Text": "Ein Objekt ist keine Instanz einer Klasse. Eine Klasse kann Unterklassen haben, während ein Objekt nur ein Unterobjekte hat.",
+            "isCorrect": false
+          },
+          {
+            "Text": "Ein Objekt ist eine Instanz einer Klasse. Eine Klasse kann nur fünf Unterklassen haben, während ein Objekt keine Unterobjekte hat.",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "ExerciseText": "Was ist Abstraktion?",
+        "ExerciseTopic": "OOP",
+        "Difficulty": 20,
+        "Answers": [
+          {
+            "Text": "Abstraktion gibt es nicht in objektorierntierten Programmiersprachen.",
+            "isCorrect": false
+          },
+          {
+            "Text": "Abstraktion ist ein nützliches Merkmal von objektorierntierten Programmiersprachen, das dem Anwender eines Objekts nur die notwendigen Details zeigt.",
+            "isCorrect": true
+          },
+          {
+            "Text": "Abstraktion gibt es nur in Java.",
+            "isCorrect": false
+          },
+          {
+            "Text": "Abstraktion werden nur in Enmus verwendet.",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "ExerciseText": "Was sind die Zugriffsmodifikatoren?",
+        "ExerciseTopic": "OOP",
+        "Difficulty": 20,
+        "Answers": [
+          {
+            "Text": "Private, Profected, Public, Friend und Protected Friend",
+            "isCorrect": false
+          },
+          {
+            "Text": "Private, Protected, Publicize, Friend und Protected Friend",
+            "isCorrect": false
+          },
+          {
+            "Text": "Private, Defended, Puplic, Friend und Defended Friend",
+            "isCorrect": false
+          },
+          {
+            "Text": "Private, Protected, Public, Friend und Protected Friend",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "ExerciseText": "Wie können die Basismethode aufgerufen werden, ohne eine Instanz zu erzeugen?",
+        "ExerciseTopic": "OOP",
+        "Difficulty": 20,
+        "Answers": [
+          {
+            "Text": "Dies ist nur in abstrakten Klassen möglich.",
+            "isCorrect": false
+          },
+          {
+            "Text": "Wenn die Methode statisch ist kann diese ohne Instanz aufgerufen werden.",
+            "isCorrect": true
+          },
+          {
+            "Text": "Jede Methode einer Klasse kann ohne Instanz nicht aufgerufen werden.",
+            "isCorrect": false
+          },
+          {
+            "Text": "Dies ist nur in C++ möglich.",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "ExerciseText": "Was sind die verschiedenen Arten von Konstruktoren?",
+        "ExerciseTopic": "OOP",
+        "Difficulty": 20,
+        "Answers": [
+          {
+            "Text": "Default Konstruktor, Parameter-Konstruktor, Copy Konstruktor und Destruktor.",
+            "isCorrect": false
+          },
+          {
+            "Text": "Default Konstruktor und Copy Konstruktor.",
+            "isCorrect": false
+          },
+          {
+            "Text": "Default Konstruktor, Parameter-Konstruktor und Copy Konstruktor.",
+            "isCorrect": true
+          },
+          {
+            "Text": "Konstruktor und Destruktor.",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "ExerciseText": "Was ist ein \"this\" Zeiger?",
+        "ExerciseTopic": "OOP",
+        "Difficulty": 20,
+        "Answers": [
+          {
+            "Text": "THIS-Zeiger verweist auf das aktuelle Objekt einer Klasse.",
+            "isCorrect": true
+          },
+          {
+            "Text": "Diesen Zeiger gibt es nur in C++.",
+            "isCorrect": false
+          },
+          {
+            "Text": "Zeiger gibt es nur in prozudualen Programmiersprachen.",
+            "isCorrect": false
+          },
+          {
+            "Text": "THIS-Zeiger verweisen auf die Klasse des Objektes.",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "ExerciseText": "Was ist der Unterschied zwischen einer Struktur und einer Klasse?",
+        "ExerciseTopic": "OOP",
+        "Difficulty": 20,
+        "Answers": [
+          {
+            "Text": "Eine Struktur ist ein Teil einer Klasse.",
+            "isCorrect": false
+          },
+          {
+            "Text": "Strukturen gibt es nur in Java.",
+            "isCorrect": false
+          },
+          {
+            "Text": "Strukturen bestehen nur aus Methoden.",
+            "isCorrect": false
+          },
+          {
+            "Text": "Eine Struktur wird zur Gruppierung von Daten verwendet, während eine Klasse zur Gruppierung von Daten und Methoden verwendet werden kann.",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "ExerciseText": "Der Programmierer führt den Blackbox Test durch.",
+        "ExerciseTopic": "Testing",
+        "Difficulty": 10,
+        "Answers": [
+          {
+            "Text": "Falsch",
+            "isCorrect": true
+          },
+          {
+            "Text": "Wahr",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "ExerciseText": "Der Programmierer führt den Whitebox Test durch.",
+        "ExerciseTopic": "Testing",
+        "Difficulty": 10,
+        "Answers": [
+          {
+            "Text": "Falsch",
+            "isCorrect": false
+          },
+          {
+            "Text": "Wahr",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "ExerciseText": "JUnit bietet sich für das Regressionstesten an.",
+        "ExerciseTopic": "Testing",
+        "Difficulty": 10,
+        "Answers": [
+          {
+            "Text": "Falsch",
+            "isCorrect": false
+          },
+          {
+            "Text": "Wahr",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "ExerciseText": "Was ist das Besondere am Test-Driven Development(TDD)?",
+        "ExerciseTopic": "Testing",
+        "Difficulty": 20,
+        "Answers": [
+          {
+            "Text": "Es wird der Hauptfokus auf die Tests gelegt",
+            "isCorrect": false
+          },
+          {
+            "Text": "Das sogenannte Test-Driven ist ein eigenes Framework",
+            "isCorrect": false
+          },
+          {
+            "Text": "Dieses Verfahren ist ein Teil der Prozeduralen Programmierung ",
+            "isCorrect": false
+          },
+          {
+            "Text": "Es wird erst der Test geschrieben und dann der eigentliche Code.",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "ExerciseText": "Was testet der Unit-Test?",
+        "ExerciseTopic": "Testing",
+        "Difficulty": 20,
+        "Answers": [
+          {
+            "Text": "explizit die Konstruktoren",
+            "isCorrect": false
+          },
+          {
+            "Text": "einzelne Variablen",
+            "isCorrect": false
+          },
+          {
+            "Text": "Den kompletten Code",
+            "isCorrect": false
+          },
+          {
+            "Text": "Kleinere Abschnitte eines Codes z.B einzelne Funktionen.",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "ExerciseText": "Was testet der Intergrations-Test?",
+        "ExerciseTopic": "Testing",
+        "Difficulty": 20,
+        "Answers": [
+          {
+            "Text": "Explizit die Konstruktoren",
+            "isCorrect": false
+          },
+          {
+            "Text": "Einzelne Variablen",
+            "isCorrect": false
+          },
+          {
+            "Text": "Testet ob ein Integrationshintergrund vorliegt",
+            "isCorrect": false
+          },
+          {
+            "Text": "Der Integrations-Test testet Code im zusammenspiel.",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "ExerciseText": "Was ist ein Beta-Test?",
+        "ExerciseTopic": "Testing",
+        "Difficulty": 20,
+        "Answers": [
+          {
+            "Text": "Ist das gleiche wie der Whitebox-Test",
+            "isCorrect": false
+          },
+          {
+            "Text": "Dieser Test existiert nicht.",
+            "isCorrect": false
+          },
+          {
+            "Text": "Keine dieser Aussagen trifft zu.",
+            "isCorrect": false
+          },
+          {
+            "Text": "Es wird eine Beta-Version entwickelt diese wird dann vom Endbenutzer getestet.",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "ExerciseText": "Welcher Software-Test exisitiert nicht",
+        "ExerciseTopic": "Testing",
+        "Difficulty": 20,
+        "Answers": [
+          {
+            "Text": "Komponententest",
+            "isCorrect": false
+          },
+          {
+            "Text": "Systemtest",
+            "isCorrect": false
+          },
+          {
+            "Text": "Schreibtisch-Test",
+            "isCorrect": false
+          },
+          {
+            "Text": "RT-PCR-Test",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "ExerciseText": "Vom Anwender gefundene Fehler sind zurückzuführen auf",
+        "ExerciseTopic": "Testing",
+        "Difficulty": 20,
+        "Answers": [
+          {
+            "Text": "Pech",
+            "isCorrect": false
+          },
+          {
+            "Text": "einen schlechten Programmierer",
+            "isCorrect": false
+          },
+          {
+            "Text": "schlechte qualität der Software",
+            "isCorrect": false
+          },
+          {
+            "Text": "nicht ausreichend getestet",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "ExerciseText": "Wann sollte man aufhören zu testen",
+        "ExerciseTopic": "Testing",
+        "Difficulty": 20,
+        "Answers": [
+          {
+            "Text": "Wenn die eingeplante Zeit zu Ende ist",
+            "isCorrect": false
+          },
+          {
+            "Text": "wenn alle Tests durchgelaufen sind",
+            "isCorrect": false
+          },
+          {
+            "Text": "Wenn man keine Lust mehr hat",
+            "isCorrect": false
+          },
+          {
+            "Text": "wenn alle Tests durchgelaufen sind und sie keine Fehler ausgegben haben",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "ExerciseText": "Was ist der Unterschied zwischen re-testing und Regressions-Test",
+        "ExerciseTopic": "Testing",
+        "Difficulty": 20,
+        "Answers": [
+          {
+            "Text": "re-testing is done after faults are fixed; regression testing is done earlier",
+            "isCorrect": false
+          },
+          {
+            "Text": "re-testing looks for unexcpected side effects; regression testing is repeating those tests",
+            "isCorrect": false
+          },
+          {
+            "Text": "re-testing is done by developers; regression testing is done by independent",
+            "isCorrect": false
+          },
+          {
+            "Text": " re-testing is running a test againg; regressions testing looks for unexpet side effects ",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "ExerciseText": "Die Norm, die Definitionen von Prüfbegriffen enthält, ist",
+        "ExerciseTopic": "Testing",
+        "Difficulty": 20,
+        "Answers": [
+          {
+            "Text": "ISO/IEC 12207",
+            "isCorrect": false
+          },
+          {
+            "Text": "BS7925-2",
+            "isCorrect": false
+          },
+          {
+            "Text": "ANSI/IEEE 829",
+            "isCorrect": false
+          },
+          {
+            "Text": "BS7925-1",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "ExerciseText": "Ein Tool, das die Rückverfolgbarkeit, die Aufzeichnung von Fehlern von Tests unterstützt, heißt",
+        "ExerciseTopic": "Testing",
+        "Difficulty": 20,
+        "Answers": [
+          {
+            "Text": "a dynamic analysis tool",
+            "isCorrect": false
+          },
+          {
+            "Text": "a test execution tool",
+            "isCorrect": false
+          },
+          {
+            "Text": "a test management tool",
+            "isCorrect": false
+          },
+          {
+            "Text": "a debugging tool",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "ExerciseText": "Welche der folgenden Antwortmöglichkeiten ist kein Teil des perfomance tests?",
+        "ExerciseTopic": "Testing",
+        "Difficulty": 20,
+        "Answers": [
+          {
+            "Text": "response time",
+            "isCorrect": false
+          },
+          {
+            "Text": "transaction rates",
+            "isCorrect": false
+          },
+          {
+            "Text": "simulating many users",
+            "isCorrect": false
+          },
+          {
+            "Text": "recovery test",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "ExerciseText": "Welche Informationen sollte in einem incident report stehen?",
+        "ExerciseTopic": "Testing",
+        "Difficulty": 20,
+        "Answers": [
+          {
+            "Text": "Details zur Testumgebung",
+            "isCorrect": false
+          },
+          {
+            "Text": "Schwere und Vorrangigkeit",
+            "isCorrect": false
+          },
+          {
+            "Text": "Wie der Fehler reproduziert werden kann.",
+            "isCorrect": false
+          },
+          {
+            "Text": "Ein Lösungsvorschlag für den Fehler.",
+            "isCorrect": true
+          }
+        ]
+      }
     ]
   }
 ]
