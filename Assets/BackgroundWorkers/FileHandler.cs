@@ -1,4 +1,4 @@
-﻿using CsvHelper;
+﻿//using CsvHelper;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -39,12 +39,12 @@ namespace PokAEmon.BackgroundWorkers
             File.WriteAllText(mPlayersPath, jsonstring);
         }
 
-        public static string ReadTextLinesCSV()
-        {
-            using (TextReader reader = File.OpenText(mTextLinesPath))
-            {
-                CsvReader csvReader = new CsvReader(reader);
-            }
-        }
+        //public static string ReadTextLinesCSV()
+        //{
+        //    using (TextReader reader = File.OpenText(mTextLinesPath))
+        //    {
+        //        CsvReader csvReader = new CsvReader(reader);
+        //    }
+        //}
     }
 }
