@@ -3,75 +3,536 @@
     "SubjectName": "Anwendungsentwicklung",
     "Exercises": [
       {
-        "ID": 1,
-        "ExerciseTopic": "SQL",
+        "ExerciseText": "Was bedeutet OOP?",
+        "ExerciseTopic": "OOP",
         "Difficulty": 10,
-        "ExerciseText": "Welcher der folgenden Befehle wird genutzt, um eine Spalte einer Tabelle zu bearbeiten?",
         "Answers": [
+          { "Text": "Objektoriertierte Programmierung", "isCorrect": true },
           {
-            "Text": "antwortext1",
-            "isCorrect": true
-          },
-          {
-            "Text": "antwortext2",
+            "Text": "Offensichtlich organisierte Programmierung",
             "isCorrect": false
           }
         ]
       },
       {
-        "ID": 2,
-        "ExerciseTopic": "SQL",
+        "ExerciseText": "Was sind die Grundlegende Konzepte von OOP?",
+        "ExerciseTopic": "OOP",
         "Difficulty": 10,
-        "ExerciseText": "testquestion",
         "Answers": [
           {
-            "Text": "antwortext1",
+            "Text": "Abstraktion, Verkapselung, Erbe, Polymorphie",
             "isCorrect": true
           },
           {
-            "Text": "antwortext2",
-            "isCorrect": false
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "SubjectName": "ITS",
-    "Exercises": [
-      {
-        "ID": 1,
-        "ExerciseTopic": "Netzwerke",
-        "Difficulty": 10,
-        "ExerciseText": "Welcher der folgenden Befehle wird genutzt, um eine Spalte einer Tabelle zu bearbeiten?",
-        "Answers": [
-          {
-            "Text": "antwortext1",
-            "isCorrect": true
-          },
-          {
-            "Text": "antwortext2",
+            "Text": "Abstraktion, Virtualisierung, Erbe, Polymorphie",
             "isCorrect": false
           }
         ]
       },
       {
-        "ID": 2,
-        "ExerciseTopic": "Netzwerke",
+        "ExerciseText": "Was ist eine Klasse?",
+        "ExerciseTopic": "OOP",
         "Difficulty": 10,
-        "ExerciseText": "testquestion",
         "Answers": [
           {
-            "Text": "antwortext1",
+            "Text": "Eine Klasse ist vereinfacht gesagt eine Darstellung eines Objekttyps.",
             "isCorrect": true
           },
           {
-            "Text": "antwortext2",
+            "Text": "Klasse ein Ausdruck, wenn eine Person etwas gut findet.",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "ExerciseText": "Was ist ein Objekt?",
+        "ExerciseTopic": "OOP",
+        "Difficulty": 10,
+        "Answers": [
+          { "Text": "Ein Objekt ist eine Methode.", "isCorrect": false },
+          {
+            "Text": "Ein Objekt ist eine Instanz eines Datentyps.",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "ExerciseText": "Was ist Verkapselung?",
+        "ExerciseTopic": "OOP",
+        "Difficulty": 10,
+        "Answers": [
+          {
+            "Text": "Verkapselung beschreibt wie viele geschweifte Klammern eine Methode hat.",
+            "isCorrect": false
+          },
+          {
+            "Text": "Verkapselung ist ein Attribut und beschreibt die Sichtbarkeit.",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "ExerciseText": "Was ist Polymorphie?",
+        "ExerciseTopic": "OOP",
+        "Difficulty": 10,
+        "Answers": [
+          {
+            "Text": "Polymorphie beschreibt die Sichtbarkeit.",
+            "isCorrect": false
+          },
+          {
+            "Text": "Polymorphie ist nichts anderes als die Zuweisung von Verhalten oder Werten in einer Unterklasse zu etwas, das bereits in der Hauptklasse deklariert wurde.",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "ExerciseText": "Was ist Vererbung?",
+        "ExerciseTopic": "OOP",
+        "Difficulty": 10,
+        "Answers": [
+          {
+            "Text": "Vererbung teilt die Struktur einer Klasse an anderen Klassen.",
+            "isCorrect": true
+          },
+          {
+            "Text": "Vererbung erbt den Namen der Klasse.",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "ExerciseText": "Was ist ein Konstruktor?",
+        "ExerciseTopic": "OOP",
+        "Difficulty": 10,
+        "Answers": [
+          {
+            "Text": "Ein Konstruktor ist eine Bezeichnung für ein Konstrukt.",
+            "isCorrect": false
+          },
+          {
+            "Text": "Ein Konstruktor ist eine Methode, die dazu dient, den Zustand eines Objekts zu initialisieren.",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "ExerciseText": "Was ist ein Destruktor?",
+        "ExerciseTopic": "OOP",
+        "Difficulty": 10,
+        "Answers": [
+          {
+            "Text": "Ein Destruktor ist die letzte Methode, welche vor der Löschung des Objektes aufgerufen wird.",
+            "isCorrect": true
+          },
+          {
+            "Text": "Ein Destruktor wird immer vor dem Konstrukt aufgerufen.",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "ExerciseText": "Was ist eine Inline-Funktion?",
+        "ExerciseTopic": "OOP",
+        "Difficulty": 10,
+        "Answers": [
+          {
+            "Text": "Eine Inline-Funktion ist eine Optimierungsmethode von Compilern zur Steigerung der Ausführungsgeschwindigkeit.",
+            "isCorrect": true
+          },
+          {
+            "Text": "Eine Inline-Funktion ist eine virtuelle Funktion.",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "ExerciseText": "Was ist eine virtuelle Funktion?",
+        "ExerciseTopic": "OOP",
+        "Difficulty": 10,
+        "Answers": [
+          {
+            "Text": "Eine virtuelle Funktion ist eine Funktion einer Klasse, deren Funktionalität in der abgeleiteten Klasse überschrieben werden kann.",
+            "isCorrect": true
+          },
+          {
+            "Text": "Eine virtuelle Funktion kann nur in Konstruktoren aufgerufen werden.",
+            "isCorrect": false
+          }
+        ]
+      },
+	  {
+        "ExerciseText": "Mit Git kann man mehrere Zweige in einem Repository erstellen",
+        "ExerciseTopic": "VC",
+        "Difficulty": 10,
+        "Answers": [
+          {
+            "Text": "Wahr",
+            "isCorrect": true
+          },
+          {
+            "Text": "Falsch",
+            "isCorrect": false
+          }
+        ]
+      },
+	  {
+        "ExerciseText": "Git erschien 1997",
+        "ExerciseTopic": "VC",
+        "Difficulty": 10,
+        "Answers": [
+          {
+            "Text": "Falsch",
+            "isCorrect": true
+          },
+          {
+            "Text": "Wahr",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+      "ExerciseText": "Git ist nicht für Teams",
+      "ExerciseTopic": "VC",
+      "Difficulty": 10,
+      "Answers": [
+        {
+          "Text": "Falsch",
+          "isCorrect": true
+        },
+        {
+          "Text": "Wahr",
+          "isCorrect": false
+        }
+      ]
+    }, 
+	  {
+        "ExerciseText": "Ist Git und Github das selbe?",
+        "ExerciseTopic": "VC",
+        "Difficulty": 10,
+        "Answers": [
+          {
+            "Text": "Falsch",
+            "isCorrect": true
+          },
+          {
+            "Text": "Wahr",
+            "isCorrect": false
+          }
+        ]
+      },
+{
+      "ExerciseText": "Git erschien 1997",
+      "ExerciseTopic": "VC",
+      "Difficulty": 10,
+      "Answers": [
+        {
+          "Text": "Falsch",
+          "isCorrect": true
+        },
+        {
+          "Text": "Wahr",
+          "isCorrect": false
+        }
+      ]
+    },
+      {
+        "ExerciseText": "Was ist GIT?",
+        "ExerciseTopic": "VC",
+        "Difficulty": 20,
+        "Answers": [
+          {
+            "Text": "Eine Versionsverwaltung",
+            "isCorrect": true
+          },
+          {
+            "Text": "Ein CMS",
+            "isCorrect": false
+          },
+          {
+            "Text": "Ein Javascript Framework",
+            "isCorrect": false
+          },
+          {
+            "Text": "Ein Repository",
+            "isCorrect": false
+          }
+        ]
+      },
+	  {
+        "ExerciseText": "Was ist ein Branch",
+        "ExerciseTopic": "VC",
+        "Difficulty": 20,
+        "Answers": [
+          {
+            "Text": "eine unabhängige Entwicklungslinie",
+            "isCorrect": true
+          },
+          {
+            "Text": "Ein CMS",
+            "isCorrect": false
+          },
+          {
+            "Text": "Ein Javascript Framework",
+            "isCorrect": false
+          },
+          {
+            "Text": "Ein Repository",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "ExerciseText": "Welche Programmiersprache nutzt Git?",
+        "ExerciseTopic": "VC",
+        "Difficulty": 20,
+        "Answers": [
+          {
+            "Text": "C",
+            "isCorrect": true
+          },
+          {
+            "Text": "HTML",
+            "isCorrect": false
+          },
+          {
+            "Text": "PHP",
+            "isCorrect": false
+          },
+          {
+            "Text": "C++",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "ExerciseText": "Welcher Command erstellt eine Lokale Copy vom Repository?",
+        "ExerciseTopic": "VC",
+        "Difficulty": 20,
+        "Answers": [
+          {
+            "Text": "clone",
+            "isCorrect": true
+          },
+          {
+            "Text": "checkout",
+            "isCorrect": false
+          },
+          {
+            "Text": "push",
+            "isCorrect": false
+          },
+          {
+            "Text": "pull",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "ExerciseText": "Welcher Command erstellt ein neues Repository im Ordner?",
+        "ExerciseTopic": "VC",
+        "Difficulty": 20,
+        "Answers": [
+          {
+            "Text": "git init",
+            "isCorrect": true
+          },
+          {
+            "Text": "git reset",
+            "isCorrect": false
+          },
+          {
+            "Text": "git log",
+            "isCorrect": false
+          },
+          {
+            "Text": "git create",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "ExerciseText": "Was ist eine Friend-Funktion?",
+        "ExerciseTopic": "OOP",
+        "Difficulty": 10,
+        "Answers": [
+          {
+            "Text": "Eine Friend-Funktion befreundet Klassen über mehrere Programmiersprachen.",
+            "isCorrect": false
+          },
+          {
+            "Text": "Eine Friend-Funktion ist ein Freund einer Klasse, der auf öffentliche, private oder geschützte Daten in derselben Klasse zugreifen darf.",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "ExerciseText": "Was ist die Funktionsüberladung?",
+        "ExerciseTopic": "OOP",
+        "Difficulty": 10,
+        "Answers": [
+          {
+            "Text": "Sie ermöglicht das Anlegen mehrerer Methoden mit gleichem Namen, die sich durch die Art des Inputs und Outputs der Funktion voneinander unterscheiden.",
+            "isCorrect": true
+          },
+          {
+            "Text": "Dies ist eine Prozedur mit Rückgabeparameter.",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "ExerciseText": "Was ist Operatorüberladung?",
+        "ExerciseTopic": "OOP",
+        "Difficulty": 10,
+        "Answers": [
+          {
+            "Text": "Das Überladen von Operatoren ist eine Funktion, bei der verschiedene Operatoren angewendet werden und die von den Argumenten abhängt.",
+            "isCorrect": true
+          },
+          {
+            "Text": "Sie ermöglicht das Anlegen mehrerer Methoden mit gleichem Namen, die sich durch die Art des Inputs und Outputs der Funktion voneinander unterscheiden.",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "ExerciseText": "Was ist eine abstrakte Klasse?",
+        "ExerciseTopic": "OOP",
+        "Difficulty": 10,
+        "Answers": [
+          {
+            "Text": "Eine abstrakte Klasse ist keine Klasse.",
+            "isCorrect": false
+          },
+          {
+            "Text": "Eine abstrakte Klasse ist eine Klasse, die nicht instanziiert werden kann.",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "ExerciseText": "Wozu dient die finalize Methode?",
+        "ExerciseTopic": "OOP",
+        "Difficulty": 10,
+        "Answers": [
+          {
+            "Text": "Die Finalize-Methode hilft bei der Durchführung von Aufräumarbeiten an den Ressourcen, die derzeit nicht verwendet werden. Die Finalize-Methoden sind geschützt.",
+            "isCorrect": true
+          },
+          {
+            "Text": "Eine finalize Methode ist eine Prozedur.",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "ExerciseText": "Was ist eine Prozedur?",
+        "ExerciseTopic": "OOP",
+        "Difficulty": 10,
+        "Answers": [
+          {
+            "Text": "Eine Prozedur ist eine Funktion ohne Rückgabeparameter.",
+            "isCorrect": true
+          },
+          {
+            "Text": "Eine finalize Methode ist eine Prozedur.",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "ExerciseText": "Was sind die verschiedenen Arten von Argumenten?",
+        "ExerciseTopic": "OOP",
+        "Difficulty": 20,
+        "Answers": [
+          {
+            "Text": "Call by Value und Call by Reference.",
+            "isCorrect": true
+          },
+          {
+            "Text": "Call by Argument und Call by Value.",
+            "isCorrect": false
+          },
+          {
+            "Text": "Call by Method und Call by Procedur.",
+            "isCorrect": false
+          },
+          {
+            "Text": "Call by Reference und Call by Amount.",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "ExerciseText": "Was ist das Super-Schlüsselwort?",
+        "ExerciseTopic": "OOP",
+        "Difficulty": 20,
+        "Answers": [
+          {
+            "Text": "Das Super-Schlüsselwort beschreibt eine gute Methode.",
+            "isCorrect": false
+          },
+          {
+            "Text": "Das Super-Schlüsselwort wird verwendet, um die überschriebene Methode aufzurufen, die eine der Methoden ihrer Oberklasse überschreibt.",
+            "isCorrect": true
+          },
+          {
+            "Text": "Super ist das Schlüsselwort, welche eine abstrakte Methode beschreibt.",
+            "isCorrect": false
+          },
+          {
+            "Text": "Das Super-Schlüsselwort gibt es nicht.",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "ExerciseText": "Was ist Methoden-Overriding?",
+        "ExerciseTopic": "OOP",
+        "Difficulty": 20,
+        "Answers": [
+          {
+            "Text": "Das Überschreiben von Methoden gibt es nicht.",
+            "isCorrect": false
+          },
+          {
+            "Text": "Das Methoden-Overriding gibt es nur in prozeduralen Programmiersprachen.",
+            "isCorrect": false
+          },
+          {
+            "Text": "Das Überschreiben von Methoden ist eine Funktionalität, die es einer Unterklasse ermöglicht, die Implementierung einer Methode bereitzustellen, die in der Hauptklasse überschrieben wird.",
+            "isCorrect": true
+          },
+          {
+            "Text": "Methoden-Overriding ist ein anderer Name für Funktionsüberladungen.",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "ExerciseText": "Was ist ein Interface?",
+        "ExerciseTopic": "OOP",
+        "Difficulty": 20,
+        "Answers": [
+          {
+            "Text": "Ein Interface ist eine Sammlung von abstrakten Methode.",
+            "isCorrect": true
+          },
+          {
+            "Text": "Ein Interface ist das Gesicht einer Methode.",
+            "isCorrect": false
+          },
+          {
+            "Text": "Ein Interface gibt es nur in prozedualen Programmiersprachen.",
+            "isCorrect": false
+          },
+          {
+            "Text": "Ein Interface ist keine Sammlung von abstrakten Methode.",
             "isCorrect": false
           }
         ]
       }
     ]
   }
-
 ]
