@@ -762,6 +762,327 @@
                 "isCorrect": true
               }
             ]
+          },
+          {
+            "ExerciseText": "Der Programmierer führt den Blackbox Test durch.",
+            "ExerciseTopic": "Testing",
+            "Difficulty": 10,
+            "Answers": [
+              {
+                "Text": "Falsch",
+                "isCorrect": true
+              },
+              {
+                "Text": "Wahr",
+                "isCorrect": false
+              }
+            ]
+          },
+          {
+            "ExerciseText": "Der Programmierer führt den Whitebox Test durch.",
+            "ExerciseTopic": "Testing",
+            "Difficulty": 10,
+            "Answers": [
+              {
+                "Text": "Falsch",
+                "isCorrect": false
+              },
+              {
+                "Text": "Wahr",
+                "isCorrect": true
+              }
+            ]
+          },
+          {
+            "ExerciseText": "JUnit bietet sich für das Regressionstesten an.",
+            "ExerciseTopic": "Testing",
+            "Difficulty": 10,
+            "Answers": [
+              {
+                "Text": "Falsch",
+                "isCorrect": false
+              },
+              {
+                "Text": "Wahr",
+                "isCorrect": true
+              }
+            ]
+          },
+          {
+            "ExerciseText": "Was ist das Besondere am Test-Driven Development(TDD)?",
+            "ExerciseTopic": "Testing",
+            "Difficulty": 20,
+            "Answers": [
+              {
+                "Text": "Es wird der Hauptfokus auf die Tests gelegt",
+                "isCorrect": false
+              },
+              {
+                "Text": "Das sogenannte Test-Driven ist ein eigenes Framework",
+                "isCorrect": false
+              },
+              {
+                "Text": "Dieses Verfahren ist ein Teil der Prozeduralen Programmierung ",
+                "isCorrect": false
+              },
+              {
+                "Text": "Es wird erst der Test geschrieben und dann der eigentliche Code.",
+                "isCorrect": true
+              }
+            ]
+          },
+          {
+            "ExerciseText": "Was testet der Unit-Test?",
+            "ExerciseTopic": "Testing",
+            "Difficulty": 20,
+            "Answers": [
+              {
+                "Text": "explizit die Konstruktoren",
+                "isCorrect": false
+              },
+              {
+                "Text": "einzelne Variablen",
+                "isCorrect": false
+              },
+              {
+                "Text": "Den kompletten Code",
+                "isCorrect": false
+              },
+              {
+                "Text": "Kleinere Abschnitte eines Codes z.B einzelne Funktionen.",
+                "isCorrect": true
+              }
+            ]
+          },
+          {
+            "ExerciseText": "Was testet der Intergrations-Test?",
+            "ExerciseTopic": "Testing",
+            "Difficulty": 20,
+            "Answers": [
+              {
+                "Text": "Explizit die Konstruktoren",
+                "isCorrect": false
+              },
+              {
+                "Text": "Einzelne Variablen",
+                "isCorrect": false
+              },
+              {
+                "Text": "Testet ob ein Integrationshintergrund vorliegt",
+                "isCorrect": false
+              },
+              {
+                "Text": "Der Integrations-Test testet Code im zusammenspiel.",
+                "isCorrect": true
+              }
+            ]
+          },
+          {
+            "ExerciseText": "Was ist ein Beta-Test?",
+            "ExerciseTopic": "Testing",
+            "Difficulty": 20,
+            "Answers": [
+              {
+                "Text": "Ist das gleiche wie der Whitebox-Test",
+                "isCorrect": false
+              },
+              {
+                "Text": "Dieser Test existiert nicht.",
+                "isCorrect": false
+              },
+              {
+                "Text": "Keine dieser Aussagen trifft zu.",
+                "isCorrect": false
+              },
+              {
+                "Text": "Es wird eine Beta-Version entwickelt diese wird dann vom Endbenutzer getestet.",
+                "isCorrect": true
+              }
+            ]
+          },
+          {
+            "ExerciseText": "Welcher Software-Test exisitiert nicht",
+            "ExerciseTopic": "Testing",
+            "Difficulty": 20,
+            "Answers": [
+              {
+                "Text": "Komponententest",
+                "isCorrect": false
+              },
+              {
+                "Text": "Systemtest",
+                "isCorrect": false
+              },
+              {
+                "Text": "Schreibtisch-Test",
+                "isCorrect": false
+              },
+              {
+                "Text": "RT-PCR-Test",
+                "isCorrect": true
+              }
+            ]
+          },
+          {
+            "ExerciseText": "Vom Anwender gefundene Fehler sind zurückzuführen auf",
+            "ExerciseTopic": "Testing",
+            "Difficulty": 20,
+            "Answers": [
+              {
+                "Text": "Pech",
+                "isCorrect": false
+              },
+              {
+                "Text": "einen schlechten Programmierer",
+                "isCorrect": false
+              },
+              {
+                "Text": "schlechte qualität der Software",
+                "isCorrect": false
+              },
+              {
+                "Text": "nicht ausreichend getestet",
+                "isCorrect": true
+              }
+            ]
+          },
+          {
+            "ExerciseText": "Wann sollte man aufhören zu testen",
+            "ExerciseTopic": "Testing",
+            "Difficulty": 20,
+            "Answers": [
+              {
+                "Text": "Wenn die eingeplante Zeit zu Ende ist",
+                "isCorrect": false
+              },
+              {
+                "Text": "wenn alle Tests durchgelaufen sind",
+                "isCorrect": false
+              },
+              {
+                "Text": "Wenn man keine Lust mehr hat",
+                "isCorrect": false
+              },
+              {
+                "Text": "wenn alle Tests durchgelaufen sind und sie keine Fehler ausgegben haben",
+                "isCorrect": true
+              }
+            ]
+          },
+          {
+            "ExerciseText": "Was ist der Unterschied zwischen re-testing und Regressions-Test",
+            "ExerciseTopic": "Testing",
+            "Difficulty": 20,
+            "Answers": [
+              {
+                "Text": "re-testing is done after faults are fixed; regression testing is done earlier",
+                "isCorrect": false
+              },
+              {
+                "Text": "re-testing looks for unexcpected side effects; regression testing is repeating those tests",
+                "isCorrect": false
+              },
+              {
+                "Text": "re-testing is done by developers; regression testing is done by independent",
+                "isCorrect": false
+              },
+              {
+                "Text": " re-testing is running a test againg; regressions testing looks for unexpet side effects ",
+                "isCorrect": true
+              }
+            ]
+          },
+          {
+            "ExerciseText": "Die Norm, die Definitionen von Prüfbegriffen enthält, ist",
+            "ExerciseTopic": "Testing",
+            "Difficulty": 20,
+            "Answers": [
+              {
+                "Text": "ISO/IEC 12207",
+                "isCorrect": false
+              },
+              {
+                "Text": "BS7925-2",
+                "isCorrect": false
+              },
+              {
+                "Text": "ANSI/IEEE 829",
+                "isCorrect": false
+              },
+              {
+                "Text": "BS7925-1",
+                "isCorrect": true
+              }
+            ]
+          },
+          {
+            "ExerciseText": "Ein Tool, das die Rückverfolgbarkeit, die Aufzeichnung von Fehlern von Tests unterstützt, heißt",
+            "ExerciseTopic": "Testing",
+            "Difficulty": 20,
+            "Answers": [
+              {
+                "Text": "a dynamic analysis tool",
+                "isCorrect": false
+              },
+              {
+                "Text": "a test execution tool",
+                "isCorrect": false
+              },
+              {
+                "Text": "a test management tool",
+                "isCorrect": false
+              },
+              {
+                "Text": "a debugging tool",
+                "isCorrect": true
+              }
+            ]
+          },
+          {
+            "ExerciseText": "Welche der folgenden Antwortmöglichkeiten ist kein Teil des perfomance tests?",
+            "ExerciseTopic": "Testing",
+            "Difficulty": 20,
+            "Answers": [
+              {
+                "Text": "response time",
+                "isCorrect": false
+              },
+              {
+                "Text": "transaction rates",
+                "isCorrect": false
+              },
+              {
+                "Text": "simulating many users",
+                "isCorrect": false
+              },
+              {
+                "Text": "recovery test",
+                "isCorrect": true
+              }
+            ]
+          },
+          {
+            "ExerciseText": "Welche Informationen sollte in einem incident report stehen?",
+            "ExerciseTopic": "Testing",
+            "Difficulty": 20,
+            "Answers": [
+              {
+                "Text": "Details zur Testumgebung",
+                "isCorrect": false
+              },
+              {
+                "Text": "Schwere und Vorrangigkeit",
+                "isCorrect": false
+              },
+              {
+                "Text": "Wie der Fehler reproduziert werden kann.",
+                "isCorrect": false
+              },
+              {
+                "Text": "Ein Lösungsvorschlag für den Fehler.",
+                "isCorrect": true
+              }
+            ]
           }
     ]
   }
