@@ -28,6 +28,10 @@ namespace PokAEmon.BackgroundWorkers
         /// Speichert den Pfad zur JSON Datei, die alle TextLines speichert.
         /// </summary>
         private static readonly string mTextLinesPath = mBaseDirectory + "/Texts/InteractionTexts.JSON";
+        /// <summary>
+        /// Speichert den Pfad zur JSON Datei, die alle speziellen TextLines speichert.
+        /// </summary>
+        private static readonly string mSpecialTextLinesPath = mBaseDirectory + "/Texts/SpecialInteractions.JSON";
         #endregion
 
         #region Methods
@@ -72,10 +76,20 @@ namespace PokAEmon.BackgroundWorkers
         /// <summary>
         /// Liest die JSON Datei aus, die die TextLines beinhaltet.
         /// </summary>
-        /// <returns></returns>
+        /// <returns>Den Inhalt der Datei als String.</returns>
         public static string ReadTextLineJSON()
         {
             var jsonString = File.ReadAllText(mTextLinesPath);
+            return jsonString;
+        }
+
+        /// <summary>
+        /// Liest die JSON Datei aus, die die besonderen TextLines beinhaltet.
+        /// </summary>
+        /// <returns>Den Inhalt der Datei als String.</returns>
+        public static string ReadSpecialTextLineJSON()
+        {
+            var jsonString = File.ReadAllText(mSpecialTextLinesPath);
             return jsonString;
         }
         #endregion

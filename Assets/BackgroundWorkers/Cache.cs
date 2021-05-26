@@ -30,6 +30,10 @@ namespace PokAEmon.BackgroundWorkers
         /// </summary>
         public static List<TextLine> AllTextLines { get; set; }
         /// <summary>
+        /// Speichert eine Liste aller besonderen Nachrichten, die im Spiel ausgegeben werden können.
+        /// </summary>
+        public static List<TextLine> AllSpecialTextLines { get; set; }
+        /// <summary>
         /// Speichert eine Liste alle Fächer mit Fragen, die im Spiel gestellt werden können.
         /// </summary>
         public static List<Subject> AllSubjects { get; set; }
@@ -80,6 +84,7 @@ namespace PokAEmon.BackgroundWorkers
             QuestionIdCache = new Queue<int>();
             GetAllSubjects();
             GetAllTextLines();
+            GetAllSpecialTextLines();
             //GetAllPlayers();
         }
         #endregion
@@ -121,6 +126,19 @@ namespace PokAEmon.BackgroundWorkers
             else
             {
                 AllTextLines = new List<TextLine>();
+            }
+        }
+
+        private void GetAllSpecialTextLines()
+        {
+            List<TextLine> res = JsonConvert.DeserializeObject<List<TextLine>>(FileHandler.ReadSpecialTextLineJSON());
+            if (res != null)
+            {
+                AllSpecialTextLines = res;
+            }
+            else
+            {
+                AllSpecialTextLines = new List<TextLine>();
             }
         }
 

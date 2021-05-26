@@ -24,7 +24,7 @@ public class InteractionMessage : Interactable
             messageManager.DisplayMessage(currentTextLine);
             if (currentTextLine.ID == 2)
             {
-                Player.PlayerExperience.AddXP(1000);
+                PokAEmon.BackgroundWorkers.Cache.CurrentPlayer.PlayerExperience.AddXP(100);
             }
         }
         else

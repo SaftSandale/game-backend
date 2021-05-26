@@ -19,7 +19,7 @@ namespace PokAEmon.Model
         /// <summary>
         /// Erfahrung des Spielers
         /// </summary>
-        public static Experience PlayerExperience { get; set; }
+        public Experience PlayerExperience { get; set; }
 
         /// <summary>
         /// 

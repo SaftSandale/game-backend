@@ -1,0 +1,14 @@
+[
+	{
+		"ID":1,
+		"TextString": "Hmm... es scheint, dass dein Level nicht ausreicht um diese Tür zu öffnen. Du musst mindestens Level *LEVEL* sein, um das zu tun."
+	},
+	{
+		"ID":2,
+		"TextString": "Oh, sieht aus als wäre diese Tür verschlossen. Vielleicht kannst du etwas finden, womit du sie öffnen kannst?"
+	},
+	{
+		"ID":3,
+		"TextString": "HAHA, denkst du wirklich du kommst an mir vorbei?! Da hast du dich geirrt, mich kannst du nicht besiegen!"
+	},
+]

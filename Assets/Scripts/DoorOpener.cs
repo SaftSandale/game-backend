@@ -1,6 +1,7 @@
 using PokAEmon.Model;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class DoorOpener : Interactable
@@ -11,9 +12,6 @@ public class DoorOpener : Interactable
     private Animator animatorLeft;
     private Animator animatorRight;
     #endregion
-
-    private string mLevelInformationMessage = "Hmm... es scheint, dass dein Level nicht ausreicht um diese Tür zu öffnen. Du musst mindestens Level *LEVEL* sein, um das zu tun.";
-    private readonly string mHardDifficultyUnlockError = "HAHA, denkst du wirklich du kommst an mir vorbei?! Da hast du dich geirrt, mich kannst du nicht besiegen!";
 
     #region Methods
     /// <summary>
@@ -32,8 +30,9 @@ public class DoorOpener : Interactable
         }
         else
         {
-            mLevelInformationMessage = mLevelInformationMessage.Replace("*LEVEL*", NeededLevelToOpen.ToString());
-            messageManager.DisplayWrongInteractionMessage(mLevelInformationMessage);
+            var levelTooLowTextLine = PokAEmon.BackgroundWorkers.Cache.AllSpecialTextLines.FirstOrDefault(t => t.ID == 1);
+            var textToDisplay = levelTooLowTextLine.TextString.Replace("*LEVEL*", NeededLevelToOpen.ToString());
+            messageManager.DisplayWrongInteractionMessage(textToDisplay);
         }
     }
 
@@ -43,7 +42,7 @@ public class DoorOpener : Interactable
     /// <returns>Boolean, ob der Spieler die Tür öffnen kann.</returns>
     private bool CheckIfPlayerCanOpenDoor()
     {
-        if (Player.PlayerExperience.Level >= NeededLevelToOpen)
+        if (PokAEmon.BackgroundWorkers.Cache.CurrentPlayer.PlayerExperience.Level >= NeededLevelToOpen)
         {
             return true;
         }

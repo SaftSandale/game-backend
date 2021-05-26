@@ -38,7 +38,7 @@ namespace PokAEmon.Model
             XP = 0;
             Level = 0;
             Bonus = 1;
-            NeededXPForNextLevel = 1000;
+            NeededXPForNextLevel = 100;
         }
 
         /// <summary>

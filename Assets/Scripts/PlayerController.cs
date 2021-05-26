@@ -12,6 +12,8 @@ public class PlayerController : MonoBehaviour
     public Vector2 movement;
     public float moveLimiter = 0.7f;
     public Transform trans;
+    public PauseManager pauseManager;
+    public InformationUIManager infoUIManager;
     private bool controlallowed;
     private Vector2 boxSize = new Vector2(0.1f, 0.1f);
     #endregion
@@ -51,6 +53,16 @@ public class PlayerController : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.E))
             {
                 checkInteraction();
+            }
+
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                pauseManager.WakePauseMenu();
+            }
+
+            if (Input.GetKeyDown(KeyCode.Tab))
+            {
+                infoUIManager.WakeInfoMenu();
             }
         }
     }
