@@ -1,0 +1,786 @@
+[
+	{
+		"SubjectName":"Anwendungsentwicklung",
+		"Exercises": [
+			{
+				"ExerciseText": "Was bedeutet OOP?",
+				"ExerciseTopic": "OOP",
+				"Difficulty": 10,
+				"Answers":	[
+					{"Text": "Objektoriertierte Programmierung", "isCorrect": true},
+					{"Text": "Objektbedingte organische Programmierung", "isCorrect": false},
+					{"Text": "Offensichtlich organisierte Programmierung", "isCorrect": false},
+					{"Text": "Objektives Ordnungsprotokoll", "isCorrect": false}
+				]
+			},
+			{
+				"ExerciseText": "Was sind die Grundlegende Konzepte von OOP?",
+				"ExerciseTopic": "OOP",
+				"Difficulty": 10,
+				"Answers":	[
+					{"Text": "Abstraktion, Verkapselung, Erbe, Polymorphismus", "isCorrect": true},
+					{"Text": "Abstraktion, Virtualisierung, Erbe, Polymorphismus", "isCorrect": false},
+					{"Text": "Erbe, Virtualisierung, Verkapselung, Abstraktion", "isCorrect": false},
+					{"Text": "Autonomität, Virtualisierung, Schutz, Erbe", "isCorrect": false}
+				]
+			},
+			{
+				"ExerciseText": "Was ist eine Klasse?",
+				"ExerciseTopic": "OOP",
+				"Difficulty": 10,
+				"Answers":	[
+					{"Text": "Eine Klasse ist einfach eine Darstellung eines Objekttyps.", "isCorrect": true},
+					{"Text": "Eine Klasse sind mehrere Schüler die das gleiche Ziel haben.", "isCorrect": false},
+					{"Text": "Eine Klasse ist ein haufen von Leuten mit ähnlichem Wissens- & Finanziellen Stand.", "isCorrect": false},
+					{"Text": "Klasse ein Ausdruck, wenn eine Person etwas gut findet.", "isCorrect": false}
+				]
+			},
+			{
+				"ExerciseText": "Was ist ein Objekt?",
+				"ExerciseTopic": "OOP",
+				"Difficulty": 10,
+				"Answers":	[
+					{"Text": "Ein Objekt ist eine Methode.", "isCorrect": false},
+					{"Text": "Ein Objekt ist eine Instanz einer Klasse.", "isCorrect": true},
+					{"Text": "Ein Gegenstand welches eine Person anfassen kann.", "isCorrect": false},
+					{"Text": "Ein Objekt ist eine Instanz eines Datentyps.", "isCorrect": false}
+				]
+			},
+			{
+				"ExerciseText": "Was ist Verkapselung?",
+				"ExerciseTopic": "OOP",
+				"Difficulty": 10,
+				"Answers":	[
+					{"Text": "Verkapselung beschreibt wie viele geschweifte Klammern eine Methode hat.", "isCorrect": false},
+					{"Text": "Verkapselung ist eine organische Varianz der Klasse.", "isCorrect": false},
+					{"Text": "Verkapselung ist ein Attribut und beschreibt die Sichtbarkeit.", "isCorrect": true},
+					{"Text": "Verkapselung kapselt ein Datentyp an einer beliebigen Klasse.", "isCorrect": false}
+				]
+			},
+			{
+				"ExerciseText": "Was ist Polymorphie?",
+				"ExerciseTopic": "OOP",
+				"Difficulty": 10,
+				"Answers":	[
+					{"Text": "Polymorphie beschreibt die Sichtbarkeit.", "isCorrect": false},
+					{"Text": "Polymorphie nimmt mehr als eine Form an.", "isCorrect": true},
+					{"Text": "Polymorphie ist eine Form einer Klasse.", "isCorrect": false},
+					{"Text": "Polymorphie beschreibt eine Prozedur.", "isCorrect": false}
+				]
+			},
+			{
+				"ExerciseText": "Was ist Vererbung?",
+				"ExerciseTopic": "OOP",
+				"Difficulty": 10,
+				"Answers":	[
+					{"Text": "Vererbung teilt die Struktur einer Klasse an anderen Klassen.", "isCorrect": true},
+					{"Text": "Vererbung erbt den Namen der Klasse.", "isCorrect": false},
+					{"Text": "Vererbung erbt den Datentyp der Klasse.", "isCorrect": false},
+					{"Text": "Vererbung erbt den Pfad des Projektes.", "isCorrect": false}
+				]
+			},
+			{
+				"ExerciseText": "Was ist ein Konstruktor?",
+				"ExerciseTopic": "OOP",
+				"Difficulty": 10,
+				"Answers":	[
+					{"Text": "Ein Konstruktor ist eine Bezeichnung für ein Konstrukt.", "isCorrect": false},
+					{"Text": "Ein Konstruktor ist eine Person, welche etwas erbaut.", "isCorrect": false},
+					{"Text": "Ein Konstruktor ist die letzte Methode, welche vor der Löschung aufgerufen wird.", "isCorrect": false},
+					{"Text": "Ein Konstruktor ist eine Methode, die dazu dient, den Zustand eines Objekts zu initialisieren.", "isCorrect": true}
+				]
+			},
+			{
+				"ExerciseText": "Was ist ein Destruktor?",
+				"ExerciseTopic": "OOP",
+				"Difficulty": 10,
+				"Answers":	[
+					{"Text": "Ein Destruktor ist die letzte Methode, welche vor der Löschung aufgerufen wird.", "isCorrect": true},
+					{"Text": "Ein Destruktor ist eine Methode, die dazu dient, den Zustand eines Objekts zu initialisieren.", "isCorrect": false},
+					{"Text": "Ein Destruktor ist eine Bezeichnung für ein Konstrukt.", "isCorrect": false},
+					{"Text": "Ein Destruktor wird immer vor dem Konstrukt aufgerufen.", "isCorrect": false}
+				]
+			},
+			{
+				"ExerciseText": "Was ist eine Inline-Funktion?",
+				"ExerciseTopic": "OOP",
+				"Difficulty": 10,
+				"Answers":	[
+					{"Text": "Eine Inline-Funktion ist eine Optimierungsmethode von Compilern zur Steigerung der Ausführungsgeschwindigkeit.", "isCorrect": true},
+					{"Text": "Eine Inline-Funktion ist eine Funktion, welche in nur einer Zeile geschrieben wurde.", "isCorrect": false},
+					{"Text": "Eine Inline-Funktion ist eine virtuelle Funktion.", "isCorrect": false},
+					{"Text": "Eine Inline-Funktion ist eine Klasse.", "isCorrect": false}
+				]
+			},
+			{
+				"ExerciseText": "Was ist eine virtuelle Funktion?",
+				"ExerciseTopic": "OOP",
+				"Difficulty": 10,
+				"Answers":	[
+					{"Text": "Eine virtuelle Funktion ist eine Funktion einer Klasse, deren Funktionalität in der abgeleiteten Klasse überschrieben werden kann.", "isCorrect": true},
+					{"Text": "Eine virtuelle Funktion kann nur in Konstruktoren aufgerufen werden.", "isCorrect": false},
+					{"Text": "Eine virtuelle Funktion kann nur im Destruktor aufgerufen werden.", "isCorrect": false},
+					{"Text": "Eine virtuelle Funktion ist eine Funktion, welche in einer anderen Programmiersprache geschrieben wurde.", "isCorrect": false}
+				]
+			},
+			{
+				"ExerciseText": "Welche Methode wird von zwei Computern verwendet, um sicherzustellen, dass keine Pakete verloren gehen, wenn zu viele Daten zu schnell gesendet werden?",
+				"ExerciseTopic": "ITS",
+				"Difficulty": 10,
+				"Answers":	[
+					{"Text": "Datenflusskontrolle", "isCorrect": true},
+					{"Text": "Zeitüberschreitung", "isCorrect": false},
+					{"Text": "Zugriffsmethode", "isCorrect": false},
+					{"Text": "Kapselung", "isCorrect": false}
+				]
+			},
+			{
+				"ExerciseText": "Welche Schicht des OSI-Modells spezifiziert die Kapselungsmethode, die für einen spezifischen Medientyp verwendet wird?",
+				"ExerciseTopic": "ITS",
+				"Difficulty": 10,
+				"Answers":	[
+					{"Text": "Sicherungsschicht", "isCorrect": true},
+					{"Text": "Bitübertragungsschicht", "isCorrect": false},
+					{"Text": "Transportschicht", "isCorrect": false},
+					{"Text": "Anwendungsschicht", "isCorrect": false}
+				]
+			},
+			{
+				"ExerciseText": "Mit welchem Verfahren wird eine Nachricht in einer anderen Nachricht platziert, um sie von der Quelle an das Ziel zu übertragen?",
+				"ExerciseTopic": "ITS",
+				"Difficulty": 10,
+				"Answers":	[
+					{"Text": "Kapselung", "isCorrect": true},
+					{"Text": "Flusskontrolle", "isCorrect": false},
+					{"Text": "Dekodierung", "isCorrect": false},
+					{"Text": "Flusskontrolle", "isCorrect": false}
+				]
+			},
+			{
+				"ExerciseText": "Ein Web-Client sendet eine Anforderung für eine Webseite an einen Webserver. Was ist aus der Sicht des Clients die richtige Reihenfolge des Protokollstapels, um die Übertragung vorzubereiten?",
+				"ExerciseTopic": "ITS",
+				"Difficulty": 10,
+				"Answers":	[
+					{"Text": "HTTP, TCP, IP, Ethernet", "isCorrect": true},
+					{"Text": "HTTP, IP, TCP, Ethernet", "isCorrect": false},
+					{"Text": "Ethernet, TCP, IP, HTTP", "isCorrect": false},
+					{"Text": "Ethernet, IP, TCP, HTTP", "isCorrect": false}
+				]
+			},
+			{
+				"ExerciseText": "Welche Aussage über Netzwerkprotokolle trifft zu?",
+				"ExerciseTopic": "ITS",
+				"Difficulty": 10,
+				"Answers":	[
+					{"Text": "Sie bestimmen, wie Nachrichten zwischen der Quelle und dem Ziel ausgetauscht werden.", "isCorrect": true},
+					{"Text": "Netzwerkprotokolle definieren die Art der verwendeten Hardware und wie diese in Racks montiert wird.", "isCorrect": false},
+					{"Text": "Sie arbeiten alle in der Netzzugangsschicht von TCP/IP.", "isCorrect": false},
+					{"Text": "Sie sind nur für den Austausch von Nachrichten zwischen den Geräten entfernter Netzwerke erforderlich.", "isCorrect": false}
+				]
+			},
+			{
+				"ExerciseText": "Welche Aussage über das TCP/IP- und OSI-Modell trifft zu?",
+				"ExerciseTopic": "ITS",
+				"Difficulty": 20,
+				"Answers":	[
+					{"Text": "Die TCP/IP-Transportschicht und OSI Schicht 4 bieten ähnliche Dienste und Funktionen.", "isCorrect": true},
+					{"Text": "Die OSI-Schicht 7 und die TCP/IP-Anwendungsschicht bieten identische Funktionen.", "isCorrect": false},
+					{"Text": "Die ersten drei OSI-Schichten beschreiben allgemeine Dienste, die auch durch die TCP/IP-Internetschicht bereitgestellt werden.", "isCorrect": false},
+					{"Text": "Die TCP/IP-Netzzugangsschicht beinhaltet ähnliche Funktionen wie die OSI-Vermittlungsschicht.", "isCorrect": false}
+				]
+			},
+			{
+				"ExerciseText": "Was ist ein Vorteil der Verwendung von Standards zur Entwicklung und Umsetzung von Protokollen?",
+				"ExerciseTopic": "ITS",
+				"Difficulty": 20,
+				"Answers":	[
+					{"Text": "Produkte von verschiedenen Herstellern können erfolgreich zusammenarbeiten.", "isCorrect": true},
+					{"Text": "Ein bestimmtes Protokoll kann nur von einem Hersteller implementiert werden.", "isCorrect": false},
+					{"Text": "Standards bieten Flexibilität für die Hersteller von Geräten mit besonderen Anforderungen.", "isCorrect": false},
+					{"Text": "Verschiedene Hersteller sind frei, verschiedene Anforderungen bei der Implementierung eines Protokolls zu berücksichtigen.", "isCorrect": false}
+				]
+			},
+			{
+				"ExerciseText": "Was versteht man unter proprietären Protokollen?",
+				"ExerciseTopic": "ITS",
+				"Difficulty": 20,
+				"Answers":	[
+					{"Text": "Protokolle, die von Organisationen entwickelt wurden, die Kontrolle über die Definition und den Betrieb der Protokolle besitzen", "isCorrect": true},
+					{"Text": "eine Sammlung von Protokollen wie z.B. die TCP/IP-Protokoll-Suite", "isCorrect": false},
+					{"Text": "Protokolle, die von jeder Organisation oder jedem Anbieter frei verwendet werden können", "isCorrect": false},
+					{"Text": "Protokolle, die von privaten Organisationen entwickelt wurden, um auf der Hardware jedes Anbieters zu arbeiten", "isCorrect": false}
+				]
+			},
+			{
+				"ExerciseText": "Worin besteht der Vorteil von Netzwerkgeräten, die offene Standard-Protokolle benutzen?",
+				"ExerciseTopic": "ITS",
+				"Difficulty": 20,
+				"Answers":	[
+					{"Text": "Ein Client-Host und ein Server mit unterschiedlichen Betriebssystemen können trotzdem erfolgreich Daten auszutauschen.", "isCorrect": true},
+					{"Text": "Der Internet-Zugang wird durch einen einzelnen ISP kontrolliert.", "isCorrect": false},
+					{"Text": "Wettbewerb und Innovation sind auf bestimmte Produktarten beschränkt.", "isCorrect": false},
+					{"Text": "Die Netzwerkkommunikation ist auf Datenübertragungen zwischen Geräten des gleichen Herstellers beschränkt.", "isCorrect": false}
+				]
+			},
+			{
+				"ExerciseText": "Auf welcher Schicht des OSI-Modells wird eine logische Adresse gekapselt?",
+				"ExerciseTopic": "ITS",
+				"Difficulty": 20,
+				"Answers":	[
+					{"Text": "Vermittlungsschicht", "isCorrect": true},
+					{"Text": "Bitübertragungsschicht", "isCorrect": false},
+					{"Text": "Transportschicht", "isCorrect": false},
+					{"Text": "Sicherungsschicht", "isCorrect": false}
+				]
+			},
+			{
+				"ExerciseText": "Welches PDU-Format wird verwendet, wenn Bits über das Netzwerkmedium von der Netzwerkkarte des Hosts empfangen werden?",
+				"ExerciseTopic": "ITS",
+				"Difficulty": 30,
+				"Answers":	[
+					{"Text": "Frame", "isCorrect": true},
+					{"Text": "Paket", "isCorrect": false},
+					{"Text": "Segment", "isCorrect": false},
+					{"Text": "Datei", "isCorrect": false}
+				]
+			},
+			{
+				"ExerciseText": "Welche PDU wird verarbeitet, wenn ein Host-Computer eine Nachricht auf der Transportschicht des TCP/IP-Modells entkapselt?",
+				"ExerciseTopic": "ITS",
+				"Difficulty": 30,
+				"Answers":	[
+					{"Text": "Segment", "isCorrect": true},
+					{"Text": "Bit", "isCorrect": false},
+					{"Text": "Paket", "isCorrect": false},
+					{"Text": "Frame", "isCorrect": false}
+				]
+			},
+			{
+				"ExerciseText": "Welche Adresse verwendet eine Netzwerkkarte für die Entscheidung, ob ein Frame akzeptiert wird?",
+				"ExerciseTopic": "ITS",
+				"Difficulty": 30,
+				"Answers":	[
+					{"Text": "Ziel-MAC-Adresse", "isCorrect": true},
+					{"Text": "Absender-IP-Adresse", "isCorrect": false},
+					{"Text": "Ziel-IP-Adresse", "isCorrect": false},
+					{"Text": "Absender-Ethernet-Adresse", "isCorrect": false}
+				]
+			},
+			{
+				"ExerciseText": "Was passiert, wenn die Standardgateway-Adresse auf einem Host falsch konfiguriert ist?",
+				"ExerciseTopic": "ITS",
+				"Difficulty": 30,
+				"Answers":	[
+					{"Text": "Der Host kann nicht mit Hosts in anderen Netzwerken kommunizieren.", "isCorrect": true},
+					{"Text": "Der Switch leitet keine Pakete weiter, die vom Host stammen.", "isCorrect": false},
+					{"Text": "Ein vom Host an die Adresse 127.0.0.1 gesendetes Ping wäre nicht erfolgreich.", "isCorrect": false},
+					{"Text": "Der Host muss ARP verwenden, um die richtige Adresse des Standardgateways zu bestimmen.", "isCorrect": false}
+				]
+			},
+			{
+				"ExerciseText": "Welche Eigenschaft beschreibt das Standardgateway eines Host-Computers?",
+				"ExerciseTopic": "ITS",
+				"Difficulty": 30,
+				"Answers":	[
+					{"Text": "Die logische Adresse der Router-Schnittstelle im gleichen Netzwerk wie der Host-Computer", "isCorrect": true},
+					{"Text": "Die physische Adresse der Switch-Schnittstelle, die mit dem Host-Computer verbunden ist", "isCorrect": false},
+					{"Text": "Die logische Adresse der Switch-Schnittstelle, die mit dem Host-Computer verbunden ist", "isCorrect": false},
+					{"Text": "Die physische Adresse der Router-Schnittstelle im gleichen Netzwerk wie der Host-Computer", "isCorrect": false}
+				]
+			},
+			{
+				"ExerciseText": "",
+				"ExerciseTopic": "UT",
+				"Difficulty": 10,
+				"Answers":	[
+					{"Text": "", "isCorrect": true},
+					{"Text": "", "isCorrect": false},
+					{"Text": "", "isCorrect": false},
+					{"Text": "", "isCorrect": false}
+				]
+			},
+			  {
+				"ExerciseText": "Mit Git kann man mehrere Zweige in einem Repository erstellen",
+				"ExerciseTopic": "VC",
+				"Difficulty": 10,
+				"Answers": [
+				  {
+					"Text": "Wahr",
+					"isCorrect": true
+				  },
+				  {
+					"Text": "Falsch",
+					"isCorrect": false
+				  }
+				]
+			  },
+			  {
+				"ExerciseText": "Git erschien 1997",
+				"ExerciseTopic": "VC",
+				"Difficulty": 10,
+				"Answers": [
+				  {
+					"Text": "Falsch",
+					"isCorrect": true
+				  },
+				  {
+					"Text": "Wahr",
+					"isCorrect": false
+				  }
+				]
+			  },
+			  {
+				"ExerciseText": "Ist Git und Github das selbe?",
+				"ExerciseTopic": "VC",
+				"Difficulty": 10,
+				"Answers": [
+				  {
+					"Text": "Falsch",
+					"isCorrect": true
+				  },
+				  {
+					"Text": "Wahr",
+					"isCorrect": false
+				  }
+				]
+			  },
+			  {
+				"ExerciseText": "Was ist GIT?",
+				"ExerciseTopic": "VC",
+				"Difficulty": 20,
+				"Answers": [
+				  {
+					"Text": "Eine Versionsverwaltung",
+					"isCorrect": true
+				  },
+				  {
+					"Text": "Ein CMS",
+					"isCorrect": false
+				  },
+				  {
+					"Text": "Ein Javascript Framework",
+					"isCorrect": false
+				  },
+				  {
+					"Text": "Ein Repository",
+					"isCorrect": false
+				  }
+				]
+			  },
+			  {
+				"ExerciseText": "Was ist ein Branch",
+				"ExerciseTopic": "VC",
+				"Difficulty": 20,
+				"Answers": [
+				  {
+					"Text": "eine unabhängige Entwicklungslinie",
+					"isCorrect": true
+				  },
+				  {
+					"Text": "Ein CMS",
+					"isCorrect": false
+				  },
+				  {
+					"Text": "Ein Javascript Framework",
+					"isCorrect": false
+				  },
+				  {
+					"Text": "Ein Repository",
+					"isCorrect": false
+				  }
+				]
+			  },
+			  {
+				"ExerciseText": "Welche Programmiersprache nutzt Git?",
+				"ExerciseTopic": "VC",
+				"Difficulty": 20,
+				"Answers": [
+				  {
+					"Text": "C",
+					"isCorrect": true
+				  },
+				  {
+					"Text": "HTML",
+					"isCorrect": false
+				  },
+				  {
+					"Text": "PHP",
+					"isCorrect": false
+				  },
+				  {
+					"Text": "C++",
+					"isCorrect": false
+				  }
+				]
+			  },
+			  {
+				"ExerciseText": "Welcher Command erstellt eine Lokale Copy vom Repository?",
+				"ExerciseTopic": "VC",
+				"Difficulty": 20,
+				"Answers": [
+				  {
+					"Text": "clone",
+					"isCorrect": true
+				  },
+				  {
+					"Text": "checkout",
+					"isCorrect": false
+				  },
+				  {
+					"Text": "push",
+					"isCorrect": false
+				  },
+				  {
+					"Text": "pull",
+					"isCorrect": false
+				  }
+				]
+			  },
+			  {
+				"ExerciseText": "Welcher Command erstellt ein neues Repository im Ordner?",
+				"ExerciseTopic": "VC",
+				"Difficulty": 20,
+				"Answers": [
+				  {
+					"Text": "git init",
+					"isCorrect": true
+				  },
+				  {
+					"Text": "git reset",
+					"isCorrect": false
+				  },
+				  {
+					"Text": "git log",
+					"isCorrect": false
+				  },
+				  {
+					"Text": "git create",
+					"isCorrect": false
+				  }
+				]
+			  },
+			  {
+				"ExerciseText": "Der Programmierer führt den Blackbox Test durch.",
+				"ExerciseTopic": "Testing",
+				"Difficulty": 10,
+				"Answers": [
+			  {
+				"Text": "Falsch",
+				"isCorrect": true
+			  },
+			  {
+				"Text": "Wahr",
+				"isCorrect": false
+			  }
+			]
+		  },
+		  {
+				"ExerciseText": "Der Programmierer führt den Whitebox Test durch.",
+				"ExerciseTopic": "Testing",
+				"Difficulty": 10,
+				"Answers": [
+			  {
+				"Text": "Falsch",
+				"isCorrect": false
+			  },
+			  {
+				"Text": "Wahr",
+				"isCorrect": true
+			  }
+			]
+		  },
+		  {
+				"ExerciseText": "JUnit bietet sich für das Regressionstesten an.",
+				"ExerciseTopic": "Testing",
+				"Difficulty": 10,
+				"Answers": [
+			  {
+				"Text": "Falsch",
+				"isCorrect": false
+			  },
+			  {
+				"Text": "Wahr",
+				"isCorrect": true
+			  }
+			]
+		  },
+		  {
+				"ExerciseText": "Was ist das Besondere am Test-Driven Development(TDD)?",
+				"ExerciseTopic": "Testing",
+				"Difficulty": 20,
+				"Answers": [
+			  {
+				"Text": "Es wird der Hauptfokus auf die Tests gelegt",
+				"isCorrect": false
+			  },
+			  {
+				"Text": "Das sogenannte Test-Driven ist ein eigenes Framework",
+				"isCorrect": false
+			  },
+			  {
+				"Text": "Dieses Verfahren ist ein Teil der Prozeduralen Programmierung ",
+				"isCorrect": false
+			  },
+			  {
+				"Text": "Es wird erst der Test geschrieben und dann der eigentliche Code.",
+				"isCorrect": true
+			  }
+			]
+		  },
+		  {
+				"ExerciseText": "Was testet der Unit-Test?",
+				"ExerciseTopic": "Testing",
+				"Difficulty": 20,
+				"Answers": [
+			  {
+				"Text": "explizit die Konstruktoren",
+				"isCorrect": false
+			  },
+			  {
+				"Text": "einzelne Variablen",
+				"isCorrect": false
+			  },
+			  {
+				"Text": "Den kompletten Code",
+				"isCorrect": false
+			  },
+			  {
+				"Text": "Kleinere Abschnitte eines Codes z.B einzelne Funktionen.",
+				"isCorrect": true
+			  }
+			]
+		  },
+		  {
+				"ExerciseText": "Was testet der Intergrations-Test?",
+				"ExerciseTopic": "Testing",
+				"Difficulty": 20,
+				"Answers": [
+			  {
+				"Text": "Explizit die Konstruktoren",
+				"isCorrect": false
+			  },
+			  {
+				"Text": "Einzelne Variablen",
+				"isCorrect": false
+			  },
+			  {
+				"Text": "Testet ob ein Integrationshintergrund vorliegt",
+				"isCorrect": false
+			  },
+			  {
+				"Text": "Der Integrations-Test testet Code im zusammenspiel.",
+				"isCorrect": true
+			  }
+			]
+		  },
+		  {
+				"ExerciseText": "Was ist ein Beta-Test?",
+				"ExerciseTopic": "Testing",
+				"Difficulty": 20,
+				"Answers": [
+			  {
+				"Text": "Ist das gleiche wie der Whitebox-Test",
+				"isCorrect": false
+			  },
+			  {
+				"Text": "Dieser Test existiert nicht.",
+				"isCorrect": false
+			  },
+			  {
+				"Text": "Keine dieser Aussagen trifft zu.",
+				"isCorrect": false
+			  },
+			  {
+				"Text": "Es wird eine Beta-Version entwickelt diese wird dann vom Endbenutzer getestet.",
+				"isCorrect": true
+			  }
+			]
+		  },
+		  {
+				"ExerciseText": "Welcher Software-Test exisitiert nicht",
+				"ExerciseTopic": "Testing",
+				"Difficulty": 20,
+				"Answers": [
+			  {
+				"Text": "Komponententest",
+				"isCorrect": false
+			  },
+			  {
+				"Text": "Systemtest",
+				"isCorrect": false
+			  },
+			  {
+				"Text": "Schreibtisch-Test",
+				"isCorrect": false
+			  },
+			  {
+				"Text": "RT-PCR-Test",
+				"isCorrect": true
+			  }
+			]
+		  },
+		  {
+				"ExerciseText": "Vom Anwender gefundene Fehler sind zurückzuführen auf",
+				"ExerciseTopic": "Testing",
+				"Difficulty": 20,
+				"Answers": [
+			  {
+				"Text": "Pech",
+				"isCorrect": false
+			  },
+			  {
+				"Text": "einen schlechten Programmierer",
+				"isCorrect": false
+			  },
+			  {
+				"Text": "schlechte qualität der Software",
+				"isCorrect": false
+			  },
+			  {
+				"Text": "nicht ausreichend getestet",
+				"isCorrect": true
+			  }
+			]
+		  },
+		  {
+				"ExerciseText": "Wann sollte man aufhören zu testen",
+				"ExerciseTopic": "Testing",
+				"Difficulty": 20,
+				"Answers": [
+			  {
+				"Text": "Wenn die eingeplante Zeit zu Ende ist",
+				"isCorrect": false
+			  },
+			  {
+				"Text": "wenn alle Tests durchgelaufen sind",
+				"isCorrect": false
+			  },
+			  {
+				"Text": "Wenn man keine Lust mehr hat",
+				"isCorrect": false
+			  },
+			  {
+				"Text": "wenn alle Tests durchgelaufen sind und sie keine Fehler ausgegben haben",
+				"isCorrect": true
+			  }
+			]
+		  },
+		  {
+				"ExerciseText": "Was ist der Unterschied zwischen re-testing und Regressions-Test",
+				"ExerciseTopic": "Testing",
+				"Difficulty": 20,
+				"Answers": [
+			  {
+				"Text": "re-testing is done after faults are fixed; regression testing is done earlier",
+				"isCorrect": false
+			  },
+			  {
+				"Text": "re-testing looks for unexcpected side effects; regression testing is repeating those tests",
+				"isCorrect": false
+			  },
+			  {
+				"Text": "re-testing is done by developers; regression testing is done by independent",
+				"isCorrect": false
+			  },
+			  {
+				"Text": " re-testing is running a test againg; regressions testing looks for unexpet side effects ",
+				"isCorrect": true
+			  }
+			]
+		  },
+		  {
+				"ExerciseText": "Die Norm, die Definitionen von Prüfbegriffen enthält, ist",
+				"ExerciseTopic": "Testing",
+				"Difficulty": 20,
+				"Answers": [
+			  {
+				"Text": "ISO/IEC 12207",
+				"isCorrect": false
+			  },
+			  {
+				"Text": "BS7925-2",
+				"isCorrect": false
+			  },
+			  {
+				"Text": "ANSI/IEEE 829",
+				"isCorrect": false
+			  },
+			  {
+				"Text": "BS7925-1",
+				"isCorrect": true
+			  }
+			]
+		  },
+		  {
+				"ExerciseText": "Ein Tool, das die Rückverfolgbarkeit, die Aufzeichnung von Fehlern von Tests unterstützt, heißt",
+				"ExerciseTopic": "Testing",
+				"Difficulty": 20,
+				"Answers": [
+			  {
+				"Text": "a dynamic analysis tool",
+				"isCorrect": false
+			  },
+			  {
+				"Text": "a test execution tool",
+				"isCorrect": false
+			  },
+			  {
+				"Text": "a test management tool",
+				"isCorrect": false
+			  },
+			  {
+				"Text": "a debugging tool",
+				"isCorrect": true
+			  }
+			]
+		  },
+		  {
+				"ExerciseText": "Welche der folgenden Antwortmöglichkeiten ist kein Teil des perfomance tests?",
+				"ExerciseTopic": "Testing",
+				"Difficulty": 20,
+				"Answers": [
+			  {
+				"Text": "response time",
+				"isCorrect": false
+			  },
+			  {
+				"Text": "transaction rates",
+				"isCorrect": false
+			  },
+			  {
+				"Text": "simulating many users",
+				"isCorrect": false
+			  },
+			  {
+				"Text": "recovery test",
+				"isCorrect": true
+			  }
+			]
+		  },
+		  {
+				"ExerciseText": "Welche Informationen sollte in einem incident report stehen?",
+				"ExerciseTopic": "Testing",
+				"Difficulty": 20,
+				"Answers": [
+			  {
+				"Text": "Details zur Testumgebung",
+				"isCorrect": false
+			  },
+			  {
+				"Text": "Schwere und Vorrangigkeit",
+				"isCorrect": false
+			  },
+			  {
+				"Text": "Wie der Fehler reproduziert werden kann.",
+				"isCorrect": false
+			  },
+			  {
+				"Text": "Ein Lösungsvorschlag für den Fehler.",
+				"isCorrect": true
+			  }
+			]
+		  }
+			
+		]
+	}
+]
