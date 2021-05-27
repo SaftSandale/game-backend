@@ -162,6 +162,36 @@
         ]
       },
       {
+        "ExerciseText": "GIT funktioniert nur auf Windows",
+        "ExerciseTopic": "VC",
+        "Difficulty": 10,
+        "Answers": [
+          {
+            "Text": "Falsch",
+            "isCorrect": true
+          },
+          {
+            "Text": "Wahr",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "ExerciseText": "GIT funktioniert nur auf MacOS",
+        "ExerciseTopic": "VC",
+        "Difficulty": 10,
+        "Answers": [
+          {
+            "Text": "Falsch",
+            "isCorrect": true
+          },
+          {
+            "Text": "Wahr",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
         "ExerciseText": "Mit Git kann man mehrere Zweige in einem Repository erstellen",
         "ExerciseTopic": "VC",
         "Difficulty": 10,
@@ -222,7 +252,202 @@
         ]
       },
       {
-        "ExerciseText": "Git erschien 1997",
+        "ExerciseText": "Git gibt es nur in Europa",
+        "ExerciseTopic": "VC",
+        "Difficulty": 10,
+        "Answers": [
+          {
+            "Text": "Falsch",
+            "isCorrect": true
+          },
+          {
+            "Text": "Wahr",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "ExerciseText": "Ein Versionskontrollsystem funktioniert nicht auf Laptops",
+        "ExerciseTopic": "VC",
+        "Difficulty": 10,
+        "Answers": [
+          {
+            "Text": "Falsch",
+            "isCorrect": true
+          },
+          {
+            "Text": "Wahr",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "ExerciseText": "Git ist Dezentralisiert",
+        "ExerciseTopic": "VC",
+        "Difficulty": 10,
+        "Answers": [
+          {
+            "Text": "Wahr",
+            "isCorrect": true
+          },
+          {
+            "Text": "Falsch",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "ExerciseText": "Git funktioniert nur mit Javascript Projekten",
+        "ExerciseTopic": "VC",
+        "Difficulty": 10,
+        "Answers": [
+          {
+            "Text": "Falsch",
+            "isCorrect": true
+          },
+          {
+            "Text": "Wahr",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "ExerciseText": "Die erste Versionsverwaltung wurde im Jahr 2003 released",
+        "ExerciseTopic": "VC",
+        "Difficulty": 10,
+        "Answers": [
+          {
+            "Text": "Falsch",
+            "isCorrect": true
+          },
+          {
+            "Text": "Wahr",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "ExerciseText": "Die erste Versionsverwaltung erschien in den 1970er",
+        "ExerciseTopic": "VC",
+        "Difficulty": 10,
+        "Answers": [
+          {
+            "Text": "Wahr",
+            "isCorrect": true
+          },
+          {
+            "Text": "Falsch",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "ExerciseText": "Die erste Versionsverwaltung erschien in den 1980er",
+        "ExerciseTopic": "VC",
+        "Difficulty": 10,
+        "Answers": [
+          {
+            "Text": "Falsch",
+            "isCorrect": true
+          },
+          {
+            "Text": "Wahr",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "ExerciseText": "Jedes Git Repository ist Öffentlich zugänglich",
+        "ExerciseTopic": "VC",
+        "Difficulty": 10,
+        "Answers": [
+          {
+            "Text": "Falsch",
+            "isCorrect": true
+          },
+          {
+            "Text": "Wahr",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "ExerciseText": "Jedes Git Repository ist Öffentlich zugänglich",
+        "ExerciseTopic": "VC",
+        "Difficulty": 10,
+        "Answers": [
+          {
+            "Text": "Falsch",
+            "isCorrect": true
+          },
+          {
+            "Text": "Wahr",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "ExerciseText": "Jede Versionsverwaltung funktioniert nur auf Linux",
+        "ExerciseTopic": "VC",
+        "Difficulty": 10,
+        "Answers": [
+          {
+            "Text": "Falsch",
+            "isCorrect": true
+          },
+          {
+            "Text": "Wahr",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "ExerciseText": "Der Erfinder der Versionsverwaltung hieß Manuel Schreck",
+        "ExerciseTopic": "VC",
+        "Difficulty": 10,
+        "Answers": [
+          {
+            "Text": "Falsch",
+            "isCorrect": true
+          },
+          {
+            "Text": "Wahr",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "ExerciseText": "Github wird nur in Asien benutzt",
+        "ExerciseTopic": "VC",
+        "Difficulty": 10,
+        "Answers": [
+          {
+            "Text": "Falsch",
+            "isCorrect": true
+          },
+          {
+            "Text": "Wahr",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "ExerciseText": "Git kann man nicht mit einer GUI benutzen",
+        "ExerciseTopic": "VC",
+        "Difficulty": 10,
+        "Answers": [
+          {
+            "Text": "Falsch",
+            "isCorrect": true
+          },
+          {
+            "Text": "Wahr",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "ExerciseText": "Github wird nur in Asien benutzt",
         "ExerciseTopic": "VC",
         "Difficulty": 10,
         "Answers": [
@@ -255,6 +480,190 @@
           },
           {
             "Text": "Ein Repository",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "ExerciseText": "Wann kam die erste Versionsverwaltung?",
+        "ExerciseTopic": "VC",
+        "Difficulty": 20,
+        "Answers": [
+          {
+            "Text": "1972",
+            "isCorrect": true
+          },
+          {
+            "Text": "1997",
+            "isCorrect": false
+          },
+          {
+            "Text": "1978",
+            "isCorrect": false
+          },
+          {
+            "Text": "2001",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "ExerciseText": "Was macht Git Status",
+        "ExerciseTopic": "VC",
+        "Difficulty": 20,
+        "Answers": [
+          {
+            "Text": "gibt den Status des Arbeitsverzeichnisses und der Staging-Umgebung zurück",
+            "isCorrect": true
+          },
+          {
+            "Text": "Zeigt den Akkustand des Gerätes an",
+            "isCorrect": false
+          },
+          {
+            "Text": "Pusht ins Repository",
+            "isCorrect": false
+          },
+          {
+            "Text": "Checkt fehlerhafte Dateien",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "ExerciseText": "Womit kannst du dir die Commits anzeigen lassen",
+        "ExerciseTopic": "VC",
+        "Difficulty": 20,
+        "Answers": [
+          {
+            "Text": "git log",
+            "isCorrect": true
+          },
+          {
+            "Text": "git commit",
+            "isCorrect": false
+          },
+          {
+            "Text": "git status",
+            "isCorrect": false
+          },
+          {
+            "Text": "git push",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "ExerciseText": "Wie wechselt man in den Branch 'test' ",
+        "ExerciseTopic": "VC",
+        "Difficulty": 20,
+        "Answers": [
+          {
+            "Text": "git checkout test",
+            "isCorrect": true
+          },
+          {
+            "Text": "git pull test",
+            "isCorrect": false
+          },
+          {
+            "Text": "git commit test",
+            "isCorrect": false
+          },
+          {
+            "Text": "git push test",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "ExerciseText": "Wie erstellt mein einen neuen Branch?",
+        "ExerciseTopic": "VC",
+        "Difficulty": 20,
+        "Answers": [
+          {
+            "Text": "git branch new_branch",
+            "isCorrect": true
+          },
+          {
+            "Text": "git new branch",
+            "isCorrect": false
+          },
+          {
+            "Text": "git commit new_branch",
+            "isCorrect": false
+          },
+          {
+            "Text": "git pull branch",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "ExerciseText": "Was macht Git branch",
+        "ExerciseTopic": "VC",
+        "Difficulty": 20,
+        "Answers": [
+          {
+            "Text": "Zeigt Dir deine lokalen Branches an",
+            "isCorrect": true
+          },
+          {
+            "Text": "Pusht in das Remote-Repository",
+            "isCorrect": false
+          },
+          {
+            "Text": "Zeigt dir alle Änderungen an",
+            "isCorrect": false
+          },
+          {
+            "Text": "Checkt fehlerhafte Dateien",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "ExerciseText": "Was macht Git add",
+        "ExerciseTopic": "VC",
+        "Difficulty": 20,
+        "Answers": [
+          {
+            "Text": "Fügt Änderungen aus dem Arbeitsverzeichnis zur Staging-Umgebung hinzu",
+            "isCorrect": true
+          },
+          {
+            "Text": "Checkt den Status der CPU",
+            "isCorrect": false
+          },
+          {
+            "Text": "Pusht ins Repository",
+            "isCorrect": false
+          },
+          {
+            "Text": "Checkt fehlerhafte Dateien",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "ExerciseText": "Wofür benutzt man ein Versionskontrollsystem",
+        "ExerciseTopic": "VC",
+        "Difficulty": 20,
+        "Answers": [
+          {
+            "Text": "Um auf verschiedene Versionen und Änderungen zugreifen zu können",
+            "isCorrect": true
+          },
+          {
+            "Text": "Um sein Projekt geheim zu halten",
+            "isCorrect": false
+          },
+          {
+            "Text": "Damit man nicht im Team arbeiten muss",
+            "isCorrect": false
+          },
+          {
+            "Text": "Um Fehlerhafte Dateien zu erkennen",
             "isCorrect": false
           }
         ]
@@ -347,6 +756,75 @@
           },
           {
             "Text": "git create",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "ExerciseText": "Was macht Git pull",
+        "ExerciseTopic": "VC",
+        "Difficulty": 20,
+        "Answers": [
+          {
+            "Text": "Um Inhalte aus einem Remote-Repository herunterzuladen",
+            "isCorrect": true
+          },
+          {
+            "Text": "Um Inhalte in ein Remote-Repository hochzuladen",
+            "isCorrect": false
+          },
+          {
+            "Text": "Um Inhalte aus einem Remote-Repository zu löschen",
+            "isCorrect": false
+          },
+          {
+            "Text": "Wechselt den Branch",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "ExerciseText": "Wofür benutzt man Git remote",
+        "ExerciseTopic": "VC",
+        "Difficulty": 20,
+        "Answers": [
+          {
+            "Text": "Um Verbindungen mit anderen Repositorys erstellen, abrufen und löschen.",
+            "isCorrect": true
+          },
+          {
+            "Text": "Um auf andere Computer zuzugreifen",
+            "isCorrect": false
+          },
+          {
+            "Text": "Um Festplattenspeicher zu sparen",
+            "isCorrect": false
+          },
+          {
+            "Text": "damit man keinen Code Editor benutzen muss",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "ExerciseText": "Wofür benutzt man Git fetch",
+        "ExerciseTopic": "VC",
+        "Difficulty": 20,
+        "Answers": [
+          {
+            "Text": "Um Änderungen aus einem Remote-Repository in das lokale Repository abzuholen.",
+            "isCorrect": true
+          },
+          {
+            "Text": "Um auf andere Computer zuzugreifen",
+            "isCorrect": false
+          },
+          {
+            "Text": "Um Änderungen in das Remote-Repository zu pushen",
+            "isCorrect": false
+          },
+          {
+            "Text": "damit man keinen Code Editor benutzen muss",
             "isCorrect": false
           }
         ]
@@ -903,7 +1381,7 @@
       {
         "ExerciseText": "Welcher Software-Test exisitiert nicht",
         "ExerciseTopic": "Testing",
-        "Difficulty": 20,
+        "Difficulty": 30,
         "Answers": [
           {
             "Text": "Komponententest",
@@ -914,18 +1392,22 @@
             "isCorrect": false
           },
           {
+            "Text": "THIS-Zeiger verweist auf das aktuelle Objekt einer Klasse.",
+            "isCorrect": true
+          },
+          {
             "Text": "Schreibtisch-Test",
             "isCorrect": false
           },
           {
-            "Text": "RT-PCR-Test",
-            "isCorrect": true
-          }
-        ]
-      },
-      {
-        "ExerciseText": "Vom Anwender gefundene Fehler sind zurückzuführen auf",
-        "ExerciseTopic": "Testing",
+            "Text": "Diesen Zeiger gibt es nur in C++.",
+            "isCorrect": false
+          },
+          {
+            "Text": "Zeiger gibt es nur in prozudualen Programmiersprachen.",
+            "isCorrect": false
+          },
+          {   
         "Difficulty": 20,
         "Answers": [
           {
@@ -1083,7 +1565,759 @@
             "isCorrect": true
           }
         ]
-      }
+      },
+          {
+            "ExerciseText": "Was ist der Standard-Zugriffsmodifikator in einer Klasse?",
+            "ExerciseTopic": "OOP",
+            "Difficulty": 20,
+            "Answers": [
+              {
+                "Text": "Protected.",
+                "isCorrect": false
+              },
+              {
+                "Text": "Private.",
+                "isCorrect": true
+              },
+              {
+                "Text": "Public.",
+                "isCorrect": false
+              },
+              {
+                "Text": "Default.",
+                "isCorrect": false
+              }
+            ]
+          },
+          {
+            "ExerciseText": "Was ist eine rein virtuelle Funktion?",
+            "ExerciseTopic": "OOP",
+            "Difficulty": 30,
+            "Answers": [
+              {
+                "Text": "Dies existiert nicht.",
+                "isCorrect": false
+              },
+              {
+                "Text": "Virtuelle Funktionen gibt es nur in Linux.",
+                "isCorrect": false
+              },
+              {
+                "Text": "Virtuelle Funktionen gibt es nur in Java.",
+                "isCorrect": false
+              },
+              {
+                "Text": "Eine reine virtuelle Funktion ist eine Funktionalität, welche nur in prozudualen Programmiersprachen angewendet wird.",
+                "isCorrect": false
+              },
+              {
+                "Text": "Eine reine virtuelle Funktion ist eine Funktion, die in der abgeleiteten Klasse überschrieben werden kann, aber nicht definiert werden kann.",
+                "isCorrect": true
+              },
+              {
+                "Text": "Virtuelle Funktionen ermöglichen es Funktionen in anderen Programmiersprachen einzubinden.",
+                "isCorrect": false
+              }
+            ]
+          },
+          {
+            "ExerciseText": "Was ist ein Copy-Konstruktor?",
+            "ExerciseTopic": "OOP",
+            "Difficulty": 30,
+            "Answers": [
+              {
+                "Text": "Dies ist ein spezieller Konstruktor, um ein neues Objekt als Kopie eines bestehenden Objekts zu erzeugen.",
+                "isCorrect": true
+              },
+              {
+                "Text": "Der Copy-Konstruktor gibt es nur in C++.",
+                "isCorrect": false
+              },
+              {
+                "Text": "Der Copy-Konstruktor ist eine Kopie des Default-Konstruktor.",
+                "isCorrect": false
+              },
+              {
+                "Text": "Der Copy-Konstruktor wird nach dem Destruktor aufgerufen.",
+                "isCorrect": false
+              },
+              {
+                "Text": "Dies ist ein spezieller Konstruktor, welche eine Kopie des Default-Konstruktor ist.",
+                "isCorrect": false
+              },
+              {
+                "Text": "Dies ist ein spezieller Destruktor, um ein neues Objekt als Kopie eines bestehenden Objekts zu löschen.",
+                "isCorrect": false
+              }
+            ]
+          },
+          {
+            "ExerciseText": "Was stellt das Schlüsselwort virtual in der Methodendefinition dar?",
+            "ExerciseTopic": "OOP",
+            "Difficulty": 30,
+            "Answers": [
+              {
+                "Text": "Das bedeutet, dass wir die Methode nicht nutzen können.",
+                "isCorrect": false
+              },
+              {
+                "Text": "Das bedeutet, dass wir die Methode nur intern nutzen können.",
+                "isCorrect": false
+              },
+              {
+                "Text": "Das bedeutet, dass wir die Methode überschreiben können.",
+                "isCorrect": true
+              },
+              {
+                "Text": "Das bedeutet, dass wir die Methode unterschreiben können.",
+                "isCorrect": false
+              },
+              {
+                "Text": "Das bedeutet, dass wir die Variable nur intern nutzen können.",
+                "isCorrect": false
+              },
+              {
+                "Text": "Das bedeutet, dass wir die Variable überschreiben können.",
+                "isCorrect": false
+              }
+            ]
+          },
+          {
+            "ExerciseText": "Kann eine statische Methode nicht-statische Member verwenden?",
+            "ExerciseTopic": "OOP",
+            "Difficulty": 10,
+            "Answers": [
+              {
+                "Text": "Falsch.",
+                "isCorrect": true
+              },
+              {
+                "Text": "Richtig.",
+                "isCorrect": false
+              }
+            ]
+          },
+          {
+            "ExerciseText": "Was ist statisches und dynamisches Binden?",
+            "ExerciseTopic": "OOP",
+            "Difficulty": 30,
+            "Answers": [
+              {
+                "Text": "Statisches Binden existiert nur in prozedualen Programmiersprachen. Dynamisches Binden nur in objektorierntierten Programmiersprachen.",
+                "isCorrect": false
+              },
+              {
+                "Text": "Statisches Binden existiert nur in C++. Dynamisches Binden nur in Java.",
+                "isCorrect": false
+              },
+              {
+                "Text": "Statisch: Name wird vor der Kompilierung mit der Klasse verknüpft; dynamisch: Name wird während der der Kompilierung mit der Klasse verknüpft.",
+                "isCorrect": false
+              },
+              {
+                "Text": "Statisches Binden wird auch spätes Binden und dynamisches Binden wird auch frühes Binden genannt.",
+                "isCorrect": false
+              },
+              {
+                "Text": "Dynamisches Binden existiert nur in prozedualen Programmiersprachen. Statisches Binden nur in objektorierntierten Programmiersprachen.",
+                "isCorrect": false
+              },
+              {
+                "Text": "Statisch: Name wird während der Kompilierung mit der Klasse verknüpft; dynamisch: Name wird während der Laufzeit mit der Klasse verknüpft.",
+                "isCorrect": true
+              }
+            ]
+          },
+          {
+            "ExerciseText": "Wie viele Instanzen können für eine abstrakte Klasse erzeugt werden?",
+            "ExerciseTopic": "OOP",
+            "Difficulty": 30,
+            "Answers": [
+              {
+                "Text": "Maximal 5.",
+                "isCorrect": false
+              },
+              {
+                "Text": "0.",
+                "isCorrect": true
+              },
+              {
+                "Text": "Unbegrenzt.",
+                "isCorrect": false
+              },
+              {
+                "Text": "Minimal 5.",
+                "isCorrect": false
+              },
+              {
+                "Text": "Maximal 10.",
+                "isCorrect": false
+              },
+              {
+                "Text": "Minimal 10.",
+                "isCorrect": false
+              }
+            ]
+          },
+          {
+            "ExerciseText": "Welches Schlüsselwort kann zum Überladen verwendet werden?",
+            "ExerciseTopic": "OOP",
+            "Difficulty": 30,
+            "Answers": [
+              {
+                "Text": "overloading.",
+                "isCorrect": true
+              },
+              {
+                "Text": "overload.",
+                "isCorrect": false
+              },
+              {
+                "Text": "overloaded.",
+                "isCorrect": false
+              },
+              {
+                "Text": "overhead.",
+                "isCorrect": false
+              },
+              {
+                "Text": "overheaded.",
+                "isCorrect": false
+              },
+              {
+                "Text": "overheading.",
+                "isCorrect": false
+              }
+            ]
+          },
+          {
+            "ExerciseText": "Was sind die zentralen zwei Elemente in der Objektorientierung?",
+            "ExerciseTopic": "OOP",
+            "Difficulty": 10,
+            "Answers": [
+              {
+                "Text": "Klassen und Objekte.",
+                "isCorrect": true
+              },
+              {
+                "Text": "Strukturen und Methoden.",
+                "isCorrect": false
+              }
+            ]
+          },
+          {
+            "ExerciseText": "Wie verändere ich den Zustand eines Objektes?",
+            "ExerciseTopic": "OOP",
+            "Difficulty": 10,
+            "Answers": [
+              {
+                "Text": "Mit einer Methode.",
+                "isCorrect": true
+              },
+              {
+                "Text": "Mit einer Klasse.",
+                "isCorrect": false
+              }
+            ]
+          },
+          {
+            "ExerciseText": "Klassen beschreiben wie Objekte aussehen.",
+            "ExerciseTopic": "OOP",
+            "Difficulty": 10,
+            "Answers": [
+              {
+                "Text": "Wahr.",
+                "isCorrect": true
+              },
+              {
+                "Text": "Falsch.",
+                "isCorrect": false
+              }
+            ]
+          },
+          {
+            "ExerciseText": "Objekte repräsentieren kontrete Instanzen [0, n] einer Klasse.",
+            "ExerciseTopic": "OOP",
+            "Difficulty": 10,
+            "Answers": [
+              {
+                "Text": "Wahr.",
+                "isCorrect": true
+              },
+              {
+                "Text": "Falsch.",
+                "isCorrect": false
+              }
+            ]
+          },
+          {
+            "ExerciseText": "Klassen beschreiben Attribute und Methoden?",
+            "ExerciseTopic": "OOP",
+            "Difficulty": 10,
+            "Answers": [
+              {
+                "Text": "Wahr.",
+                "isCorrect": true
+              },
+              {
+                "Text": "Falsch.",
+                "isCorrect": false
+              }
+            ]
+          },
+          {
+            "ExerciseText": "Objekte repräsentieren den Zustand eines Attributs?",
+            "ExerciseTopic": "OOP",
+            "Difficulty": 10,
+            "Answers": [
+              {
+                "Text": "Wahr.",
+                "isCorrect": false
+              },
+              {
+                "Text": "Falsch.",
+                "isCorrect": true
+              }
+            ]
+          },
+          {
+            "ExerciseText": "Attribute repräsentieren den Zustand eines Objektes?",
+            "ExerciseTopic": "OOP",
+            "Difficulty": 10,
+            "Answers": [
+              {
+                "Text": "Wahr.",
+                "isCorrect": true
+              },
+              {
+                "Text": "Falsch.",
+                "isCorrect": false
+              }
+            ]
+          },
+          {
+            "ExerciseText": "Methoden repräsentieren das Verhalten einer Klasse?",
+            "ExerciseTopic": "OOP",
+            "Difficulty": 10,
+            "Answers": [
+              {
+                "Text": "Wahr.",
+                "isCorrect": false
+              },
+              {
+                "Text": "Falsch.",
+                "isCorrect": true
+              }
+            ]
+          },
+          {
+            "ExerciseText": "Was ist ein Vorteil der objektorienterter Programmierung?",
+            "ExerciseTopic": "OOP",
+            "Difficulty": 10,
+            "Answers": [
+              {
+                "Text": "Man bewegt sich immer in einer Objekt-Welt. Es entsteht eine adäquate und durchgängige Betrachtungsweise.",
+                "isCorrect": true
+              },
+              {
+                "Text": "Variablen müssen alle mit einem kleinen Buchstaben starten.",
+                "isCorrect": false
+              }
+            ]
+          },
+          {
+            "ExerciseText": "Was ist ein Nachteil der objektorienterter Programmierung?",
+            "ExerciseTopic": "OOP",
+            "Difficulty": 10,
+            "Answers": [
+              {
+                "Text": "Objekte sind immer eine (starke) Vereinfachung, sie können manchmal sehr Abstrakt werden.",
+                "isCorrect": true
+              },
+              {
+                "Text": "Variablen müssen alle mit einem kleinen Buchstaben starten.",
+                "isCorrect": false
+              }
+            ]
+          },
+          {
+            "ExerciseText": "Nenne zwei Synonyme für Objekt?",
+            "ExerciseTopic": "OOP",
+            "Difficulty": 10,
+            "Answers": [
+              {
+                "Text": "Instanz, Member.",
+                "isCorrect": true
+              },
+              {
+                "Text": "Boolean, Strings.",
+                "isCorrect": false
+              }
+            ]
+          },
+          {
+            "ExerciseText": "Nenne zwei Synonyme für Klasse?",
+            "ExerciseTopic": "OOP",
+            "Difficulty": 10,
+            "Answers": [
+              {
+                "Text": "Klassentyp, Typ.",
+                "isCorrect": true
+              },
+              {
+                "Text": "Boolean, Strings.",
+                "isCorrect": false
+              }
+            ]
+          },
+          {
+            "ExerciseText": "Durch den Aufruf von Methoden können Attribute und somit der Zustand des Objektes verändert werden?",
+            "ExerciseTopic": "OOP",
+            "Difficulty": 10,
+            "Answers": [
+              {
+                "Text": "Wahr.",
+                "isCorrect": true
+              },
+              {
+                "Text": "Falsch.",
+                "isCorrect": false
+              }
+            ]
+          },
+          {
+            "ExerciseText": "Der Binärcode einer Klasse wird vom Kompiler zu Quelltext kompiliert?",
+            "ExerciseTopic": "OOP",
+            "Difficulty": 10,
+            "Answers": [
+              {
+                "Text": "Wahr.",
+                "isCorrect": false
+              },
+              {
+                "Text": "Falsch.",
+                "isCorrect": true
+              }
+            ]
+          },
+          {
+            "ExerciseText": "Der Quelltext einer Klasse wird vom Kompiler zu Binärcode kompiliert?",
+            "ExerciseTopic": "OOP",
+            "Difficulty": 10,
+            "Answers": [
+              {
+                "Text": "Wahr.",
+                "isCorrect": true
+              },
+              {
+                "Text": "Falsch.",
+                "isCorrect": false
+              }
+            ]
+          },
+          {
+            "ExerciseText": "Nenne einige elementaren (primitiven) Datentypen, welche bei der Initialisierung von Attributen verwendet werden können?",
+            "ExerciseTopic": "OOP",
+            "Difficulty": 10,
+            "Answers": [
+              {
+                "Text": "Double, Float, Long, Int, Short, Byte, Char, Boolean.",
+                "isCorrect": true
+              },
+              {
+                "Text": "Double, Float, Long, Int, Short, Byte, String, Boolean.",
+                "isCorrect": false
+              }
+            ]
+          },
+          {
+            "ExerciseText": "Nenne einen typischen Klassentyp, welcher bei der Initialisierung eines Attributs verwendet wird?",
+            "ExerciseTopic": "OOP",
+            "Difficulty": 10,
+            "Answers": [
+              {
+                "Text": "Double.",
+                "isCorrect": false
+              },
+              {
+                "Text": "String.",
+                "isCorrect": true
+              }
+            ]
+          },
+          {
+            "ExerciseText": "Was ist wichtig zu beachten bei der Implementation eines Konstruktors?",
+            "ExerciseTopic": "OOP",
+            "Difficulty": 20,
+            "Answers": [
+              {
+                "Text": "Hat keinen Rückgabewert.",
+                "isCorrect": true
+              },
+              {
+                "Text": "Beim Erzeugen eines Objektes ermöglicht es nicht das ordentliche Initialisieren eines Objektes.",
+                "isCorrect": false
+              },
+              {
+                "Text": "Beinhaltet nie ausführbare Anweisungen.",
+                "isCorrect": false
+              },
+              {
+                "Text": "Wird beim Erzeugen eines Objektes nie automatisch aufgerufen.",
+                "isCorrect": false
+              }
+            ]
+          },
+          {
+            "ExerciseText": "Was ist der Hauptvorteil von Methoden?",
+            "ExerciseTopic": "OOP",
+            "Difficulty": 10,
+            "Answers": [
+              {
+                "Text": "Einmal implementieren, aber an n-Stellen aufrufen und wiederverwenden.",
+                "isCorrect": true
+              },
+              {
+                "Text": "Die geschweiften Klammern bestimmen den Scope.",
+                "isCorrect": false
+              }
+            ]
+          },
+          {
+            "ExerciseText": "Können zwei Methoden denselben Namen besitzen?",
+            "ExerciseTopic": "OOP",
+            "Difficulty": 10,
+            "Answers": [
+              {
+                "Text": "Ja, wenn ihre Parameter unterschiedliche Datentypen besitzen oder sie eine unterschiedliche Anzahl Parameter haben.",
+                "isCorrect": true
+              },
+              {
+                "Text": "Nein.",
+                "isCorrect": false
+              }
+            ]
+          },
+          {
+            "ExerciseText": "Variablen eines elementaren Datentyps enthalten jeweils mehrere Werte?",
+            "ExerciseTopic": "OOP",
+            "Difficulty": 10,
+            "Answers": [
+              {
+                "Text": "Falsch.",
+                "isCorrect": true
+              },
+              {
+                "Text": "Wahr.",
+                "isCorrect": false
+              }
+            ]
+          },
+          {
+            "ExerciseText": "Variablen eines elementaren Datentyps enthalten jeweils nur einen einzigen Wert?",
+            "ExerciseTopic": "OOP",
+            "Difficulty": 10,
+            "Answers": [
+              {
+                "Text": "Falsch.",
+                "isCorrect": false
+              },
+              {
+                "Text": "Wahr.",
+                "isCorrect": true
+              }
+            ]
+          },
+          {
+            "ExerciseText": "Der Computer speichert alle Werte (Zahlen, Zeichen, etc.) als Bitmuster (Folge von 1 und 0) ab?",
+            "ExerciseTopic": "OOP",
+            "Difficulty": 10,
+            "Answers": [
+              {
+                "Text": "Falsch.",
+                "isCorrect": false
+              },
+              {
+                "Text": "Wahr.",
+                "isCorrect": true
+              }
+            ]
+          },
+          {
+            "ExerciseText": "Mit einem Datentyp wird beschrieben, wie dieses Muster interpretiert wird und welcher Wertebereich damit möglich ist?",
+            "ExerciseTopic": "OOP",
+            "Difficulty": 10,
+            "Answers": [
+              {
+                "Text": "Falsch.",
+                "isCorrect": false
+              },
+              {
+                "Text": "Wahr.",
+                "isCorrect": true
+              }
+            ]
+          },
+          {
+            "ExerciseText": "Jeder Datentyp legt implizit fest, welche Operationen möglich sind, bzw. wie diese ausgeführt werden?",
+            "ExerciseTopic": "OOP",
+            "Difficulty": 10,
+            "Answers": [
+              {
+                "Text": "Falsch.",
+                "isCorrect": false
+              },
+              {
+                "Text": "Wahr.",
+                "isCorrect": true
+              }
+            ]
+          },
+          {
+            "ExerciseText": "Datentypen legen die Genauigkeit durch die explizite Angabe des Wertebereichs fest?",
+            "ExerciseTopic": "OOP",
+            "Difficulty": 10,
+            "Answers": [
+              {
+                "Text": "Falsch.",
+                "isCorrect": true
+              },
+              {
+                "Text": "Wahr.",
+                "isCorrect": false
+              }
+            ]
+          },
+          {
+            "ExerciseText": "Jeder Datentyp legt implizit auch eine Genauigkeit fest?",
+            "ExerciseTopic": "OOP",
+            "Difficulty": 10,
+            "Answers": [
+              {
+                "Text": "Falsch.",
+                "isCorrect": false
+              },
+              {
+                "Text": "Wahr.",
+                "isCorrect": true
+              }
+            ]
+          },
+          {
+            "ExerciseText": "An welchen Stellen können elementare Datentypen eingesetzt werden?",
+            "ExerciseTopic": "OOP",
+            "Difficulty": 10,
+            "Answers": [
+              {
+                "Text": "Konstruktoren, Klassen.",
+                "isCorrect": false
+              },
+              {
+                "Text": "Lokalen Variablen, Parameter von Methoden und Konstruktoren.",
+                "isCorrect": true
+              }
+            ]
+          },
+          {
+            "ExerciseText": "Überall, wo ein Typ (Klasse) verlangt ist, kann häufig auch ein elementarer Datentyp verwendet werden?",
+            "ExerciseTopic": "OOP",
+            "Difficulty": 10,
+            "Answers": [
+              {
+                "Text": "Falsch.",
+                "isCorrect": false
+              },
+              {
+                "Text": "Wahr.",
+                "isCorrect": true
+              }
+            ]
+          },
+          {
+            "ExerciseText": "Überall, wo ein Typ (Klasse) verlangt ist, kann nie ein elementarer Datentyp verwendet werden?",
+            "ExerciseTopic": "OOP",
+            "Difficulty": 10,
+            "Answers": [
+              {
+                "Text": "Falsch.",
+                "isCorrect": true
+              },
+              {
+                "Text": "Wahr.",
+                "isCorrect": false
+              }
+            ]
+          },
+          {
+            "ExerciseText": "Welche primitiven Datentypen gibt es für ganze Zahlen?",
+            "ExerciseTopic": "OOP",
+            "Difficulty": 10,
+            "Answers": [
+              {
+                "Text": "byte, short, int, long.",
+                "isCorrect": true
+              },
+              {
+                "Text": "float, double.",
+                "isCorrect": false
+              }
+            ]
+          },
+          {
+            "ExerciseText": "Welche Datentypen gibt es für Gleitkommazahlen?",
+            "ExerciseTopic": "OOP",
+            "Difficulty": 10,
+            "Answers": [
+              {
+                "Text": "byte, short.",
+                "isCorrect": false
+              },
+              {
+                "Text": "float, double.",
+                "isCorrect": true
+              }
+            ]
+          },
+          {
+            "ExerciseText": "String ist ein primitiver Datentyp?",
+            "ExerciseTopic": "OOP",
+            "Difficulty": 10,
+            "Answers": [
+              {
+                "Text": "Wahr.",
+                "isCorrect": false
+              },
+              {
+                "Text": "Falsch.",
+                "isCorrect": true
+              }
+            ]
+          },
+          {
+            "ExerciseText": "Was ist Casting bei Datentypen?",
+            "ExerciseTopic": "OOP",
+            "Difficulty": 20,
+            "Answers": [
+              {
+                "Text": "Namensumwandlung: Konvertierung des Namens der Variable.",
+                "isCorrect": false
+              },
+              {
+                "Text": "Die Variablen stellen sich vor um eine Rolle in dem Projekt zu bekommen.",
+                "isCorrect": false
+              },
+              {
+                "Text": "Casting konvertiert Variablen zu Pointern.",
+                "isCorrect": false
+              },
+              {
+                "Text": "Typumwandlung: Konvertierung eines Wertes von einem Typ zu einem Anderen.",
+                "isCorrect": true
+              }
+            ]
+          }
     ]
+  }
+]
   }
 ]
