@@ -6,6 +6,7 @@ public class Question : Interactable
 {
     #region Unity Variables
     public QuizManager quizManager;
+    public Area area;
     #endregion
 
     #region Overwritten Methods
@@ -14,7 +15,7 @@ public class Question : Interactable
     /// </summary>
     public override void interact()
     {
-        quizManager.wakeQuizManager();
+        quizManager.wakeQuizManager(area.subject, area.topic, area.difficulty, false);
     }
     #endregion
 }

@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
     public Transform trans;
     public PauseManager pauseManager;
     public InformationUIManager infoUIManager;
+    public GameObject infoUI;
     private bool controlallowed;
     private Vector2 boxSize = new Vector2(0.1f, 0.1f);
     #endregion
@@ -60,7 +61,24 @@ public class PlayerController : MonoBehaviour
                 pauseManager.WakePauseMenu();
             }
 
-            if (Input.GetKeyDown(KeyCode.Tab))
+            
+        }
+        else
+        {
+            movement.x = 0;
+            movement.y = 0;
+            animator.SetFloat("Horizontal", movement.x);
+            animator.SetFloat("Vertical", movement.y);
+            animator.SetFloat("Speed", movement.sqrMagnitude);
+            animator.SetFloat("Rotation_Z", trans.rotation.z);
+        }
+        if (Input.GetKeyDown(KeyCode.Tab))
+        {
+            if (infoUI.activeSelf)
+            {
+                infoUIManager.CloseInfoMenu();
+            }
+            else
             {
                 infoUIManager.WakeInfoMenu();
             }
