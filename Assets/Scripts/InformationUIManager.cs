@@ -26,15 +26,6 @@ public class InformationUIManager : MonoBehaviour
         xpText.text = PokAEmon.BackgroundWorkers.Cache.CurrentPlayer.PlayerExperience.XP.ToString() + "/" + PokAEmon.BackgroundWorkers.Cache.CurrentPlayer.PlayerExperience.NeededXPForNextLevel.ToString();
     }
 
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Tab))
-        {
-            ui.SetActive(false);
-            player.GetComponent<PlayerController>().resumeMovement();
-        }
-    }
-
     public void WakeInfoMenu()
     {
         levelText.text = PokAEmon.BackgroundWorkers.Cache.CurrentPlayer.PlayerExperience.Level.ToString();
@@ -43,5 +34,11 @@ public class InformationUIManager : MonoBehaviour
 
         player.GetComponent<PlayerController>().suspendMovement();
         ui.SetActive(true);
+    }
+
+    public void CloseInfoMenu()
+    {
+        ui.SetActive(false);
+        player.GetComponent<PlayerController>().resumeMovement();
     }
 }

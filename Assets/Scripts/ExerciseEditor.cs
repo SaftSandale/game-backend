@@ -94,8 +94,9 @@ public class ExerciseEditor : MonoBehaviour
     /// Zeigt anhand der gewählten Schwierigkeit Eingabemöglichkeiten für die Antworten an.
     /// </summary>
     /// <param name="difficulty">Die ausgewählte Schwierigkeit.</param>
-    public void OnDifficultySelect(int difficulty)
+    public void OnDifficultySelect()
     {
+        int difficulty = DifficultyDropDown.GetComponent<Dropdown>().value;
         switch (difficulty)
         {
             case 0:

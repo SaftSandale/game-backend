@@ -36,9 +36,9 @@ namespace PokAEmon.Model
         public Experience()
         {
             XP = 0;
-            Level = 0;
+            Level = 1;
             Bonus = 1;
-            NeededXPForNextLevel = 100;
+            NeededXPForNextLevel = 200;
         }
 
         /// <summary>

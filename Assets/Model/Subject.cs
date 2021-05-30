@@ -108,10 +108,17 @@ namespace PokAEmon.Model
         {
             List<int> allIDs = new List<int>();
             foreach (Subject sub in Cache.AllSubjects)
-                foreach(Exercise ex in sub.Exercises)
-                    allIDs.Add(ex.ID);
+                if (sub.Exercises != null)
+                {
+                    foreach (Exercise ex in sub.Exercises)
+                        allIDs.Add(ex.ID);
+                }
 
             //int lastID = Cache.AllSubjects.Last().Exercises.Last().ID;
+            if (Exercises == null)
+            {
+                Exercises = new List<Exercise>();
+            }
             Exercise newExercise = new Exercise(allIDs.Max() + 1, text, topic, (int)difficulty, answers);
             Exercises.Add(newExercise);
         }

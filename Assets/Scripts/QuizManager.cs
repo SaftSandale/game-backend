@@ -85,7 +85,8 @@ public class QuizManager : MonoBehaviour
         image = ui.transform.GetChild(0).GetChild(0).GetComponent<Image>();
         save = image.color;
         PokAEmon.BackgroundWorkers.Cache.CurrentPlayer.UpdateXP(exercise.Difficulty, isCorrect);
-        ui.transform.GetChild(0).gameObject.SetActive(false);
+        PokAEmon.BackgroundWorkers.Cache.SaveAmountCorrectAnsweredQuestion(exercise, isCorrect);
+        ui.SetActive(false);
         player.GetComponent<PlayerController>().resumeMovement();
         if (isCorrect)
         {

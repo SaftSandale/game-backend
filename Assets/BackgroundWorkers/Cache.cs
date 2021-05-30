@@ -1,4 +1,5 @@
 using Newtonsoft.Json;
+using PokAEmon.Enums;
 using PokAEmon.Model;
 using System;
 using System.Collections;
@@ -37,6 +38,10 @@ namespace PokAEmon.BackgroundWorkers
         /// Speichert eine Liste alle Fächer mit Fragen, die im Spiel gestellt werden können.
         /// </summary>
         public static List<Subject> AllSubjects { get; set; }
+        public static Dictionary<string, int> AmountCorrectEasyExercises { get; set; }
+        public static Dictionary<string, int> AmountCorrectMediumExercises { get; set; }
+        public static Dictionary<string, int> AmountCorrectHardExercises { get; set; }
+        public static int TotalAnsweredQuestions { get; set; }
         /// <summary>
         /// Speichert eine Liste aller Facher mit Fragen, die im aktuellen Speildurchlauf noch nicht gestellt wurden.
         /// </summary>
@@ -164,6 +169,50 @@ namespace PokAEmon.BackgroundWorkers
             //string leveljsonstring = JsonConvert.SerializeObject(AllPlayers);
             FileHandler.WriteExerciseJson(subjectjsonstring);
             //FileHandler.WritePlayersJson(leveljsonstring);
+        }
+
+        public static void SaveAmountCorrectAnsweredQuestion(Exercise exercise, bool isCorrect)
+        {
+            if (isCorrect)
+            {
+                switch (exercise.Difficulty)
+                {
+                    case Difficulty.Easy:
+                        if (!AmountCorrectEasyExercises.Any(x => x.Key == exercise.ExerciseTopic))
+                        {
+                            AmountCorrectEasyExercises.Add(exercise.ExerciseTopic, 1);
+                        }
+                        else
+                        {
+                            var currentValue = AmountCorrectEasyExercises.FirstOrDefault(x => x.Key == exercise.ExerciseTopic).Value;
+                            currentValue++;
+                        }
+                        break;
+                    case Difficulty.Medium:
+                        if (!AmountCorrectMediumExercises.Any(x => x.Key == exercise.ExerciseTopic))
+                        {
+                            AmountCorrectMediumExercises.Add(exercise.ExerciseTopic, 1);
+                        }
+                        else
+                        {
+                            var currentValue = AmountCorrectMediumExercises.FirstOrDefault(x => x.Key == exercise.ExerciseTopic).Value;
+                            currentValue++;
+                        }
+                        break;
+                    case Difficulty.Hard:
+                        if (!AmountCorrectHardExercises.Any(x => x.Key == exercise.ExerciseTopic))
+                        {
+                            AmountCorrectHardExercises.Add(exercise.ExerciseTopic, 1);
+                        }
+                        else
+                        {
+                            var currentValue = AmountCorrectHardExercises.FirstOrDefault(x => x.Key == exercise.ExerciseTopic).Value;
+                            currentValue++;
+                        }
+                        break;
+                }
+            }
+            TotalAnsweredQuestions++;
         }
         #endregion
     }
