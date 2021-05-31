@@ -3248,7 +3248,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 575, y: -89.22}
+  m_AnchoredPosition: {x: 575, y: -102.58}
   m_SizeDelta: {x: 1150, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &887751765
@@ -7062,7 +7062,19 @@ MonoBehaviour:
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2055194676}
+        m_TargetAssemblyTypeName: ExerciseEditor, Assembly-CSharp
+        m_MethodName: OnDifficultySelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
   m_AlphaFadeSpeed: 0.15
 --- !u!114 &1993446456
 MonoBehaviour:
@@ -7359,7 +7371,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2055194668}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f593065952b916b48aa2b38388d71542, type: 3}
+  m_Script: {fileID: 11500000, guid: 154b8382891f7d84ead1aff260af0c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   SubjectInput: {fileID: 1249494217}
@@ -7650,7 +7662,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 575, y: -122.58}
+  m_AnchoredPosition: {x: 575, y: -152.62}
   m_SizeDelta: {x: 1150, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2092916281

@@ -15,11 +15,11 @@ namespace PokAEmon.BackgroundWorkers
         /// <summary>
         /// Speichert den Dateipfad zum Spiel.
         /// </summary>
-        private static  string mBaseDirectory = Application.dataPath;
+        private static  string mBaseDirectory = Application.streamingAssetsPath;
         /// <summary>
         /// Speichert den Pfad zur JSON Datei, die alle Exercises beinhaltet.
         /// </summary>
-        private static readonly string mExercisePath = mBaseDirectory + "/Exercises/Exercises1.JSON";
+        private static readonly string mExercisePath = mBaseDirectory + "/Exercises/Exercises.JSON";
         /// <summary>
         /// Speichert den Pfad zur JSON Datei, die alle Spielerdaten speichert.
         /// </summary>

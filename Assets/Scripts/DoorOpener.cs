@@ -8,9 +8,12 @@ public class DoorOpener : Interactable
 {
     #region Unity Variables
     public int NeededLevelToOpen;
+    public bool openAfterEasy;
+    public bool openAfterMedium;
     public MessageManager messageManager;
     private Animator animatorLeft;
     private Animator animatorRight;
+    private bool levelTooLow;
     #endregion
 
     #region Methods
@@ -31,7 +34,16 @@ public class DoorOpener : Interactable
         else
         {
             var levelTooLowTextLine = PokAEmon.BackgroundWorkers.Cache.AllSpecialTextLines.FirstOrDefault(t => t.ID == 1);
-            var textToDisplay = levelTooLowTextLine.TextString.Replace("*LEVEL*", NeededLevelToOpen.ToString());
+            var notAllExercisesDoneTextLine = PokAEmon.BackgroundWorkers.Cache.AllSpecialTextLines.FirstOrDefault(t => t.ID == 4);
+            string textToDisplay = "";
+            if (levelTooLow)
+            {
+                textToDisplay = levelTooLowTextLine.TextString.Replace("*LEVEL*", NeededLevelToOpen.ToString());
+            }
+            else if (!levelTooLow)
+            {
+                textToDisplay = notAllExercisesDoneTextLine.TextString;
+            }
             messageManager.DisplayWrongInteractionMessage(textToDisplay);
         }
     }
@@ -42,14 +54,40 @@ public class DoorOpener : Interactable
     /// <returns>Boolean, ob der Spieler die Tür öffnen kann.</returns>
     private bool CheckIfPlayerCanOpenDoor()
     {
+        bool canOpen = false;
         if (PokAEmon.BackgroundWorkers.Cache.CurrentPlayer.PlayerExperience.Level >= NeededLevelToOpen)
         {
-            return true;
+            if (openAfterEasy)
+            {
+                foreach (var topic in PokAEmon.BackgroundWorkers.Cache.AmountCorrectEasyExercises)
+                {
+                    if (topic.Value >= 10)
+                    {
+                        canOpen = true;
+                    }
+                }
+            }
+            else if (openAfterMedium)
+            {
+                foreach (var topic in PokAEmon.BackgroundWorkers.Cache.AmountCorrectMediumExercises)
+                {
+                    if (topic.Value >= 10)
+                    {
+                        canOpen = true;
+                    }
+                }
+            }
+            else if(!openAfterMedium && !openAfterEasy)
+            {
+                canOpen = true;
+            }
+            levelTooLow = false;
         }
         else
         {
-            return false;
+            levelTooLow = true;
         }
+        return canOpen;
     }
     #endregion
 }

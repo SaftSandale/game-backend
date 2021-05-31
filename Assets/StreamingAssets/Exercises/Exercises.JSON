@@ -1,0 +1,6739 @@
+[
+	{
+		"SubjectName": "Anwendungsentwicklung",
+		"Exercises": [
+			{
+				"ID": 1,
+				"ExerciseText": "Was bedeutet OOP?",
+				"ExerciseTopic": "OOP",
+				"Difficulty": 10,
+				"Answers": [
+					{
+						"Text": "Objektoriertierte Programmierung",
+						"isCorrect": true
+					},
+					{
+						"Text": "Offensichtlich organisierte Programmierung",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"ID": 2,
+				"ExerciseText": "Was sind die Grundlegende Konzepte von OOP?",
+				"ExerciseTopic": "OOP",
+				"Difficulty": 10,
+				"Answers": [
+					{
+						"Text": "Abstraktion, Verkapselung, Erbe, Polymorphie",
+						"isCorrect": true
+					},
+					{
+						"Text": "Abstraktion, Virtualisierung, Erbe, Polymorphie",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"ID": 3,
+				"ExerciseText": "Was ist eine Klasse?",
+				"ExerciseTopic": "OOP",
+				"Difficulty": 10,
+				"Answers": [
+					{
+						"Text": "Eine Klasse ist vereinfacht gesagt eine Darstellung eines Objekttyps.",
+						"isCorrect": true
+					},
+					{
+						"Text": "Klasse ein Ausdruck, wenn eine Person etwas gut findet.",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"ID": 4,
+				"ExerciseText": "Was ist ein Objekt?",
+				"ExerciseTopic": "OOP",
+				"Difficulty": 10,
+				"Answers": [
+					{
+						"Text": "Ein Objekt ist eine Methode.",
+						"isCorrect": false
+					},
+					{
+						"Text": "Ein Objekt ist eine Instanz eines Datentyps.",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"ID": 5,
+				"ExerciseText": "Was ist Verkapselung?",
+				"ExerciseTopic": "OOP",
+				"Difficulty": 10,
+				"Answers": [
+					{
+						"Text": "Verkapselung beschreibt wie viele geschweifte Klammern eine Methode hat.",
+						"isCorrect": false
+					},
+					{
+						"Text": "Verkapselung ist ein Attribut und beschreibt die Sichtbarkeit.",
+						"isCorrect": true
+					}
+				]
+			},
+			{
+				"ID": 6,
+				"ExerciseText": "Was ist Polymorphie?",
+				"ExerciseTopic": "OOP",
+				"Difficulty": 10,
+				"Answers": [
+					{
+						"Text": "Polymorphie beschreibt die Sichtbarkeit.",
+						"isCorrect": false
+					},
+					{
+						"Text": "Polymorphie ist nichts anderes als die Zuweisung von Verhalten oder Werten in einer Unterklasse zu etwas, das bereits in der Hauptklasse deklariert wurde.",
+						"isCorrect": true
+					}
+				]
+			},
+			{
+				"ID": 7,
+				"ExerciseText": "Was ist Vererbung?",
+				"ExerciseTopic": "OOP",
+				"Difficulty": 10,
+				"Answers": [
+					{
+						"Text": "Vererbung teilt die Struktur einer Klasse an anderen Klassen.",
+						"isCorrect": true
+					},
+					{
+						"Text": "Vererbung erbt den Namen der Klasse.",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"ID": 8,
+				"ExerciseText": "Was ist ein Konstruktor?",
+				"ExerciseTopic": "OOP",
+				"Difficulty": 10,
+				"Answers": [
+					{
+						"Text": "Ein Konstruktor ist eine Bezeichnung für ein Konstrukt.",
+						"isCorrect": false
+					},
+					{
+						"Text": "Ein Konstruktor ist eine Methode, die dazu dient, den Zustand eines Objekts zu initialisieren.",
+						"isCorrect": true
+					}
+				]
+			},
+			{
+				"ID": 9,
+				"ExerciseText": "Was ist ein Destruktor?",
+				"ExerciseTopic": "OOP",
+				"Difficulty": 10,
+				"Answers": [
+					{
+						"Text": "Ein Destruktor ist die letzte Methode, welche vor der Löschung des Objektes aufgerufen wird.",
+						"isCorrect": true
+					},
+					{
+						"Text": "Ein Destruktor wird immer vor dem Konstrukt aufgerufen.",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"ID": 10,
+				"ExerciseText": "Was ist eine Inline-Funktion?",
+				"ExerciseTopic": "OOP",
+				"Difficulty": 10,
+				"Answers": [
+					{
+						"Text": "Eine Inline-Funktion ist eine Optimierungsmethode von Compilern zur Steigerung der Ausführungsgeschwindigkeit.",
+						"isCorrect": true
+					},
+					{
+						"Text": "Eine Inline-Funktion ist eine virtuelle Funktion.",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"ID": 11,
+				"ExerciseText": "Was ist eine virtuelle Funktion?",
+				"ExerciseTopic": "OOP",
+				"Difficulty": 10,
+				"Answers": [
+					{
+						"Text": "Eine virtuelle Funktion ist eine Funktion einer Klasse, deren Funktionalität in der abgeleiteten Klasse überschrieben werden kann.",
+						"isCorrect": true
+					},
+					{
+						"Text": "Eine virtuelle Funktion kann nur in Konstruktoren aufgerufen werden.",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"ID": 12,
+				"ExerciseText": "GIT funktioniert nur auf Windows",
+				"ExerciseTopic": "VC",
+				"Difficulty": 10,
+				"Answers": [
+					{
+						"Text": "Falsch",
+						"isCorrect": true
+					},
+					{
+						"Text": "Wahr",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"ID": 13,
+				"ExerciseText": "GIT funktioniert nur auf MacOS",
+				"ExerciseTopic": "VC",
+				"Difficulty": 10,
+				"Answers": [
+					{
+						"Text": "Falsch",
+						"isCorrect": true
+					},
+					{
+						"Text": "Wahr",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"ID": 14,
+				"ExerciseText": "Mit Git kann man mehrere Zweige in einem Repository erstellen",
+				"ExerciseTopic": "VC",
+				"Difficulty": 10,
+				"Answers": [
+					{
+						"Text": "Wahr",
+						"isCorrect": true
+					},
+					{
+						"Text": "Falsch",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"ID": 15,
+				"ExerciseText": "Git erschien 1997",
+				"ExerciseTopic": "VC",
+				"Difficulty": 10,
+				"Answers": [
+					{
+						"Text": "Falsch",
+						"isCorrect": true
+					},
+					{
+						"Text": "Wahr",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"ID": 16,
+				"ExerciseText": "Git ist nicht für Teams",
+				"ExerciseTopic": "VC",
+				"Difficulty": 10,
+				"Answers": [
+					{
+						"Text": "Falsch",
+						"isCorrect": true
+					},
+					{
+						"Text": "Wahr",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"ID": 17,
+				"ExerciseText": "Ist Git und Github das selbe?",
+				"ExerciseTopic": "VC",
+				"Difficulty": 10,
+				"Answers": [
+					{
+						"Text": "Falsch",
+						"isCorrect": true
+					},
+					{
+						"Text": "Wahr",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"ID": 18,
+				"ExerciseText": "Git gibt es nur in Europa",
+				"ExerciseTopic": "VC",
+				"Difficulty": 10,
+				"Answers": [
+					{
+						"Text": "Falsch",
+						"isCorrect": true
+					},
+					{
+						"Text": "Wahr",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"ID": 19,
+				"ExerciseText": "Ein Versionskontrollsystem funktioniert nicht auf Laptops",
+				"ExerciseTopic": "VC",
+				"Difficulty": 10,
+				"Answers": [
+					{
+						"Text": "Falsch",
+						"isCorrect": true
+					},
+					{
+						"Text": "Wahr",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"ID": 20,
+				"ExerciseText": "Git ist Dezentralisiert",
+				"ExerciseTopic": "VC",
+				"Difficulty": 10,
+				"Answers": [
+					{
+						"Text": "Wahr",
+						"isCorrect": true
+					},
+					{
+						"Text": "Falsch",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"ID": 21,
+				"ExerciseText": "Git funktioniert nur mit Javascript Projekten",
+				"ExerciseTopic": "VC",
+				"Difficulty": 10,
+				"Answers": [
+					{
+						"Text": "Falsch",
+						"isCorrect": true
+					},
+					{
+						"Text": "Wahr",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"ID": 22,
+				"ExerciseText": "Die erste Versionsverwaltung wurde im Jahr 2003 released",
+				"ExerciseTopic": "VC",
+				"Difficulty": 10,
+				"Answers": [
+					{
+						"Text": "Falsch",
+						"isCorrect": true
+					},
+					{
+						"Text": "Wahr",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"ID": 23,
+				"ExerciseText": "Die erste Versionsverwaltung erschien in den 1970er",
+				"ExerciseTopic": "VC",
+				"Difficulty": 10,
+				"Answers": [
+					{
+						"Text": "Wahr",
+						"isCorrect": true
+					},
+					{
+						"Text": "Falsch",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"ID": 24,
+				"ExerciseText": "Die erste Versionsverwaltung erschien in den 1980er",
+				"ExerciseTopic": "VC",
+				"Difficulty": 10,
+				"Answers": [
+					{
+						"Text": "Falsch",
+						"isCorrect": true
+					},
+					{
+						"Text": "Wahr",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"ID": 25,
+				"ExerciseText": "Jedes Git Repository ist Öffentlich zugänglich",
+				"ExerciseTopic": "VC",
+				"Difficulty": 10,
+				"Answers": [
+					{
+						"Text": "Falsch",
+						"isCorrect": true
+					},
+					{
+						"Text": "Wahr",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"ID": 27,
+				"ExerciseText": "Jede Versionsverwaltung funktioniert nur auf Linux",
+				"ExerciseTopic": "VC",
+				"Difficulty": 10,
+				"Answers": [
+					{
+						"Text": "Falsch",
+						"isCorrect": true
+					},
+					{
+						"Text": "Wahr",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"ID": 28,
+				"ExerciseText": "Der Erfinder der Versionsverwaltung hieß Manuel Schreck",
+				"ExerciseTopic": "VC",
+				"Difficulty": 10,
+				"Answers": [
+					{
+						"Text": "Falsch",
+						"isCorrect": true
+					},
+					{
+						"Text": "Wahr",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"ID": 30,
+				"ExerciseText": "Git kann man nicht mit einer GUI benutzen",
+				"ExerciseTopic": "VC",
+				"Difficulty": 10,
+				"Answers": [
+					{
+						"Text": "Falsch",
+						"isCorrect": true
+					},
+					{
+						"Text": "Wahr",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"ID": 31,
+				"ExerciseText": "Github wird nur in Asien benutzt",
+				"ExerciseTopic": "VC",
+				"Difficulty": 10,
+				"Answers": [
+					{
+						"Text": "Falsch",
+						"isCorrect": true
+					},
+					{
+						"Text": "Wahr",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"ID": 32,
+				"ExerciseText": "Was ist GIT?",
+				"ExerciseTopic": "VC",
+				"Difficulty": 20,
+				"Answers": [
+					{
+						"Text": "Eine Versionsverwaltung",
+						"isCorrect": true
+					},
+					{
+						"Text": "Ein CMS",
+						"isCorrect": false
+					},
+					{
+						"Text": "Ein Javascript Framework",
+						"isCorrect": false
+					},
+					{
+						"Text": "Ein Repository",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"ID": 33,
+				"ExerciseText": "Wann kam die erste Versionsverwaltung?",
+				"ExerciseTopic": "VC",
+				"Difficulty": 20,
+				"Answers": [
+					{
+						"Text": "1972",
+						"isCorrect": true
+					},
+					{
+						"Text": "1997",
+						"isCorrect": false
+					},
+					{
+						"Text": "1978",
+						"isCorrect": false
+					},
+					{
+						"Text": "2001",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"ID": 34,
+				"ExerciseText": "Was macht Git Status",
+				"ExerciseTopic": "VC",
+				"Difficulty": 20,
+				"Answers": [
+					{
+						"Text": "gibt den Status des Arbeitsverzeichnisses und der Staging-Umgebung zurück",
+						"isCorrect": true
+					},
+					{
+						"Text": "Zeigt den Akkustand des Gerätes an",
+						"isCorrect": false
+					},
+					{
+						"Text": "Pusht ins Repository",
+						"isCorrect": false
+					},
+					{
+						"Text": "Checkt fehlerhafte Dateien",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"ID": 35,
+				"ExerciseText": "Womit kannst du dir die Commits anzeigen lassen",
+				"ExerciseTopic": "VC",
+				"Difficulty": 20,
+				"Answers": [
+					{
+						"Text": "git log",
+						"isCorrect": true
+					},
+					{
+						"Text": "git commit",
+						"isCorrect": false
+					},
+					{
+						"Text": "git status",
+						"isCorrect": false
+					},
+					{
+						"Text": "git push",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"ID": 36,
+				"ExerciseText": "Wie wechselt man in den Branch 'test' ",
+				"ExerciseTopic": "VC",
+				"Difficulty": 20,
+				"Answers": [
+					{
+						"Text": "git checkout test",
+						"isCorrect": true
+					},
+					{
+						"Text": "git pull test",
+						"isCorrect": false
+					},
+					{
+						"Text": "git commit test",
+						"isCorrect": false
+					},
+					{
+						"Text": "git push test",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"ID": 37,
+				"ExerciseText": "Wie erstellt mein einen neuen Branch?",
+				"ExerciseTopic": "VC",
+				"Difficulty": 20,
+				"Answers": [
+					{
+						"Text": "git branch new_branch",
+						"isCorrect": true
+					},
+					{
+						"Text": "git new branch",
+						"isCorrect": false
+					},
+					{
+						"Text": "git commit new_branch",
+						"isCorrect": false
+					},
+					{
+						"Text": "git pull branch",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"ID": 38,
+				"ExerciseText": "Was macht Git branch",
+				"ExerciseTopic": "VC",
+				"Difficulty": 20,
+				"Answers": [
+					{
+						"Text": "Zeigt Dir deine lokalen Branches an",
+						"isCorrect": true
+					},
+					{
+						"Text": "Pusht in das Remote-Repository",
+						"isCorrect": false
+					},
+					{
+						"Text": "Zeigt dir alle Änderungen an",
+						"isCorrect": false
+					},
+					{
+						"Text": "Checkt fehlerhafte Dateien",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"ID": 39,
+				"ExerciseText": "Was macht Git add",
+				"ExerciseTopic": "VC",
+				"Difficulty": 20,
+				"Answers": [
+					{
+						"Text": "Fügt Änderungen aus dem Arbeitsverzeichnis zur Staging-Umgebung hinzu",
+						"isCorrect": true
+					},
+					{
+						"Text": "Checkt den Status der CPU",
+						"isCorrect": false
+					},
+					{
+						"Text": "Pusht ins Repository",
+						"isCorrect": false
+					},
+					{
+						"Text": "Checkt fehlerhafte Dateien",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"ID": 40,
+				"ExerciseText": "Wofür benutzt man ein Versionskontrollsystem",
+				"ExerciseTopic": "VC",
+				"Difficulty": 20,
+				"Answers": [
+					{
+						"Text": "Um auf verschiedene Versionen und Änderungen zugreifen zu können",
+						"isCorrect": true
+					},
+					{
+						"Text": "Um sein Projekt geheim zu halten",
+						"isCorrect": false
+					},
+					{
+						"Text": "Damit man nicht im Team arbeiten muss",
+						"isCorrect": false
+					},
+					{
+						"Text": "Um Fehlerhafte Dateien zu erkennen",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"ID": 41,
+				"ExerciseText": "Was ist ein Branch",
+				"ExerciseTopic": "VC",
+				"Difficulty": 20,
+				"Answers": [
+					{
+						"Text": "eine unabhängige Entwicklungslinie",
+						"isCorrect": true
+					},
+					{
+						"Text": "Ein CMS",
+						"isCorrect": false
+					},
+					{
+						"Text": "Ein Javascript Framework",
+						"isCorrect": false
+					},
+					{
+						"Text": "Ein Repository",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"ID": 42,
+				"ExerciseText": "Welche Programmiersprache nutzt Git?",
+				"ExerciseTopic": "VC",
+				"Difficulty": 20,
+				"Answers": [
+					{
+						"Text": "C",
+						"isCorrect": true
+					},
+					{
+						"Text": "HTML",
+						"isCorrect": false
+					},
+					{
+						"Text": "PHP",
+						"isCorrect": false
+					},
+					{
+						"Text": "C++",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"ID": 43,
+				"ExerciseText": "Welcher Command erstellt eine Lokale Copy vom Repository?",
+				"ExerciseTopic": "VC",
+				"Difficulty": 20,
+				"Answers": [
+					{
+						"Text": "clone",
+						"isCorrect": true
+					},
+					{
+						"Text": "checkout",
+						"isCorrect": false
+					},
+					{
+						"Text": "push",
+						"isCorrect": false
+					},
+					{
+						"Text": "pull",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"ID": 44,
+				"ExerciseText": "Welcher Command erstellt ein neues Repository im Ordner?",
+				"ExerciseTopic": "VC",
+				"Difficulty": 20,
+				"Answers": [
+					{
+						"Text": "git init",
+						"isCorrect": true
+					},
+					{
+						"Text": "git reset",
+						"isCorrect": false
+					},
+					{
+						"Text": "git log",
+						"isCorrect": false
+					},
+					{
+						"Text": "git create",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"ID": 45,
+				"ExerciseText": "Was macht Git pull",
+				"ExerciseTopic": "VC",
+				"Difficulty": 20,
+				"Answers": [
+					{
+						"Text": "Um Inhalte aus einem Remote-Repository herunterzuladen",
+						"isCorrect": true
+					},
+					{
+						"Text": "Um Inhalte in ein Remote-Repository hochzuladen",
+						"isCorrect": false
+					},
+					{
+						"Text": "Um Inhalte aus einem Remote-Repository zu löschen",
+						"isCorrect": false
+					},
+					{
+						"Text": "Wechselt den Branch",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"ID": 46,
+				"ExerciseText": "Wofür benutzt man Git remote",
+				"ExerciseTopic": "VC",
+				"Difficulty": 20,
+				"Answers": [
+					{
+						"Text": "Um Verbindungen mit anderen Repositorys erstellen, abrufen und löschen.",
+						"isCorrect": true
+					},
+					{
+						"Text": "Um auf andere Computer zuzugreifen",
+						"isCorrect": false
+					},
+					{
+						"Text": "Um Festplattenspeicher zu sparen",
+						"isCorrect": false
+					},
+					{
+						"Text": "damit man keinen Code Editor benutzen muss",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"ID": 47,
+				"ExerciseText": "Wofür benutzt man Git fetch",
+				"ExerciseTopic": "VC",
+				"Difficulty": 20,
+				"Answers": [
+					{
+						"Text": "Um Änderungen aus einem Remote-Repository in das lokale Repository abzuholen.",
+						"isCorrect": true
+					},
+					{
+						"Text": "Um auf andere Computer zuzugreifen",
+						"isCorrect": false
+					},
+					{
+						"Text": "Um Änderungen in das Remote-Repository zu pushen",
+						"isCorrect": false
+					},
+					{
+						"Text": "damit man keinen Code Editor benutzen muss",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"ID": 48,
+				"ExerciseText": "Was ist eine Friend-Funktion?",
+				"ExerciseTopic": "OOP",
+				"Difficulty": 10,
+				"Answers": [
+					{
+						"Text": "Eine Friend-Funktion befreundet Klassen über mehrere Programmiersprachen.",
+						"isCorrect": false
+					},
+					{
+						"Text": "Eine Friend-Funktion ist ein Freund einer Klasse, der auf öffentliche, private oder geschützte Daten in derselben Klasse zugreifen darf.",
+						"isCorrect": true
+					}
+				]
+			},
+			{
+				"ID": 49,
+				"ExerciseText": "Was ist die Funktionsüberladung?",
+				"ExerciseTopic": "OOP",
+				"Difficulty": 10,
+				"Answers": [
+					{
+						"Text": "Sie ermöglicht das Anlegen mehrerer Methoden mit gleichem Namen, die sich durch die Art des Inputs und Outputs der Funktion voneinander unterscheiden.",
+						"isCorrect": true
+					},
+					{
+						"Text": "Dies ist eine Prozedur mit Rückgabeparameter.",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"ID": 50,
+				"ExerciseText": "Was ist Operatorüberladung?",
+				"ExerciseTopic": "OOP",
+				"Difficulty": 10,
+				"Answers": [
+					{
+						"Text": "Das Überladen von Operatoren ist eine Funktion, bei der verschiedene Operatoren angewendet werden und die von den Argumenten abhängt.",
+						"isCorrect": true
+					},
+					{
+						"Text": "Sie ermöglicht das Anlegen mehrerer Methoden mit gleichem Namen, die sich durch die Art des Inputs und Outputs der Funktion voneinander unterscheiden.",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"ID": 51,
+				"ExerciseText": "Was ist eine abstrakte Klasse?",
+				"ExerciseTopic": "OOP",
+				"Difficulty": 10,
+				"Answers": [
+					{
+						"Text": "Eine abstrakte Klasse ist keine Klasse.",
+						"isCorrect": false
+					},
+					{
+						"Text": "Eine abstrakte Klasse ist eine Klasse, die nicht instanziiert werden kann.",
+						"isCorrect": true
+					}
+				]
+			},
+			{
+				"ID": 52,
+				"ExerciseText": "Wozu dient die finalize Methode?",
+				"ExerciseTopic": "OOP",
+				"Difficulty": 10,
+				"Answers": [
+					{
+						"Text": "Die Finalize-Methode hilft bei der Durchführung von Aufräumarbeiten an den Ressourcen, die derzeit nicht verwendet werden. Die Finalize-Methoden sind geschützt.",
+						"isCorrect": true
+					},
+					{
+						"Text": "Eine finalize Methode ist eine Prozedur.",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"ID": 53,
+				"ExerciseText": "Was ist eine Prozedur?",
+				"ExerciseTopic": "OOP",
+				"Difficulty": 10,
+				"Answers": [
+					{
+						"Text": "Eine Prozedur ist eine Funktion ohne Rückgabeparameter.",
+						"isCorrect": true
+					},
+					{
+						"Text": "Eine finalize Methode ist eine Prozedur.",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"ID": 54,
+				"ExerciseText": "Was sind die verschiedenen Arten von Argumenten?",
+				"ExerciseTopic": "OOP",
+				"Difficulty": 20,
+				"Answers": [
+					{
+						"Text": "Call by Value und Call by Reference.",
+						"isCorrect": true
+					},
+					{
+						"Text": "Call by Argument und Call by Value.",
+						"isCorrect": false
+					},
+					{
+						"Text": "Call by Method und Call by Procedur.",
+						"isCorrect": false
+					},
+					{
+						"Text": "Call by Reference und Call by Amount.",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"ID": 55,
+				"ExerciseText": "Was ist das Super-Schlüsselwort?",
+				"ExerciseTopic": "OOP",
+				"Difficulty": 20,
+				"Answers": [
+					{
+						"Text": "Das Super-Schlüsselwort beschreibt eine gute Methode.",
+						"isCorrect": false
+					},
+					{
+						"Text": "Das Super-Schlüsselwort wird verwendet, um die überschriebene Methode aufzurufen, die eine der Methoden ihrer Oberklasse überschreibt.",
+						"isCorrect": true
+					},
+					{
+						"Text": "Super ist das Schlüsselwort, welche eine abstrakte Methode beschreibt.",
+						"isCorrect": false
+					},
+					{
+						"Text": "Das Super-Schlüsselwort gibt es nicht.",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"ID": 56,
+				"ExerciseText": "Was ist Methoden-Overriding?",
+				"ExerciseTopic": "OOP",
+				"Difficulty": 20,
+				"Answers": [
+					{
+						"Text": "Das Überschreiben von Methoden gibt es nicht.",
+						"isCorrect": false
+					},
+					{
+						"Text": "Das Methoden-Overriding gibt es nur in prozeduralen Programmiersprachen.",
+						"isCorrect": false
+					},
+					{
+						"Text": "Das Überschreiben von Methoden ist eine Funktionalität, die es einer Unterklasse ermöglicht, die Implementierung einer Methode bereitzustellen, die in der Hauptklasse überschrieben wird.",
+						"isCorrect": true
+					},
+					{
+						"Text": "Methoden-Overriding ist ein anderer Name für Funktionsüberladungen.",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"ID": 57,
+				"ExerciseText": "Was ist ein Interface?",
+				"ExerciseTopic": "OOP",
+				"Difficulty": 20,
+				"Answers": [
+					{
+						"Text": "Ein Interface ist eine Sammlung von abstrakten Methode.",
+						"isCorrect": true
+					},
+					{
+						"Text": "Ein Interface ist das Gesicht einer Methode.",
+						"isCorrect": false
+					},
+					{
+						"Text": "Ein Interface gibt es nur in prozedualen Programmiersprachen.",
+						"isCorrect": false
+					},
+					{
+						"Text": "Ein Interface ist keine Sammlung von abstrakten Methode.",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"ID": 58,
+				"ExerciseText": "Was ist Exception Handing?",
+				"ExerciseTopic": "OOP",
+				"Difficulty": 20,
+				"Answers": [
+					{
+						"Text": "Exceptions gibt es in objektorientierten Sprachen nicht.",
+						"isCorrect": false
+					},
+					{
+						"Text": "Exceptions sind nicht mehr aktuell, heute wird Troubleshooting genutzt.",
+						"isCorrect": false
+					},
+					{
+						"Text": "Eine Exception ist ein Ereignis, das während der Ausführung eines Programms auftritt. Exceptions können von jedem Typ sein - Runtime exception, Error exceptions.",
+						"isCorrect": true
+					},
+					{
+						"Text": "Eine Exception darf nur in Unit Tests verwendet werden.",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"ID": 59,
+				"ExerciseText": "Was sind Token?",
+				"ExerciseTopic": "OOP",
+				"Difficulty": 20,
+				"Answers": [
+					{
+						"Text": "Tokens ist ein anderer Begiff für Strings.",
+						"isCorrect": false
+					},
+					{
+						"Text": "Ein Compiler erkennt ein Token, und es kann nicht in Komponentenelemente zerlegt werden.",
+						"isCorrect": true
+					},
+					{
+						"Text": "Alle Variablen im Konstruktor werden Tokens genannt.",
+						"isCorrect": false
+					},
+					{
+						"Text": "Übergabeparamter von Methoden werden auch Token genannt.",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"ID": 60,
+				"ExerciseText": "Was ist der Hauptunterschied zwischen Overloading und Overriding?",
+				"ExerciseTopic": "OOP",
+				"Difficulty": 20,
+				"Answers": [
+					{
+						"Text": "Es gibt prin­zi­pi­ell keinen Unterschied. Overloading heißt es bei Variablen und Overriding bei Methoden.",
+						"isCorrect": false
+					},
+					{
+						"Text": "Overriding gibt es nur bei prozedualen Programmiersprachen.",
+						"isCorrect": false
+					},
+					{
+						"Text": "Overloading und Overriding gibt es nur in Java.",
+						"isCorrect": false
+					},
+					{
+						"Text": "Overloading ist eine statische Bindung, während Overriding eine dynamische Bindung ist.",
+						"isCorrect": true
+					}
+				]
+			},
+			{
+				"ID": 61,
+				"ExerciseText": "Was ist der Hauptunterschied zwischen einer Klasse und einem Objekt?",
+				"ExerciseTopic": "OOP",
+				"Difficulty": 20,
+				"Answers": [
+					{
+						"Text": "Ein Objekt ist eine Instanz einer Klasse. Eine Klasse kann Unterklassen haben, während ein Objekt keine Unterobjekte hat.",
+						"isCorrect": true
+					},
+					{
+						"Text": "Ein Objekt ist eine Instanz einer Klasse. Eine Klasse kann keine Unterklassen haben, während ein Objekt Unterobjekte hat.",
+						"isCorrect": false
+					},
+					{
+						"Text": "Ein Objekt ist keine Instanz einer Klasse. Eine Klasse kann Unterklassen haben, während ein Objekt nur ein Unterobjekte hat.",
+						"isCorrect": false
+					},
+					{
+						"Text": "Ein Objekt ist eine Instanz einer Klasse. Eine Klasse kann nur fünf Unterklassen haben, während ein Objekt keine Unterobjekte hat.",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"ID": 62,
+				"ExerciseText": "Was ist Abstraktion?",
+				"ExerciseTopic": "OOP",
+				"Difficulty": 20,
+				"Answers": [
+					{
+						"Text": "Abstraktion gibt es nicht in objektorierntierten Programmiersprachen.",
+						"isCorrect": false
+					},
+					{
+						"Text": "Abstraktion ist ein nützliches Merkmal von objektorierntierten Programmiersprachen, das dem Anwender eines Objekts nur die notwendigen Details zeigt.",
+						"isCorrect": true
+					},
+					{
+						"Text": "Abstraktion gibt es nur in Java.",
+						"isCorrect": false
+					},
+					{
+						"Text": "Abstraktion werden nur in Enmus verwendet.",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"ID": 63,
+				"ExerciseText": "Was sind die Zugriffsmodifikatoren?",
+				"ExerciseTopic": "OOP",
+				"Difficulty": 20,
+				"Answers": [
+					{
+						"Text": "Private, Profected, Public, Friend und Protected Friend",
+						"isCorrect": false
+					},
+					{
+						"Text": "Private, Protected, Publicize, Friend und Protected Friend",
+						"isCorrect": false
+					},
+					{
+						"Text": "Private, Defended, Puplic, Friend und Defended Friend",
+						"isCorrect": false
+					},
+					{
+						"Text": "Private, Protected, Public, Friend und Protected Friend",
+						"isCorrect": true
+					}
+				]
+			},
+			{
+				"ID": 64,
+				"ExerciseText": "Wie können die Basismethode aufgerufen werden, ohne eine Instanz zu erzeugen?",
+				"ExerciseTopic": "OOP",
+				"Difficulty": 20,
+				"Answers": [
+					{
+						"Text": "Dies ist nur in abstrakten Klassen möglich.",
+						"isCorrect": false
+					},
+					{
+						"Text": "Wenn die Methode statisch ist kann diese ohne Instanz aufgerufen werden.",
+						"isCorrect": true
+					},
+					{
+						"Text": "Jede Methode einer Klasse kann ohne Instanz nicht aufgerufen werden.",
+						"isCorrect": false
+					},
+					{
+						"Text": "Dies ist nur in C++ möglich.",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"ID": 65,
+				"ExerciseText": "Was sind die verschiedenen Arten von Konstruktoren?",
+				"ExerciseTopic": "OOP",
+				"Difficulty": 20,
+				"Answers": [
+					{
+						"Text": "Default Konstruktor, Parameter-Konstruktor, Copy Konstruktor und Destruktor.",
+						"isCorrect": false
+					},
+					{
+						"Text": "Default Konstruktor und Copy Konstruktor.",
+						"isCorrect": false
+					},
+					{
+						"Text": "Default Konstruktor, Parameter-Konstruktor und Copy Konstruktor.",
+						"isCorrect": true
+					},
+					{
+						"Text": "Konstruktor und Destruktor.",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"ID": 66,
+				"ExerciseText": "Was ist ein \"this\" Zeiger?",
+				"ExerciseTopic": "OOP",
+				"Difficulty": 20,
+				"Answers": [
+					{
+						"Text": "THIS-Zeiger verweist auf das aktuelle Objekt einer Klasse.",
+						"isCorrect": true
+					},
+					{
+						"Text": "Diesen Zeiger gibt es nur in C++.",
+						"isCorrect": false
+					},
+					{
+						"Text": "Zeiger gibt es nur in prozudualen Programmiersprachen.",
+						"isCorrect": false
+					},
+					{
+						"Text": "THIS-Zeiger verweisen auf die Klasse des Objektes.",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"ID": 67,
+				"ExerciseText": "Was ist der Unterschied zwischen einer Struktur und einer Klasse?",
+				"ExerciseTopic": "OOP",
+				"Difficulty": 20,
+				"Answers": [
+					{
+						"Text": "Eine Struktur ist ein Teil einer Klasse.",
+						"isCorrect": false
+					},
+					{
+						"Text": "Strukturen gibt es nur in Java.",
+						"isCorrect": false
+					},
+					{
+						"Text": "Strukturen bestehen nur aus Methoden.",
+						"isCorrect": false
+					},
+					{
+						"Text": "Eine Struktur wird zur Gruppierung von Daten verwendet, während eine Klasse zur Gruppierung von Daten und Methoden verwendet werden kann.",
+						"isCorrect": true
+					}
+				]
+			},
+			{
+				"ID": 68,
+				"ExerciseText": "Der Programmierer führt den Blackbox Test durch.",
+				"ExerciseTopic": "Testing",
+				"Difficulty": 10,
+				"Answers": [
+					{
+						"Text": "Falsch",
+						"isCorrect": true
+					},
+					{
+						"Text": "Wahr",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"ID": 69,
+				"ExerciseText": "Der Programmierer führt den Whitebox Test durch.",
+				"ExerciseTopic": "Testing",
+				"Difficulty": 10,
+				"Answers": [
+					{
+						"Text": "Falsch",
+						"isCorrect": false
+					},
+					{
+						"Text": "Wahr",
+						"isCorrect": true
+					}
+				]
+			},
+			{
+				"ID": 70,
+				"ExerciseText": "JUnit bietet sich für das Regressionstesten an.",
+				"ExerciseTopic": "Testing",
+				"Difficulty": 10,
+				"Answers": [
+					{
+						"Text": "Falsch",
+						"isCorrect": false
+					},
+					{
+						"Text": "Wahr",
+						"isCorrect": true
+					}
+				]
+			},
+			{
+				"ID": 71,
+				"ExerciseText": "Was ist das Besondere am Test-Driven Development(TDD)?",
+				"ExerciseTopic": "Testing",
+				"Difficulty": 20,
+				"Answers": [
+					{
+						"Text": "Es wird der Hauptfokus auf die Tests gelegt",
+						"isCorrect": false
+					},
+					{
+						"Text": "Das sogenannte Test-Driven ist ein eigenes Framework",
+						"isCorrect": false
+					},
+					{
+						"Text": "Dieses Verfahren ist ein Teil der Prozeduralen Programmierung ",
+						"isCorrect": false
+					},
+					{
+						"Text": "Es wird erst der Test geschrieben und dann der eigentliche Code.",
+						"isCorrect": true
+					}
+				]
+			},
+			{
+				"ID": 72,
+				"ExerciseText": "Was testet der Unit-Test?",
+				"ExerciseTopic": "Testing",
+				"Difficulty": 20,
+				"Answers": [
+					{
+						"Text": "explizit die Konstruktoren",
+						"isCorrect": false
+					},
+					{
+						"Text": "einzelne Variablen",
+						"isCorrect": false
+					},
+					{
+						"Text": "Den kompletten Code",
+						"isCorrect": false
+					},
+					{
+						"Text": "Kleinere Abschnitte eines Codes z.B einzelne Funktionen.",
+						"isCorrect": true
+					}
+				]
+			},
+			{
+				"ID": 73,
+				"ExerciseText": "Was testet der Intergrations-Test?",
+				"ExerciseTopic": "Testing",
+				"Difficulty": 20,
+				"Answers": [
+					{
+						"Text": "Explizit die Konstruktoren",
+						"isCorrect": false
+					},
+					{
+						"Text": "Einzelne Variablen",
+						"isCorrect": false
+					},
+					{
+						"Text": "Testet ob ein Integrationshintergrund vorliegt",
+						"isCorrect": false
+					},
+					{
+						"Text": "Der Integrations-Test testet Code im zusammenspiel.",
+						"isCorrect": true
+					}
+				]
+			},
+			{
+				"ID": 74,
+				"ExerciseText": "Was ist ein Beta-Test?",
+				"ExerciseTopic": "Testing",
+				"Difficulty": 20,
+				"Answers": [
+					{
+						"Text": "Ist das gleiche wie der Whitebox-Test",
+						"isCorrect": false
+					},
+					{
+						"Text": "Dieser Test existiert nicht.",
+						"isCorrect": false
+					},
+					{
+						"Text": "Keine dieser Aussagen trifft zu.",
+						"isCorrect": false
+					},
+					{
+						"Text": "Es wird eine Beta-Version entwickelt diese wird dann vom Endbenutzer getestet.",
+						"isCorrect": true
+					}
+				]
+			},
+			{
+				"ID": 75,
+				"ExerciseText": "Welcher Software-Test exisitiert nicht",
+				"ExerciseTopic": "Testing",
+				"Difficulty": 30,
+				"Answers": [
+					{
+						"Text": "Komponententest",
+						"isCorrect": false
+					},
+					{
+						"Text": "Systemtest",
+						"isCorrect": false
+					},
+					{
+						"Text": "THIS-Zeiger verweist auf das aktuelle Objekt einer Klasse.",
+						"isCorrect": true
+					},
+					{
+						"Text": "Schreibtisch-Test",
+						"isCorrect": false
+					},
+					{
+						"Text": "Diesen Zeiger gibt es nur in C++.",
+						"isCorrect": false
+					},
+					{
+						"Text": "Zeiger gibt es nur in prozudualen Programmiersprachen.",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"ID": 76,
+				"ExerciseText": "SQL ist eine objektorientierte Programmiersprache.",
+				"ExerciseTopic": "DB",
+				"Difficulty": 10,
+				"Answers": [
+					{
+						"Text": "Wahr",
+						"isCorrect": false
+					},
+					{
+						"Text": "Falsch",
+						"isCorrect": true
+					}
+				]
+			},
+			{
+				"ID": 77,
+				"ExerciseText": "SQL wird seit Jahren nicht mehr verwendet.",
+				"ExerciseTopic": "DB",
+				"Difficulty": 10,
+				"Answers": [
+					{
+						"Text": "Wahr",
+						"isCorrect": false
+					},
+					{
+						"Text": "Falsch",
+						"isCorrect": true
+					}
+				]
+			},
+			{
+				"ID": 78,
+				"ExerciseText": "SQL ist eine Datenbank Engine.",
+				"ExerciseTopic": "DB",
+				"Difficulty": 10,
+				"Answers": [
+					{
+						"Text": "Wahr",
+						"isCorrect": false
+					},
+					{
+						"Text": "Falsch",
+						"isCorrect": true
+					}
+				]
+			},
+			{
+				"ID": 79,
+				"ExerciseText": "SQL ist eine Datenbanksprache.",
+				"ExerciseTopic": "DB",
+				"Difficulty": 10,
+				"Answers": [
+					{
+						"Text": "Wahr",
+						"isCorrect": true
+					},
+					{
+						"Text": "Falsch",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"ID": 80,
+				"ExerciseText": "Mithilfe von SQL definiert man Datenstrukturen in einer Datenbank.",
+				"ExerciseTopic": "DB",
+				"Difficulty": 10,
+				"Answers": [
+					{
+						"Text": "Wahr",
+						"isCorrect": true
+					},
+					{
+						"Text": "Falsch",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"ID": 81,
+				"ExerciseText": "SQL ist die Sprache, die man verwendet, um Einträge in Datenbanken zu bearbeiten.",
+				"ExerciseTopic": "DB",
+				"Difficulty": 10,
+				"Answers": [
+					{
+						"Text": "Wahr",
+						"isCorrect": true
+					},
+					{
+						"Text": "Falsch",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"ID": 82,
+				"ExerciseText": "SQL Befehle werden immer auf Deutsch geschrieben.",
+				"ExerciseTopic": "DB",
+				"Difficulty": 10,
+				"Answers": [
+					{
+						"Text": "Wahr",
+						"isCorrect": false
+					},
+					{
+						"Text": "Falsch",
+						"isCorrect": true
+					}
+				]
+			},
+			{
+				"ID": 83,
+				"ExerciseText": "SQL ist eine Abkürzung.",
+				"ExerciseTopic": "DB",
+				"Difficulty": 10,
+				"Answers": [
+					{
+						"Text": "Wahr",
+						"isCorrect": true
+					},
+					{
+						"Text": "Falsch",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"ID": 84,
+				"ExerciseText": "SQL Befehle können Kategorisiert werden.",
+				"ExerciseTopic": "DB",
+				"Difficulty": 10,
+				"Answers": [
+					{
+						"Text": "Wahr",
+						"isCorrect": true
+					},
+					{
+						"Text": "Falsch",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"ID": 85,
+				"ExerciseText": "Bei SELECT handelt es sich um einen Befehl von SQL.",
+				"ExerciseTopic": "DB",
+				"Difficulty": 10,
+				"Answers": [
+					{
+						"Text": "Wahr",
+						"isCorrect": true
+					},
+					{
+						"Text": "Falsch",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"ID": 86,
+				"ExerciseText": "Eine Datenbank ist eine spezielle Bank, auf die man sich setzen kann.",
+				"ExerciseTopic": "DB",
+				"Difficulty": 10,
+				"Answers": [
+					{
+						"Text": "Wahr",
+						"isCorrect": false
+					},
+					{
+						"Text": "Falsch",
+						"isCorrect": true
+					}
+				]
+			},
+			{
+				"ID": 87,
+				"ExerciseText": "Eine Datenbank ist eine Methode Daten zu speichern.",
+				"ExerciseTopic": "DB",
+				"Difficulty": 10,
+				"Answers": [
+					{
+						"Text": "Wahr",
+						"isCorrect": true
+					},
+					{
+						"Text": "Falsch",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"ID": 88,
+				"ExerciseText": "Eine Datenbank speichert Daten lediglich temporär.",
+				"ExerciseTopic": "DB",
+				"Difficulty": 10,
+				"Answers": [
+					{
+						"Text": "Wahr",
+						"isCorrect": false
+					},
+					{
+						"Text": "Falsch",
+						"isCorrect": true
+					}
+				]
+			},
+			{
+				"ID": 89,
+				"ExerciseText": "Um auf eine Datenbank zuzugreifen verwendet man meistens eine Verwaltungssoftware.",
+				"ExerciseTopic": "DB",
+				"Difficulty": 10,
+				"Answers": [
+					{
+						"Text": "Wahr",
+						"isCorrect": true
+					},
+					{
+						"Text": "Falsch",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"ID": 90,
+				"ExerciseText": "Datenbanken sind eine unbeliebte Variante Daten zu speichern.",
+				"ExerciseTopic": "DB",
+				"Difficulty": 10,
+				"Answers": [
+					{
+						"Text": "Wahr",
+						"isCorrect": false
+					},
+					{
+						"Text": "Falsch",
+						"isCorrect": true
+					}
+				]
+			},
+			{
+				"ID": 91,
+				"ExerciseText": "Eine Datenbank ist eine der perfomantesten Methoden große Datensätze zu speichern.",
+				"ExerciseTopic": "DB",
+				"Difficulty": 10,
+				"Answers": [
+					{
+						"Text": "Wahr",
+						"isCorrect": true
+					},
+					{
+						"Text": "Falsch",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"ID": 92,
+				"ExerciseText": "Ein Alltagsbeispiel für die Nutzung einer Datenbank sind die Kundendaten eines Onlineshops.",
+				"ExerciseTopic": "DB",
+				"Difficulty": 10,
+				"Answers": [
+					{
+						"Text": "Wahr",
+						"isCorrect": true
+					},
+					{
+						"Text": "Falsch",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"ID": 93,
+				"ExerciseText": "Eine Datenbank besteht meistens aus einer Vielzahl von Tabellen.",
+				"ExerciseTopic": "DB",
+				"Difficulty": 10,
+				"Answers": [
+					{
+						"Text": "Wahr",
+						"isCorrect": true
+					},
+					{
+						"Text": "Falsch",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"ID": 94,
+				"ExerciseText": "Tabellen in einer Datenbank haben Beziehungen zueinander.",
+				"ExerciseTopic": "DB",
+				"Difficulty": 10,
+				"Answers": [
+					{
+						"Text": "Wahr",
+						"isCorrect": true
+					},
+					{
+						"Text": "Falsch",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"ID": 95,
+				"ExerciseText": "Jede Tabelle in einer Datenbank muss einen sogenannten Primärschlüssel haben.",
+				"ExerciseTopic": "DB",
+				"Difficulty": 10,
+				"Answers": [
+					{
+						"Text": "Wahr",
+						"isCorrect": true
+					},
+					{
+						"Text": "Falsch",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"ID": 96,
+				"ExerciseText": "In Datenbanken gibt es Primär und Fremdschlüsel.",
+				"ExerciseTopic": "DB",
+				"Difficulty": 10,
+				"Answers": [
+					{
+						"Text": "Wahr",
+						"isCorrect": true
+					},
+					{
+						"Text": "Falsch",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"ID": 97,
+				"ExerciseText": "Frendschlüssel dienen dazu, Beziehungen darzustellen.",
+				"ExerciseTopic": "DB",
+				"Difficulty": 10,
+				"Answers": [
+					{
+						"Text": "Wahr",
+						"isCorrect": true
+					},
+					{
+						"Text": "Falsch",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"ID": 98,
+				"ExerciseText": "Tabellen müssen nicht zwingend einen Fremdschlüssel haben.",
+				"ExerciseTopic": "DB",
+				"Difficulty": 10,
+				"Answers": [
+					{
+						"Text": "Wahr",
+						"isCorrect": true
+					},
+					{
+						"Text": "Falsch",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"ID": 99,
+				"ExerciseText": "Es kann mehrere Arten von Beziehungen in einer Datenbank geben.",
+				"ExerciseTopic": "DB",
+				"Difficulty": 10,
+				"Answers": [
+					{
+						"Text": "Wahr",
+						"isCorrect": true
+					},
+					{
+						"Text": "Falsch",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"ID": 100,
+				"ExerciseText": "Es gibt nur wenige Arten von SQL-Datenbanken.",
+				"ExerciseTopic": "DB",
+				"Difficulty": 10,
+				"Answers": [
+					{
+						"Text": "Wahr",
+						"isCorrect": false
+					},
+					{
+						"Text": "Falsch",
+						"isCorrect": true
+					}
+				]
+			},
+			{
+				"ID": 101,
+				"ExerciseText": "Die Reihenfolge von SQL Befehlen bei einer Abfrage spielt keine Rolle.",
+				"ExerciseTopic": "DB",
+				"Difficulty": 10,
+				"Answers": [
+					{
+						"Text": "Wahr",
+						"isCorrect": false
+					},
+					{
+						"Text": "Falsch",
+						"isCorrect": true
+					},
+					{
+						"Text": "",
+						"isCorrect": false
+					},
+					{
+						"Text": "",
+						"isCorrect": false
+					},
+					{
+						"Text": "",
+						"isCorrect": false
+					},
+					{
+						"Text": "",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"ID": 102,
+				"ExerciseText": "Der Primärschlüssel in einer Datenbank dient nur als eine Art Passwort für die Tabelle.",
+				"ExerciseTopic": "DB",
+				"Difficulty": 10,
+				"Answers": [
+					{
+						"Text": "Wahr",
+						"isCorrect": false
+					},
+					{
+						"Text": "Falsch",
+						"isCorrect": true
+					}
+				]
+			},
+			{
+				"ID": 103,
+				"ExerciseText": "Eine Tabelle kann immer nur einen Schlüssel haben.",
+				"ExerciseTopic": "DB",
+				"Difficulty": 10,
+				"Answers": [
+					{
+						"Text": "Wahr",
+						"isCorrect": false
+					},
+					{
+						"Text": "Falsch",
+						"isCorrect": true
+					}
+				]
+			},
+			{
+				"ID": 104,
+				"ExerciseText": "Jedes Feld in einer Tabelle muss von einem bestimmten Datentyp sein.",
+				"ExerciseTopic": "DB",
+				"Difficulty": 10,
+				"Answers": [
+					{
+						"Text": "Wahr",
+						"isCorrect": true
+					},
+					{
+						"Text": "Falsch",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"ID": 105,
+				"ExerciseText": "Die Datentypen in einer Datenbank sind genau die Selben, wie in C++.",
+				"ExerciseTopic": "DB",
+				"Difficulty": 10,
+				"Answers": [
+					{
+						"Text": "Wahr",
+						"isCorrect": false
+					},
+					{
+						"Text": "Falsch",
+						"isCorrect": true
+					}
+				]
+			},
+			{
+				"ID": 106,
+				"ExerciseText": "Heutzutage lässt sich SQL mit anderen Programmiersprachen kombinieren.",
+				"ExerciseTopic": "DB",
+				"Difficulty": 10,
+				"Answers": [
+					{
+						"Text": "Wahr",
+						"isCorrect": true
+					},
+					{
+						"Text": "Falsch",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"ID": 107,
+				"ExerciseText": "Wofür steht die Abkürzung SQL?",
+				"ExerciseTopic": "DB",
+				"Difficulty": 20,
+				"Answers": [
+					{
+						"Text": "Structured Query Language",
+						"isCorrect": true
+					},
+					{
+						"Text": "Structured Question Language",
+						"isCorrect": false
+					},
+					{
+						"Text": "Strong Query Licence",
+						"isCorrect": false
+					},
+					{
+						"Text": "Strong Question Language",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"ID": 108,
+				"ExerciseText": "Welcher Befehl ist kein valider SQL Befehl?",
+				"ExerciseTopic": "DB",
+				"Difficulty": 20,
+				"Answers": [
+					{
+						"Text": "SELECT",
+						"isCorrect": false
+					},
+					{
+						"Text": "WHERE",
+						"isCorrect": false
+					},
+					{
+						"Text": "FILTER",
+						"isCorrect": true
+					},
+					{
+						"Text": "ORDER BY",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"ID": 109,
+				"ExerciseText": "Welchen SQL Befehl nutzt man um Datensätze zu Filtern?",
+				"ExerciseTopic": "DB",
+				"Difficulty": 20,
+				"Answers": [
+					{
+						"Text": "WHERE",
+						"isCorrect": true
+					},
+					{
+						"Text": "WHICH",
+						"isCorrect": false
+					},
+					{
+						"Text": "ORDER BY",
+						"isCorrect": false
+					},
+					{
+						"Text": "SELECT",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"ID": 110,
+				"ExerciseText": "Welcher SQL Befehl wird genutzt um Daten in einer Datenbank zu aktualisieren?",
+				"ExerciseTopic": "DB",
+				"Difficulty": 20,
+				"Answers": [
+					{
+						"Text": "UPDATE",
+						"isCorrect": true
+					},
+					{
+						"Text": "MODIFY",
+						"isCorrect": false
+					},
+					{
+						"Text": "SAVE",
+						"isCorrect": false
+					},
+					{
+						"Text": "SAVE AS",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"ID": 111,
+				"ExerciseText": "Welchen SQL Befehl nutzt man um Daten in eine Tabelle einzufügen?",
+				"ExerciseTopic": "DB",
+				"Difficulty": 20,
+				"Answers": [
+					{
+						"Text": "INSERT INTO",
+						"isCorrect": true
+					},
+					{
+						"Text": "INSERT",
+						"isCorrect": false
+					},
+					{
+						"Text": "ADD NEW",
+						"isCorrect": false
+					},
+					{
+						"Text": "CREATE",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"ID": 112,
+				"ExerciseText": "Wo muss der SELECT Befehl immer stehen?",
+				"ExerciseTopic": "DB",
+				"Difficulty": 20,
+				"Answers": [
+					{
+						"Text": "An erster Stelle der Abfrage",
+						"isCorrect": true
+					},
+					{
+						"Text": "Immer an der Zweiten Stelle der Abfrage",
+						"isCorrect": false
+					},
+					{
+						"Text": "Man braucht den SSELECT Befehl nicht",
+						"isCorrect": false
+					},
+					{
+						"Text": "An letzter Stelle einer Abfrage",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"ID": 113,
+				"ExerciseText": "Wofür steht die Abkürzung DMBS?",
+				"ExerciseTopic": "DB",
+				"Difficulty": 20,
+				"Answers": [
+					{
+						"Text": "Database Management Software",
+						"isCorrect": true
+					},
+					{
+						"Text": "Database Modification Software",
+						"isCorrect": false
+					},
+					{
+						"Text": "Datenbank Management Sprache",
+						"isCorrect": false
+					},
+					{
+						"Text": "Datenbank Modifizierungs Sequenz",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"ID": 114,
+				"ExerciseText": "Was ist kein Datentyp in SQL?",
+				"ExerciseTopic": "DB",
+				"Difficulty": 20,
+				"Answers": [
+					{
+						"Text": "string",
+						"isCorrect": true
+					},
+					{
+						"Text": "integer",
+						"isCorrect": false
+					},
+					{
+						"Text": "varchar",
+						"isCorrect": false
+					},
+					{
+						"Text": "timestamp",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"ID": 115,
+				"ExerciseText": "Mit welchem Zeichen beim SELECT Befehl kann man alle Spalten einer Tabelle auswählen?",
+				"ExerciseTopic": "DB",
+				"Difficulty": 20,
+				"Answers": [
+					{
+						"Text": "*",
+						"isCorrect": true
+					},
+					{
+						"Text": "+",
+						"isCorrect": false
+					},
+					{
+						"Text": "-",
+						"isCorrect": false
+					},
+					{
+						"Text": "#",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"ID": 116,
+				"ExerciseText": "Welchen SQL Befehl nutzt man um das Ergebnis zu sortieren?",
+				"ExerciseTopic": "DB",
+				"Difficulty": 20,
+				"Answers": [
+					{
+						"Text": "ORDER BY",
+						"isCorrect": true
+					},
+					{
+						"Text": "ORDER",
+						"isCorrect": false
+					},
+					{
+						"Text": "SORT",
+						"isCorrect": false
+					},
+					{
+						"Text": "SORT BY",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"ID": 117,
+				"ExerciseText": "Wie löscht man einen Eintrag aus der Tabelle 'Personen' wo der 'Vorname' Peter ist.",
+				"ExerciseTopic": "DB",
+				"Difficulty": 20,
+				"Answers": [
+					{
+						"Text": "DELETE FROM Personen WHERE Vorname = 'Peter'",
+						"isCorrect": true
+					},
+					{
+						"Text": "DELETE Vorname Peter",
+						"isCorrect": false
+					},
+					{
+						"Text": "REMOVE WHERE Vorname Peter",
+						"isCorrect": false
+					},
+					{
+						"Text": "DELETE WHERE Vorname = 'Peter' FROM Personen",
+						"isCorrect": false
+					}
+				]
+			}
+		],
+		"ExercisesByDifficulty": {
+			"Easy": [
+				{
+					"ID": 1,
+					"ExerciseText": "Was bedeutet OOP?",
+					"ExerciseTopic": "OOP",
+					"Difficulty": 10,
+					"Answers": [
+						{
+							"Text": "Objektoriertierte Programmierung",
+							"isCorrect": true
+						},
+						{
+							"Text": "Offensichtlich organisierte Programmierung",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"ID": 2,
+					"ExerciseText": "Was sind die Grundlegende Konzepte von OOP?",
+					"ExerciseTopic": "OOP",
+					"Difficulty": 10,
+					"Answers": [
+						{
+							"Text": "Abstraktion, Verkapselung, Erbe, Polymorphie",
+							"isCorrect": true
+						},
+						{
+							"Text": "Abstraktion, Virtualisierung, Erbe, Polymorphie",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"ID": 3,
+					"ExerciseText": "Was ist eine Klasse?",
+					"ExerciseTopic": "OOP",
+					"Difficulty": 10,
+					"Answers": [
+						{
+							"Text": "Eine Klasse ist vereinfacht gesagt eine Darstellung eines Objekttyps.",
+							"isCorrect": true
+						},
+						{
+							"Text": "Klasse ein Ausdruck, wenn eine Person etwas gut findet.",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"ID": 4,
+					"ExerciseText": "Was ist ein Objekt?",
+					"ExerciseTopic": "OOP",
+					"Difficulty": 10,
+					"Answers": [
+						{
+							"Text": "Ein Objekt ist eine Methode.",
+							"isCorrect": false
+						},
+						{
+							"Text": "Ein Objekt ist eine Instanz eines Datentyps.",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"ID": 5,
+					"ExerciseText": "Was ist Verkapselung?",
+					"ExerciseTopic": "OOP",
+					"Difficulty": 10,
+					"Answers": [
+						{
+							"Text": "Verkapselung beschreibt wie viele geschweifte Klammern eine Methode hat.",
+							"isCorrect": false
+						},
+						{
+							"Text": "Verkapselung ist ein Attribut und beschreibt die Sichtbarkeit.",
+							"isCorrect": true
+						}
+					]
+				},
+				{
+					"ID": 6,
+					"ExerciseText": "Was ist Polymorphie?",
+					"ExerciseTopic": "OOP",
+					"Difficulty": 10,
+					"Answers": [
+						{
+							"Text": "Polymorphie beschreibt die Sichtbarkeit.",
+							"isCorrect": false
+						},
+						{
+							"Text": "Polymorphie ist nichts anderes als die Zuweisung von Verhalten oder Werten in einer Unterklasse zu etwas, das bereits in der Hauptklasse deklariert wurde.",
+							"isCorrect": true
+						}
+					]
+				},
+				{
+					"ID": 7,
+					"ExerciseText": "Was ist Vererbung?",
+					"ExerciseTopic": "OOP",
+					"Difficulty": 10,
+					"Answers": [
+						{
+							"Text": "Vererbung teilt die Struktur einer Klasse an anderen Klassen.",
+							"isCorrect": true
+						},
+						{
+							"Text": "Vererbung erbt den Namen der Klasse.",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"ID": 8,
+					"ExerciseText": "Was ist ein Konstruktor?",
+					"ExerciseTopic": "OOP",
+					"Difficulty": 10,
+					"Answers": [
+						{
+							"Text": "Ein Konstruktor ist eine Bezeichnung für ein Konstrukt.",
+							"isCorrect": false
+						},
+						{
+							"Text": "Ein Konstruktor ist eine Methode, die dazu dient, den Zustand eines Objekts zu initialisieren.",
+							"isCorrect": true
+						}
+					]
+				},
+				{
+					"ID": 9,
+					"ExerciseText": "Was ist ein Destruktor?",
+					"ExerciseTopic": "OOP",
+					"Difficulty": 10,
+					"Answers": [
+						{
+							"Text": "Ein Destruktor ist die letzte Methode, welche vor der Löschung des Objektes aufgerufen wird.",
+							"isCorrect": true
+						},
+						{
+							"Text": "Ein Destruktor wird immer vor dem Konstrukt aufgerufen.",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"ID": 10,
+					"ExerciseText": "Was ist eine Inline-Funktion?",
+					"ExerciseTopic": "OOP",
+					"Difficulty": 10,
+					"Answers": [
+						{
+							"Text": "Eine Inline-Funktion ist eine Optimierungsmethode von Compilern zur Steigerung der Ausführungsgeschwindigkeit.",
+							"isCorrect": true
+						},
+						{
+							"Text": "Eine Inline-Funktion ist eine virtuelle Funktion.",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"ID": 11,
+					"ExerciseText": "Was ist eine virtuelle Funktion?",
+					"ExerciseTopic": "OOP",
+					"Difficulty": 10,
+					"Answers": [
+						{
+							"Text": "Eine virtuelle Funktion ist eine Funktion einer Klasse, deren Funktionalität in der abgeleiteten Klasse überschrieben werden kann.",
+							"isCorrect": true
+						},
+						{
+							"Text": "Eine virtuelle Funktion kann nur in Konstruktoren aufgerufen werden.",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"ID": 12,
+					"ExerciseText": "GIT funktioniert nur auf Windows",
+					"ExerciseTopic": "VC",
+					"Difficulty": 10,
+					"Answers": [
+						{
+							"Text": "Falsch",
+							"isCorrect": true
+						},
+						{
+							"Text": "Wahr",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"ID": 13,
+					"ExerciseText": "GIT funktioniert nur auf MacOS",
+					"ExerciseTopic": "VC",
+					"Difficulty": 10,
+					"Answers": [
+						{
+							"Text": "Falsch",
+							"isCorrect": true
+						},
+						{
+							"Text": "Wahr",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"ID": 14,
+					"ExerciseText": "Mit Git kann man mehrere Zweige in einem Repository erstellen",
+					"ExerciseTopic": "VC",
+					"Difficulty": 10,
+					"Answers": [
+						{
+							"Text": "Wahr",
+							"isCorrect": true
+						},
+						{
+							"Text": "Falsch",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"ID": 15,
+					"ExerciseText": "Git erschien 1997",
+					"ExerciseTopic": "VC",
+					"Difficulty": 10,
+					"Answers": [
+						{
+							"Text": "Falsch",
+							"isCorrect": true
+						},
+						{
+							"Text": "Wahr",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"ID": 16,
+					"ExerciseText": "Git ist nicht für Teams",
+					"ExerciseTopic": "VC",
+					"Difficulty": 10,
+					"Answers": [
+						{
+							"Text": "Falsch",
+							"isCorrect": true
+						},
+						{
+							"Text": "Wahr",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"ID": 17,
+					"ExerciseText": "Ist Git und Github das selbe?",
+					"ExerciseTopic": "VC",
+					"Difficulty": 10,
+					"Answers": [
+						{
+							"Text": "Falsch",
+							"isCorrect": true
+						},
+						{
+							"Text": "Wahr",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"ID": 18,
+					"ExerciseText": "Git gibt es nur in Europa",
+					"ExerciseTopic": "VC",
+					"Difficulty": 10,
+					"Answers": [
+						{
+							"Text": "Falsch",
+							"isCorrect": true
+						},
+						{
+							"Text": "Wahr",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"ID": 19,
+					"ExerciseText": "Ein Versionskontrollsystem funktioniert nicht auf Laptops",
+					"ExerciseTopic": "VC",
+					"Difficulty": 10,
+					"Answers": [
+						{
+							"Text": "Falsch",
+							"isCorrect": true
+						},
+						{
+							"Text": "Wahr",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"ID": 20,
+					"ExerciseText": "Git ist Dezentralisiert",
+					"ExerciseTopic": "VC",
+					"Difficulty": 10,
+					"Answers": [
+						{
+							"Text": "Wahr",
+							"isCorrect": true
+						},
+						{
+							"Text": "Falsch",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"ID": 21,
+					"ExerciseText": "Git funktioniert nur mit Javascript Projekten",
+					"ExerciseTopic": "VC",
+					"Difficulty": 10,
+					"Answers": [
+						{
+							"Text": "Falsch",
+							"isCorrect": true
+						},
+						{
+							"Text": "Wahr",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"ID": 22,
+					"ExerciseText": "Die erste Versionsverwaltung wurde im Jahr 2003 released",
+					"ExerciseTopic": "VC",
+					"Difficulty": 10,
+					"Answers": [
+						{
+							"Text": "Falsch",
+							"isCorrect": true
+						},
+						{
+							"Text": "Wahr",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"ID": 23,
+					"ExerciseText": "Die erste Versionsverwaltung erschien in den 1970er",
+					"ExerciseTopic": "VC",
+					"Difficulty": 10,
+					"Answers": [
+						{
+							"Text": "Wahr",
+							"isCorrect": true
+						},
+						{
+							"Text": "Falsch",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"ID": 24,
+					"ExerciseText": "Die erste Versionsverwaltung erschien in den 1980er",
+					"ExerciseTopic": "VC",
+					"Difficulty": 10,
+					"Answers": [
+						{
+							"Text": "Falsch",
+							"isCorrect": true
+						},
+						{
+							"Text": "Wahr",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"ID": 25,
+					"ExerciseText": "Jedes Git Repository ist Öffentlich zugänglich",
+					"ExerciseTopic": "VC",
+					"Difficulty": 10,
+					"Answers": [
+						{
+							"Text": "Falsch",
+							"isCorrect": true
+						},
+						{
+							"Text": "Wahr",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"ID": 27,
+					"ExerciseText": "Jede Versionsverwaltung funktioniert nur auf Linux",
+					"ExerciseTopic": "VC",
+					"Difficulty": 10,
+					"Answers": [
+						{
+							"Text": "Falsch",
+							"isCorrect": true
+						},
+						{
+							"Text": "Wahr",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"ID": 28,
+					"ExerciseText": "Der Erfinder der Versionsverwaltung hieß Manuel Schreck",
+					"ExerciseTopic": "VC",
+					"Difficulty": 10,
+					"Answers": [
+						{
+							"Text": "Falsch",
+							"isCorrect": true
+						},
+						{
+							"Text": "Wahr",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"ID": 30,
+					"ExerciseText": "Git kann man nicht mit einer GUI benutzen",
+					"ExerciseTopic": "VC",
+					"Difficulty": 10,
+					"Answers": [
+						{
+							"Text": "Falsch",
+							"isCorrect": true
+						},
+						{
+							"Text": "Wahr",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"ID": 31,
+					"ExerciseText": "Github wird nur in Asien benutzt",
+					"ExerciseTopic": "VC",
+					"Difficulty": 10,
+					"Answers": [
+						{
+							"Text": "Falsch",
+							"isCorrect": true
+						},
+						{
+							"Text": "Wahr",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"ID": 48,
+					"ExerciseText": "Was ist eine Friend-Funktion?",
+					"ExerciseTopic": "OOP",
+					"Difficulty": 10,
+					"Answers": [
+						{
+							"Text": "Eine Friend-Funktion befreundet Klassen über mehrere Programmiersprachen.",
+							"isCorrect": false
+						},
+						{
+							"Text": "Eine Friend-Funktion ist ein Freund einer Klasse, der auf öffentliche, private oder geschützte Daten in derselben Klasse zugreifen darf.",
+							"isCorrect": true
+						}
+					]
+				},
+				{
+					"ID": 49,
+					"ExerciseText": "Was ist die Funktionsüberladung?",
+					"ExerciseTopic": "OOP",
+					"Difficulty": 10,
+					"Answers": [
+						{
+							"Text": "Sie ermöglicht das Anlegen mehrerer Methoden mit gleichem Namen, die sich durch die Art des Inputs und Outputs der Funktion voneinander unterscheiden.",
+							"isCorrect": true
+						},
+						{
+							"Text": "Dies ist eine Prozedur mit Rückgabeparameter.",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"ID": 50,
+					"ExerciseText": "Was ist Operatorüberladung?",
+					"ExerciseTopic": "OOP",
+					"Difficulty": 10,
+					"Answers": [
+						{
+							"Text": "Das Überladen von Operatoren ist eine Funktion, bei der verschiedene Operatoren angewendet werden und die von den Argumenten abhängt.",
+							"isCorrect": true
+						},
+						{
+							"Text": "Sie ermöglicht das Anlegen mehrerer Methoden mit gleichem Namen, die sich durch die Art des Inputs und Outputs der Funktion voneinander unterscheiden.",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"ID": 51,
+					"ExerciseText": "Was ist eine abstrakte Klasse?",
+					"ExerciseTopic": "OOP",
+					"Difficulty": 10,
+					"Answers": [
+						{
+							"Text": "Eine abstrakte Klasse ist keine Klasse.",
+							"isCorrect": false
+						},
+						{
+							"Text": "Eine abstrakte Klasse ist eine Klasse, die nicht instanziiert werden kann.",
+							"isCorrect": true
+						}
+					]
+				},
+				{
+					"ID": 52,
+					"ExerciseText": "Wozu dient die finalize Methode?",
+					"ExerciseTopic": "OOP",
+					"Difficulty": 10,
+					"Answers": [
+						{
+							"Text": "Die Finalize-Methode hilft bei der Durchführung von Aufräumarbeiten an den Ressourcen, die derzeit nicht verwendet werden. Die Finalize-Methoden sind geschützt.",
+							"isCorrect": true
+						},
+						{
+							"Text": "Eine finalize Methode ist eine Prozedur.",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"ID": 53,
+					"ExerciseText": "Was ist eine Prozedur?",
+					"ExerciseTopic": "OOP",
+					"Difficulty": 10,
+					"Answers": [
+						{
+							"Text": "Eine Prozedur ist eine Funktion ohne Rückgabeparameter.",
+							"isCorrect": true
+						},
+						{
+							"Text": "Eine finalize Methode ist eine Prozedur.",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"ID": 68,
+					"ExerciseText": "Der Programmierer führt den Blackbox Test durch.",
+					"ExerciseTopic": "Testing",
+					"Difficulty": 10,
+					"Answers": [
+						{
+							"Text": "Falsch",
+							"isCorrect": true
+						},
+						{
+							"Text": "Wahr",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"ID": 69,
+					"ExerciseText": "Der Programmierer führt den Whitebox Test durch.",
+					"ExerciseTopic": "Testing",
+					"Difficulty": 10,
+					"Answers": [
+						{
+							"Text": "Falsch",
+							"isCorrect": false
+						},
+						{
+							"Text": "Wahr",
+							"isCorrect": true
+						}
+					]
+				},
+				{
+					"ID": 70,
+					"ExerciseText": "JUnit bietet sich für das Regressionstesten an.",
+					"ExerciseTopic": "Testing",
+					"Difficulty": 10,
+					"Answers": [
+						{
+							"Text": "Falsch",
+							"isCorrect": false
+						},
+						{
+							"Text": "Wahr",
+							"isCorrect": true
+						}
+					]
+				},
+				{
+					"ID": 76,
+					"ExerciseText": "SQL ist eine objektorientierte Programmiersprache.",
+					"ExerciseTopic": "DB",
+					"Difficulty": 10,
+					"Answers": [
+						{
+							"Text": "Wahr",
+							"isCorrect": false
+						},
+						{
+							"Text": "Falsch",
+							"isCorrect": true
+						}
+					]
+				},
+				{
+					"ID": 77,
+					"ExerciseText": "SQL wird seit Jahren nicht mehr verwendet.",
+					"ExerciseTopic": "DB",
+					"Difficulty": 10,
+					"Answers": [
+						{
+							"Text": "Wahr",
+							"isCorrect": false
+						},
+						{
+							"Text": "Falsch",
+							"isCorrect": true
+						}
+					]
+				},
+				{
+					"ID": 78,
+					"ExerciseText": "SQL ist eine Datenbank Engine.",
+					"ExerciseTopic": "DB",
+					"Difficulty": 10,
+					"Answers": [
+						{
+							"Text": "Wahr",
+							"isCorrect": false
+						},
+						{
+							"Text": "Falsch",
+							"isCorrect": true
+						}
+					]
+				},
+				{
+					"ID": 79,
+					"ExerciseText": "SQL ist eine Datenbanksprache.",
+					"ExerciseTopic": "DB",
+					"Difficulty": 10,
+					"Answers": [
+						{
+							"Text": "Wahr",
+							"isCorrect": true
+						},
+						{
+							"Text": "Falsch",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"ID": 80,
+					"ExerciseText": "Mithilfe von SQL definiert man Datenstrukturen in einer Datenbank.",
+					"ExerciseTopic": "DB",
+					"Difficulty": 10,
+					"Answers": [
+						{
+							"Text": "Wahr",
+							"isCorrect": true
+						},
+						{
+							"Text": "Falsch",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"ID": 81,
+					"ExerciseText": "SQL ist die Sprache, die man verwendet, um Einträge in Datenbanken zu bearbeiten.",
+					"ExerciseTopic": "DB",
+					"Difficulty": 10,
+					"Answers": [
+						{
+							"Text": "Wahr",
+							"isCorrect": true
+						},
+						{
+							"Text": "Falsch",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"ID": 82,
+					"ExerciseText": "SQL Befehle werden immer auf Deutsch geschrieben.",
+					"ExerciseTopic": "DB",
+					"Difficulty": 10,
+					"Answers": [
+						{
+							"Text": "Wahr",
+							"isCorrect": false
+						},
+						{
+							"Text": "Falsch",
+							"isCorrect": true
+						}
+					]
+				},
+				{
+					"ID": 83,
+					"ExerciseText": "SQL ist eine Abkürzung.",
+					"ExerciseTopic": "DB",
+					"Difficulty": 10,
+					"Answers": [
+						{
+							"Text": "Wahr",
+							"isCorrect": true
+						},
+						{
+							"Text": "Falsch",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"ID": 84,
+					"ExerciseText": "SQL Befehle können Kategorisiert werden.",
+					"ExerciseTopic": "DB",
+					"Difficulty": 10,
+					"Answers": [
+						{
+							"Text": "Wahr",
+							"isCorrect": true
+						},
+						{
+							"Text": "Falsch",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"ID": 85,
+					"ExerciseText": "Bei SELECT handelt es sich um einen Befehl von SQL.",
+					"ExerciseTopic": "DB",
+					"Difficulty": 10,
+					"Answers": [
+						{
+							"Text": "Wahr",
+							"isCorrect": true
+						},
+						{
+							"Text": "Falsch",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"ID": 86,
+					"ExerciseText": "Eine Datenbank ist eine spezielle Bank, auf die man sich setzen kann.",
+					"ExerciseTopic": "DB",
+					"Difficulty": 10,
+					"Answers": [
+						{
+							"Text": "Wahr",
+							"isCorrect": false
+						},
+						{
+							"Text": "Falsch",
+							"isCorrect": true
+						}
+					]
+				},
+				{
+					"ID": 87,
+					"ExerciseText": "Eine Datenbank ist eine Methode Daten zu speichern.",
+					"ExerciseTopic": "DB",
+					"Difficulty": 10,
+					"Answers": [
+						{
+							"Text": "Wahr",
+							"isCorrect": true
+						},
+						{
+							"Text": "Falsch",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"ID": 88,
+					"ExerciseText": "Eine Datenbank speichert Daten lediglich temporär.",
+					"ExerciseTopic": "DB",
+					"Difficulty": 10,
+					"Answers": [
+						{
+							"Text": "Wahr",
+							"isCorrect": false
+						},
+						{
+							"Text": "Falsch",
+							"isCorrect": true
+						}
+					]
+				},
+				{
+					"ID": 89,
+					"ExerciseText": "Um auf eine Datenbank zuzugreifen verwendet man meistens eine Verwaltungssoftware.",
+					"ExerciseTopic": "DB",
+					"Difficulty": 10,
+					"Answers": [
+						{
+							"Text": "Wahr",
+							"isCorrect": true
+						},
+						{
+							"Text": "Falsch",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"ID": 90,
+					"ExerciseText": "Datenbanken sind eine unbeliebte Variante Daten zu speichern.",
+					"ExerciseTopic": "DB",
+					"Difficulty": 10,
+					"Answers": [
+						{
+							"Text": "Wahr",
+							"isCorrect": false
+						},
+						{
+							"Text": "Falsch",
+							"isCorrect": true
+						}
+					]
+				},
+				{
+					"ID": 91,
+					"ExerciseText": "Eine Datenbank ist eine der perfomantesten Methoden große Datensätze zu speichern.",
+					"ExerciseTopic": "DB",
+					"Difficulty": 10,
+					"Answers": [
+						{
+							"Text": "Wahr",
+							"isCorrect": true
+						},
+						{
+							"Text": "Falsch",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"ID": 92,
+					"ExerciseText": "Ein Alltagsbeispiel für die Nutzung einer Datenbank sind die Kundendaten eines Onlineshops.",
+					"ExerciseTopic": "DB",
+					"Difficulty": 10,
+					"Answers": [
+						{
+							"Text": "Wahr",
+							"isCorrect": true
+						},
+						{
+							"Text": "Falsch",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"ID": 93,
+					"ExerciseText": "Eine Datenbank besteht meistens aus einer Vielzahl von Tabellen.",
+					"ExerciseTopic": "DB",
+					"Difficulty": 10,
+					"Answers": [
+						{
+							"Text": "Wahr",
+							"isCorrect": true
+						},
+						{
+							"Text": "Falsch",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"ID": 94,
+					"ExerciseText": "Tabellen in einer Datenbank haben Beziehungen zueinander.",
+					"ExerciseTopic": "DB",
+					"Difficulty": 10,
+					"Answers": [
+						{
+							"Text": "Wahr",
+							"isCorrect": true
+						},
+						{
+							"Text": "Falsch",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"ID": 95,
+					"ExerciseText": "Jede Tabelle in einer Datenbank muss einen sogenannten Primärschlüssel haben.",
+					"ExerciseTopic": "DB",
+					"Difficulty": 10,
+					"Answers": [
+						{
+							"Text": "Wahr",
+							"isCorrect": true
+						},
+						{
+							"Text": "Falsch",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"ID": 96,
+					"ExerciseText": "In Datenbanken gibt es Primär und Fremdschlüsel.",
+					"ExerciseTopic": "DB",
+					"Difficulty": 10,
+					"Answers": [
+						{
+							"Text": "Wahr",
+							"isCorrect": true
+						},
+						{
+							"Text": "Falsch",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"ID": 97,
+					"ExerciseText": "Frendschlüssel dienen dazu, Beziehungen darzustellen.",
+					"ExerciseTopic": "DB",
+					"Difficulty": 10,
+					"Answers": [
+						{
+							"Text": "Wahr",
+							"isCorrect": true
+						},
+						{
+							"Text": "Falsch",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"ID": 98,
+					"ExerciseText": "Tabellen müssen nicht zwingend einen Fremdschlüssel haben.",
+					"ExerciseTopic": "DB",
+					"Difficulty": 10,
+					"Answers": [
+						{
+							"Text": "Wahr",
+							"isCorrect": true
+						},
+						{
+							"Text": "Falsch",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"ID": 99,
+					"ExerciseText": "Es kann mehrere Arten von Beziehungen in einer Datenbank geben.",
+					"ExerciseTopic": "DB",
+					"Difficulty": 10,
+					"Answers": [
+						{
+							"Text": "Wahr",
+							"isCorrect": true
+						},
+						{
+							"Text": "Falsch",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"ID": 100,
+					"ExerciseText": "Es gibt nur wenige Arten von SQL-Datenbanken.",
+					"ExerciseTopic": "DB",
+					"Difficulty": 10,
+					"Answers": [
+						{
+							"Text": "Wahr",
+							"isCorrect": false
+						},
+						{
+							"Text": "Falsch",
+							"isCorrect": true
+						}
+					]
+				},
+				{
+					"ID": 101,
+					"ExerciseText": "Die Reihenfolge von SQL Befehlen bei einer Abfrage spielt keine Rolle.",
+					"ExerciseTopic": "DB",
+					"Difficulty": 10,
+					"Answers": [
+						{
+							"Text": "Wahr",
+							"isCorrect": false
+						},
+						{
+							"Text": "Falsch",
+							"isCorrect": true
+						},
+						{
+							"Text": "",
+							"isCorrect": false
+						},
+						{
+							"Text": "",
+							"isCorrect": false
+						},
+						{
+							"Text": "",
+							"isCorrect": false
+						},
+						{
+							"Text": "",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"ID": 102,
+					"ExerciseText": "Der Primärschlüssel in einer Datenbank dient nur als eine Art Passwort für die Tabelle.",
+					"ExerciseTopic": "DB",
+					"Difficulty": 10,
+					"Answers": [
+						{
+							"Text": "Wahr",
+							"isCorrect": false
+						},
+						{
+							"Text": "Falsch",
+							"isCorrect": true
+						}
+					]
+				},
+				{
+					"ID": 103,
+					"ExerciseText": "Eine Tabelle kann immer nur einen Schlüssel haben.",
+					"ExerciseTopic": "DB",
+					"Difficulty": 10,
+					"Answers": [
+						{
+							"Text": "Wahr",
+							"isCorrect": false
+						},
+						{
+							"Text": "Falsch",
+							"isCorrect": true
+						}
+					]
+				},
+				{
+					"ID": 104,
+					"ExerciseText": "Jedes Feld in einer Tabelle muss von einem bestimmten Datentyp sein.",
+					"ExerciseTopic": "DB",
+					"Difficulty": 10,
+					"Answers": [
+						{
+							"Text": "Wahr",
+							"isCorrect": true
+						},
+						{
+							"Text": "Falsch",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"ID": 105,
+					"ExerciseText": "Die Datentypen in einer Datenbank sind genau die Selben, wie in C++.",
+					"ExerciseTopic": "DB",
+					"Difficulty": 10,
+					"Answers": [
+						{
+							"Text": "Wahr",
+							"isCorrect": false
+						},
+						{
+							"Text": "Falsch",
+							"isCorrect": true
+						}
+					]
+				},
+				{
+					"ID": 106,
+					"ExerciseText": "Heutzutage lässt sich SQL mit anderen Programmiersprachen kombinieren.",
+					"ExerciseTopic": "DB",
+					"Difficulty": 10,
+					"Answers": [
+						{
+							"Text": "Wahr",
+							"isCorrect": true
+						},
+						{
+							"Text": "Falsch",
+							"isCorrect": false
+						}
+					]
+				}
+			],
+			"Medium": [
+				{
+					"ID": 32,
+					"ExerciseText": "Was ist GIT?",
+					"ExerciseTopic": "VC",
+					"Difficulty": 20,
+					"Answers": [
+						{
+							"Text": "Eine Versionsverwaltung",
+							"isCorrect": true
+						},
+						{
+							"Text": "Ein CMS",
+							"isCorrect": false
+						},
+						{
+							"Text": "Ein Javascript Framework",
+							"isCorrect": false
+						},
+						{
+							"Text": "Ein Repository",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"ID": 33,
+					"ExerciseText": "Wann kam die erste Versionsverwaltung?",
+					"ExerciseTopic": "VC",
+					"Difficulty": 20,
+					"Answers": [
+						{
+							"Text": "1972",
+							"isCorrect": true
+						},
+						{
+							"Text": "1997",
+							"isCorrect": false
+						},
+						{
+							"Text": "1978",
+							"isCorrect": false
+						},
+						{
+							"Text": "2001",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"ID": 34,
+					"ExerciseText": "Was macht Git Status",
+					"ExerciseTopic": "VC",
+					"Difficulty": 20,
+					"Answers": [
+						{
+							"Text": "gibt den Status des Arbeitsverzeichnisses und der Staging-Umgebung zurück",
+							"isCorrect": true
+						},
+						{
+							"Text": "Zeigt den Akkustand des Gerätes an",
+							"isCorrect": false
+						},
+						{
+							"Text": "Pusht ins Repository",
+							"isCorrect": false
+						},
+						{
+							"Text": "Checkt fehlerhafte Dateien",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"ID": 35,
+					"ExerciseText": "Womit kannst du dir die Commits anzeigen lassen",
+					"ExerciseTopic": "VC",
+					"Difficulty": 20,
+					"Answers": [
+						{
+							"Text": "git log",
+							"isCorrect": true
+						},
+						{
+							"Text": "git commit",
+							"isCorrect": false
+						},
+						{
+							"Text": "git status",
+							"isCorrect": false
+						},
+						{
+							"Text": "git push",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"ID": 36,
+					"ExerciseText": "Wie wechselt man in den Branch 'test' ",
+					"ExerciseTopic": "VC",
+					"Difficulty": 20,
+					"Answers": [
+						{
+							"Text": "git checkout test",
+							"isCorrect": true
+						},
+						{
+							"Text": "git pull test",
+							"isCorrect": false
+						},
+						{
+							"Text": "git commit test",
+							"isCorrect": false
+						},
+						{
+							"Text": "git push test",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"ID": 37,
+					"ExerciseText": "Wie erstellt mein einen neuen Branch?",
+					"ExerciseTopic": "VC",
+					"Difficulty": 20,
+					"Answers": [
+						{
+							"Text": "git branch new_branch",
+							"isCorrect": true
+						},
+						{
+							"Text": "git new branch",
+							"isCorrect": false
+						},
+						{
+							"Text": "git commit new_branch",
+							"isCorrect": false
+						},
+						{
+							"Text": "git pull branch",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"ID": 38,
+					"ExerciseText": "Was macht Git branch",
+					"ExerciseTopic": "VC",
+					"Difficulty": 20,
+					"Answers": [
+						{
+							"Text": "Zeigt Dir deine lokalen Branches an",
+							"isCorrect": true
+						},
+						{
+							"Text": "Pusht in das Remote-Repository",
+							"isCorrect": false
+						},
+						{
+							"Text": "Zeigt dir alle Änderungen an",
+							"isCorrect": false
+						},
+						{
+							"Text": "Checkt fehlerhafte Dateien",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"ID": 39,
+					"ExerciseText": "Was macht Git add",
+					"ExerciseTopic": "VC",
+					"Difficulty": 20,
+					"Answers": [
+						{
+							"Text": "Fügt Änderungen aus dem Arbeitsverzeichnis zur Staging-Umgebung hinzu",
+							"isCorrect": true
+						},
+						{
+							"Text": "Checkt den Status der CPU",
+							"isCorrect": false
+						},
+						{
+							"Text": "Pusht ins Repository",
+							"isCorrect": false
+						},
+						{
+							"Text": "Checkt fehlerhafte Dateien",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"ID": 40,
+					"ExerciseText": "Wofür benutzt man ein Versionskontrollsystem",
+					"ExerciseTopic": "VC",
+					"Difficulty": 20,
+					"Answers": [
+						{
+							"Text": "Um auf verschiedene Versionen und Änderungen zugreifen zu können",
+							"isCorrect": true
+						},
+						{
+							"Text": "Um sein Projekt geheim zu halten",
+							"isCorrect": false
+						},
+						{
+							"Text": "Damit man nicht im Team arbeiten muss",
+							"isCorrect": false
+						},
+						{
+							"Text": "Um Fehlerhafte Dateien zu erkennen",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"ID": 41,
+					"ExerciseText": "Was ist ein Branch",
+					"ExerciseTopic": "VC",
+					"Difficulty": 20,
+					"Answers": [
+						{
+							"Text": "eine unabhängige Entwicklungslinie",
+							"isCorrect": true
+						},
+						{
+							"Text": "Ein CMS",
+							"isCorrect": false
+						},
+						{
+							"Text": "Ein Javascript Framework",
+							"isCorrect": false
+						},
+						{
+							"Text": "Ein Repository",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"ID": 42,
+					"ExerciseText": "Welche Programmiersprache nutzt Git?",
+					"ExerciseTopic": "VC",
+					"Difficulty": 20,
+					"Answers": [
+						{
+							"Text": "C",
+							"isCorrect": true
+						},
+						{
+							"Text": "HTML",
+							"isCorrect": false
+						},
+						{
+							"Text": "PHP",
+							"isCorrect": false
+						},
+						{
+							"Text": "C++",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"ID": 43,
+					"ExerciseText": "Welcher Command erstellt eine Lokale Copy vom Repository?",
+					"ExerciseTopic": "VC",
+					"Difficulty": 20,
+					"Answers": [
+						{
+							"Text": "clone",
+							"isCorrect": true
+						},
+						{
+							"Text": "checkout",
+							"isCorrect": false
+						},
+						{
+							"Text": "push",
+							"isCorrect": false
+						},
+						{
+							"Text": "pull",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"ID": 44,
+					"ExerciseText": "Welcher Command erstellt ein neues Repository im Ordner?",
+					"ExerciseTopic": "VC",
+					"Difficulty": 20,
+					"Answers": [
+						{
+							"Text": "git init",
+							"isCorrect": true
+						},
+						{
+							"Text": "git reset",
+							"isCorrect": false
+						},
+						{
+							"Text": "git log",
+							"isCorrect": false
+						},
+						{
+							"Text": "git create",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"ID": 45,
+					"ExerciseText": "Was macht Git pull",
+					"ExerciseTopic": "VC",
+					"Difficulty": 20,
+					"Answers": [
+						{
+							"Text": "Um Inhalte aus einem Remote-Repository herunterzuladen",
+							"isCorrect": true
+						},
+						{
+							"Text": "Um Inhalte in ein Remote-Repository hochzuladen",
+							"isCorrect": false
+						},
+						{
+							"Text": "Um Inhalte aus einem Remote-Repository zu löschen",
+							"isCorrect": false
+						},
+						{
+							"Text": "Wechselt den Branch",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"ID": 46,
+					"ExerciseText": "Wofür benutzt man Git remote",
+					"ExerciseTopic": "VC",
+					"Difficulty": 20,
+					"Answers": [
+						{
+							"Text": "Um Verbindungen mit anderen Repositorys erstellen, abrufen und löschen.",
+							"isCorrect": true
+						},
+						{
+							"Text": "Um auf andere Computer zuzugreifen",
+							"isCorrect": false
+						},
+						{
+							"Text": "Um Festplattenspeicher zu sparen",
+							"isCorrect": false
+						},
+						{
+							"Text": "damit man keinen Code Editor benutzen muss",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"ID": 47,
+					"ExerciseText": "Wofür benutzt man Git fetch",
+					"ExerciseTopic": "VC",
+					"Difficulty": 20,
+					"Answers": [
+						{
+							"Text": "Um Änderungen aus einem Remote-Repository in das lokale Repository abzuholen.",
+							"isCorrect": true
+						},
+						{
+							"Text": "Um auf andere Computer zuzugreifen",
+							"isCorrect": false
+						},
+						{
+							"Text": "Um Änderungen in das Remote-Repository zu pushen",
+							"isCorrect": false
+						},
+						{
+							"Text": "damit man keinen Code Editor benutzen muss",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"ID": 54,
+					"ExerciseText": "Was sind die verschiedenen Arten von Argumenten?",
+					"ExerciseTopic": "OOP",
+					"Difficulty": 20,
+					"Answers": [
+						{
+							"Text": "Call by Value und Call by Reference.",
+							"isCorrect": true
+						},
+						{
+							"Text": "Call by Argument und Call by Value.",
+							"isCorrect": false
+						},
+						{
+							"Text": "Call by Method und Call by Procedur.",
+							"isCorrect": false
+						},
+						{
+							"Text": "Call by Reference und Call by Amount.",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"ID": 55,
+					"ExerciseText": "Was ist das Super-Schlüsselwort?",
+					"ExerciseTopic": "OOP",
+					"Difficulty": 20,
+					"Answers": [
+						{
+							"Text": "Das Super-Schlüsselwort beschreibt eine gute Methode.",
+							"isCorrect": false
+						},
+						{
+							"Text": "Das Super-Schlüsselwort wird verwendet, um die überschriebene Methode aufzurufen, die eine der Methoden ihrer Oberklasse überschreibt.",
+							"isCorrect": true
+						},
+						{
+							"Text": "Super ist das Schlüsselwort, welche eine abstrakte Methode beschreibt.",
+							"isCorrect": false
+						},
+						{
+							"Text": "Das Super-Schlüsselwort gibt es nicht.",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"ID": 56,
+					"ExerciseText": "Was ist Methoden-Overriding?",
+					"ExerciseTopic": "OOP",
+					"Difficulty": 20,
+					"Answers": [
+						{
+							"Text": "Das Überschreiben von Methoden gibt es nicht.",
+							"isCorrect": false
+						},
+						{
+							"Text": "Das Methoden-Overriding gibt es nur in prozeduralen Programmiersprachen.",
+							"isCorrect": false
+						},
+						{
+							"Text": "Das Überschreiben von Methoden ist eine Funktionalität, die es einer Unterklasse ermöglicht, die Implementierung einer Methode bereitzustellen, die in der Hauptklasse überschrieben wird.",
+							"isCorrect": true
+						},
+						{
+							"Text": "Methoden-Overriding ist ein anderer Name für Funktionsüberladungen.",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"ID": 57,
+					"ExerciseText": "Was ist ein Interface?",
+					"ExerciseTopic": "OOP",
+					"Difficulty": 20,
+					"Answers": [
+						{
+							"Text": "Ein Interface ist eine Sammlung von abstrakten Methode.",
+							"isCorrect": true
+						},
+						{
+							"Text": "Ein Interface ist das Gesicht einer Methode.",
+							"isCorrect": false
+						},
+						{
+							"Text": "Ein Interface gibt es nur in prozedualen Programmiersprachen.",
+							"isCorrect": false
+						},
+						{
+							"Text": "Ein Interface ist keine Sammlung von abstrakten Methode.",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"ID": 58,
+					"ExerciseText": "Was ist Exception Handing?",
+					"ExerciseTopic": "OOP",
+					"Difficulty": 20,
+					"Answers": [
+						{
+							"Text": "Exceptions gibt es in objektorientierten Sprachen nicht.",
+							"isCorrect": false
+						},
+						{
+							"Text": "Exceptions sind nicht mehr aktuell, heute wird Troubleshooting genutzt.",
+							"isCorrect": false
+						},
+						{
+							"Text": "Eine Exception ist ein Ereignis, das während der Ausführung eines Programms auftritt. Exceptions können von jedem Typ sein - Runtime exception, Error exceptions.",
+							"isCorrect": true
+						},
+						{
+							"Text": "Eine Exception darf nur in Unit Tests verwendet werden.",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"ID": 59,
+					"ExerciseText": "Was sind Token?",
+					"ExerciseTopic": "OOP",
+					"Difficulty": 20,
+					"Answers": [
+						{
+							"Text": "Tokens ist ein anderer Begiff für Strings.",
+							"isCorrect": false
+						},
+						{
+							"Text": "Ein Compiler erkennt ein Token, und es kann nicht in Komponentenelemente zerlegt werden.",
+							"isCorrect": true
+						},
+						{
+							"Text": "Alle Variablen im Konstruktor werden Tokens genannt.",
+							"isCorrect": false
+						},
+						{
+							"Text": "Übergabeparamter von Methoden werden auch Token genannt.",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"ID": 60,
+					"ExerciseText": "Was ist der Hauptunterschied zwischen Overloading und Overriding?",
+					"ExerciseTopic": "OOP",
+					"Difficulty": 20,
+					"Answers": [
+						{
+							"Text": "Es gibt prin­zi­pi­ell keinen Unterschied. Overloading heißt es bei Variablen und Overriding bei Methoden.",
+							"isCorrect": false
+						},
+						{
+							"Text": "Overriding gibt es nur bei prozedualen Programmiersprachen.",
+							"isCorrect": false
+						},
+						{
+							"Text": "Overloading und Overriding gibt es nur in Java.",
+							"isCorrect": false
+						},
+						{
+							"Text": "Overloading ist eine statische Bindung, während Overriding eine dynamische Bindung ist.",
+							"isCorrect": true
+						}
+					]
+				},
+				{
+					"ID": 61,
+					"ExerciseText": "Was ist der Hauptunterschied zwischen einer Klasse und einem Objekt?",
+					"ExerciseTopic": "OOP",
+					"Difficulty": 20,
+					"Answers": [
+						{
+							"Text": "Ein Objekt ist eine Instanz einer Klasse. Eine Klasse kann Unterklassen haben, während ein Objekt keine Unterobjekte hat.",
+							"isCorrect": true
+						},
+						{
+							"Text": "Ein Objekt ist eine Instanz einer Klasse. Eine Klasse kann keine Unterklassen haben, während ein Objekt Unterobjekte hat.",
+							"isCorrect": false
+						},
+						{
+							"Text": "Ein Objekt ist keine Instanz einer Klasse. Eine Klasse kann Unterklassen haben, während ein Objekt nur ein Unterobjekte hat.",
+							"isCorrect": false
+						},
+						{
+							"Text": "Ein Objekt ist eine Instanz einer Klasse. Eine Klasse kann nur fünf Unterklassen haben, während ein Objekt keine Unterobjekte hat.",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"ID": 62,
+					"ExerciseText": "Was ist Abstraktion?",
+					"ExerciseTopic": "OOP",
+					"Difficulty": 20,
+					"Answers": [
+						{
+							"Text": "Abstraktion gibt es nicht in objektorierntierten Programmiersprachen.",
+							"isCorrect": false
+						},
+						{
+							"Text": "Abstraktion ist ein nützliches Merkmal von objektorierntierten Programmiersprachen, das dem Anwender eines Objekts nur die notwendigen Details zeigt.",
+							"isCorrect": true
+						},
+						{
+							"Text": "Abstraktion gibt es nur in Java.",
+							"isCorrect": false
+						},
+						{
+							"Text": "Abstraktion werden nur in Enmus verwendet.",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"ID": 63,
+					"ExerciseText": "Was sind die Zugriffsmodifikatoren?",
+					"ExerciseTopic": "OOP",
+					"Difficulty": 20,
+					"Answers": [
+						{
+							"Text": "Private, Profected, Public, Friend und Protected Friend",
+							"isCorrect": false
+						},
+						{
+							"Text": "Private, Protected, Publicize, Friend und Protected Friend",
+							"isCorrect": false
+						},
+						{
+							"Text": "Private, Defended, Puplic, Friend und Defended Friend",
+							"isCorrect": false
+						},
+						{
+							"Text": "Private, Protected, Public, Friend und Protected Friend",
+							"isCorrect": true
+						}
+					]
+				},
+				{
+					"ID": 64,
+					"ExerciseText": "Wie können die Basismethode aufgerufen werden, ohne eine Instanz zu erzeugen?",
+					"ExerciseTopic": "OOP",
+					"Difficulty": 20,
+					"Answers": [
+						{
+							"Text": "Dies ist nur in abstrakten Klassen möglich.",
+							"isCorrect": false
+						},
+						{
+							"Text": "Wenn die Methode statisch ist kann diese ohne Instanz aufgerufen werden.",
+							"isCorrect": true
+						},
+						{
+							"Text": "Jede Methode einer Klasse kann ohne Instanz nicht aufgerufen werden.",
+							"isCorrect": false
+						},
+						{
+							"Text": "Dies ist nur in C++ möglich.",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"ID": 65,
+					"ExerciseText": "Was sind die verschiedenen Arten von Konstruktoren?",
+					"ExerciseTopic": "OOP",
+					"Difficulty": 20,
+					"Answers": [
+						{
+							"Text": "Default Konstruktor, Parameter-Konstruktor, Copy Konstruktor und Destruktor.",
+							"isCorrect": false
+						},
+						{
+							"Text": "Default Konstruktor und Copy Konstruktor.",
+							"isCorrect": false
+						},
+						{
+							"Text": "Default Konstruktor, Parameter-Konstruktor und Copy Konstruktor.",
+							"isCorrect": true
+						},
+						{
+							"Text": "Konstruktor und Destruktor.",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"ID": 66,
+					"ExerciseText": "Was ist ein \"this\" Zeiger?",
+					"ExerciseTopic": "OOP",
+					"Difficulty": 20,
+					"Answers": [
+						{
+							"Text": "THIS-Zeiger verweist auf das aktuelle Objekt einer Klasse.",
+							"isCorrect": true
+						},
+						{
+							"Text": "Diesen Zeiger gibt es nur in C++.",
+							"isCorrect": false
+						},
+						{
+							"Text": "Zeiger gibt es nur in prozudualen Programmiersprachen.",
+							"isCorrect": false
+						},
+						{
+							"Text": "THIS-Zeiger verweisen auf die Klasse des Objektes.",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"ID": 67,
+					"ExerciseText": "Was ist der Unterschied zwischen einer Struktur und einer Klasse?",
+					"ExerciseTopic": "OOP",
+					"Difficulty": 20,
+					"Answers": [
+						{
+							"Text": "Eine Struktur ist ein Teil einer Klasse.",
+							"isCorrect": false
+						},
+						{
+							"Text": "Strukturen gibt es nur in Java.",
+							"isCorrect": false
+						},
+						{
+							"Text": "Strukturen bestehen nur aus Methoden.",
+							"isCorrect": false
+						},
+						{
+							"Text": "Eine Struktur wird zur Gruppierung von Daten verwendet, während eine Klasse zur Gruppierung von Daten und Methoden verwendet werden kann.",
+							"isCorrect": true
+						}
+					]
+				},
+				{
+					"ID": 71,
+					"ExerciseText": "Was ist das Besondere am Test-Driven Development(TDD)?",
+					"ExerciseTopic": "Testing",
+					"Difficulty": 20,
+					"Answers": [
+						{
+							"Text": "Es wird der Hauptfokus auf die Tests gelegt",
+							"isCorrect": false
+						},
+						{
+							"Text": "Das sogenannte Test-Driven ist ein eigenes Framework",
+							"isCorrect": false
+						},
+						{
+							"Text": "Dieses Verfahren ist ein Teil der Prozeduralen Programmierung ",
+							"isCorrect": false
+						},
+						{
+							"Text": "Es wird erst der Test geschrieben und dann der eigentliche Code.",
+							"isCorrect": true
+						}
+					]
+				},
+				{
+					"ID": 72,
+					"ExerciseText": "Was testet der Unit-Test?",
+					"ExerciseTopic": "Testing",
+					"Difficulty": 20,
+					"Answers": [
+						{
+							"Text": "explizit die Konstruktoren",
+							"isCorrect": false
+						},
+						{
+							"Text": "einzelne Variablen",
+							"isCorrect": false
+						},
+						{
+							"Text": "Den kompletten Code",
+							"isCorrect": false
+						},
+						{
+							"Text": "Kleinere Abschnitte eines Codes z.B einzelne Funktionen.",
+							"isCorrect": true
+						}
+					]
+				},
+				{
+					"ID": 73,
+					"ExerciseText": "Was testet der Intergrations-Test?",
+					"ExerciseTopic": "Testing",
+					"Difficulty": 20,
+					"Answers": [
+						{
+							"Text": "Explizit die Konstruktoren",
+							"isCorrect": false
+						},
+						{
+							"Text": "Einzelne Variablen",
+							"isCorrect": false
+						},
+						{
+							"Text": "Testet ob ein Integrationshintergrund vorliegt",
+							"isCorrect": false
+						},
+						{
+							"Text": "Der Integrations-Test testet Code im zusammenspiel.",
+							"isCorrect": true
+						}
+					]
+				},
+				{
+					"ID": 74,
+					"ExerciseText": "Was ist ein Beta-Test?",
+					"ExerciseTopic": "Testing",
+					"Difficulty": 20,
+					"Answers": [
+						{
+							"Text": "Ist das gleiche wie der Whitebox-Test",
+							"isCorrect": false
+						},
+						{
+							"Text": "Dieser Test existiert nicht.",
+							"isCorrect": false
+						},
+						{
+							"Text": "Keine dieser Aussagen trifft zu.",
+							"isCorrect": false
+						},
+						{
+							"Text": "Es wird eine Beta-Version entwickelt diese wird dann vom Endbenutzer getestet.",
+							"isCorrect": true
+						}
+					]
+				},
+				{
+					"ID": 107,
+					"ExerciseText": "Wofür steht die Abkürzung SQL?",
+					"ExerciseTopic": "DB",
+					"Difficulty": 20,
+					"Answers": [
+						{
+							"Text": "Structured Query Language",
+							"isCorrect": true
+						},
+						{
+							"Text": "Structured Question Language",
+							"isCorrect": false
+						},
+						{
+							"Text": "Strong Query Licence",
+							"isCorrect": false
+						},
+						{
+							"Text": "Strong Question Language",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"ID": 108,
+					"ExerciseText": "Welcher Befehl ist kein valider SQL Befehl?",
+					"ExerciseTopic": "DB",
+					"Difficulty": 20,
+					"Answers": [
+						{
+							"Text": "SELECT",
+							"isCorrect": false
+						},
+						{
+							"Text": "WHERE",
+							"isCorrect": false
+						},
+						{
+							"Text": "FILTER",
+							"isCorrect": true
+						},
+						{
+							"Text": "ORDER BY",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"ID": 109,
+					"ExerciseText": "Welchen SQL Befehl nutzt man um Datensätze zu Filtern?",
+					"ExerciseTopic": "DB",
+					"Difficulty": 20,
+					"Answers": [
+						{
+							"Text": "WHERE",
+							"isCorrect": true
+						},
+						{
+							"Text": "WHICH",
+							"isCorrect": false
+						},
+						{
+							"Text": "ORDER BY",
+							"isCorrect": false
+						},
+						{
+							"Text": "SELECT",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"ID": 110,
+					"ExerciseText": "Welcher SQL Befehl wird genutzt um Daten in einer Datenbank zu aktualisieren?",
+					"ExerciseTopic": "DB",
+					"Difficulty": 20,
+					"Answers": [
+						{
+							"Text": "UPDATE",
+							"isCorrect": true
+						},
+						{
+							"Text": "MODIFY",
+							"isCorrect": false
+						},
+						{
+							"Text": "SAVE",
+							"isCorrect": false
+						},
+						{
+							"Text": "SAVE AS",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"ID": 111,
+					"ExerciseText": "Welchen SQL Befehl nutzt man um Daten in eine Tabelle einzufügen?",
+					"ExerciseTopic": "DB",
+					"Difficulty": 20,
+					"Answers": [
+						{
+							"Text": "INSERT INTO",
+							"isCorrect": true
+						},
+						{
+							"Text": "INSERT",
+							"isCorrect": false
+						},
+						{
+							"Text": "ADD NEW",
+							"isCorrect": false
+						},
+						{
+							"Text": "CREATE",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"ID": 112,
+					"ExerciseText": "Wo muss der SELECT Befehl immer stehen?",
+					"ExerciseTopic": "DB",
+					"Difficulty": 20,
+					"Answers": [
+						{
+							"Text": "An erster Stelle der Abfrage",
+							"isCorrect": true
+						},
+						{
+							"Text": "Immer an der Zweiten Stelle der Abfrage",
+							"isCorrect": false
+						},
+						{
+							"Text": "Man braucht den SSELECT Befehl nicht",
+							"isCorrect": false
+						},
+						{
+							"Text": "An letzter Stelle einer Abfrage",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"ID": 113,
+					"ExerciseText": "Wofür steht die Abkürzung DMBS?",
+					"ExerciseTopic": "DB",
+					"Difficulty": 20,
+					"Answers": [
+						{
+							"Text": "Database Management Software",
+							"isCorrect": true
+						},
+						{
+							"Text": "Database Modification Software",
+							"isCorrect": false
+						},
+						{
+							"Text": "Datenbank Management Sprache",
+							"isCorrect": false
+						},
+						{
+							"Text": "Datenbank Modifizierungs Sequenz",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"ID": 114,
+					"ExerciseText": "Was ist kein Datentyp in SQL?",
+					"ExerciseTopic": "DB",
+					"Difficulty": 20,
+					"Answers": [
+						{
+							"Text": "string",
+							"isCorrect": true
+						},
+						{
+							"Text": "integer",
+							"isCorrect": false
+						},
+						{
+							"Text": "varchar",
+							"isCorrect": false
+						},
+						{
+							"Text": "timestamp",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"ID": 115,
+					"ExerciseText": "Mit welchem Zeichen beim SELECT Befehl kann man alle Spalten einer Tabelle auswählen?",
+					"ExerciseTopic": "DB",
+					"Difficulty": 20,
+					"Answers": [
+						{
+							"Text": "*",
+							"isCorrect": true
+						},
+						{
+							"Text": "+",
+							"isCorrect": false
+						},
+						{
+							"Text": "-",
+							"isCorrect": false
+						},
+						{
+							"Text": "#",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"ID": 116,
+					"ExerciseText": "Welchen SQL Befehl nutzt man um das Ergebnis zu sortieren?",
+					"ExerciseTopic": "DB",
+					"Difficulty": 20,
+					"Answers": [
+						{
+							"Text": "ORDER BY",
+							"isCorrect": true
+						},
+						{
+							"Text": "ORDER",
+							"isCorrect": false
+						},
+						{
+							"Text": "SORT",
+							"isCorrect": false
+						},
+						{
+							"Text": "SORT BY",
+							"isCorrect": false
+						}
+					]
+				},
+				{
+					"ID": 117,
+					"ExerciseText": "Wie löscht man einen Eintrag aus der Tabelle 'Personen' wo der 'Vorname' Peter ist.",
+					"ExerciseTopic": "DB",
+					"Difficulty": 20,
+					"Answers": [
+						{
+							"Text": "DELETE FROM Personen WHERE Vorname = 'Peter'",
+							"isCorrect": true
+						},
+						{
+							"Text": "DELETE Vorname Peter",
+							"isCorrect": false
+						},
+						{
+							"Text": "REMOVE WHERE Vorname Peter",
+							"isCorrect": false
+						},
+						{
+							"Text": "DELETE WHERE Vorname = 'Peter' FROM Personen",
+							"isCorrect": false
+						}
+					]
+				}
+			],
+			"Hard": [
+				{
+					"ID": 75,
+					"ExerciseText": "Welcher Software-Test exisitiert nicht",
+					"ExerciseTopic": "Testing",
+					"Difficulty": 30,
+					"Answers": [
+						{
+							"Text": "Komponententest",
+							"isCorrect": false
+						},
+						{
+							"Text": "Systemtest",
+							"isCorrect": false
+						},
+						{
+							"Text": "THIS-Zeiger verweist auf das aktuelle Objekt einer Klasse.",
+							"isCorrect": true
+						},
+						{
+							"Text": "Schreibtisch-Test",
+							"isCorrect": false
+						},
+						{
+							"Text": "Diesen Zeiger gibt es nur in C++.",
+							"isCorrect": false
+						},
+						{
+							"Text": "Zeiger gibt es nur in prozudualen Programmiersprachen.",
+							"isCorrect": false
+						}
+					]
+				}
+			]
+		},
+		"ExercisesByTopicAndDifficulty": {
+			"OOP": {
+				"Easy": [
+					{
+						"ID": 1,
+						"ExerciseText": "Was bedeutet OOP?",
+						"ExerciseTopic": "OOP",
+						"Difficulty": 10,
+						"Answers": [
+							{
+								"Text": "Objektoriertierte Programmierung",
+								"isCorrect": true
+							},
+							{
+								"Text": "Offensichtlich organisierte Programmierung",
+								"isCorrect": false
+							}
+						]
+					},
+					{
+						"ID": 2,
+						"ExerciseText": "Was sind die Grundlegende Konzepte von OOP?",
+						"ExerciseTopic": "OOP",
+						"Difficulty": 10,
+						"Answers": [
+							{
+								"Text": "Abstraktion, Verkapselung, Erbe, Polymorphie",
+								"isCorrect": true
+							},
+							{
+								"Text": "Abstraktion, Virtualisierung, Erbe, Polymorphie",
+								"isCorrect": false
+							}
+						]
+					},
+					{
+						"ID": 3,
+						"ExerciseText": "Was ist eine Klasse?",
+						"ExerciseTopic": "OOP",
+						"Difficulty": 10,
+						"Answers": [
+							{
+								"Text": "Eine Klasse ist vereinfacht gesagt eine Darstellung eines Objekttyps.",
+								"isCorrect": true
+							},
+							{
+								"Text": "Klasse ein Ausdruck, wenn eine Person etwas gut findet.",
+								"isCorrect": false
+							}
+						]
+					},
+					{
+						"ID": 4,
+						"ExerciseText": "Was ist ein Objekt?",
+						"ExerciseTopic": "OOP",
+						"Difficulty": 10,
+						"Answers": [
+							{
+								"Text": "Ein Objekt ist eine Methode.",
+								"isCorrect": false
+							},
+							{
+								"Text": "Ein Objekt ist eine Instanz eines Datentyps.",
+								"isCorrect": false
+							}
+						]
+					},
+					{
+						"ID": 5,
+						"ExerciseText": "Was ist Verkapselung?",
+						"ExerciseTopic": "OOP",
+						"Difficulty": 10,
+						"Answers": [
+							{
+								"Text": "Verkapselung beschreibt wie viele geschweifte Klammern eine Methode hat.",
+								"isCorrect": false
+							},
+							{
+								"Text": "Verkapselung ist ein Attribut und beschreibt die Sichtbarkeit.",
+								"isCorrect": true
+							}
+						]
+					},
+					{
+						"ID": 6,
+						"ExerciseText": "Was ist Polymorphie?",
+						"ExerciseTopic": "OOP",
+						"Difficulty": 10,
+						"Answers": [
+							{
+								"Text": "Polymorphie beschreibt die Sichtbarkeit.",
+								"isCorrect": false
+							},
+							{
+								"Text": "Polymorphie ist nichts anderes als die Zuweisung von Verhalten oder Werten in einer Unterklasse zu etwas, das bereits in der Hauptklasse deklariert wurde.",
+								"isCorrect": true
+							}
+						]
+					},
+					{
+						"ID": 7,
+						"ExerciseText": "Was ist Vererbung?",
+						"ExerciseTopic": "OOP",
+						"Difficulty": 10,
+						"Answers": [
+							{
+								"Text": "Vererbung teilt die Struktur einer Klasse an anderen Klassen.",
+								"isCorrect": true
+							},
+							{
+								"Text": "Vererbung erbt den Namen der Klasse.",
+								"isCorrect": false
+							}
+						]
+					},
+					{
+						"ID": 8,
+						"ExerciseText": "Was ist ein Konstruktor?",
+						"ExerciseTopic": "OOP",
+						"Difficulty": 10,
+						"Answers": [
+							{
+								"Text": "Ein Konstruktor ist eine Bezeichnung für ein Konstrukt.",
+								"isCorrect": false
+							},
+							{
+								"Text": "Ein Konstruktor ist eine Methode, die dazu dient, den Zustand eines Objekts zu initialisieren.",
+								"isCorrect": true
+							}
+						]
+					},
+					{
+						"ID": 9,
+						"ExerciseText": "Was ist ein Destruktor?",
+						"ExerciseTopic": "OOP",
+						"Difficulty": 10,
+						"Answers": [
+							{
+								"Text": "Ein Destruktor ist die letzte Methode, welche vor der Löschung des Objektes aufgerufen wird.",
+								"isCorrect": true
+							},
+							{
+								"Text": "Ein Destruktor wird immer vor dem Konstrukt aufgerufen.",
+								"isCorrect": false
+							}
+						]
+					},
+					{
+						"ID": 10,
+						"ExerciseText": "Was ist eine Inline-Funktion?",
+						"ExerciseTopic": "OOP",
+						"Difficulty": 10,
+						"Answers": [
+							{
+								"Text": "Eine Inline-Funktion ist eine Optimierungsmethode von Compilern zur Steigerung der Ausführungsgeschwindigkeit.",
+								"isCorrect": true
+							},
+							{
+								"Text": "Eine Inline-Funktion ist eine virtuelle Funktion.",
+								"isCorrect": false
+							}
+						]
+					},
+					{
+						"ID": 11,
+						"ExerciseText": "Was ist eine virtuelle Funktion?",
+						"ExerciseTopic": "OOP",
+						"Difficulty": 10,
+						"Answers": [
+							{
+								"Text": "Eine virtuelle Funktion ist eine Funktion einer Klasse, deren Funktionalität in der abgeleiteten Klasse überschrieben werden kann.",
+								"isCorrect": true
+							},
+							{
+								"Text": "Eine virtuelle Funktion kann nur in Konstruktoren aufgerufen werden.",
+								"isCorrect": false
+							}
+						]
+					},
+					{
+						"ID": 48,
+						"ExerciseText": "Was ist eine Friend-Funktion?",
+						"ExerciseTopic": "OOP",
+						"Difficulty": 10,
+						"Answers": [
+							{
+								"Text": "Eine Friend-Funktion befreundet Klassen über mehrere Programmiersprachen.",
+								"isCorrect": false
+							},
+							{
+								"Text": "Eine Friend-Funktion ist ein Freund einer Klasse, der auf öffentliche, private oder geschützte Daten in derselben Klasse zugreifen darf.",
+								"isCorrect": true
+							}
+						]
+					},
+					{
+						"ID": 49,
+						"ExerciseText": "Was ist die Funktionsüberladung?",
+						"ExerciseTopic": "OOP",
+						"Difficulty": 10,
+						"Answers": [
+							{
+								"Text": "Sie ermöglicht das Anlegen mehrerer Methoden mit gleichem Namen, die sich durch die Art des Inputs und Outputs der Funktion voneinander unterscheiden.",
+								"isCorrect": true
+							},
+							{
+								"Text": "Dies ist eine Prozedur mit Rückgabeparameter.",
+								"isCorrect": false
+							}
+						]
+					},
+					{
+						"ID": 50,
+						"ExerciseText": "Was ist Operatorüberladung?",
+						"ExerciseTopic": "OOP",
+						"Difficulty": 10,
+						"Answers": [
+							{
+								"Text": "Das Überladen von Operatoren ist eine Funktion, bei der verschiedene Operatoren angewendet werden und die von den Argumenten abhängt.",
+								"isCorrect": true
+							},
+							{
+								"Text": "Sie ermöglicht das Anlegen mehrerer Methoden mit gleichem Namen, die sich durch die Art des Inputs und Outputs der Funktion voneinander unterscheiden.",
+								"isCorrect": false
+							}
+						]
+					},
+					{
+						"ID": 51,
+						"ExerciseText": "Was ist eine abstrakte Klasse?",
+						"ExerciseTopic": "OOP",
+						"Difficulty": 10,
+						"Answers": [
+							{
+								"Text": "Eine abstrakte Klasse ist keine Klasse.",
+								"isCorrect": false
+							},
+							{
+								"Text": "Eine abstrakte Klasse ist eine Klasse, die nicht instanziiert werden kann.",
+								"isCorrect": true
+							}
+						]
+					},
+					{
+						"ID": 52,
+						"ExerciseText": "Wozu dient die finalize Methode?",
+						"ExerciseTopic": "OOP",
+						"Difficulty": 10,
+						"Answers": [
+							{
+								"Text": "Die Finalize-Methode hilft bei der Durchführung von Aufräumarbeiten an den Ressourcen, die derzeit nicht verwendet werden. Die Finalize-Methoden sind geschützt.",
+								"isCorrect": true
+							},
+							{
+								"Text": "Eine finalize Methode ist eine Prozedur.",
+								"isCorrect": false
+							}
+						]
+					},
+					{
+						"ID": 53,
+						"ExerciseText": "Was ist eine Prozedur?",
+						"ExerciseTopic": "OOP",
+						"Difficulty": 10,
+						"Answers": [
+							{
+								"Text": "Eine Prozedur ist eine Funktion ohne Rückgabeparameter.",
+								"isCorrect": true
+							},
+							{
+								"Text": "Eine finalize Methode ist eine Prozedur.",
+								"isCorrect": false
+							}
+						]
+					}
+				],
+				"Medium": [
+					{
+						"ID": 54,
+						"ExerciseText": "Was sind die verschiedenen Arten von Argumenten?",
+						"ExerciseTopic": "OOP",
+						"Difficulty": 20,
+						"Answers": [
+							{
+								"Text": "Call by Value und Call by Reference.",
+								"isCorrect": true
+							},
+							{
+								"Text": "Call by Argument und Call by Value.",
+								"isCorrect": false
+							},
+							{
+								"Text": "Call by Method und Call by Procedur.",
+								"isCorrect": false
+							},
+							{
+								"Text": "Call by Reference und Call by Amount.",
+								"isCorrect": false
+							}
+						]
+					},
+					{
+						"ID": 55,
+						"ExerciseText": "Was ist das Super-Schlüsselwort?",
+						"ExerciseTopic": "OOP",
+						"Difficulty": 20,
+						"Answers": [
+							{
+								"Text": "Das Super-Schlüsselwort beschreibt eine gute Methode.",
+								"isCorrect": false
+							},
+							{
+								"Text": "Das Super-Schlüsselwort wird verwendet, um die überschriebene Methode aufzurufen, die eine der Methoden ihrer Oberklasse überschreibt.",
+								"isCorrect": true
+							},
+							{
+								"Text": "Super ist das Schlüsselwort, welche eine abstrakte Methode beschreibt.",
+								"isCorrect": false
+							},
+							{
+								"Text": "Das Super-Schlüsselwort gibt es nicht.",
+								"isCorrect": false
+							}
+						]
+					},
+					{
+						"ID": 56,
+						"ExerciseText": "Was ist Methoden-Overriding?",
+						"ExerciseTopic": "OOP",
+						"Difficulty": 20,
+						"Answers": [
+							{
+								"Text": "Das Überschreiben von Methoden gibt es nicht.",
+								"isCorrect": false
+							},
+							{
+								"Text": "Das Methoden-Overriding gibt es nur in prozeduralen Programmiersprachen.",
+								"isCorrect": false
+							},
+							{
+								"Text": "Das Überschreiben von Methoden ist eine Funktionalität, die es einer Unterklasse ermöglicht, die Implementierung einer Methode bereitzustellen, die in der Hauptklasse überschrieben wird.",
+								"isCorrect": true
+							},
+							{
+								"Text": "Methoden-Overriding ist ein anderer Name für Funktionsüberladungen.",
+								"isCorrect": false
+							}
+						]
+					},
+					{
+						"ID": 57,
+						"ExerciseText": "Was ist ein Interface?",
+						"ExerciseTopic": "OOP",
+						"Difficulty": 20,
+						"Answers": [
+							{
+								"Text": "Ein Interface ist eine Sammlung von abstrakten Methode.",
+								"isCorrect": true
+							},
+							{
+								"Text": "Ein Interface ist das Gesicht einer Methode.",
+								"isCorrect": false
+							},
+							{
+								"Text": "Ein Interface gibt es nur in prozedualen Programmiersprachen.",
+								"isCorrect": false
+							},
+							{
+								"Text": "Ein Interface ist keine Sammlung von abstrakten Methode.",
+								"isCorrect": false
+							}
+						]
+					},
+					{
+						"ID": 58,
+						"ExerciseText": "Was ist Exception Handing?",
+						"ExerciseTopic": "OOP",
+						"Difficulty": 20,
+						"Answers": [
+							{
+								"Text": "Exceptions gibt es in objektorientierten Sprachen nicht.",
+								"isCorrect": false
+							},
+							{
+								"Text": "Exceptions sind nicht mehr aktuell, heute wird Troubleshooting genutzt.",
+								"isCorrect": false
+							},
+							{
+								"Text": "Eine Exception ist ein Ereignis, das während der Ausführung eines Programms auftritt. Exceptions können von jedem Typ sein - Runtime exception, Error exceptions.",
+								"isCorrect": true
+							},
+							{
+								"Text": "Eine Exception darf nur in Unit Tests verwendet werden.",
+								"isCorrect": false
+							}
+						]
+					},
+					{
+						"ID": 59,
+						"ExerciseText": "Was sind Token?",
+						"ExerciseTopic": "OOP",
+						"Difficulty": 20,
+						"Answers": [
+							{
+								"Text": "Tokens ist ein anderer Begiff für Strings.",
+								"isCorrect": false
+							},
+							{
+								"Text": "Ein Compiler erkennt ein Token, und es kann nicht in Komponentenelemente zerlegt werden.",
+								"isCorrect": true
+							},
+							{
+								"Text": "Alle Variablen im Konstruktor werden Tokens genannt.",
+								"isCorrect": false
+							},
+							{
+								"Text": "Übergabeparamter von Methoden werden auch Token genannt.",
+								"isCorrect": false
+							}
+						]
+					},
+					{
+						"ID": 60,
+						"ExerciseText": "Was ist der Hauptunterschied zwischen Overloading und Overriding?",
+						"ExerciseTopic": "OOP",
+						"Difficulty": 20,
+						"Answers": [
+							{
+								"Text": "Es gibt prin­zi­pi­ell keinen Unterschied. Overloading heißt es bei Variablen und Overriding bei Methoden.",
+								"isCorrect": false
+							},
+							{
+								"Text": "Overriding gibt es nur bei prozedualen Programmiersprachen.",
+								"isCorrect": false
+							},
+							{
+								"Text": "Overloading und Overriding gibt es nur in Java.",
+								"isCorrect": false
+							},
+							{
+								"Text": "Overloading ist eine statische Bindung, während Overriding eine dynamische Bindung ist.",
+								"isCorrect": true
+							}
+						]
+					},
+					{
+						"ID": 61,
+						"ExerciseText": "Was ist der Hauptunterschied zwischen einer Klasse und einem Objekt?",
+						"ExerciseTopic": "OOP",
+						"Difficulty": 20,
+						"Answers": [
+							{
+								"Text": "Ein Objekt ist eine Instanz einer Klasse. Eine Klasse kann Unterklassen haben, während ein Objekt keine Unterobjekte hat.",
+								"isCorrect": true
+							},
+							{
+								"Text": "Ein Objekt ist eine Instanz einer Klasse. Eine Klasse kann keine Unterklassen haben, während ein Objekt Unterobjekte hat.",
+								"isCorrect": false
+							},
+							{
+								"Text": "Ein Objekt ist keine Instanz einer Klasse. Eine Klasse kann Unterklassen haben, während ein Objekt nur ein Unterobjekte hat.",
+								"isCorrect": false
+							},
+							{
+								"Text": "Ein Objekt ist eine Instanz einer Klasse. Eine Klasse kann nur fünf Unterklassen haben, während ein Objekt keine Unterobjekte hat.",
+								"isCorrect": false
+							}
+						]
+					},
+					{
+						"ID": 62,
+						"ExerciseText": "Was ist Abstraktion?",
+						"ExerciseTopic": "OOP",
+						"Difficulty": 20,
+						"Answers": [
+							{
+								"Text": "Abstraktion gibt es nicht in objektorierntierten Programmiersprachen.",
+								"isCorrect": false
+							},
+							{
+								"Text": "Abstraktion ist ein nützliches Merkmal von objektorierntierten Programmiersprachen, das dem Anwender eines Objekts nur die notwendigen Details zeigt.",
+								"isCorrect": true
+							},
+							{
+								"Text": "Abstraktion gibt es nur in Java.",
+								"isCorrect": false
+							},
+							{
+								"Text": "Abstraktion werden nur in Enmus verwendet.",
+								"isCorrect": false
+							}
+						]
+					},
+					{
+						"ID": 63,
+						"ExerciseText": "Was sind die Zugriffsmodifikatoren?",
+						"ExerciseTopic": "OOP",
+						"Difficulty": 20,
+						"Answers": [
+							{
+								"Text": "Private, Profected, Public, Friend und Protected Friend",
+								"isCorrect": false
+							},
+							{
+								"Text": "Private, Protected, Publicize, Friend und Protected Friend",
+								"isCorrect": false
+							},
+							{
+								"Text": "Private, Defended, Puplic, Friend und Defended Friend",
+								"isCorrect": false
+							},
+							{
+								"Text": "Private, Protected, Public, Friend und Protected Friend",
+								"isCorrect": true
+							}
+						]
+					},
+					{
+						"ID": 64,
+						"ExerciseText": "Wie können die Basismethode aufgerufen werden, ohne eine Instanz zu erzeugen?",
+						"ExerciseTopic": "OOP",
+						"Difficulty": 20,
+						"Answers": [
+							{
+								"Text": "Dies ist nur in abstrakten Klassen möglich.",
+								"isCorrect": false
+							},
+							{
+								"Text": "Wenn die Methode statisch ist kann diese ohne Instanz aufgerufen werden.",
+								"isCorrect": true
+							},
+							{
+								"Text": "Jede Methode einer Klasse kann ohne Instanz nicht aufgerufen werden.",
+								"isCorrect": false
+							},
+							{
+								"Text": "Dies ist nur in C++ möglich.",
+								"isCorrect": false
+							}
+						]
+					},
+					{
+						"ID": 65,
+						"ExerciseText": "Was sind die verschiedenen Arten von Konstruktoren?",
+						"ExerciseTopic": "OOP",
+						"Difficulty": 20,
+						"Answers": [
+							{
+								"Text": "Default Konstruktor, Parameter-Konstruktor, Copy Konstruktor und Destruktor.",
+								"isCorrect": false
+							},
+							{
+								"Text": "Default Konstruktor und Copy Konstruktor.",
+								"isCorrect": false
+							},
+							{
+								"Text": "Default Konstruktor, Parameter-Konstruktor und Copy Konstruktor.",
+								"isCorrect": true
+							},
+							{
+								"Text": "Konstruktor und Destruktor.",
+								"isCorrect": false
+							}
+						]
+					},
+					{
+						"ID": 66,
+						"ExerciseText": "Was ist ein \"this\" Zeiger?",
+						"ExerciseTopic": "OOP",
+						"Difficulty": 20,
+						"Answers": [
+							{
+								"Text": "THIS-Zeiger verweist auf das aktuelle Objekt einer Klasse.",
+								"isCorrect": true
+							},
+							{
+								"Text": "Diesen Zeiger gibt es nur in C++.",
+								"isCorrect": false
+							},
+							{
+								"Text": "Zeiger gibt es nur in prozudualen Programmiersprachen.",
+								"isCorrect": false
+							},
+							{
+								"Text": "THIS-Zeiger verweisen auf die Klasse des Objektes.",
+								"isCorrect": false
+							}
+						]
+					},
+					{
+						"ID": 67,
+						"ExerciseText": "Was ist der Unterschied zwischen einer Struktur und einer Klasse?",
+						"ExerciseTopic": "OOP",
+						"Difficulty": 20,
+						"Answers": [
+							{
+								"Text": "Eine Struktur ist ein Teil einer Klasse.",
+								"isCorrect": false
+							},
+							{
+								"Text": "Strukturen gibt es nur in Java.",
+								"isCorrect": false
+							},
+							{
+								"Text": "Strukturen bestehen nur aus Methoden.",
+								"isCorrect": false
+							},
+							{
+								"Text": "Eine Struktur wird zur Gruppierung von Daten verwendet, während eine Klasse zur Gruppierung von Daten und Methoden verwendet werden kann.",
+								"isCorrect": true
+							}
+						]
+					}
+				]
+			},
+			"VC": {
+				"Easy": [
+					{
+						"ID": 12,
+						"ExerciseText": "GIT funktioniert nur auf Windows",
+						"ExerciseTopic": "VC",
+						"Difficulty": 10,
+						"Answers": [
+							{
+								"Text": "Falsch",
+								"isCorrect": true
+							},
+							{
+								"Text": "Wahr",
+								"isCorrect": false
+							}
+						]
+					},
+					{
+						"ID": 13,
+						"ExerciseText": "GIT funktioniert nur auf MacOS",
+						"ExerciseTopic": "VC",
+						"Difficulty": 10,
+						"Answers": [
+							{
+								"Text": "Falsch",
+								"isCorrect": true
+							},
+							{
+								"Text": "Wahr",
+								"isCorrect": false
+							}
+						]
+					},
+					{
+						"ID": 14,
+						"ExerciseText": "Mit Git kann man mehrere Zweige in einem Repository erstellen",
+						"ExerciseTopic": "VC",
+						"Difficulty": 10,
+						"Answers": [
+							{
+								"Text": "Wahr",
+								"isCorrect": true
+							},
+							{
+								"Text": "Falsch",
+								"isCorrect": false
+							}
+						]
+					},
+					{
+						"ID": 15,
+						"ExerciseText": "Git erschien 1997",
+						"ExerciseTopic": "VC",
+						"Difficulty": 10,
+						"Answers": [
+							{
+								"Text": "Falsch",
+								"isCorrect": true
+							},
+							{
+								"Text": "Wahr",
+								"isCorrect": false
+							}
+						]
+					},
+					{
+						"ID": 16,
+						"ExerciseText": "Git ist nicht für Teams",
+						"ExerciseTopic": "VC",
+						"Difficulty": 10,
+						"Answers": [
+							{
+								"Text": "Falsch",
+								"isCorrect": true
+							},
+							{
+								"Text": "Wahr",
+								"isCorrect": false
+							}
+						]
+					},
+					{
+						"ID": 17,
+						"ExerciseText": "Ist Git und Github das selbe?",
+						"ExerciseTopic": "VC",
+						"Difficulty": 10,
+						"Answers": [
+							{
+								"Text": "Falsch",
+								"isCorrect": true
+							},
+							{
+								"Text": "Wahr",
+								"isCorrect": false
+							}
+						]
+					},
+					{
+						"ID": 18,
+						"ExerciseText": "Git gibt es nur in Europa",
+						"ExerciseTopic": "VC",
+						"Difficulty": 10,
+						"Answers": [
+							{
+								"Text": "Falsch",
+								"isCorrect": true
+							},
+							{
+								"Text": "Wahr",
+								"isCorrect": false
+							}
+						]
+					},
+					{
+						"ID": 19,
+						"ExerciseText": "Ein Versionskontrollsystem funktioniert nicht auf Laptops",
+						"ExerciseTopic": "VC",
+						"Difficulty": 10,
+						"Answers": [
+							{
+								"Text": "Falsch",
+								"isCorrect": true
+							},
+							{
+								"Text": "Wahr",
+								"isCorrect": false
+							}
+						]
+					},
+					{
+						"ID": 20,
+						"ExerciseText": "Git ist Dezentralisiert",
+						"ExerciseTopic": "VC",
+						"Difficulty": 10,
+						"Answers": [
+							{
+								"Text": "Wahr",
+								"isCorrect": true
+							},
+							{
+								"Text": "Falsch",
+								"isCorrect": false
+							}
+						]
+					},
+					{
+						"ID": 21,
+						"ExerciseText": "Git funktioniert nur mit Javascript Projekten",
+						"ExerciseTopic": "VC",
+						"Difficulty": 10,
+						"Answers": [
+							{
+								"Text": "Falsch",
+								"isCorrect": true
+							},
+							{
+								"Text": "Wahr",
+								"isCorrect": false
+							}
+						]
+					},
+					{
+						"ID": 22,
+						"ExerciseText": "Die erste Versionsverwaltung wurde im Jahr 2003 released",
+						"ExerciseTopic": "VC",
+						"Difficulty": 10,
+						"Answers": [
+							{
+								"Text": "Falsch",
+								"isCorrect": true
+							},
+							{
+								"Text": "Wahr",
+								"isCorrect": false
+							}
+						]
+					},
+					{
+						"ID": 23,
+						"ExerciseText": "Die erste Versionsverwaltung erschien in den 1970er",
+						"ExerciseTopic": "VC",
+						"Difficulty": 10,
+						"Answers": [
+							{
+								"Text": "Wahr",
+								"isCorrect": true
+							},
+							{
+								"Text": "Falsch",
+								"isCorrect": false
+							}
+						]
+					},
+					{
+						"ID": 24,
+						"ExerciseText": "Die erste Versionsverwaltung erschien in den 1980er",
+						"ExerciseTopic": "VC",
+						"Difficulty": 10,
+						"Answers": [
+							{
+								"Text": "Falsch",
+								"isCorrect": true
+							},
+							{
+								"Text": "Wahr",
+								"isCorrect": false
+							}
+						]
+					},
+					{
+						"ID": 25,
+						"ExerciseText": "Jedes Git Repository ist Öffentlich zugänglich",
+						"ExerciseTopic": "VC",
+						"Difficulty": 10,
+						"Answers": [
+							{
+								"Text": "Falsch",
+								"isCorrect": true
+							},
+							{
+								"Text": "Wahr",
+								"isCorrect": false
+							}
+						]
+					},
+					{
+						"ID": 27,
+						"ExerciseText": "Jede Versionsverwaltung funktioniert nur auf Linux",
+						"ExerciseTopic": "VC",
+						"Difficulty": 10,
+						"Answers": [
+							{
+								"Text": "Falsch",
+								"isCorrect": true
+							},
+							{
+								"Text": "Wahr",
+								"isCorrect": false
+							}
+						]
+					},
+					{
+						"ID": 28,
+						"ExerciseText": "Der Erfinder der Versionsverwaltung hieß Manuel Schreck",
+						"ExerciseTopic": "VC",
+						"Difficulty": 10,
+						"Answers": [
+							{
+								"Text": "Falsch",
+								"isCorrect": true
+							},
+							{
+								"Text": "Wahr",
+								"isCorrect": false
+							}
+						]
+					},
+					{
+						"ID": 30,
+						"ExerciseText": "Git kann man nicht mit einer GUI benutzen",
+						"ExerciseTopic": "VC",
+						"Difficulty": 10,
+						"Answers": [
+							{
+								"Text": "Falsch",
+								"isCorrect": true
+							},
+							{
+								"Text": "Wahr",
+								"isCorrect": false
+							}
+						]
+					},
+					{
+						"ID": 31,
+						"ExerciseText": "Github wird nur in Asien benutzt",
+						"ExerciseTopic": "VC",
+						"Difficulty": 10,
+						"Answers": [
+							{
+								"Text": "Falsch",
+								"isCorrect": true
+							},
+							{
+								"Text": "Wahr",
+								"isCorrect": false
+							}
+						]
+					}
+				],
+				"Medium": [
+					{
+						"ID": 32,
+						"ExerciseText": "Was ist GIT?",
+						"ExerciseTopic": "VC",
+						"Difficulty": 20,
+						"Answers": [
+							{
+								"Text": "Eine Versionsverwaltung",
+								"isCorrect": true
+							},
+							{
+								"Text": "Ein CMS",
+								"isCorrect": false
+							},
+							{
+								"Text": "Ein Javascript Framework",
+								"isCorrect": false
+							},
+							{
+								"Text": "Ein Repository",
+								"isCorrect": false
+							}
+						]
+					},
+					{
+						"ID": 33,
+						"ExerciseText": "Wann kam die erste Versionsverwaltung?",
+						"ExerciseTopic": "VC",
+						"Difficulty": 20,
+						"Answers": [
+							{
+								"Text": "1972",
+								"isCorrect": true
+							},
+							{
+								"Text": "1997",
+								"isCorrect": false
+							},
+							{
+								"Text": "1978",
+								"isCorrect": false
+							},
+							{
+								"Text": "2001",
+								"isCorrect": false
+							}
+						]
+					},
+					{
+						"ID": 34,
+						"ExerciseText": "Was macht Git Status",
+						"ExerciseTopic": "VC",
+						"Difficulty": 20,
+						"Answers": [
+							{
+								"Text": "gibt den Status des Arbeitsverzeichnisses und der Staging-Umgebung zurück",
+								"isCorrect": true
+							},
+							{
+								"Text": "Zeigt den Akkustand des Gerätes an",
+								"isCorrect": false
+							},
+							{
+								"Text": "Pusht ins Repository",
+								"isCorrect": false
+							},
+							{
+								"Text": "Checkt fehlerhafte Dateien",
+								"isCorrect": false
+							}
+						]
+					},
+					{
+						"ID": 35,
+						"ExerciseText": "Womit kannst du dir die Commits anzeigen lassen",
+						"ExerciseTopic": "VC",
+						"Difficulty": 20,
+						"Answers": [
+							{
+								"Text": "git log",
+								"isCorrect": true
+							},
+							{
+								"Text": "git commit",
+								"isCorrect": false
+							},
+							{
+								"Text": "git status",
+								"isCorrect": false
+							},
+							{
+								"Text": "git push",
+								"isCorrect": false
+							}
+						]
+					},
+					{
+						"ID": 36,
+						"ExerciseText": "Wie wechselt man in den Branch 'test' ",
+						"ExerciseTopic": "VC",
+						"Difficulty": 20,
+						"Answers": [
+							{
+								"Text": "git checkout test",
+								"isCorrect": true
+							},
+							{
+								"Text": "git pull test",
+								"isCorrect": false
+							},
+							{
+								"Text": "git commit test",
+								"isCorrect": false
+							},
+							{
+								"Text": "git push test",
+								"isCorrect": false
+							}
+						]
+					},
+					{
+						"ID": 37,
+						"ExerciseText": "Wie erstellt mein einen neuen Branch?",
+						"ExerciseTopic": "VC",
+						"Difficulty": 20,
+						"Answers": [
+							{
+								"Text": "git branch new_branch",
+								"isCorrect": true
+							},
+							{
+								"Text": "git new branch",
+								"isCorrect": false
+							},
+							{
+								"Text": "git commit new_branch",
+								"isCorrect": false
+							},
+							{
+								"Text": "git pull branch",
+								"isCorrect": false
+							}
+						]
+					},
+					{
+						"ID": 38,
+						"ExerciseText": "Was macht Git branch",
+						"ExerciseTopic": "VC",
+						"Difficulty": 20,
+						"Answers": [
+							{
+								"Text": "Zeigt Dir deine lokalen Branches an",
+								"isCorrect": true
+							},
+							{
+								"Text": "Pusht in das Remote-Repository",
+								"isCorrect": false
+							},
+							{
+								"Text": "Zeigt dir alle Änderungen an",
+								"isCorrect": false
+							},
+							{
+								"Text": "Checkt fehlerhafte Dateien",
+								"isCorrect": false
+							}
+						]
+					},
+					{
+						"ID": 39,
+						"ExerciseText": "Was macht Git add",
+						"ExerciseTopic": "VC",
+						"Difficulty": 20,
+						"Answers": [
+							{
+								"Text": "Fügt Änderungen aus dem Arbeitsverzeichnis zur Staging-Umgebung hinzu",
+								"isCorrect": true
+							},
+							{
+								"Text": "Checkt den Status der CPU",
+								"isCorrect": false
+							},
+							{
+								"Text": "Pusht ins Repository",
+								"isCorrect": false
+							},
+							{
+								"Text": "Checkt fehlerhafte Dateien",
+								"isCorrect": false
+							}
+						]
+					},
+					{
+						"ID": 40,
+						"ExerciseText": "Wofür benutzt man ein Versionskontrollsystem",
+						"ExerciseTopic": "VC",
+						"Difficulty": 20,
+						"Answers": [
+							{
+								"Text": "Um auf verschiedene Versionen und Änderungen zugreifen zu können",
+								"isCorrect": true
+							},
+							{
+								"Text": "Um sein Projekt geheim zu halten",
+								"isCorrect": false
+							},
+							{
+								"Text": "Damit man nicht im Team arbeiten muss",
+								"isCorrect": false
+							},
+							{
+								"Text": "Um Fehlerhafte Dateien zu erkennen",
+								"isCorrect": false
+							}
+						]
+					},
+					{
+						"ID": 41,
+						"ExerciseText": "Was ist ein Branch",
+						"ExerciseTopic": "VC",
+						"Difficulty": 20,
+						"Answers": [
+							{
+								"Text": "eine unabhängige Entwicklungslinie",
+								"isCorrect": true
+							},
+							{
+								"Text": "Ein CMS",
+								"isCorrect": false
+							},
+							{
+								"Text": "Ein Javascript Framework",
+								"isCorrect": false
+							},
+							{
+								"Text": "Ein Repository",
+								"isCorrect": false
+							}
+						]
+					},
+					{
+						"ID": 42,
+						"ExerciseText": "Welche Programmiersprache nutzt Git?",
+						"ExerciseTopic": "VC",
+						"Difficulty": 20,
+						"Answers": [
+							{
+								"Text": "C",
+								"isCorrect": true
+							},
+							{
+								"Text": "HTML",
+								"isCorrect": false
+							},
+							{
+								"Text": "PHP",
+								"isCorrect": false
+							},
+							{
+								"Text": "C++",
+								"isCorrect": false
+							}
+						]
+					},
+					{
+						"ID": 43,
+						"ExerciseText": "Welcher Command erstellt eine Lokale Copy vom Repository?",
+						"ExerciseTopic": "VC",
+						"Difficulty": 20,
+						"Answers": [
+							{
+								"Text": "clone",
+								"isCorrect": true
+							},
+							{
+								"Text": "checkout",
+								"isCorrect": false
+							},
+							{
+								"Text": "push",
+								"isCorrect": false
+							},
+							{
+								"Text": "pull",
+								"isCorrect": false
+							}
+						]
+					},
+					{
+						"ID": 44,
+						"ExerciseText": "Welcher Command erstellt ein neues Repository im Ordner?",
+						"ExerciseTopic": "VC",
+						"Difficulty": 20,
+						"Answers": [
+							{
+								"Text": "git init",
+								"isCorrect": true
+							},
+							{
+								"Text": "git reset",
+								"isCorrect": false
+							},
+							{
+								"Text": "git log",
+								"isCorrect": false
+							},
+							{
+								"Text": "git create",
+								"isCorrect": false
+							}
+						]
+					},
+					{
+						"ID": 45,
+						"ExerciseText": "Was macht Git pull",
+						"ExerciseTopic": "VC",
+						"Difficulty": 20,
+						"Answers": [
+							{
+								"Text": "Um Inhalte aus einem Remote-Repository herunterzuladen",
+								"isCorrect": true
+							},
+							{
+								"Text": "Um Inhalte in ein Remote-Repository hochzuladen",
+								"isCorrect": false
+							},
+							{
+								"Text": "Um Inhalte aus einem Remote-Repository zu löschen",
+								"isCorrect": false
+							},
+							{
+								"Text": "Wechselt den Branch",
+								"isCorrect": false
+							}
+						]
+					},
+					{
+						"ID": 46,
+						"ExerciseText": "Wofür benutzt man Git remote",
+						"ExerciseTopic": "VC",
+						"Difficulty": 20,
+						"Answers": [
+							{
+								"Text": "Um Verbindungen mit anderen Repositorys erstellen, abrufen und löschen.",
+								"isCorrect": true
+							},
+							{
+								"Text": "Um auf andere Computer zuzugreifen",
+								"isCorrect": false
+							},
+							{
+								"Text": "Um Festplattenspeicher zu sparen",
+								"isCorrect": false
+							},
+							{
+								"Text": "damit man keinen Code Editor benutzen muss",
+								"isCorrect": false
+							}
+						]
+					},
+					{
+						"ID": 47,
+						"ExerciseText": "Wofür benutzt man Git fetch",
+						"ExerciseTopic": "VC",
+						"Difficulty": 20,
+						"Answers": [
+							{
+								"Text": "Um Änderungen aus einem Remote-Repository in das lokale Repository abzuholen.",
+								"isCorrect": true
+							},
+							{
+								"Text": "Um auf andere Computer zuzugreifen",
+								"isCorrect": false
+							},
+							{
+								"Text": "Um Änderungen in das Remote-Repository zu pushen",
+								"isCorrect": false
+							},
+							{
+								"Text": "damit man keinen Code Editor benutzen muss",
+								"isCorrect": false
+							}
+						]
+					}
+				]
+			},
+			"Testing": {
+				"Easy": [
+					{
+						"ID": 68,
+						"ExerciseText": "Der Programmierer führt den Blackbox Test durch.",
+						"ExerciseTopic": "Testing",
+						"Difficulty": 10,
+						"Answers": [
+							{
+								"Text": "Falsch",
+								"isCorrect": true
+							},
+							{
+								"Text": "Wahr",
+								"isCorrect": false
+							}
+						]
+					},
+					{
+						"ID": 69,
+						"ExerciseText": "Der Programmierer führt den Whitebox Test durch.",
+						"ExerciseTopic": "Testing",
+						"Difficulty": 10,
+						"Answers": [
+							{
+								"Text": "Falsch",
+								"isCorrect": false
+							},
+							{
+								"Text": "Wahr",
+								"isCorrect": true
+							}
+						]
+					},
+					{
+						"ID": 70,
+						"ExerciseText": "JUnit bietet sich für das Regressionstesten an.",
+						"ExerciseTopic": "Testing",
+						"Difficulty": 10,
+						"Answers": [
+							{
+								"Text": "Falsch",
+								"isCorrect": false
+							},
+							{
+								"Text": "Wahr",
+								"isCorrect": true
+							}
+						]
+					}
+				],
+				"Medium": [
+					{
+						"ID": 71,
+						"ExerciseText": "Was ist das Besondere am Test-Driven Development(TDD)?",
+						"ExerciseTopic": "Testing",
+						"Difficulty": 20,
+						"Answers": [
+							{
+								"Text": "Es wird der Hauptfokus auf die Tests gelegt",
+								"isCorrect": false
+							},
+							{
+								"Text": "Das sogenannte Test-Driven ist ein eigenes Framework",
+								"isCorrect": false
+							},
+							{
+								"Text": "Dieses Verfahren ist ein Teil der Prozeduralen Programmierung ",
+								"isCorrect": false
+							},
+							{
+								"Text": "Es wird erst der Test geschrieben und dann der eigentliche Code.",
+								"isCorrect": true
+							}
+						]
+					},
+					{
+						"ID": 72,
+						"ExerciseText": "Was testet der Unit-Test?",
+						"ExerciseTopic": "Testing",
+						"Difficulty": 20,
+						"Answers": [
+							{
+								"Text": "explizit die Konstruktoren",
+								"isCorrect": false
+							},
+							{
+								"Text": "einzelne Variablen",
+								"isCorrect": false
+							},
+							{
+								"Text": "Den kompletten Code",
+								"isCorrect": false
+							},
+							{
+								"Text": "Kleinere Abschnitte eines Codes z.B einzelne Funktionen.",
+								"isCorrect": true
+							}
+						]
+					},
+					{
+						"ID": 73,
+						"ExerciseText": "Was testet der Intergrations-Test?",
+						"ExerciseTopic": "Testing",
+						"Difficulty": 20,
+						"Answers": [
+							{
+								"Text": "Explizit die Konstruktoren",
+								"isCorrect": false
+							},
+							{
+								"Text": "Einzelne Variablen",
+								"isCorrect": false
+							},
+							{
+								"Text": "Testet ob ein Integrationshintergrund vorliegt",
+								"isCorrect": false
+							},
+							{
+								"Text": "Der Integrations-Test testet Code im zusammenspiel.",
+								"isCorrect": true
+							}
+						]
+					},
+					{
+						"ID": 74,
+						"ExerciseText": "Was ist ein Beta-Test?",
+						"ExerciseTopic": "Testing",
+						"Difficulty": 20,
+						"Answers": [
+							{
+								"Text": "Ist das gleiche wie der Whitebox-Test",
+								"isCorrect": false
+							},
+							{
+								"Text": "Dieser Test existiert nicht.",
+								"isCorrect": false
+							},
+							{
+								"Text": "Keine dieser Aussagen trifft zu.",
+								"isCorrect": false
+							},
+							{
+								"Text": "Es wird eine Beta-Version entwickelt diese wird dann vom Endbenutzer getestet.",
+								"isCorrect": true
+							}
+						]
+					}
+				],
+				"Hard": [
+					{
+						"ID": 75,
+						"ExerciseText": "Welcher Software-Test exisitiert nicht",
+						"ExerciseTopic": "Testing",
+						"Difficulty": 30,
+						"Answers": [
+							{
+								"Text": "Komponententest",
+								"isCorrect": false
+							},
+							{
+								"Text": "Systemtest",
+								"isCorrect": false
+							},
+							{
+								"Text": "THIS-Zeiger verweist auf das aktuelle Objekt einer Klasse.",
+								"isCorrect": true
+							},
+							{
+								"Text": "Schreibtisch-Test",
+								"isCorrect": false
+							},
+							{
+								"Text": "Diesen Zeiger gibt es nur in C++.",
+								"isCorrect": false
+							},
+							{
+								"Text": "Zeiger gibt es nur in prozudualen Programmiersprachen.",
+								"isCorrect": false
+							}
+						]
+					}
+				]
+			},
+			"DB": {
+				"Easy": [
+					{
+						"ID": 76,
+						"ExerciseText": "SQL ist eine objektorientierte Programmiersprache.",
+						"ExerciseTopic": "DB",
+						"Difficulty": 10,
+						"Answers": [
+							{
+								"Text": "Wahr",
+								"isCorrect": false
+							},
+							{
+								"Text": "Falsch",
+								"isCorrect": true
+							}
+						]
+					},
+					{
+						"ID": 77,
+						"ExerciseText": "SQL wird seit Jahren nicht mehr verwendet.",
+						"ExerciseTopic": "DB",
+						"Difficulty": 10,
+						"Answers": [
+							{
+								"Text": "Wahr",
+								"isCorrect": false
+							},
+							{
+								"Text": "Falsch",
+								"isCorrect": true
+							}
+						]
+					},
+					{
+						"ID": 78,
+						"ExerciseText": "SQL ist eine Datenbank Engine.",
+						"ExerciseTopic": "DB",
+						"Difficulty": 10,
+						"Answers": [
+							{
+								"Text": "Wahr",
+								"isCorrect": false
+							},
+							{
+								"Text": "Falsch",
+								"isCorrect": true
+							}
+						]
+					},
+					{
+						"ID": 79,
+						"ExerciseText": "SQL ist eine Datenbanksprache.",
+						"ExerciseTopic": "DB",
+						"Difficulty": 10,
+						"Answers": [
+							{
+								"Text": "Wahr",
+								"isCorrect": true
+							},
+							{
+								"Text": "Falsch",
+								"isCorrect": false
+							}
+						]
+					},
+					{
+						"ID": 80,
+						"ExerciseText": "Mithilfe von SQL definiert man Datenstrukturen in einer Datenbank.",
+						"ExerciseTopic": "DB",
+						"Difficulty": 10,
+						"Answers": [
+							{
+								"Text": "Wahr",
+								"isCorrect": true
+							},
+							{
+								"Text": "Falsch",
+								"isCorrect": false
+							}
+						]
+					},
+					{
+						"ID": 81,
+						"ExerciseText": "SQL ist die Sprache, die man verwendet, um Einträge in Datenbanken zu bearbeiten.",
+						"ExerciseTopic": "DB",
+						"Difficulty": 10,
+						"Answers": [
+							{
+								"Text": "Wahr",
+								"isCorrect": true
+							},
+							{
+								"Text": "Falsch",
+								"isCorrect": false
+							}
+						]
+					},
+					{
+						"ID": 82,
+						"ExerciseText": "SQL Befehle werden immer auf Deutsch geschrieben.",
+						"ExerciseTopic": "DB",
+						"Difficulty": 10,
+						"Answers": [
+							{
+								"Text": "Wahr",
+								"isCorrect": false
+							},
+							{
+								"Text": "Falsch",
+								"isCorrect": true
+							}
+						]
+					},
+					{
+						"ID": 83,
+						"ExerciseText": "SQL ist eine Abkürzung.",
+						"ExerciseTopic": "DB",
+						"Difficulty": 10,
+						"Answers": [
+							{
+								"Text": "Wahr",
+								"isCorrect": true
+							},
+							{
+								"Text": "Falsch",
+								"isCorrect": false
+							}
+						]
+					},
+					{
+						"ID": 84,
+						"ExerciseText": "SQL Befehle können Kategorisiert werden.",
+						"ExerciseTopic": "DB",
+						"Difficulty": 10,
+						"Answers": [
+							{
+								"Text": "Wahr",
+								"isCorrect": true
+							},
+							{
+								"Text": "Falsch",
+								"isCorrect": false
+							}
+						]
+					},
+					{
+						"ID": 85,
+						"ExerciseText": "Bei SELECT handelt es sich um einen Befehl von SQL.",
+						"ExerciseTopic": "DB",
+						"Difficulty": 10,
+						"Answers": [
+							{
+								"Text": "Wahr",
+								"isCorrect": true
+							},
+							{
+								"Text": "Falsch",
+								"isCorrect": false
+							}
+						]
+					},
+					{
+						"ID": 86,
+						"ExerciseText": "Eine Datenbank ist eine spezielle Bank, auf die man sich setzen kann.",
+						"ExerciseTopic": "DB",
+						"Difficulty": 10,
+						"Answers": [
+							{
+								"Text": "Wahr",
+								"isCorrect": false
+							},
+							{
+								"Text": "Falsch",
+								"isCorrect": true
+							}
+						]
+					},
+					{
+						"ID": 87,
+						"ExerciseText": "Eine Datenbank ist eine Methode Daten zu speichern.",
+						"ExerciseTopic": "DB",
+						"Difficulty": 10,
+						"Answers": [
+							{
+								"Text": "Wahr",
+								"isCorrect": true
+							},
+							{
+								"Text": "Falsch",
+								"isCorrect": false
+							}
+						]
+					},
+					{
+						"ID": 88,
+						"ExerciseText": "Eine Datenbank speichert Daten lediglich temporär.",
+						"ExerciseTopic": "DB",
+						"Difficulty": 10,
+						"Answers": [
+							{
+								"Text": "Wahr",
+								"isCorrect": false
+							},
+							{
+								"Text": "Falsch",
+								"isCorrect": true
+							}
+						]
+					},
+					{
+						"ID": 89,
+						"ExerciseText": "Um auf eine Datenbank zuzugreifen verwendet man meistens eine Verwaltungssoftware.",
+						"ExerciseTopic": "DB",
+						"Difficulty": 10,
+						"Answers": [
+							{
+								"Text": "Wahr",
+								"isCorrect": true
+							},
+							{
+								"Text": "Falsch",
+								"isCorrect": false
+							}
+						]
+					},
+					{
+						"ID": 90,
+						"ExerciseText": "Datenbanken sind eine unbeliebte Variante Daten zu speichern.",
+						"ExerciseTopic": "DB",
+						"Difficulty": 10,
+						"Answers": [
+							{
+								"Text": "Wahr",
+								"isCorrect": false
+							},
+							{
+								"Text": "Falsch",
+								"isCorrect": true
+							}
+						]
+					},
+					{
+						"ID": 91,
+						"ExerciseText": "Eine Datenbank ist eine der perfomantesten Methoden große Datensätze zu speichern.",
+						"ExerciseTopic": "DB",
+						"Difficulty": 10,
+						"Answers": [
+							{
+								"Text": "Wahr",
+								"isCorrect": true
+							},
+							{
+								"Text": "Falsch",
+								"isCorrect": false
+							}
+						]
+					},
+					{
+						"ID": 92,
+						"ExerciseText": "Ein Alltagsbeispiel für die Nutzung einer Datenbank sind die Kundendaten eines Onlineshops.",
+						"ExerciseTopic": "DB",
+						"Difficulty": 10,
+						"Answers": [
+							{
+								"Text": "Wahr",
+								"isCorrect": true
+							},
+							{
+								"Text": "Falsch",
+								"isCorrect": false
+							}
+						]
+					},
+					{
+						"ID": 93,
+						"ExerciseText": "Eine Datenbank besteht meistens aus einer Vielzahl von Tabellen.",
+						"ExerciseTopic": "DB",
+						"Difficulty": 10,
+						"Answers": [
+							{
+								"Text": "Wahr",
+								"isCorrect": true
+							},
+							{
+								"Text": "Falsch",
+								"isCorrect": false
+							}
+						]
+					},
+					{
+						"ID": 94,
+						"ExerciseText": "Tabellen in einer Datenbank haben Beziehungen zueinander.",
+						"ExerciseTopic": "DB",
+						"Difficulty": 10,
+						"Answers": [
+							{
+								"Text": "Wahr",
+								"isCorrect": true
+							},
+							{
+								"Text": "Falsch",
+								"isCorrect": false
+							}
+						]
+					},
+					{
+						"ID": 95,
+						"ExerciseText": "Jede Tabelle in einer Datenbank muss einen sogenannten Primärschlüssel haben.",
+						"ExerciseTopic": "DB",
+						"Difficulty": 10,
+						"Answers": [
+							{
+								"Text": "Wahr",
+								"isCorrect": true
+							},
+							{
+								"Text": "Falsch",
+								"isCorrect": false
+							}
+						]
+					},
+					{
+						"ID": 96,
+						"ExerciseText": "In Datenbanken gibt es Primär und Fremdschlüsel.",
+						"ExerciseTopic": "DB",
+						"Difficulty": 10,
+						"Answers": [
+							{
+								"Text": "Wahr",
+								"isCorrect": true
+							},
+							{
+								"Text": "Falsch",
+								"isCorrect": false
+							}
+						]
+					},
+					{
+						"ID": 97,
+						"ExerciseText": "Frendschlüssel dienen dazu, Beziehungen darzustellen.",
+						"ExerciseTopic": "DB",
+						"Difficulty": 10,
+						"Answers": [
+							{
+								"Text": "Wahr",
+								"isCorrect": true
+							},
+							{
+								"Text": "Falsch",
+								"isCorrect": false
+							}
+						]
+					},
+					{
+						"ID": 98,
+						"ExerciseText": "Tabellen müssen nicht zwingend einen Fremdschlüssel haben.",
+						"ExerciseTopic": "DB",
+						"Difficulty": 10,
+						"Answers": [
+							{
+								"Text": "Wahr",
+								"isCorrect": true
+							},
+							{
+								"Text": "Falsch",
+								"isCorrect": false
+							}
+						]
+					},
+					{
+						"ID": 99,
+						"ExerciseText": "Es kann mehrere Arten von Beziehungen in einer Datenbank geben.",
+						"ExerciseTopic": "DB",
+						"Difficulty": 10,
+						"Answers": [
+							{
+								"Text": "Wahr",
+								"isCorrect": true
+							},
+							{
+								"Text": "Falsch",
+								"isCorrect": false
+							}
+						]
+					},
+					{
+						"ID": 100,
+						"ExerciseText": "Es gibt nur wenige Arten von SQL-Datenbanken.",
+						"ExerciseTopic": "DB",
+						"Difficulty": 10,
+						"Answers": [
+							{
+								"Text": "Wahr",
+								"isCorrect": false
+							},
+							{
+								"Text": "Falsch",
+								"isCorrect": true
+							}
+						]
+					},
+					{
+						"ID": 101,
+						"ExerciseText": "Die Reihenfolge von SQL Befehlen bei einer Abfrage spielt keine Rolle.",
+						"ExerciseTopic": "DB",
+						"Difficulty": 10,
+						"Answers": [
+							{
+								"Text": "Wahr",
+								"isCorrect": false
+							},
+							{
+								"Text": "Falsch",
+								"isCorrect": true
+							},
+							{
+								"Text": "",
+								"isCorrect": false
+							},
+							{
+								"Text": "",
+								"isCorrect": false
+							},
+							{
+								"Text": "",
+								"isCorrect": false
+							},
+							{
+								"Text": "",
+								"isCorrect": false
+							}
+						]
+					},
+					{
+						"ID": 102,
+						"ExerciseText": "Der Primärschlüssel in einer Datenbank dient nur als eine Art Passwort für die Tabelle.",
+						"ExerciseTopic": "DB",
+						"Difficulty": 10,
+						"Answers": [
+							{
+								"Text": "Wahr",
+								"isCorrect": false
+							},
+							{
+								"Text": "Falsch",
+								"isCorrect": true
+							}
+						]
+					},
+					{
+						"ID": 103,
+						"ExerciseText": "Eine Tabelle kann immer nur einen Schlüssel haben.",
+						"ExerciseTopic": "DB",
+						"Difficulty": 10,
+						"Answers": [
+							{
+								"Text": "Wahr",
+								"isCorrect": false
+							},
+							{
+								"Text": "Falsch",
+								"isCorrect": true
+							}
+						]
+					},
+					{
+						"ID": 104,
+						"ExerciseText": "Jedes Feld in einer Tabelle muss von einem bestimmten Datentyp sein.",
+						"ExerciseTopic": "DB",
+						"Difficulty": 10,
+						"Answers": [
+							{
+								"Text": "Wahr",
+								"isCorrect": true
+							},
+							{
+								"Text": "Falsch",
+								"isCorrect": false
+							}
+						]
+					},
+					{
+						"ID": 105,
+						"ExerciseText": "Die Datentypen in einer Datenbank sind genau die Selben, wie in C++.",
+						"ExerciseTopic": "DB",
+						"Difficulty": 10,
+						"Answers": [
+							{
+								"Text": "Wahr",
+								"isCorrect": false
+							},
+							{
+								"Text": "Falsch",
+								"isCorrect": true
+							}
+						]
+					},
+					{
+						"ID": 106,
+						"ExerciseText": "Heutzutage lässt sich SQL mit anderen Programmiersprachen kombinieren.",
+						"ExerciseTopic": "DB",
+						"Difficulty": 10,
+						"Answers": [
+							{
+								"Text": "Wahr",
+								"isCorrect": true
+							},
+							{
+								"Text": "Falsch",
+								"isCorrect": false
+							}
+						]
+					}
+				],
+				"Medium": [
+					{
+						"ID": 107,
+						"ExerciseText": "Wofür steht die Abkürzung SQL?",
+						"ExerciseTopic": "DB",
+						"Difficulty": 20,
+						"Answers": [
+							{
+								"Text": "Structured Query Language",
+								"isCorrect": true
+							},
+							{
+								"Text": "Structured Question Language",
+								"isCorrect": false
+							},
+							{
+								"Text": "Strong Query Licence",
+								"isCorrect": false
+							},
+							{
+								"Text": "Strong Question Language",
+								"isCorrect": false
+							}
+						]
+					},
+					{
+						"ID": 108,
+						"ExerciseText": "Welcher Befehl ist kein valider SQL Befehl?",
+						"ExerciseTopic": "DB",
+						"Difficulty": 20,
+						"Answers": [
+							{
+								"Text": "SELECT",
+								"isCorrect": false
+							},
+							{
+								"Text": "WHERE",
+								"isCorrect": false
+							},
+							{
+								"Text": "FILTER",
+								"isCorrect": true
+							},
+							{
+								"Text": "ORDER BY",
+								"isCorrect": false
+							}
+						]
+					},
+					{
+						"ID": 109,
+						"ExerciseText": "Welchen SQL Befehl nutzt man um Datensätze zu Filtern?",
+						"ExerciseTopic": "DB",
+						"Difficulty": 20,
+						"Answers": [
+							{
+								"Text": "WHERE",
+								"isCorrect": true
+							},
+							{
+								"Text": "WHICH",
+								"isCorrect": false
+							},
+							{
+								"Text": "ORDER BY",
+								"isCorrect": false
+							},
+							{
+								"Text": "SELECT",
+								"isCorrect": false
+							}
+						]
+					},
+					{
+						"ID": 110,
+						"ExerciseText": "Welcher SQL Befehl wird genutzt um Daten in einer Datenbank zu aktualisieren?",
+						"ExerciseTopic": "DB",
+						"Difficulty": 20,
+						"Answers": [
+							{
+								"Text": "UPDATE",
+								"isCorrect": true
+							},
+							{
+								"Text": "MODIFY",
+								"isCorrect": false
+							},
+							{
+								"Text": "SAVE",
+								"isCorrect": false
+							},
+							{
+								"Text": "SAVE AS",
+								"isCorrect": false
+							}
+						]
+					},
+					{
+						"ID": 111,
+						"ExerciseText": "Welchen SQL Befehl nutzt man um Daten in eine Tabelle einzufügen?",
+						"ExerciseTopic": "DB",
+						"Difficulty": 20,
+						"Answers": [
+							{
+								"Text": "INSERT INTO",
+								"isCorrect": true
+							},
+							{
+								"Text": "INSERT",
+								"isCorrect": false
+							},
+							{
+								"Text": "ADD NEW",
+								"isCorrect": false
+							},
+							{
+								"Text": "CREATE",
+								"isCorrect": false
+							}
+						]
+					},
+					{
+						"ID": 112,
+						"ExerciseText": "Wo muss der SELECT Befehl immer stehen?",
+						"ExerciseTopic": "DB",
+						"Difficulty": 20,
+						"Answers": [
+							{
+								"Text": "An erster Stelle der Abfrage",
+								"isCorrect": true
+							},
+							{
+								"Text": "Immer an der Zweiten Stelle der Abfrage",
+								"isCorrect": false
+							},
+							{
+								"Text": "Man braucht den SSELECT Befehl nicht",
+								"isCorrect": false
+							},
+							{
+								"Text": "An letzter Stelle einer Abfrage",
+								"isCorrect": false
+							}
+						]
+					},
+					{
+						"ID": 113,
+						"ExerciseText": "Wofür steht die Abkürzung DMBS?",
+						"ExerciseTopic": "DB",
+						"Difficulty": 20,
+						"Answers": [
+							{
+								"Text": "Database Management Software",
+								"isCorrect": true
+							},
+							{
+								"Text": "Database Modification Software",
+								"isCorrect": false
+							},
+							{
+								"Text": "Datenbank Management Sprache",
+								"isCorrect": false
+							},
+							{
+								"Text": "Datenbank Modifizierungs Sequenz",
+								"isCorrect": false
+							}
+						]
+					},
+					{
+						"ID": 114,
+						"ExerciseText": "Was ist kein Datentyp in SQL?",
+						"ExerciseTopic": "DB",
+						"Difficulty": 20,
+						"Answers": [
+							{
+								"Text": "string",
+								"isCorrect": true
+							},
+							{
+								"Text": "integer",
+								"isCorrect": false
+							},
+							{
+								"Text": "varchar",
+								"isCorrect": false
+							},
+							{
+								"Text": "timestamp",
+								"isCorrect": false
+							}
+						]
+					},
+					{
+						"ID": 115,
+						"ExerciseText": "Mit welchem Zeichen beim SELECT Befehl kann man alle Spalten einer Tabelle auswählen?",
+						"ExerciseTopic": "DB",
+						"Difficulty": 20,
+						"Answers": [
+							{
+								"Text": "*",
+								"isCorrect": true
+							},
+							{
+								"Text": "+",
+								"isCorrect": false
+							},
+							{
+								"Text": "-",
+								"isCorrect": false
+							},
+							{
+								"Text": "#",
+								"isCorrect": false
+							}
+						]
+					},
+					{
+						"ID": 116,
+						"ExerciseText": "Welchen SQL Befehl nutzt man um das Ergebnis zu sortieren?",
+						"ExerciseTopic": "DB",
+						"Difficulty": 20,
+						"Answers": [
+							{
+								"Text": "ORDER BY",
+								"isCorrect": true
+							},
+							{
+								"Text": "ORDER",
+								"isCorrect": false
+							},
+							{
+								"Text": "SORT",
+								"isCorrect": false
+							},
+							{
+								"Text": "SORT BY",
+								"isCorrect": false
+							}
+						]
+					},
+					{
+						"ID": 117,
+						"ExerciseText": "Wie löscht man einen Eintrag aus der Tabelle 'Personen' wo der 'Vorname' Peter ist.",
+						"ExerciseTopic": "DB",
+						"Difficulty": 20,
+						"Answers": [
+							{
+								"Text": "DELETE FROM Personen WHERE Vorname = 'Peter'",
+								"isCorrect": true
+							},
+							{
+								"Text": "DELETE Vorname Peter",
+								"isCorrect": false
+							},
+							{
+								"Text": "REMOVE WHERE Vorname Peter",
+								"isCorrect": false
+							},
+							{
+								"Text": "DELETE WHERE Vorname = 'Peter' FROM Personen",
+								"isCorrect": false
+							}
+						]
+					}
+				]
+			}
+		}
+	}
+]

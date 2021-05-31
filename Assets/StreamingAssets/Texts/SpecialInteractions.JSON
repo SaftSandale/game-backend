@@ -1,0 +1,18 @@
+[
+	{
+		"ID":1,
+		"TextString": "Hmm... es scheint, dass dein Level nicht ausreicht um diese Tür zu öffnen. Du musst mindestens Level *LEVEL* sein, um das zu tun."
+	},
+	{
+		"ID":2,
+		"TextString": "Oh, sieht aus als wäre diese Tür verschlossen. Vielleicht kannst du etwas finden, womit du sie öffnen kannst?"
+	},
+	{
+		"ID":3,
+		"TextString": "HAHA, denkst du wirklich du kommst an uns vorbei?! Da hast du dich geirrt, uns kannst du nicht besiegen!"
+	},
+	{
+		"ID":4,
+		"TextString": "Du hast noch nicht alle Fragen der vorherigen Schwierigkeit beantwortet. Wenn du von jedem Thema 10 Fragen oder mehr richtig beantwortet hast, kannst du diese Tür öffnen."
+	},
+]
