@@ -9,9 +9,13 @@ using System.Threading.Tasks;
 
 namespace PokAEmon.Model
 {
+    /// <summary>
+    /// Model für alle Fächer. 
+    /// </summary>
     public class Subject
     {
         #region Properties
+
         /// <summary>
         /// Speichert den Namen des Fachs.
         /// </summary>
@@ -23,7 +27,7 @@ namespace PokAEmon.Model
         public List<Exercise> Exercises { get; set; }
 
         /// <summary>
-        /// Speichert alle Aufgaben nach Schwierigkeit sortiert..
+        /// Speichert alle Aufgaben nach Schwierigkeit sortiert.
         /// </summary>
         public Dictionary<Difficulty, List<Exercise>> ExercisesByDifficulty
         {
@@ -74,6 +78,7 @@ namespace PokAEmon.Model
         #endregion
 
         #region Contructor
+
         /// <summary>
         /// Erstellt ein neues Fach mit übergebenem Namen.
         /// </summary>

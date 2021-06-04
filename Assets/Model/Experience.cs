@@ -5,21 +5,25 @@ using System.Collections;
 
 namespace PokAEmon.Model
 {
+    /// <summary>
+    /// Model für die Erfahrungspunkte des Spielers.
+    /// </summary>
     public class Experience
     {
         #region Properties
+
         /// <summary>
         /// Aktueller Erfahrungswert.
         /// </summary>
         public float XP { get; private set; }
 
         /// <summary>
-        /// Aktuelles Level des  Spielers.
+        /// Aktuelles Level des Spielers.
         /// </summary>
         public int Level { get; private set; }
 
         /// <summary>
-        /// Erfahrungspunkte, die für das nächste Level benötigt  werden.
+        /// Erfahrungspunkte, die für das nächste Level benötigt werden.
         /// </summary>
         public float NeededXPForNextLevel { get; private set; }
 
@@ -30,6 +34,7 @@ namespace PokAEmon.Model
         #endregion
 
         #region Contructor
+
         /// <summary>
         /// Konstruktor, der initial die Properties befüllt.
         /// </summary>
@@ -40,21 +45,10 @@ namespace PokAEmon.Model
             Bonus = 1;
             NeededXPForNextLevel = 200;
         }
-
-        /// <summary>
-        /// JSON Konstruktor, der genutzt wird, um Erfahrung aus der JSON Datei in den Properties zu speichern.
-        /// </summary>
-        /// <param name="xp">Die Erfahrung, die gespeichert wurde.</param>
-        /// <param name="lvl">Das Level, das gespeichert wurde.</param>
-        [JsonConstructor]
-        public Experience(int xp, int lvl)
-        {
-            XP = xp;
-            Level = lvl;
-        }
         #endregion
 
         #region Methods
+
         /// <summary>
         /// Erhöht den Bonus.
         /// </summary>
@@ -89,16 +83,16 @@ namespace PokAEmon.Model
         }
 
         /// <summary>
-        /// Fügt Erfahrungspunkte hinzu.
+        /// Fügt Erfahrungspunkte beim Tutorial hinzu.
         /// </summary>
         /// <param name="xpToAdd">Erfahrungspunkte, die hinzugefügt werden sollen.</param>
-        public void AddXP(float xpToAdd)
+        public void AddTutorialXP(float xpToAdd)
         {
             this.XP += xpToAdd;
             if (this.XP >= NeededXPForNextLevel)
             {
                 Level++;
-                NeededXPForNextLevel = Level * 100;
+                NeededXPForNextLevel = 300;
             }
         }
         #endregion

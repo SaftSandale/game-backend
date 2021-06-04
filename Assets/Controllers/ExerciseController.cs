@@ -10,16 +10,20 @@ using System.Threading.Tasks;
 
 namespace PokAEmon.Controllers
 {
+    /// <summary>
+    /// ExerciseController führt Aufgabenbezogene Operationen durch.
+    /// </summary>
     public class ExerciseController
     {
         #region Methods
+
         /// <summary>
-        /// Ermittelt aus dem Chache eine zufällige Frage, die das passende Fach, die passende Schwierigkeit und das passende Thema hat.
+        /// Ermittelt aus dem Chache eine zufällige Aufgabe, die das passende Fach, die passende Schwierigkeit und das passende Thema hat.
         /// </summary>
-        /// <param name="subject">Das Fach, dem die Frage angehören soll.</param>
-        /// <param name="topic">Das Thema, dem die Frage angehören soll.</param>
-        /// <param name="difficulty">Die Schwierigkeit, die Frage haben soll.</param>
-        /// <returns>Gibt eine Exercise zurück.</returns>
+        /// <param name="subject">Das Fach, dem die Aufgabe angehören soll.</param>
+        /// <param name="topic">Das Thema, dem die Aufgabe angehören soll.</param>
+        /// <param name="difficulty">Die Schwierigkeit, die Aufgabe haben soll.</param>
+        /// <returns>Gibt eine Aufgabe zurück.</returns>
         public static Exercise GetRandomSuitableExercise(Subject subject, string topic, Difficulty difficulty)
         {
             Subject suitableSubject = Cache.AllSubjectsUnusedExercises.FirstOrDefault(s => s.SubjectName == subject.SubjectName);
@@ -44,8 +48,8 @@ namespace PokAEmon.Controllers
         /// <returns>Gibt true oder false zurück.</returns>
         public static bool CheckIfAnwerIsCorrect(Exercise exercise, string answer)
         {
-            var pickedAnwer = exercise.Answers.FirstOrDefault(a => a.Text == answer);
-            return pickedAnwer.isCorrect;
+            var pickedAnswer = exercise.Answers.FirstOrDefault(a => a.Text == answer);
+            return pickedAnswer.IsCorrect;
         }
         #endregion
     }

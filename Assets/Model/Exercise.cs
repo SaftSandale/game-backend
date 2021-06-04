@@ -9,9 +9,13 @@ using System.Threading.Tasks;
 
 namespace PokAEmon.Model
 {
+    /// <summary>
+    /// Model für alle Aufgaben.
+    /// </summary>
     public class Exercise
     {
         #region Properties
+
         /// <summary>
         /// ID, um eine Aufgabe unverwechselbar zu unterscheiden.
         /// </summary>
@@ -38,7 +42,7 @@ namespace PokAEmon.Model
         public List<Answer> Answers { get; set; }
 
         /// <summary>
-        /// Liste aller richtigen Aufgaben.
+        /// Liste aller richtigen Antworten.
         /// </summary>
         private IEnumerable<Answer> CorrectAnswers
         {
@@ -46,7 +50,7 @@ namespace PokAEmon.Model
             {
                 if (Answers != null && Answers.Count() != 0)
                 {
-                    IEnumerable<Answer> res = Answers.Where(a => a.isCorrect == true);
+                    IEnumerable<Answer> res = Answers.Where(a => a.IsCorrect == true);
                     return res;
                 }
                 return null;
@@ -55,6 +59,7 @@ namespace PokAEmon.Model
         #endregion
 
         #region Constructor
+
         /// <summary>
         /// Konstruktor um neue Aufgabe anzulegen, wenn der Nutzer eine Aufgabe hinzufügt.
         /// </summary>
@@ -86,8 +91,9 @@ namespace PokAEmon.Model
         #endregion
 
         #region Methods
+
         /// <summary>
-        /// Mischt alle Anwtorten in zufällige Reihenfolge.
+        /// Mischt alle Anwtorten in eine zufällige Reihenfolge.
         /// </summary>
         /// <returns>Liste der zufällig gemischten Antworten.</returns>
         public List<Answer> GetShuffledAnswers()
@@ -96,12 +102,6 @@ namespace PokAEmon.Model
             var randomizedAnswers = new List<Answer>(Answers.OrderBy(item => rnd.Next()));
             return randomizedAnswers;
         }
-
-        //public bool CheckAnswers(IEnumerable<Answer> givenanswers)
-        //{
-        //    bool equal = givenanswers.OrderBy(x => x.Text).SequenceEqual(CorrectAnswers.OrderBy(x => x.Text));
-        //    return equal;
-        //}
 
         /// <summary>
         /// Bearbeitet eine Aufgabe mit übergebenen Werten.

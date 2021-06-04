@@ -10,6 +10,9 @@ public abstract class Interactable : MonoBehaviour
     /// Zahlenwert anhand dessen eine TextLine zu einem interagierbaren Objekt zugeordnet werden kann.
     /// </summary>
     public int ID;
+    public bool openAfterEasy;
+    public bool openAfterMedium;
+    public bool openAfterHard;
     #endregion
 
     #region Unity Methods

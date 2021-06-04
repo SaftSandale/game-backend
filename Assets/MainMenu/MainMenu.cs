@@ -8,13 +8,21 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+/// <summary>
+/// Unity Script des Hauptmenüs.
+/// </summary>
 public class MainMenu : MonoBehaviour
 {
     #region Public Variables
+
     /// <summary>
     /// Property, die Instanz der Cache Klasse speichert.
     /// </summary>
     public static PokAEmon.BackgroundWorkers.Cache QuestionCache { get; set; }
+
+    /// <summary>
+    /// Gibt an, ob der Nutzer vom Editor zurück ins Hauptmenu geleitet wurde.
+    /// </summary>
     public static bool returnedFromEditor = false;
     #endregion
 
@@ -40,6 +48,7 @@ public class MainMenu : MonoBehaviour
     #endregion
 
     #region Methods
+
     /// <summary>
     /// Wechselt im Hauptmenu die Ansicht zur Spielen Ansicht.
     /// </summary>

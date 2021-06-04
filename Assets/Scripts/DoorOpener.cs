@@ -8,8 +8,6 @@ public class DoorOpener : Interactable
 {
     #region Unity Variables
     public int NeededLevelToOpen;
-    public bool openAfterEasy;
-    public bool openAfterMedium;
     public MessageManager messageManager;
     private Animator animatorLeft;
     private Animator animatorRight;
@@ -17,6 +15,7 @@ public class DoorOpener : Interactable
     #endregion
 
     #region Methods
+
     /// <summary>
     /// Wird aufgerufen, wenn der Spieler mit einer Tür interagiert. Startet die Animation und entfernt die Kollision der Tür. Gibt außerdem einen Fehler aus, wenn das Level nicht ausreicht.
     /// </summary>
@@ -59,23 +58,39 @@ public class DoorOpener : Interactable
         {
             if (openAfterEasy)
             {
+                bool playerAnswered50EzQs = true;
                 foreach (var topic in PokAEmon.BackgroundWorkers.Cache.AmountCorrectEasyExercises)
                 {
-                    if (topic.Value >= 10)
+                    if (topic.Value < 10)
                     {
-                        canOpen = true;
+                        playerAnswered50EzQs = false;
                     }
                 }
+                canOpen = playerAnswered50EzQs;
             }
             else if (openAfterMedium)
             {
+                bool playerAnswered50EzQs = true;
                 foreach (var topic in PokAEmon.BackgroundWorkers.Cache.AmountCorrectMediumExercises)
                 {
-                    if (topic.Value >= 10)
+                    if (topic.Value < 10)
                     {
-                        canOpen = true;
+                        playerAnswered50EzQs = false;
                     }
                 }
+                canOpen = playerAnswered50EzQs;
+            }
+            else if (openAfterHard)
+            {
+                bool playerAnswered50EzQs = true;
+                foreach (var topic in PokAEmon.BackgroundWorkers.Cache.AmountCorrectHardExercises)
+                {
+                    if (topic.Value < 10)
+                    {
+                        playerAnswered50EzQs = false;
+                    }
+                }
+                canOpen = playerAnswered50EzQs;
             }
             else if(!openAfterMedium && !openAfterEasy)
             {

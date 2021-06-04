@@ -158,7 +158,7 @@ public class QuizManager : MonoBehaviour
                 button.SetActive(false);
             }
         }
-        MainMenu.QuestionCache.addElement(exercise.ID);
+        MainMenu.QuestionCache.AddElement(exercise.ID);
 
         Debug.Log(exercise.ExerciseText);
     }

@@ -9,32 +9,36 @@ using UnityEngine;
 
 namespace PokAEmon.BackgroundWorkers
 {
+    /// <summary>
+    /// FileHandler ist die Klasse, die Inhalte von Dateien ausliest und verändert.
+    /// </summary>
     public class FileHandler
     {
-        #region Private Variables
+        #region Path Variables
+
         /// <summary>
-        /// Speichert den Dateipfad zum Spiel.
+        /// Speichert einen eindeutigen Pfad zum StreamingAssets Ordner des Projekts.
         /// </summary>
         private static  string mBaseDirectory = Application.streamingAssetsPath;
+
         /// <summary>
-        /// Speichert den Pfad zur JSON Datei, die alle Exercises beinhaltet.
+        /// Speichert den Pfad zur JSON Datei, die alle Afugaben beinhaltet.
         /// </summary>
         private static readonly string mExercisePath = mBaseDirectory + "/Exercises/Exercises.JSON";
-        /// <summary>
-        /// Speichert den Pfad zur JSON Datei, die alle Spielerdaten speichert.
-        /// </summary>
-        private static readonly string mPlayersPath = mBaseDirectory + "/SaveStates/Players.JSON";
+
         /// <summary>
         /// Speichert den Pfad zur JSON Datei, die alle TextLines speichert.
         /// </summary>
         private static readonly string mTextLinesPath = mBaseDirectory + "/Texts/InteractionTexts.JSON";
+
         /// <summary>
-        /// Speichert den Pfad zur JSON Datei, die alle speziellen TextLines speichert.
+        /// Speichert den Pfad zur JSON Datei, die alle besonderen TextLines speichert.
         /// </summary>
         private static readonly string mSpecialTextLinesPath = mBaseDirectory + "/Texts/SpecialInteractions.JSON";
         #endregion
 
         #region Methods
+
         /// <summary>
         /// Liest die JSON Datei aus, die die Aufgaben beinhaltet.
         /// </summary>
@@ -52,25 +56,6 @@ namespace PokAEmon.BackgroundWorkers
         public static void WriteExerciseJson(string jsonstring)
         {
             File.WriteAllText(mExercisePath, jsonstring);
-        }
-
-        /// <summary>
-        /// Liest die JSON Datei aus, die die Spielerdaten beinhaltet.
-        /// </summary>
-        /// <returns>Den Inhalt der JSON Datei als String.</returns>
-        public static string ReadPlayersJSON()
-        {
-            var jsonString = File.ReadAllText(mPlayersPath);
-            return jsonString;
-        }
-
-        /// <summary>
-        /// Schreibt die aktuellen Spielerdaten aus dem Cache in die JSON Datei.
-        /// </summary>
-        /// <param name="jsonstring">Einen JSON String, der in die Datei geschrieben werden soll.</param>
-        public static void WritePlayersJson(string jsonstring)
-        {
-            File.WriteAllText(mPlayersPath, jsonstring);
         }
 
         /// <summary>

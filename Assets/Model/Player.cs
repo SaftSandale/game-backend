@@ -8,9 +8,13 @@ using System.Threading.Tasks;
 
 namespace PokAEmon.Model
 {
+    /// <summary>
+    /// Model für alle Daten des Spielers.
+    /// </summary>
     public class Player
     {
         #region Properties
+
         /// <summary>
         /// Name des Spielers.
         /// </summary>
@@ -22,15 +26,19 @@ namespace PokAEmon.Model
         public Experience PlayerExperience { get; set; }
 
         /// <summary>
-        /// 
+        /// QuestionCache, der speichert, ob die letzten Aufgaben richtig beantwortet wurden.
         /// </summary>
         private QuestionCache QC { get; set; }
         #endregion
 
         #region Internal Class
+        /// <summary>
+        /// Interne Klasse QuestionCache
+        /// </summary>
         internal class QuestionCache
         {
             #region Properties
+
             /// <summary>
             /// Anzahl der in Folge richtig beantworteten Fragen.
             /// </summary>
@@ -43,6 +51,7 @@ namespace PokAEmon.Model
             #endregion
 
             #region Constructor
+
             /// <summary>
             /// Konstruktor, der Index und BonusLimit befüllt.
             /// </summary>
@@ -55,6 +64,7 @@ namespace PokAEmon.Model
             #endregion
 
             #region Methods
+
             /// <summary>
             /// Zählt den Index für jede richtige Frage hoch oder setzt ihn auf null, wenn eine Falsche Antwort ausgewählt wurde.
             /// </summary>

@@ -1,45 +1,50 @@
 using Newtonsoft.Json;
 using PokAEmon.Enums;
 using PokAEmon.Model;
-using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PokAEmon.BackgroundWorkers
 {
+    /// <summary>
+    /// Cache ist die Klasse, die alle wichtigen Daten speichert, die während des Spiels benötigt werden.
+    /// </summary>
     public class Cache
     {
         #region Properties
+
         /// <summary>
-        /// Anzahl der Fragen, die der Cache speichern soll.
+        /// Anzahl der Aufgaben, die der Cache speichern soll.
         /// </summary>
-        private int maxElements { get; set; }
+        private int MaxElements { get; set; }
+
         /// <summary>
-        /// Queue, der die IDs der letzten Fragen speichert. Die Anzahl wird mit maxElements festgelegt.
+        /// Queue, der die IDs der letzten Aufgaben speichert. Die Anzahl wird mit maxElements festgelegt.
         /// </summary>
         private static Queue<int> QuestionIdCache { get; set; }
-        //private List<Player> AllPlayers { get; set; }
+
         /// <summary>
         /// Speichert Daten des aktuellen Spielers. 
         /// </summary>
         public static Player CurrentPlayer { get; set; }
+
         /// <summary>
-        /// Speichert eine Liste aller Nachrichten, die im Spiel ausgegeben werden können.
+        /// Speichert eine Liste aller Standard Nachrichten, die im Spiel ausgegeben werden können.
         /// </summary>
         public static List<TextLine> AllTextLines { get; set; }
+
         /// <summary>
         /// Speichert eine Liste aller besonderen Nachrichten, die im Spiel ausgegeben werden können.
         /// </summary>
         public static List<TextLine> AllSpecialTextLines { get; set; }
+
         /// <summary>
-        /// Speichert eine Liste alle Fächer mit Fragen, die im Spiel gestellt werden können.
+        /// Speichert eine Liste alle Fächer mit Aufgaben, die im Spiel gestellt werden können.
         /// </summary>
         public static List<Subject> AllSubjects { get; set; }
+
         /// <summary>
-        /// Speichert eine Liste aller Facher mit Fragen, die im aktuellen Speildurchlauf noch nicht gestellt wurden.
+        /// Speichert eine Liste aller Facher mit Aufgaben, die im aktuellen Speildurchlauf noch nicht gestellt wurden.
         /// </summary>
         public static List<Subject> AllSubjectsUnusedExercises
         { 
@@ -73,39 +78,56 @@ namespace PokAEmon.BackgroundWorkers
             } 
         }
 
+        /// <summary>
+        /// Speichert die Anzahl der richtig beantworteten Aufgaben der Schwierigkeit leicht.
+        /// </summary>
         public static Dictionary<string, int> AmountCorrectEasyExercises { get; set; }
+
+        /// <summary>
+        /// Speichert die Anzahl der richtig beantworteten Aufgaben der Schwierigkeit mittelschwer.
+        /// </summary>
         public static Dictionary<string, int> AmountCorrectMediumExercises { get; set; }
+
+        /// <summary>
+        /// Speichert die Anzahl der richtig beantworteten Aufgaben der Schwierigkeit schwer.
+        /// </summary>
         public static Dictionary<string, int> AmountCorrectHardExercises { get; set; }
+
+        /// <summary>
+        /// Speichert die Anzahl der insgesamt beantworteten Aufgaben.
+        /// </summary>
         public static int TotalAnsweredQuestions { get; set; }
         #endregion
 
         #region Constructor
+
         /// <summary>
         /// Konstruktor, der die Anzahl der zu Speichernden Elemente setzt und weitere Properties befüllt.
         /// </summary>
         /// <param name="anzElements">Maximale Anzahl, die der Cache speichern soll.</param>
         public Cache(int anzElements)
         {
-            maxElements = anzElements;
+            MaxElements = anzElements;
             QuestionIdCache = new Queue<int>();
             GetAllSubjects();
             GetAllTextLines();
             GetAllSpecialTextLines();
             FillDictionarys();
-            //GetAllPlayers();
         }
         #endregion
 
         #region Methods
+
         /// <summary>
         /// Deserialisiert JSON String mit allen Fächern und Aufgaben in das Subject Model und befüllt die Property AllSubjects mit diesen Daten.
         /// </summary>
         private void GetAllSubjects()
         {
-            List<Subject> res = JsonConvert.DeserializeObject<List<Subject>>(FileHandler.ReadExerciseJSON());
-            if (res != null)
+            string jsonString = FileHandler.ReadExerciseJSON();
+            List<Subject> allSubjectsFromJson = JsonConvert.DeserializeObject<List<Subject>>(jsonString);
+            if (allSubjectsFromJson != null)
             {
-                AllSubjects = res;
+                AllSubjects = allSubjectsFromJson;
             }
             else
             {
@@ -113,22 +135,16 @@ namespace PokAEmon.BackgroundWorkers
             }
         }
 
-        //private void GetAllPlayers()
-        //{
-        //    List<Player> res = JsonConvert.DeserializeObject<List<Player>>(FileHandler.ReadPlayersJSON());
-        //    if (res != null) AllPlayers = res;
-        //    else AllPlayers = new List<Player>();
-        //}
-
         /// <summary>
-        /// Deserialisiert JSON String mit allen Nachrichten, die im Spiel ausgegeben werden können in das TextLine Model und befüllt die Property AllTextLines mit diesen Daten.
+        /// Deserialisiert JSON String mit allen standard Nachrichten, die im Spiel ausgegeben werden können in das TextLine Model und befüllt die Property AllTextLines mit diesen Daten.
         /// </summary>
         private void GetAllTextLines()
         {
-            List<TextLine> res = JsonConvert.DeserializeObject<List<TextLine>>(FileHandler.ReadTextLineJSON());
-            if (res != null)
+            string jsonString = FileHandler.ReadTextLineJSON();
+            List<TextLine> allTextLinesFromJson = JsonConvert.DeserializeObject<List<TextLine>>(jsonString);
+            if (allTextLinesFromJson != null)
             {
-                AllTextLines = res;
+                AllTextLines = allTextLinesFromJson;
             }
             else
             {
@@ -136,12 +152,16 @@ namespace PokAEmon.BackgroundWorkers
             }
         }
 
+        /// <summary>
+        /// Deserialisiert JSON String mit allen speziellen Nachrichten, die im Spiel ausgegeben werden können in das TextLine Model und befüllt die Property AllTextLines mit diesen Daten.
+        /// </summary>
         private void GetAllSpecialTextLines()
         {
-            List<TextLine> res = JsonConvert.DeserializeObject<List<TextLine>>(FileHandler.ReadSpecialTextLineJSON());
-            if (res != null)
+            string jsonString = FileHandler.ReadSpecialTextLineJSON();
+            List<TextLine> allSpecialTextLinesFromJson = JsonConvert.DeserializeObject<List<TextLine>>(jsonString);
+            if (allSpecialTextLinesFromJson != null)
             {
-                AllSpecialTextLines = res;
+                AllSpecialTextLines = allSpecialTextLinesFromJson;
             }
             else
             {
@@ -150,12 +170,12 @@ namespace PokAEmon.BackgroundWorkers
         }
 
         /// <summary>
-        /// Fügt der Property QuestionIdCache eine ID einer Frage hinzu. Sollte maxElements überschritten werden, wird der letzte Eintrag aus dem QuestionIdCache entfernt.
+        /// Fügt der Property QuestionIdCache eine ID einer Aufgabe hinzu. Sollte maxElements überschritten werden, wird der letzte Eintrag aus dem QuestionIdCache entfernt.
         /// </summary>
         /// <param name="ID"></param>
-        public void addElement(int ID)
+        public void AddElement(int ID)
         {
-            if(QuestionIdCache.Count >= maxElements)
+            if(QuestionIdCache.Count >= MaxElements)
             {
                 QuestionIdCache.Dequeue();
             }
@@ -163,16 +183,17 @@ namespace PokAEmon.BackgroundWorkers
         }
 
         /// <summary>
-        /// Speichert den aktuellen Pool an Fragen in die JSON Datei, sodass Änderungenn an Fragen beim nächsten Spielstart verfügbar sind.
+        /// Speichert den aktuellen Pool an Aufgaben in die JSON Datei, sodass Änderungenn an Aufgaben beim nächsten Spielstart verfügbar sind.
         /// </summary>
         public static void SaveCacheToJson()
         {
-            string subjectjsonstring = JsonConvert.SerializeObject(AllSubjects);
-            //string leveljsonstring = JsonConvert.SerializeObject(AllPlayers);
-            FileHandler.WriteExerciseJson(subjectjsonstring);
-            //FileHandler.WritePlayersJson(leveljsonstring);
+            string subjectJsonString = JsonConvert.SerializeObject(AllSubjects);
+            FileHandler.WriteExerciseJson(subjectJsonString);
         }
 
+        /// <summary>
+        /// Befüllt die Dictionarys, die die Anzahl der richtigen beantworteten Aufgaben speichern.
+        /// </summary>
         private void FillDictionarys()
         {
             AmountCorrectEasyExercises = new Dictionary<string, int>();
@@ -195,6 +216,11 @@ namespace PokAEmon.BackgroundWorkers
             AmountCorrectHardExercises.Add("Testing", 0);
         }
 
+        /// <summary>
+        /// Updated die Anzahl der richtig beantworteten Aufgaben, wenn eine Aufgabe richtig beantwortet wurde und zählt TotalAnsweredQuestions hoch.
+        /// </summary>
+        /// <param name="exercise">Die Aufgabe, die beantwortet wurde.</param>
+        /// <param name="isCorrect">Boolean, ob die Aufgabe richtig beantwortet wurde.</param>
         public static void SaveAmountCorrectAnsweredQuestion(Exercise exercise, bool isCorrect)
         {
             if (isCorrect)
@@ -213,6 +239,38 @@ namespace PokAEmon.BackgroundWorkers
                 }
             }
             TotalAnsweredQuestions++;
+        }
+
+        /// <summary>
+        /// Gibt die Anzahl der richtig Beantworteten Aufgaben für eine Schwierigkeit zurück.
+        /// </summary>
+        /// <param name="difficulty">Die gewünschte Schwierigkeit.</param>
+        /// <returns></returns>
+        public static int GetAmountOfCorrectAnsweredExercisesForDifficulty(Difficulty difficulty)
+        {
+            int amountCorrectlyAnsweredExercises = 0;
+            switch (difficulty)
+            {
+                case Difficulty.Easy:
+                    foreach (var topic in AmountCorrectEasyExercises)
+                    {
+                        amountCorrectlyAnsweredExercises += topic.Value;
+                    }
+                    break;
+                case Difficulty.Medium:
+                    foreach (var topic in AmountCorrectMediumExercises)
+                    {
+                        amountCorrectlyAnsweredExercises += topic.Value;
+                    }
+                    break;
+                case Difficulty.Hard:
+                    foreach (var topic in AmountCorrectHardExercises)
+                    {
+                        amountCorrectlyAnsweredExercises += topic.Value;
+                    }
+                    break;
+            }
+            return amountCorrectlyAnsweredExercises;
         }
         #endregion
     }
