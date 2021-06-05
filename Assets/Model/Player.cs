@@ -81,7 +81,7 @@ namespace PokAEmon.Model
             /// <returns>Gibt den aktuellen Bonus zurück.</returns>
             public int CalcBonus()
             {
-                return (Index % BonusLimit);
+                return (Index / BonusLimit);
             }
             #endregion
         }
