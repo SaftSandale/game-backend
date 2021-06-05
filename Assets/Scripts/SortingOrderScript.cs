@@ -1,21 +1,24 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// SortingOrderScript passt die SortingOrder in Unity an, sodass Spieler und Gegenstände auf den richtigen Ebenen liegen, je nachdem wo der Spieler sich befindet.
+/// </summary>
 public class SortingOrderScript : MonoBehaviour
 {
     #region Unity Variables
+
     public GameObject player;
     private SpriteRenderer sprite;
     #endregion
 
     #region Unity Methods
-    void Start()
+
+    private void Start()
     {
         sprite = GetComponent<SpriteRenderer>();
     }
 
-    void Update()
+    private void Update()
     {
         if (sprite.transform.position.y < player.transform.position.y)
         {

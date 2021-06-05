@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace PokAEmon.Model
+﻿namespace PokAEmon.Model
 {
     /// <summary>
     /// Model für Nachrichten, die  im Spiel von NPCs ausgegeben werden.

@@ -2,16 +2,18 @@ using PokAEmon.BackgroundWorkers;
 using PokAEmon.Controllers;
 using PokAEmon.Enums;
 using PokAEmon.Model;
-using System.Collections;
-using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
+/// <summary>
+/// QuizManager Script verwaltet alle Aktionen, die mit der UI für Aufgaben zu tun haben.
+/// </summary>
 public class QuizManager : MonoBehaviour
 {
     #region Unity Variables
+
     public GameObject ui;
     public Exercise exercise;
     public GameObject[] abuttons;
@@ -27,7 +29,8 @@ public class QuizManager : MonoBehaviour
     #endregion
 
     #region Unity Methods
-    void Start()
+
+    private void Start()
     {
         ui.transform.GetChild(0).gameObject.SetActive(false);
         ui.transform.GetChild(1).gameObject.SetActive(false);
@@ -35,10 +38,11 @@ public class QuizManager : MonoBehaviour
     #endregion
 
     #region Methods
+
     /// <summary>
     /// Lädt eine Aufgabe und sperrt die Bewegung des Spielers. Zeigt anschließend die UI für die  Aufgabe an.
     /// </summary>
-    public void wakeQuizManager(string _subject, string _topic, Difficulty _difficulty, bool _highGrass)
+    public void WakeQuizManager(string _subject, string _topic, Difficulty _difficulty, bool _highGrass)
     {
         IsQuizManagerActive = true;
         highGrass = _highGrass;
@@ -47,31 +51,35 @@ public class QuizManager : MonoBehaviour
         ui.transform.GetChild(0).gameObject.SetActive(true);
     }
 
-    public void wakeExtendedQuizManager()
+    /// <summary>
+    /// Ruft den ExtendedQuizManager auf, der alle Aufgaben anzeigt und dem Spieler die Möglichkeit bietet, Aufgaben auszuwählen.
+    /// </summary>
+    public void WakeExtendedQuizManager()
     {
         IsQuizManagerActive = true;
         player.GetComponent<PlayerController>().suspendMovement();
         ui.transform.GetChild(1).gameObject.SetActive(true);
         input_Subject.GetComponent<TMP_Dropdown>().options.Add(new TMPro.TMP_Dropdown.OptionData("Fach auswählen"));
 
-        foreach (var subject in PokAEmon.BackgroundWorkers.Cache.AllSubjects)
+        foreach (var subject in PokAEmon.BackgroundWorkers.DataCache.AllSubjects)
         {
             input_Subject.GetComponent<TMP_Dropdown>().options.Add(new TMPro.TMP_Dropdown.OptionData(subject.SubjectName));
-
         }
     }
 
+    /// <summary>
+    /// Ändert die angezeigten Felder im Drop-Down Menü anhand des Fachs.
+    /// </summary>
     public void Input_Subject_TopicChange()
     {
         string subjectName = input_Subject.GetComponent<TMP_Dropdown>().options[input_Subject.GetComponent<TMP_Dropdown>().value].text;
-        Subject subject = PokAEmon.BackgroundWorkers.Cache.AllSubjects.FirstOrDefault(s => s.SubjectName == subjectName);
+        Subject subject = DataCache.AllSubjects.FirstOrDefault(s => s.SubjectName == subjectName);
         foreach(Exercise ex in subject.Exercises)
         {
             if(input_Topic.GetComponent<TMP_Dropdown>().options.FirstOrDefault(x => x.text == ex.ExerciseTopic) == null)
             {
-                input_Topic.GetComponent<TMP_Dropdown>().options.Add(new TMPro.TMP_Dropdown.OptionData(ex.ExerciseTopic));
+                input_Topic.GetComponent<TMP_Dropdown>().options.Add(new TMP_Dropdown.OptionData(ex.ExerciseTopic));
             }
-            
         }
         
     }
@@ -80,12 +88,12 @@ public class QuizManager : MonoBehaviour
     /// Passt die Erfahrung des Spielers an, wenn die Frage richtig  beantwortet wurde und schaltet die Bewegung wieder frei.
     /// </summary>
     /// <param name="isCorrect">Boolean, ob die Frage richtig beantwortet wurde.</param>
-    public void respond(bool isCorrect)
+    public void Respond(bool isCorrect)
     {
         image = ui.transform.GetChild(0).GetChild(0).GetComponent<Image>();
         save = image.color;
-        PokAEmon.BackgroundWorkers.Cache.CurrentPlayer.UpdateXP(exercise.Difficulty, isCorrect);
-        PokAEmon.BackgroundWorkers.Cache.SaveAmountCorrectAnsweredQuestion(exercise, isCorrect);
+        PokAEmon.BackgroundWorkers.DataCache.CurrentPlayer.UpdateXP(exercise.Difficulty, isCorrect);
+        PokAEmon.BackgroundWorkers.DataCache.SaveAmountCorrectAnsweredQuestion(exercise, isCorrect);
         ui.transform.GetChild(0).gameObject.SetActive(false);
         player.GetComponent<PlayerController>().resumeMovement();
         if (isCorrect)
@@ -99,21 +107,26 @@ public class QuizManager : MonoBehaviour
         Invoke("ResetColor", 0.25f);
         
 
-        Subject subject = PokAEmon.BackgroundWorkers.Cache.AllSubjects.FirstOrDefault(s => s.Exercises.Contains(exercise));
+        Subject subject = PokAEmon.BackgroundWorkers.DataCache.AllSubjects.FirstOrDefault(s => s.Exercises.Contains(exercise));
         if (!highGrass)
         {
-            wakeQuizManager(subject.SubjectName, exercise.ExerciseTopic, exercise.Difficulty, highGrass);
+            WakeQuizManager(subject.SubjectName, exercise.ExerciseTopic, exercise.Difficulty, highGrass);
         }
         IsQuizManagerActive = !highGrass;
     }
 
+    /// <summary>
+    /// Setzt die Farbe der UI zurück.
+    /// </summary>
     void ResetColor()
     {
         image.color = save;   
     }
 
-
-    public void cancel()
+    /// <summary>
+    /// Schaltet die QuizManager UI aus.
+    /// </summary>
+    public void Cancel()
     {
         ui.transform.GetChild(0).gameObject.SetActive(false);
         ui.transform.GetChild(1).gameObject.SetActive(false);
@@ -122,10 +135,12 @@ public class QuizManager : MonoBehaviour
         IsQuizManagerActive = false;
     }
 
-    public void confirm()
+    /// <summary>
+    /// Gibt die Daten, die im ExtendedQuizManager eingegeben wurden weiter.
+    /// </summary>
+    public void Confirm()
     {
         string subjectName = input_Subject.GetComponent<TMP_Dropdown>().options[input_Subject.GetComponent<TMP_Dropdown>().value].text;
-        Subject subject = PokAEmon.BackgroundWorkers.Cache.AllSubjects.FirstOrDefault(s => s.SubjectName == subjectName);
         string topic = input_Topic.GetComponent<TMP_Dropdown>().options[input_Subject.GetComponent<TMP_Dropdown>().value].text;
         Difficulty difficulty = ((Difficulty)((input_Difficulty.GetComponent<TMP_Dropdown>().value + 1) * 10));
 
@@ -139,7 +154,7 @@ public class QuizManager : MonoBehaviour
     /// </summary>
     void FillExcersiseUI(string subjectName, string topic, Difficulty difficulty)
     {
-        Subject subject = PokAEmon.BackgroundWorkers.Cache.AllSubjects.FirstOrDefault(s => s.SubjectName == subjectName);
+        Subject subject = DataCache.AllSubjects.FirstOrDefault(s => s.SubjectName == subjectName);
         exercise = ExerciseController.GetRandomSuitableExercise(subject, topic, difficulty);
 
         questionText.GetComponent<Text>().text = exercise.ExerciseText;

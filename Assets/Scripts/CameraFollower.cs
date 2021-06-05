@@ -1,7 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// CameraFollower Klasse sorgt dafür, dass die Kamera immer dem Spieler folgt.
+/// </summary>
 public class CameraFollower : MonoBehaviour
 {
     #region Unity Variables
@@ -10,7 +11,7 @@ public class CameraFollower : MonoBehaviour
     #endregion
 
     #region Unity Methods
-    void FixedUpdate()
+    private void FixedUpdate()
     {
         if(target)
         {

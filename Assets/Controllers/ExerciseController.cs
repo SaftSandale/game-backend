@@ -1,12 +1,9 @@
-﻿using Newtonsoft.Json;
-using PokAEmon.BackgroundWorkers;
+﻿using PokAEmon.BackgroundWorkers;
 using PokAEmon.Enums;
 using PokAEmon.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PokAEmon.Controllers
 {
@@ -18,7 +15,7 @@ namespace PokAEmon.Controllers
         #region Methods
 
         /// <summary>
-        /// Ermittelt aus dem Chache eine zufällige Aufgabe, die das passende Fach, die passende Schwierigkeit und das passende Thema hat.
+        /// Ermittelt aus dem DataCache eine zufällige Aufgabe, die das passende Fach, die passende Schwierigkeit und das passende Thema hat.
         /// </summary>
         /// <param name="subject">Das Fach, dem die Aufgabe angehören soll.</param>
         /// <param name="topic">Das Thema, dem die Aufgabe angehören soll.</param>
@@ -26,7 +23,7 @@ namespace PokAEmon.Controllers
         /// <returns>Gibt eine Aufgabe zurück.</returns>
         public static Exercise GetRandomSuitableExercise(Subject subject, string topic, Difficulty difficulty)
         {
-            Subject suitableSubject = Cache.AllSubjectsUnusedExercises.FirstOrDefault(s => s.SubjectName == subject.SubjectName);
+            Subject suitableSubject = DataCache.AllSubjectsUnusedExercises.FirstOrDefault(s => s.SubjectName == subject.SubjectName);
             if (suitableSubject ==  null)
             {
                 return null;

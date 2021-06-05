@@ -1,8 +1,6 @@
+using PokAEmon.BackgroundWorkers;
 using PokAEmon.Model;
 using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Threading;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -16,9 +14,9 @@ public class MainMenu : MonoBehaviour
     #region Public Variables
 
     /// <summary>
-    /// Property, die Instanz der Cache Klasse speichert.
+    /// Property, die Instanz der DataCache Klasse speichert.
     /// </summary>
-    public static PokAEmon.BackgroundWorkers.Cache QuestionCache { get; set; }
+    public static DataCache QuestionCache { get; set; }
 
     /// <summary>
     /// Gibt an, ob der Nutzer vom Editor zurück ins Hauptmenu geleitet wurde.
@@ -34,11 +32,11 @@ public class MainMenu : MonoBehaviour
     public GameObject editorMenu;
     #endregion
 
-    #region Unity Default Methods
-    void Start()
+    #region Unity Methods
+    private void Start()
     {
         if (QuestionCache == null)
-            QuestionCache = new PokAEmon.BackgroundWorkers.Cache(100);
+            QuestionCache = new DataCache(100);
         if (returnedFromEditor)
         {
             ChangeToEditorMenu();
@@ -86,7 +84,7 @@ public class MainMenu : MonoBehaviour
         string userName = nameTextBox.GetComponent<Text>().text;
         if (userName != String.Empty)
         {
-            PokAEmon.BackgroundWorkers.Cache.CurrentPlayer = new Player(userName, new Experience());
+            DataCache.CurrentPlayer = new Player(userName, new Experience());
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
         }
         else
@@ -100,7 +98,7 @@ public class MainMenu : MonoBehaviour
     /// </summary>
     public void QuitGame()
     {
-        PokAEmon.BackgroundWorkers.Cache.SaveCacheToJson();
+        DataCache.SaveCacheToJson();
         Application.Quit();
     }
     #endregion

@@ -1,13 +1,16 @@
 using PokAEmon.Model;
 using System.Collections;
-using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
+/// <summary>
+/// MessageManager Script verwaltet Text Ausgaben in der Messagebox.
+/// </summary>
 public class MessageManager : MonoBehaviour
 {
     #region Unity Variables
+
     public GameObject ui;
     public GameObject messageText;
     public GameObject player;
@@ -15,17 +18,19 @@ public class MessageManager : MonoBehaviour
     #endregion
 
     #region Variables
+
     private readonly float mTextDelay = 0.06f;
     private string mFullText = string.Empty;
     private string mCurrentText = string.Empty;
     #endregion
 
     #region Unity Methods
-    void Start()
+
+    private void Start()
     {
         ui.SetActive(true);
         player.GetComponent<PlayerController>().suspendMovement();
-        var welcomeTextLine = PokAEmon.BackgroundWorkers.Cache.AllTextLines.First();
+        var welcomeTextLine = PokAEmon.BackgroundWorkers.DataCache.AllTextLines.First();
         var welcomeText = welcomeTextLine.TextString;
         mFullText = ReplacePlayerName(welcomeText);
         StartCoroutine(DisplayText(ReplacePlayerName(mFullText)));
@@ -33,7 +38,7 @@ public class MessageManager : MonoBehaviour
         interactIcon.SetActive(true);
     }
 
-    void Update()
+    private void Update()
     {
         if (messageText.GetComponent<Text>().text == mFullText)
         {
@@ -50,6 +55,7 @@ public class MessageManager : MonoBehaviour
     #endregion
 
     #region Methods
+
     /// <summary>
     /// Gibt Text im Schreibmaschinen Effekt aus.
     /// </summary>
@@ -103,7 +109,7 @@ public class MessageManager : MonoBehaviour
     {
         if (text.Contains("PlayerName"))
         {
-            var textWithPlayerName = text.Replace("PlayerName", PokAEmon.BackgroundWorkers.Cache.CurrentPlayer.PlayerName);
+            var textWithPlayerName = text.Replace("PlayerName", PokAEmon.BackgroundWorkers.DataCache.CurrentPlayer.PlayerName);
             return textWithPlayerName;
         }
         else

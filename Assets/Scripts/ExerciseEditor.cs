@@ -1,16 +1,18 @@
-using PokAEmon.Controllers;
 using PokAEmon.Enums;
 using PokAEmon.Model;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+/// <summary>
+/// ExerciseEditor Script ist für die CRUD Operationen an Aufgaben zuständig.
+/// </summary>
 public class ExerciseEditor : MonoBehaviour
 {
     #region Unity Variables
+
     public GameObject SubjectInput;
     public GameObject TopicInput;
     public GameObject ExerciseTextInput;
@@ -27,13 +29,15 @@ public class ExerciseEditor : MonoBehaviour
     #endregion
 
     #region Unity Methods
-    void Start()
+
+    private void Start()
     {
         FillInputsByExercise();
     }
     #endregion
 
     #region Methods
+
     /// <summary>
     /// Füllt die Textboxen bei der Bearbeitung einer Aufgabe, mit den aktuellen Daten der ausgewählten Aufgabe.
     /// </summary>
@@ -48,14 +52,14 @@ public class ExerciseEditor : MonoBehaviour
             {
                 switch (EditedExercise.Difficulty)
                 {
-                    case PokAEmon.Enums.Difficulty.Easy:
+                    case Difficulty.Easy:
                         DifficultyDropDown.GetComponent<Dropdown>().value = 0;
                         AnswerPair1.transform.GetChild(0).transform.GetChild(0).GetComponent<InputField>().text = EditedExercise.Answers[0].Text;
                         AnswerPair1.transform.GetChild(0).transform.GetChild(1).GetComponent<Toggle>().isOn = EditedExercise.Answers[0].IsCorrect;
                         AnswerPair1.transform.GetChild(1).transform.GetChild(0).GetComponent<InputField>().text = EditedExercise.Answers[1].Text;
                         AnswerPair1.transform.GetChild(1).transform.GetChild(1).GetComponent<Toggle>().isOn = EditedExercise.Answers[1].IsCorrect;
                         break;
-                    case PokAEmon.Enums.Difficulty.Medium:
+                    case Difficulty.Medium:
                         DifficultyDropDown.GetComponent<Dropdown>().value = 1;
                         AnswerPair1.transform.GetChild(0).transform.GetChild(0).GetComponent<InputField>().text = EditedExercise.Answers[0].Text;
                         AnswerPair1.transform.GetChild(0).transform.GetChild(1).GetComponent<Toggle>().isOn = EditedExercise.Answers[0].IsCorrect;
@@ -66,7 +70,7 @@ public class ExerciseEditor : MonoBehaviour
                         AnswerPair2.transform.GetChild(1).transform.GetChild(0).GetComponent<InputField>().text = EditedExercise.Answers[3].Text;
                         AnswerPair2.transform.GetChild(1).transform.GetChild(1).GetComponent<Toggle>().isOn = EditedExercise.Answers[3].IsCorrect;
                         break;
-                    case PokAEmon.Enums.Difficulty.Hard:
+                    case Difficulty.Hard:
                         DifficultyDropDown.GetComponent<Dropdown>().value = 2;
                         AnswerPair1.transform.GetChild(0).transform.GetChild(0).GetComponent<InputField>().text = EditedExercise.Answers[0].Text;
                         AnswerPair1.transform.GetChild(0).transform.GetChild(1).GetComponent<Toggle>().isOn = EditedExercise.Answers[0].IsCorrect;
@@ -145,14 +149,14 @@ public class ExerciseEditor : MonoBehaviour
         string text = ExerciseTextInput.GetComponent<InputField>().text;
         if (isNewExercise)
         {
-            if (!PokAEmon.BackgroundWorkers.Cache.AllSubjects.Any(s => s.SubjectName == subjectname))
-                PokAEmon.BackgroundWorkers.Cache.AllSubjects.Add(new Subject(subjectname));
+            if (!PokAEmon.BackgroundWorkers.DataCache.AllSubjects.Any(s => s.SubjectName == subjectname))
+                PokAEmon.BackgroundWorkers.DataCache.AllSubjects.Add(new Subject(subjectname));
                 
-            PokAEmon.BackgroundWorkers.Cache.AllSubjects.FirstOrDefault(s => s.SubjectName == subjectname).CreateExercise(text, topic, EditedExercise.Difficulty, CreateAnswerList());
+            PokAEmon.BackgroundWorkers.DataCache.AllSubjects.FirstOrDefault(s => s.SubjectName == subjectname).CreateExercise(text, topic, EditedExercise.Difficulty, CreateAnswerList());
         }
         else
         {
-            PokAEmon.BackgroundWorkers.Cache.AllSubjects.FirstOrDefault(s => s.SubjectName == subjectname).Exercises.FirstOrDefault(ex => ex.ID == EditedExercise.ID).EditExercise(text, topic, EditedExercise.Difficulty, CreateAnswerList());
+            PokAEmon.BackgroundWorkers.DataCache.AllSubjects.FirstOrDefault(s => s.SubjectName == subjectname).Exercises.FirstOrDefault(ex => ex.ID == EditedExercise.ID).EditExercise(text, topic, EditedExercise.Difficulty, CreateAnswerList());
         }
         ReturnToEditorMenu();
     }

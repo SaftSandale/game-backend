@@ -1,13 +1,14 @@
-using PokAEmon.Model;
 using PokAEmon.Enums;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Area Klasse definiert Bereiche, in denen der Spieler zufällig Aufgaben bekommen kann.
+/// </summary>
 [RequireComponent(typeof(PolygonCollider2D))]
 public class Area : MonoBehaviour
 {
-
+    #region Unity Variables
     public PolygonCollider2D col;
     public string subject;
     public string topic;
@@ -16,9 +17,10 @@ public class Area : MonoBehaviour
     private float chance;
     private float rd;
     private IEnumerator CR;
+    #endregion
 
-    // Start is called before the first frame update
-    void Start()
+    #region Unity Methods
+    private void Start()
     {
         CR = MeasureTime();
     }
@@ -39,7 +41,15 @@ public class Area : MonoBehaviour
             chance = 0;
         }
     }
-    IEnumerator MeasureTime()
+    #endregion
+
+    #region Methods
+
+    /// <summary>
+    /// Ermittelt die vergangene Zeit und erhöht die Chance eine zufällige Aufgabe zu erhalten.
+    /// </summary>
+    /// <returns></returns>
+    private IEnumerator MeasureTime()
     {
         while (true)
         {
@@ -52,7 +62,10 @@ public class Area : MonoBehaviour
         }
     }
 
-    void IncreaseChance()
+    /// <summary>
+    /// Erhöht die Chance eine zufällige Aufgabe zu erhalten.
+    /// </summary>
+    private void IncreaseChance()
     {
         rd = Random.Range(0f, 1f);
         if (chance <= 0.25)
@@ -61,12 +74,16 @@ public class Area : MonoBehaviour
         }
     }
 
-    void WakeQuizManagerByChance()
+    /// <summary>
+    /// Ruft die Aufgaben UI auf, wenn der Spieler zufällig eine Aufgabe erhält.
+    /// </summary>
+    private void WakeQuizManagerByChance()
     {
         if (rd < chance)
         {
-            quizManager.wakeQuizManager(subject, topic, difficulty, true);
+            quizManager.WakeQuizManager(subject, topic, difficulty, true);
             chance = 0f;
         }
     }
+    #endregion
 }

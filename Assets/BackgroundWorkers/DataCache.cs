@@ -7,9 +7,9 @@ using System.Linq;
 namespace PokAEmon.BackgroundWorkers
 {
     /// <summary>
-    /// Cache ist die Klasse, die alle wichtigen Daten speichert, die während des Spiels benötigt werden.
+    /// DataCache ist die Klasse, die alle wichtigen Daten speichert, die während des Spiels benötigt werden.
     /// </summary>
-    public class Cache
+    public class DataCache
     {
         #region Properties
 
@@ -105,7 +105,7 @@ namespace PokAEmon.BackgroundWorkers
         /// Konstruktor, der die Anzahl der zu Speichernden Elemente setzt und weitere Properties befüllt.
         /// </summary>
         /// <param name="anzElements">Maximale Anzahl, die der Cache speichern soll.</param>
-        public Cache(int anzElements)
+        public DataCache(int anzElements)
         {
             MaxElements = anzElements;
             QuestionIdCache = new Queue<int>();

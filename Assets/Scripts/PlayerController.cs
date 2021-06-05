@@ -1,10 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// PlayerController Script handhabt alle Aktionen, die den Spieler betreffen.
+/// </summary>
 public class PlayerController : MonoBehaviour
 {
     #region Unity Variables
+
     public float moveSpeed = 5f;
     public Rigidbody2D rb;
     public Animator animator;
@@ -20,12 +22,13 @@ public class PlayerController : MonoBehaviour
     #endregion
 
     #region Unity Methods
-    void Start()
+
+    private void Start()
     {
         controlallowed = true;
     }
 
-    void Update()
+    private void Update()
     {
         if (controlallowed)
         {
@@ -92,6 +95,7 @@ public class PlayerController : MonoBehaviour
     #endregion
 
     #region Methods
+
     /// <summary>
     /// Zeigt das Interact Icon an.
     /// </summary>
@@ -121,7 +125,7 @@ public class PlayerController : MonoBehaviour
             {
                 if (ray.transform.GetComponent<Interactable>())
                 {
-                    ray.transform.GetComponent<Interactable>().interact();
+                    ray.transform.GetComponent<Interactable>().Interact();
                     return;
                 }
             }

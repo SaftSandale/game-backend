@@ -1,13 +1,16 @@
+using PokAEmon.BackgroundWorkers;
 using PokAEmon.Enums;
-using PokAEmon.Model;
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
+/// <summary>
+/// InformationUIManager Script ist für die Handhabung des Informationsmenüs zuständig.
+/// </summary>
 public class InformationUIManager : MonoBehaviour
 {
+    #region Unity Variables
+
     public Image fillImage;
     public TextMeshProUGUI levelText;
     public TextMeshProUGUI xpText;
@@ -17,38 +20,45 @@ public class InformationUIManager : MonoBehaviour
     public TextMeshProUGUI amountAnsweredEasyQuestions;
     public TextMeshProUGUI amountAnsweredMediumQuestions;
     public TextMeshProUGUI amountAnsweredHardQuestions;
+    #endregion
 
-    protected float maxValue = PokAEmon.BackgroundWorkers.Cache.CurrentPlayer.PlayerExperience.NeededXPForNextLevel;
-    protected float minValue = 0f;
+    #region Unity Methods
 
-    private float currentValue = PokAEmon.BackgroundWorkers.Cache.CurrentPlayer.PlayerExperience.XP;
-
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         ui.SetActive(false);
-        levelText.text = PokAEmon.BackgroundWorkers.Cache.CurrentPlayer.PlayerExperience.Level.ToString();
-        xpText.text = PokAEmon.BackgroundWorkers.Cache.CurrentPlayer.PlayerExperience.XP.ToString() + "/" + PokAEmon.BackgroundWorkers.Cache.CurrentPlayer.PlayerExperience.NeededXPForNextLevel.ToString();
+        levelText.text = DataCache.CurrentPlayer.PlayerExperience.Level.ToString();
+        xpText.text = DataCache.CurrentPlayer.PlayerExperience.XP.ToString() + "/" + DataCache.CurrentPlayer.PlayerExperience.NeededXPForNextLevel.ToString();
     }
+    #endregion
 
+    #region Methods
+
+    /// <summary>
+    /// Lädt alle anzuzeigenden Daten und befüllt die Textfelder des Info Menüs mit diesen Daten.
+    /// </summary>
     public void WakeInfoMenu()
     {
-        levelText.text = PokAEmon.BackgroundWorkers.Cache.CurrentPlayer.PlayerExperience.Level.ToString();
-        xpText.text = PokAEmon.BackgroundWorkers.Cache.CurrentPlayer.PlayerExperience.XP.ToString() + "/" + PokAEmon.BackgroundWorkers.Cache.CurrentPlayer.PlayerExperience.NeededXPForNextLevel.ToString();
-        fillImage.fillAmount = PokAEmon.BackgroundWorkers.Cache.CurrentPlayer.PlayerExperience.XP / PokAEmon.BackgroundWorkers.Cache.CurrentPlayer.PlayerExperience.NeededXPForNextLevel;
+        levelText.text = DataCache.CurrentPlayer.PlayerExperience.Level.ToString();
+        xpText.text = DataCache.CurrentPlayer.PlayerExperience.XP.ToString() + "/" + DataCache.CurrentPlayer.PlayerExperience.NeededXPForNextLevel.ToString();
+        fillImage.fillAmount = DataCache.CurrentPlayer.PlayerExperience.XP / DataCache.CurrentPlayer.PlayerExperience.NeededXPForNextLevel;
 
-        amountAnsweredQuestions.text = PokAEmon.BackgroundWorkers.Cache.TotalAnsweredQuestions.ToString();
-        amountAnsweredEasyQuestions.text = PokAEmon.BackgroundWorkers.Cache.GetAmountOfCorrectAnsweredExercisesForDifficulty(Difficulty.Easy).ToString();
-        amountAnsweredMediumQuestions.text = PokAEmon.BackgroundWorkers.Cache.GetAmountOfCorrectAnsweredExercisesForDifficulty(Difficulty.Medium).ToString();
-        amountAnsweredHardQuestions.text = PokAEmon.BackgroundWorkers.Cache.GetAmountOfCorrectAnsweredExercisesForDifficulty(Difficulty.Hard).ToString();
+        amountAnsweredQuestions.text = DataCache.TotalAnsweredQuestions.ToString();
+        amountAnsweredEasyQuestions.text = DataCache.GetAmountOfCorrectAnsweredExercisesForDifficulty(Difficulty.Easy).ToString();
+        amountAnsweredMediumQuestions.text = DataCache.GetAmountOfCorrectAnsweredExercisesForDifficulty(Difficulty.Medium).ToString();
+        amountAnsweredHardQuestions.text = DataCache.GetAmountOfCorrectAnsweredExercisesForDifficulty(Difficulty.Hard).ToString();
 
         player.GetComponent<PlayerController>().suspendMovement();
         ui.SetActive(true);
     }
 
+    /// <summary>
+    /// Schließt das Info Menü.
+    /// </summary>
     public void CloseInfoMenu()
     {
         ui.SetActive(false);
         player.GetComponent<PlayerController>().resumeMovement();
     }
+    #endregion
 }

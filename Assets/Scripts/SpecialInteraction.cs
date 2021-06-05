@@ -1,27 +1,26 @@
-using PokAEmon.Model;
-using System.Collections;
-using System.Collections.Generic;
+using PokAEmon.BackgroundWorkers;
 using System.Linq;
 using UnityEngine;
 
+/// <summary>
+/// SpecialInteraction Script verwaltet Interaktionen, die von den normalen Interaktionen mit Türen, NPCs etc abweichen.
+/// </summary>
 public class SpecialInteraction : Interactable
 {
     #region Unity Variables
-    public int NeededLevelToOpen;
+
     public bool otherCriteriaNeeded;
     public bool isDoor;
-    
     public MessageManager messageManager;
-    private Animator animatorLeft;
-    private Animator animatorRight;
     private bool playerHasOtherCriteria;
     #endregion
 
     #region Methods
+
     /// <summary>
-    /// Wird aufgerufen, wenn der Spieler mit einer Tür interagiert. Startet die Animation und entfernt die Kollision der Tür. Gibt außerdem einen Fehler aus, wenn das Level nicht ausreicht.
+    /// Wird aufgerufen, wenn der Spieler mit einem besonderen Gegenstand interagiert.
     /// </summary>
-    public override void interact()
+    public override void Interact()
     {
         if (isDoor)
         {
@@ -36,72 +35,38 @@ public class SpecialInteraction : Interactable
     /// <summary>
     /// Überprüft, ob der Spieler alle Anforderungen erfüllt, um zu interagieren.
     /// </summary>
-    /// <returns>Boolean, ob der Spieler die Tür öffnen kann.</returns>
-    private bool CheckIfPlayerCanOpenDoor()
+    /// <returns>Boolean, ob der Spieler interagieren kann.</returns>
+    private bool CheckIfPlayerCanDoInteraction()
     {
         bool canOpen = false;
-        var levelIsHighEnough = PokAEmon.BackgroundWorkers.Cache.CurrentPlayer.PlayerExperience.Level >= NeededLevelToOpen;
-        if (levelIsHighEnough && otherCriteriaNeeded && playerHasOtherCriteria)
+        if (CheckIfPlayerCanInteract())
         {
-            canOpen = true;
-        }
-        else if (levelIsHighEnough && !otherCriteriaNeeded)
-        {
-            if (!openAfterEasy && !openAfterMedium)
+            if (otherCriteriaNeeded && playerHasOtherCriteria)
             {
                 canOpen = true;
             }
-            else if (openAfterEasy)
+            else if (!otherCriteriaNeeded)
             {
-                bool playerAnswered50EzQs = true;
-                foreach (var topic in PokAEmon.BackgroundWorkers.Cache.AmountCorrectEasyExercises)
-                {
-                    if (topic.Value < 10)
-                    {
-                        playerAnswered50EzQs = false;
-                    }
-                }
-                canOpen = playerAnswered50EzQs;
+                canOpen = true;
             }
-            else if (openAfterMedium)
+            else
             {
-                bool playerAnswered50EzQs = true;
-                foreach (var topic in PokAEmon.BackgroundWorkers.Cache.AmountCorrectMediumExercises)
-                {
-                    if (topic.Value < 10)
-                    {
-                        playerAnswered50EzQs = false;
-                    }
-                }
-                canOpen = playerAnswered50EzQs;
+                canOpen = false;
             }
-            else if (openAfterHard)
-            {
-                bool playerAnswered50EzQs = true;
-                foreach (var topic in PokAEmon.BackgroundWorkers.Cache.AmountCorrectHardExercises)
-                {
-                    if (topic.Value < 10)
-                    {
-                        playerAnswered50EzQs = false;
-                    }
-                }
-                canOpen = playerAnswered50EzQs;
-            }
-        }
-        else
-        {
-            return false;
         }
 
         return canOpen;
     }
 
+    /// <summary>
+    /// Führt Interaktion durch, wenn es sich bei dem Objekt um eine Tür handelt. Entfernt Kollision der Tür und startet Animation.
+    /// </summary>
     private void DoorInteraction()
     {
         animatorLeft = gameObject.transform.GetChild(0).GetComponent<Animator>();
         animatorRight = gameObject.transform.GetChild(1).GetComponent<Animator>();
 
-        if (CheckIfPlayerCanOpenDoor())
+        if (CheckIfPlayerCanDoInteraction())
         {
             animatorLeft.SetBool("Open", true);
             animatorRight.SetBool("Open", true);
@@ -109,21 +74,24 @@ public class SpecialInteraction : Interactable
         }
         else
         {
-            var cannotOpenText = PokAEmon.BackgroundWorkers.Cache.AllSpecialTextLines.FirstOrDefault(t => t.ID == ID);
+            var cannotOpenText = DataCache.AllSpecialTextLines.FirstOrDefault(t => t.ID == ID);
             messageManager.DisplayWrongInteractionMessage(cannotOpenText.TextString);
         }
     }
 
+    /// <summary>
+    /// Führt Interaktion durch, wenn es sich bei dem Objekt um keine Tür handelt. Entfernt Kollision des Gegenstands und blendet ihn aus.
+    /// </summary>
     private void OtherInteraction()
     {
-        if (CheckIfPlayerCanOpenDoor())
+        if (CheckIfPlayerCanDoInteraction())
         {
             gameObject.SetActive(false);
             gameObject.GetComponent<BoxCollider2D>().enabled = false;
         }
         else
         {
-            var cannotOpenText = PokAEmon.BackgroundWorkers.Cache.AllSpecialTextLines.FirstOrDefault(t => t.ID == ID);
+            var cannotOpenText = DataCache.AllSpecialTextLines.FirstOrDefault(t => t.ID == ID);
             messageManager.DisplayWrongInteractionMessage(cannotOpenText.TextString);
         }
     }

@@ -9,31 +9,32 @@ using UnityEngine.UI;
 
 public class PopulateList : MonoBehaviour
 {
-	public GameObject prefab; // This is our prefab object that will be exposed in the inspector
+    #region Unity Variables
 
+    public GameObject prefab;
 	public List<Subject> Subjects;
-
 	public GameObject EditModeSelectionWindow;
-
 	public Tuple<string, Exercise> SelectedExercise;
-
 	private List<GameObject> ButtonList = new List<GameObject>();
+    #endregion
 
-	void Start()
+    #region Unity Methods
+
+    private void Start()
 	{
-		Subjects = PokAEmon.BackgroundWorkers.Cache.AllSubjects;
+		Subjects = PokAEmon.BackgroundWorkers.DataCache.AllSubjects;
 		Populate();
 	}
+    #endregion
 
-	void Update()
+    #region Methods
+
+	/// <summary>
+	/// Befüllt Editor UI mit Daten der Aufgaben.
+	/// </summary>
+    private void Populate()
 	{
-
-	}
-
-	void Populate()
-	{
-		GameObject newObj; // Create GameObject instance
-
+		GameObject newObj;
 		foreach (Subject subject in Subjects)
         {
 			foreach (Exercise exercise in subject.Exercises)
@@ -48,18 +49,24 @@ public class PopulateList : MonoBehaviour
 				ButtonList.Add(newObj.gameObject);
 			}
         }
-
 	}
 
+	/// <summary>
+	/// Lädt die Startseite des Editors neu.
+	/// </summary>
 	public void ReloadScrollView()
     {
 		foreach (GameObject obj in ButtonList)
         {
 			Destroy(obj.gameObject);
         }
-		Subjects = PokAEmon.BackgroundWorkers.Cache.AllSubjects;
+		Subjects = PokAEmon.BackgroundWorkers.DataCache.AllSubjects;
 		Populate();
     }
+
+	/// <summary>
+	/// Öffnet die UI, um eine Aufgabe zu bearbeiten.
+	/// </summary>
 	public void EditSelectedExercise()
     {
 		ExerciseEditor.SubjectName = SelectedExercise.Item1;
@@ -67,11 +74,16 @@ public class PopulateList : MonoBehaviour
 		ExerciseEditor.isNewExercise = false;
 		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 	}
+
+	/// <summary>
+	/// Löscht die ausgewählte Aufgabe.
+	/// </summary>
 	public void DeleteSelectedExercise()
     {
-		Subject currentSub = PokAEmon.BackgroundWorkers.Cache.AllSubjects.FirstOrDefault(s => s.SubjectName == SelectedExercise.Item1);
+		Subject currentSub = PokAEmon.BackgroundWorkers.DataCache.AllSubjects.FirstOrDefault(s => s.SubjectName == SelectedExercise.Item1);
 		currentSub.RemoveExercise(SelectedExercise.Item2);
 		EditModeSelectionWindow.SetActive(false);
 		ReloadScrollView();
 	}
+    #endregion
 }

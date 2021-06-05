@@ -1,7 +1,4 @@
-﻿using Newtonsoft.Json;
-using PokAEmon.Enums;
-using System.Collections;
-
+﻿using PokAEmon.Enums;
 
 namespace PokAEmon.Model
 {

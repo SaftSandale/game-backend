@@ -15,4 +15,8 @@
 		"ID":4,
 		"TextString": "Du hast noch nicht alle Fragen der vorherigen Schwierigkeit beantwortet. Wenn du von jedem Thema 10 Fragen oder mehr richtig beantwortet hast, kannst du diese Tür öffnen."
 	},
+	{
+		"ID":5,
+		"TextString": "Haben wir nicht eben erst gesprochen? Sieh dich etwas um, vielleicht findest du jemand anderen zum reden..."
+	}
 ]
