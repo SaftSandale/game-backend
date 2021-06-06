@@ -6,6 +6,7 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System.Collections.Generic;
 
 /// <summary>
 /// QuizManager Script verwaltet alle Aktionen, die mit der UI für Aufgaben zu tun haben.
@@ -26,6 +27,9 @@ public class QuizManager : MonoBehaviour
     private Image image;
     private Color save;
     private bool highGrass;
+    private string subject_Save;
+    private string topic_Save;
+    private Difficulty difficulty_Save;
     #endregion
 
     #region Unity Methods
@@ -34,6 +38,7 @@ public class QuizManager : MonoBehaviour
     {
         ui.transform.GetChild(0).gameObject.SetActive(false);
         ui.transform.GetChild(1).gameObject.SetActive(false);
+        ui.transform.GetChild(2).gameObject.SetActive(false);
     }
     #endregion
 
@@ -44,11 +49,19 @@ public class QuizManager : MonoBehaviour
     /// </summary>
     public void WakeQuizManager(string _subject, string _topic, Difficulty _difficulty, bool _highGrass)
     {
-        IsQuizManagerActive = true;
-        highGrass = _highGrass;
-        player.GetComponent<PlayerController>().suspendMovement();
-        FillExcersiseUI(_subject, _topic, _difficulty);
-        ui.transform.GetChild(0).gameObject.SetActive(true);
+        if (DataCache.AllSubjectsUnusedExercises.FirstOrDefault(s => s.SubjectName == _subject).Exercises.Where(e => e.ExerciseTopic == _topic && e.Difficulty == _difficulty).Count() != 0)
+        {
+            IsQuizManagerActive = true;
+            highGrass = _highGrass;
+            player.GetComponent<PlayerController>().suspendMovement();
+            FillExcersiseUI(_subject, _topic, _difficulty);
+            ui.transform.GetChild(0).gameObject.SetActive(true);
+        }
+        else
+        {
+            ui.transform.GetChild(0).gameObject.SetActive(false);
+            WakeEmptyQuizManager(_subject, _topic, _difficulty);
+        }
     }
 
     /// <summary>
@@ -65,6 +78,31 @@ public class QuizManager : MonoBehaviour
         {
             input_Subject.GetComponent<TMP_Dropdown>().options.Add(new TMP_Dropdown.OptionData(subject.SubjectName));
         }
+        input_Subject.GetComponent<TMP_Dropdown>().options.Add(new TMP_Dropdown.OptionData("  "));
+    }
+
+    /// <summary>
+    /// Ruft den EmptyQuizManager auf, der dem Spieler sagt, dass es zum gewählten Thema und Schwierigkeit keine Aufgaben mehr gibt.
+    /// </summary>
+    public void WakeEmptyQuizManager(string _subject, string _topic, Difficulty _difficulty)
+    {
+        IsQuizManagerActive = false;
+        ui.transform.GetChild(2).gameObject.SetActive(true);
+        player.GetComponent<PlayerController>().suspendMovement();
+        subject_Save = _subject;
+        topic_Save = _topic;
+        difficulty_Save = _difficulty;
+    }
+
+    /// <summary>
+    /// Entfernt die IDs der Fragen dieses Themas aus den Cache.
+    /// </summary>
+    public void RefreshExcersiseCache()
+    {
+        List<Exercise> excersisesToRefresh = DataCache.AllSubjects.FirstOrDefault(s => s.SubjectName == subject_Save).Exercises.Where(e => e.ExerciseTopic == topic_Save && e.Difficulty == difficulty_Save).ToList();
+        DataCache.DeleteSpecificIDsFromCache(excersisesToRefresh);
+        ui.transform.GetChild(2).gameObject.SetActive(false);
+        WakeQuizManager(subject_Save, topic_Save, difficulty_Save, false);
     }
 
     /// <summary>
@@ -81,7 +119,8 @@ public class QuizManager : MonoBehaviour
                 input_Topic.GetComponent<TMP_Dropdown>().options.Add(new TMP_Dropdown.OptionData(ex.ExerciseTopic));
             }
         }
-        
+        input_Topic.GetComponent<TMP_Dropdown>().options.Add(new TMP_Dropdown.OptionData("  "));
+
     }
 
     /// <summary>
@@ -130,6 +169,7 @@ public class QuizManager : MonoBehaviour
     {
         ui.transform.GetChild(0).gameObject.SetActive(false);
         ui.transform.GetChild(1).gameObject.SetActive(false);
+        ui.transform.GetChild(2).gameObject.SetActive(false);
         player.GetComponent<PlayerController>().resumeMovement();
         input_Subject.GetComponent<TMP_Dropdown>().options.Clear();
         IsQuizManagerActive = false;
@@ -141,7 +181,7 @@ public class QuizManager : MonoBehaviour
     public void Confirm()
     {
         string subjectName = input_Subject.GetComponent<TMP_Dropdown>().options[input_Subject.GetComponent<TMP_Dropdown>().value].text;
-        string topic = input_Topic.GetComponent<TMP_Dropdown>().options[input_Subject.GetComponent<TMP_Dropdown>().value].text;
+        string topic = input_Topic.GetComponent<TMP_Dropdown>().options[input_Topic.GetComponent<TMP_Dropdown>().value].text;
         Difficulty difficulty = ((Difficulty)((input_Difficulty.GetComponent<TMP_Dropdown>().value + 1) * 10));
 
         FillExcersiseUI(subjectName, topic, difficulty);

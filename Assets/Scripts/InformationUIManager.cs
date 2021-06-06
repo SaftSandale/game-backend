@@ -14,6 +14,9 @@ public class InformationUIManager : MonoBehaviour
     public Image fillImage;
     public TextMeshProUGUI levelText;
     public TextMeshProUGUI xpText;
+    public Image endFillImage;
+    public TextMeshProUGUI endLevelText;
+    public TextMeshProUGUI endXpText;
     public GameObject player;
     public GameObject ui;
     public TextMeshProUGUI amountAnsweredQuestions;
@@ -26,7 +29,8 @@ public class InformationUIManager : MonoBehaviour
 
     private void Start()
     {
-        ui.SetActive(false);
+        ui.transform.GetChild(0).gameObject.SetActive(false);
+        ui.transform.GetChild(1).gameObject.SetActive(false);
         levelText.text = DataCache.CurrentPlayer.PlayerExperience.Level.ToString();
         xpText.text = DataCache.CurrentPlayer.PlayerExperience.XP.ToString() + "/" + DataCache.CurrentPlayer.PlayerExperience.NeededXPForNextLevel.ToString();
     }
@@ -49,7 +53,17 @@ public class InformationUIManager : MonoBehaviour
         amountAnsweredHardQuestions.text = DataCache.GetAmountOfCorrectAnsweredExercisesForDifficulty(Difficulty.Hard).ToString();
 
         player.GetComponent<PlayerController>().suspendMovement();
-        ui.SetActive(true);
+        ui.transform.GetChild(0).gameObject.SetActive(true);
+    }
+
+    public void WakeEndScreen()
+    {
+        endLevelText.text = DataCache.CurrentPlayer.PlayerExperience.Level.ToString();
+        endXpText.text = DataCache.CurrentPlayer.PlayerExperience.XP.ToString() + "/" + DataCache.CurrentPlayer.PlayerExperience.NeededXPForNextLevel.ToString();
+        endFillImage.fillAmount = DataCache.CurrentPlayer.PlayerExperience.XP / DataCache.CurrentPlayer.PlayerExperience.NeededXPForNextLevel;
+
+        player.GetComponent<PlayerController>().suspendMovement();
+        ui.transform.GetChild(1).gameObject.SetActive(true);
     }
 
     /// <summary>
@@ -57,7 +71,7 @@ public class InformationUIManager : MonoBehaviour
     /// </summary>
     public void CloseInfoMenu()
     {
-        ui.SetActive(false);
+        ui.transform.GetChild(0).gameObject.SetActive(false);
         player.GetComponent<PlayerController>().resumeMovement();
     }
     #endregion

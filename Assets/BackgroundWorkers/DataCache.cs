@@ -272,6 +272,12 @@ namespace PokAEmon.BackgroundWorkers
             }
             return amountCorrectlyAnsweredExercises;
         }
+
+        public static void DeleteSpecificIDsFromCache(List<Exercise> exercisesToRemove)
+        {
+            QuestionIdCache = new Queue<int>(QuestionIdCache.Where(e => !exercisesToRemove.Any(x => x.ID == e)));
+        }
+
         #endregion
     }
 }

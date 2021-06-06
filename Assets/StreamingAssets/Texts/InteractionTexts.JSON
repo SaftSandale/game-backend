@@ -106,5 +106,9 @@
 	{
 		"ID":27,
 		"TextString": "Was ein Tag. Schon wieder ein Schüler, der geraucht hat und die halbe Toilette in Brand gesetzt hat. Und dann noch diese Sache mit dem Spanner. Was ist nur los in dieser Schule... Wenn du den mittleren Bereich abgeschlossen hast, kannst du dir die zerstörte Toilette anschauen."
+	},
+	{
+		"ID":28,
+		"TextString": "Glückwunsch PlayerName! Du hast es geschafft. Du hast das Ende des Spiels erreicht. Gehe zum Bett, um das Spiel abzuschließen."
 	}
 ]

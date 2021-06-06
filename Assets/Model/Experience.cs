@@ -70,13 +70,13 @@ namespace PokAEmon.Model
         public void AddXPForDifficulty(Difficulty dif)
         {
             this.XP += ((int)dif * Bonus );
-
-            NeededXPForNextLevel = Level * 100;
-
-            if(this.XP >= NeededXPForNextLevel)
+            
+            if (this.XP >= NeededXPForNextLevel)
             {
                 Level++;
             }
+
+            NeededXPForNextLevel = (Level + 1) * 100;
         }
 
         /// <summary>

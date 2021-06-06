@@ -1,14 +1,14 @@
+using PokAEmon.BackgroundWorkers;
+using PokAEmon.Controllers;
 using PokAEmon.Enums;
 using PokAEmon.Model;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-/// <summary>
-/// ExerciseEditor Script ist für die CRUD Operationen an Aufgaben zuständig.
-/// </summary>
 public class ExerciseEditor : MonoBehaviour
 {
     #region Unity Variables
@@ -23,16 +23,17 @@ public class ExerciseEditor : MonoBehaviour
     #endregion
 
     #region Variables
+
     public static Exercise EditedExercise;
     public static string SubjectName;
     public static bool isNewExercise;
     #endregion
 
     #region Unity Methods
-
-    private void Start()
+    void Start()
     {
         FillInputsByExercise();
+        PreFillEasyAnswers();
     }
     #endregion
 
@@ -52,14 +53,14 @@ public class ExerciseEditor : MonoBehaviour
             {
                 switch (EditedExercise.Difficulty)
                 {
-                    case Difficulty.Easy:
+                    case PokAEmon.Enums.Difficulty.Easy:
                         DifficultyDropDown.GetComponent<Dropdown>().value = 0;
                         AnswerPair1.transform.GetChild(0).transform.GetChild(0).GetComponent<InputField>().text = EditedExercise.Answers[0].Text;
                         AnswerPair1.transform.GetChild(0).transform.GetChild(1).GetComponent<Toggle>().isOn = EditedExercise.Answers[0].IsCorrect;
                         AnswerPair1.transform.GetChild(1).transform.GetChild(0).GetComponent<InputField>().text = EditedExercise.Answers[1].Text;
                         AnswerPair1.transform.GetChild(1).transform.GetChild(1).GetComponent<Toggle>().isOn = EditedExercise.Answers[1].IsCorrect;
                         break;
-                    case Difficulty.Medium:
+                    case PokAEmon.Enums.Difficulty.Medium:
                         DifficultyDropDown.GetComponent<Dropdown>().value = 1;
                         AnswerPair1.transform.GetChild(0).transform.GetChild(0).GetComponent<InputField>().text = EditedExercise.Answers[0].Text;
                         AnswerPair1.transform.GetChild(0).transform.GetChild(1).GetComponent<Toggle>().isOn = EditedExercise.Answers[0].IsCorrect;
@@ -70,7 +71,7 @@ public class ExerciseEditor : MonoBehaviour
                         AnswerPair2.transform.GetChild(1).transform.GetChild(0).GetComponent<InputField>().text = EditedExercise.Answers[3].Text;
                         AnswerPair2.transform.GetChild(1).transform.GetChild(1).GetComponent<Toggle>().isOn = EditedExercise.Answers[3].IsCorrect;
                         break;
-                    case Difficulty.Hard:
+                    case PokAEmon.Enums.Difficulty.Hard:
                         DifficultyDropDown.GetComponent<Dropdown>().value = 2;
                         AnswerPair1.transform.GetChild(0).transform.GetChild(0).GetComponent<InputField>().text = EditedExercise.Answers[0].Text;
                         AnswerPair1.transform.GetChild(0).transform.GetChild(1).GetComponent<Toggle>().isOn = EditedExercise.Answers[0].IsCorrect;
@@ -89,7 +90,7 @@ public class ExerciseEditor : MonoBehaviour
                         break;
                 }
             }
-            
+
         }
         else EditedExercise = new Exercise();
     }
@@ -128,10 +129,11 @@ public class ExerciseEditor : MonoBehaviour
                 AnswerPair3.SetActive(false);
                 break;
         }
+        PreFillEasyAnswers();
     }
 
     /// <summary>
-    /// Wechselt die Szene zur Editor Szene.
+    /// Wechselt die Szene zur Menu-Szene mit aktiviertem Editor-Menü.
     /// </summary>
     public void ReturnToEditorMenu()
     {
@@ -147,18 +149,24 @@ public class ExerciseEditor : MonoBehaviour
         string subjectname = SubjectInput.GetComponent<InputField>().text;
         string topic = TopicInput.GetComponent<InputField>().text;
         string text = ExerciseTextInput.GetComponent<InputField>().text;
-        if (isNewExercise)
+        List<Answer> answers = CreateAnswerList();
+        if (!string.IsNullOrEmpty(subjectname) && !string.IsNullOrEmpty(topic) && !string.IsNullOrEmpty(text) && answers != null)
         {
-            if (!PokAEmon.BackgroundWorkers.DataCache.AllSubjects.Any(s => s.SubjectName == subjectname))
-                PokAEmon.BackgroundWorkers.DataCache.AllSubjects.Add(new Subject(subjectname));
-                
-            PokAEmon.BackgroundWorkers.DataCache.AllSubjects.FirstOrDefault(s => s.SubjectName == subjectname).CreateExercise(text, topic, EditedExercise.Difficulty, CreateAnswerList());
+            if (isNewExercise)
+            {
+                if (!DataCache.AllSubjects.Any(s => s.SubjectName == subjectname))
+                    DataCache.AllSubjects.Add(new Subject(subjectname));
+
+                DataCache.AllSubjects.FirstOrDefault(s => s.SubjectName == subjectname).CreateExercise(text, topic, EditedExercise.Difficulty, answers);
+            }
+            else
+            {
+                if (!DataCache.AllSubjects.Any(s => s.SubjectName == subjectname))
+                    DataCache.AllSubjects.Add(new Subject(subjectname, new List<Exercise>()));
+                DataCache.AllSubjects.FirstOrDefault(s => s.SubjectName == subjectname).Exercises.FirstOrDefault(ex => ex.ID == EditedExercise.ID).EditExercise(text, topic, EditedExercise.Difficulty, answers);
+            }
+            ReturnToEditorMenu();
         }
-        else
-        {
-            PokAEmon.BackgroundWorkers.DataCache.AllSubjects.FirstOrDefault(s => s.SubjectName == subjectname).Exercises.FirstOrDefault(ex => ex.ID == EditedExercise.ID).EditExercise(text, topic, EditedExercise.Difficulty, CreateAnswerList());
-        }
-        ReturnToEditorMenu();
     }
 
     /// <summary>
@@ -168,13 +176,55 @@ public class ExerciseEditor : MonoBehaviour
     private List<Answer> CreateAnswerList()
     {
         List<Answer> res = new List<Answer>();
+
         res.Add(new Answer(AnswerPair1.transform.GetChild(0).transform.GetChild(0).GetComponent<InputField>().text, AnswerPair1.transform.GetChild(0).transform.GetChild(1).GetComponent<Toggle>().isOn));
         res.Add(new Answer(AnswerPair1.transform.GetChild(1).transform.GetChild(0).GetComponent<InputField>().text, AnswerPair1.transform.GetChild(1).transform.GetChild(1).GetComponent<Toggle>().isOn));
         res.Add(new Answer(AnswerPair2.transform.GetChild(0).transform.GetChild(0).GetComponent<InputField>().text, AnswerPair2.transform.GetChild(0).transform.GetChild(1).GetComponent<Toggle>().isOn));
         res.Add(new Answer(AnswerPair2.transform.GetChild(1).transform.GetChild(0).GetComponent<InputField>().text, AnswerPair2.transform.GetChild(1).transform.GetChild(1).GetComponent<Toggle>().isOn));
         res.Add(new Answer(AnswerPair3.transform.GetChild(0).transform.GetChild(0).GetComponent<InputField>().text, AnswerPair3.transform.GetChild(0).transform.GetChild(1).GetComponent<Toggle>().isOn));
         res.Add(new Answer(AnswerPair3.transform.GetChild(1).transform.GetChild(0).GetComponent<InputField>().text, AnswerPair3.transform.GetChild(1).transform.GetChild(1).GetComponent<Toggle>().isOn));
-        return res;
+        int amountCorrectAnswers = 0;
+        foreach (Answer a in res)
+        {
+            if (a.IsCorrect)
+            {
+                amountCorrectAnswers++;
+            }
+            if (string.IsNullOrEmpty(a.Text))
+            {
+                res.Remove(a);
+            }
+        }
+        if (amountCorrectAnswers != 0 && amountCorrectAnswers < res.Count)
+        {
+            return res;
+        }
+        else
+        {
+            return null;
+        }
     }
+
+    /// <summary>
+    /// Befüllt die ersten Antworten im Editor mit Wahr/Falsch bei einfacher Schwierigkeit
+    /// </summary>
+    private void PreFillEasyAnswers()
+    {
+        if (EditedExercise.Difficulty == Difficulty.Easy)
+        {
+            AnswerPair1.transform.GetChild(0).transform.GetChild(0).GetComponent<InputField>().text = "Wahr";
+            AnswerPair1.transform.GetChild(0).transform.GetChild(0).GetComponent<InputField>().interactable = false;
+            AnswerPair1.transform.GetChild(1).transform.GetChild(0).GetComponent<InputField>().text = "Falsch";
+            AnswerPair1.transform.GetChild(1).transform.GetChild(0).GetComponent<InputField>().interactable = false;
+        }
+        else
+        {
+            AnswerPair1.transform.GetChild(0).transform.GetChild(0).GetComponent<InputField>().text = "";
+            AnswerPair1.transform.GetChild(0).transform.GetChild(0).GetComponent<InputField>().interactable = true;
+            AnswerPair1.transform.GetChild(1).transform.GetChild(0).GetComponent<InputField>().text = "";
+            AnswerPair1.transform.GetChild(1).transform.GetChild(0).GetComponent<InputField>().interactable = true;
+        }
+    }
+
     #endregion
 }
