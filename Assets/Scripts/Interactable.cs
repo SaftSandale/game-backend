@@ -13,7 +13,7 @@ public abstract class Interactable : MonoBehaviour
 
     public int ID;
     public int NeededLevelToOpen;
-    public Difficulty difficultyArea;
+    public Difficulty unlockAfterDifficulty;
     protected bool levelIsTooLow;
     protected Animator animatorLeft;
     protected Animator animatorRight;
@@ -66,16 +66,16 @@ public abstract class Interactable : MonoBehaviour
         bool playerHasLevel = DataCache.CurrentPlayer.PlayerExperience.Level >= NeededLevelToOpen;
         if (playerHasLevel)
         {
-            switch (difficultyArea)
+            switch (unlockAfterDifficulty)
             {
                 case Difficulty.Easy:
-                    canOpen = true;
-                    break;
-                case Difficulty.Medium:
                     canOpen = CheckIfPlayerPassedDifficulty(DataCache.AmountCorrectEasyExercises);
                     break;
-                case Difficulty.Hard:
+                case Difficulty.Medium:
                     canOpen = CheckIfPlayerPassedDifficulty(DataCache.AmountCorrectMediumExercises);
+                    break;
+                case Difficulty.Hard:
+                    canOpen = CheckIfPlayerPassedDifficulty(DataCache.AmountCorrectHardExercises);
                     break;
                 default:
                     canOpen = true;

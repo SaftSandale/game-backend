@@ -5,7 +5,7 @@
 	},
 	{
 		"ID":2,
-		"TextString": "Sehr gut, den ersten Schritt hast du geschafft! Die Schule ist in 15 Räume unterteilt. Löse Pro Raum 10 Aufgaben richtig, um den nächsten Bereich freizuschalten. Ich gebe dir etwas Erfahrungspunkte, damit du den ersten Bereich freischaltest. Nun sieh dich etwas um!"
+		"TextString": "Sehr gut, den ersten Schritt hast du geschafft! Schön, dass du dich der Herausforderung stellst. Ich gebe dir etwas Erfahrungspunkte, damit du den ersten Bereich freischaltest. Für weitere Infos lies einige der Bücher in den Regalen zu meiner Linken..."
 	},
 	{
 		"ID":3,
@@ -67,4 +67,44 @@
 		"ID":17,
 		"TextString": "Wer bist du denn? Ich war auch mal so weit, wie du, aber bin kurz vorm Ziel gescheitert. Wenn du es schaffst hier 10 schwere Aufgaben zum Thema Versionskontrolle zu bewältigen, kannst du durch die Tür in den Kontrollraum. Sieh selbst, was dich dort erwartet, aber ich sage dir: Es wird nochmal schwer!"
 	},
+	{
+		"ID":18,
+		"TextString": "Die Schule ist ein drei Bereiche unterteilt. Jeder Bereich hat eine bestimmte Schwierigkeit (leicht/mittel/schwer). Um den nächsten Bereich freizuschalten musst du zu jedem Thema 10 Aufgaben lösen."
+	},
+	{
+		"ID":19,
+		"TextString": "Das Ziel lautet, in den Kontrollraum der Schule zu gelangen. Er liegt im nordöstlichen Teil der Schule. Du kannst ihn allerdings erst Betreten, nachdem du den schweren Teil abgeschlossen hast."
+	},
+	{
+		"ID":20,
+		"TextString": "Für jede richtig gelöste Aufgabe erhälst du Erfahrungspunkte. Nach 10 richtigen Aufgaben in Folge erhälst du einen Bonus für jede weitere richtige Frage. Eine Statistik und dein aktuelles Level kannst du mit drücken der Tab Taste einsehen."
+	},
+	{
+		"ID":21,
+		"TextString": "Falls du das Spiel beenden möchtest, kannst du die Escape Taste drücken. Dort hast du die Möglichkeit zum Hauptmenü zurückzukehren oder das Spiel zu schließen. Bedenke, dass dein Spielstand nicht gespeichert wird, wenn du zum Hauptmenü zurückehrst und du anschließend von vorne anfangen musst."
+	},
+	{
+		"ID":22,
+		"TextString": "In jedem Raum wirst du auf einen Lehrer treffen, der dir Informationen gibt, welche Aufgaben es in seinem Klassenraum gibt. Finde anschließend einen Gegenstand in diesem Raum, mit dem du interagieren kannst, um Aufgaben zu lösen."
+	},
+	{
+		"ID":23,
+		"TextString": "Außerdem besteht die Möglichkeit, dass du in den Klassenräumen zufällig Aufgaben gestellt bekommst, wenn du dich dort aufhälst. Sei also nicht verwundert, wenn du plötzlich eine Aufgabe angezeigt bekommst."
+	},
+	{
+		"ID":24,
+		"TextString": "Wenn du Aufgaben lösen möchtest, die du selbst erstellt hast, kannst du diese an der Pinwand in der Aula erhalten."
+	},
+	{
+		"ID":25,
+		"TextString": "Was machst du denn hier? Möchtest du Essen kaufen? Wir haben wegen Corona leider geschlossen."
+	},
+	{
+		"ID":26,
+		"TextString": "Echt öde hier wenn alle im Homeschooling sind..."
+	},
+	{
+		"ID":27,
+		"TextString": "Was ein Tag. Schon wieder ein Schüler, der geraucht hat und die halbe Toilette in Brand gesetzt hat. Und dann noch diese Sache mit dem Spanner. Was ist nur los in dieser Schule... Wenn du den mittleren Bereich abgeschlossen hast, kannst du dir die zerstörte Toilette anschauen."
+	}
 ]

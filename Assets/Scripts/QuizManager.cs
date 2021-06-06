@@ -59,18 +59,18 @@ public class QuizManager : MonoBehaviour
         IsQuizManagerActive = true;
         player.GetComponent<PlayerController>().suspendMovement();
         ui.transform.GetChild(1).gameObject.SetActive(true);
-        input_Subject.GetComponent<TMP_Dropdown>().options.Add(new TMPro.TMP_Dropdown.OptionData("Fach auswählen"));
+        input_Subject.GetComponent<TMP_Dropdown>().options.Add(new TMP_Dropdown.OptionData("Fach auswählen"));
 
-        foreach (var subject in PokAEmon.BackgroundWorkers.DataCache.AllSubjects)
+        foreach (var subject in DataCache.AllSubjects)
         {
-            input_Subject.GetComponent<TMP_Dropdown>().options.Add(new TMPro.TMP_Dropdown.OptionData(subject.SubjectName));
+            input_Subject.GetComponent<TMP_Dropdown>().options.Add(new TMP_Dropdown.OptionData(subject.SubjectName));
         }
     }
 
     /// <summary>
     /// Ändert die angezeigten Felder im Drop-Down Menü anhand des Fachs.
     /// </summary>
-    public void Input_Subject_TopicChange()
+    public void InputSubjectTopicChange()
     {
         string subjectName = input_Subject.GetComponent<TMP_Dropdown>().options[input_Subject.GetComponent<TMP_Dropdown>().value].text;
         Subject subject = DataCache.AllSubjects.FirstOrDefault(s => s.SubjectName == subjectName);
@@ -92,8 +92,8 @@ public class QuizManager : MonoBehaviour
     {
         image = ui.transform.GetChild(0).GetChild(0).GetComponent<Image>();
         save = image.color;
-        PokAEmon.BackgroundWorkers.DataCache.CurrentPlayer.UpdateXP(exercise.Difficulty, isCorrect);
-        PokAEmon.BackgroundWorkers.DataCache.SaveAmountCorrectAnsweredQuestion(exercise, isCorrect);
+        DataCache.CurrentPlayer.UpdateXP(exercise.Difficulty, isCorrect);
+        DataCache.SaveAmountCorrectAnsweredQuestion(exercise, isCorrect);
         ui.transform.GetChild(0).gameObject.SetActive(false);
         player.GetComponent<PlayerController>().resumeMovement();
         if (isCorrect)
@@ -107,7 +107,7 @@ public class QuizManager : MonoBehaviour
         Invoke("ResetColor", 0.25f);
         
 
-        Subject subject = PokAEmon.BackgroundWorkers.DataCache.AllSubjects.FirstOrDefault(s => s.Exercises.Contains(exercise));
+        Subject subject = DataCache.AllSubjects.FirstOrDefault(s => s.Exercises.Contains(exercise));
         if (!highGrass)
         {
             WakeQuizManager(subject.SubjectName, exercise.ExerciseTopic, exercise.Difficulty, highGrass);
@@ -164,6 +164,7 @@ public class QuizManager : MonoBehaviour
         {
             if (answers.Count() > 0)
             {
+                button.SetActive(true);
                 var currentAnswer = answers.FirstOrDefault();
                 button.transform.GetChild(0).GetComponent<Text>().text = currentAnswer.Text;
                 answers.Remove(currentAnswer);
