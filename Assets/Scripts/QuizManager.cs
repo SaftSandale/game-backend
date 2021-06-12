@@ -16,6 +16,11 @@ public class QuizManager : MonoBehaviour
     #region Unity Variables
 
     public GameObject ui;
+    public GameObject messageUI;
+    public GameObject infoUI;
+    public GameObject pauseUI;
+    public GameObject passiveUI;
+    public GameObject mainCam;
     public Exercise exercise;
     public GameObject[] abuttons;
     public GameObject questionText;
@@ -49,18 +54,25 @@ public class QuizManager : MonoBehaviour
     /// </summary>
     public void WakeQuizManager(string _subject, string _topic, Difficulty _difficulty, bool _highGrass)
     {
-        if (DataCache.AllSubjectsUnusedExercises.FirstOrDefault(s => s.SubjectName == _subject).Exercises.Where(e => e.ExerciseTopic == _topic && e.Difficulty == _difficulty).Count() != 0)
+        if (!messageUI.activeSelf &&
+            !infoUI.activeSelf &&
+            !pauseUI.activeSelf &&
+            mainCam.activeSelf)
         {
-            IsQuizManagerActive = true;
-            highGrass = _highGrass;
-            player.GetComponent<PlayerController>().suspendMovement();
-            FillExcersiseUI(_subject, _topic, _difficulty);
-            ui.transform.GetChild(0).gameObject.SetActive(true);
-        }
-        else
-        {
-            ui.transform.GetChild(0).gameObject.SetActive(false);
-            WakeEmptyQuizManager(_subject, _topic, _difficulty);
+            passiveUI.SetActive(false);
+            if (DataCache.AllSubjectsUnusedExercises.FirstOrDefault(s => s.SubjectName == _subject).Exercises.Where(e => e.ExerciseTopic == _topic && e.Difficulty == _difficulty).Count() != 0)
+            {
+                IsQuizManagerActive = true;
+                highGrass = _highGrass;
+                player.GetComponent<PlayerController>().suspendMovement();
+                FillExcersiseUI(_subject, _topic, _difficulty);
+                ui.transform.GetChild(0).gameObject.SetActive(true);
+            }
+            else
+            {
+                ui.transform.GetChild(0).gameObject.SetActive(false);
+                WakeEmptyQuizManager(_subject, _topic, _difficulty);
+            }
         }
     }
 
@@ -69,16 +81,24 @@ public class QuizManager : MonoBehaviour
     /// </summary>
     public void WakeExtendedQuizManager()
     {
-        IsQuizManagerActive = true;
-        player.GetComponent<PlayerController>().suspendMovement();
-        ui.transform.GetChild(1).gameObject.SetActive(true);
-        input_Subject.GetComponent<TMP_Dropdown>().options.Add(new TMP_Dropdown.OptionData("Fach auswählen"));
-
-        foreach (var subject in DataCache.AllSubjects)
+        if (!messageUI.activeSelf &&
+            !infoUI.activeSelf &&
+            !pauseUI.activeSelf &&
+            mainCam.activeSelf)
         {
-            input_Subject.GetComponent<TMP_Dropdown>().options.Add(new TMP_Dropdown.OptionData(subject.SubjectName));
+            passiveUI.SetActive(false);
+            IsQuizManagerActive = true;
+            player.GetComponent<PlayerController>().suspendMovement();
+            ui.transform.GetChild(1).gameObject.SetActive(true);
+            input_Subject.GetComponent<TMP_Dropdown>().options.Add(new TMP_Dropdown.OptionData("Fach auswählen"));
+
+            foreach (var subject in DataCache.AllSubjects)
+            {
+                input_Subject.GetComponent<TMP_Dropdown>().options.Add(new TMP_Dropdown.OptionData(subject.SubjectName));
+            }
+            input_Subject.GetComponent<TMP_Dropdown>().options.Add(new TMP_Dropdown.OptionData("  "));
+            input_Difficulty.GetComponent<TMP_Dropdown>().options.Add(new TMP_Dropdown.OptionData(" "));
         }
-        input_Subject.GetComponent<TMP_Dropdown>().options.Add(new TMP_Dropdown.OptionData("  "));
     }
 
     /// <summary>
@@ -86,12 +106,19 @@ public class QuizManager : MonoBehaviour
     /// </summary>
     public void WakeEmptyQuizManager(string _subject, string _topic, Difficulty _difficulty)
     {
-        IsQuizManagerActive = false;
-        ui.transform.GetChild(2).gameObject.SetActive(true);
-        player.GetComponent<PlayerController>().suspendMovement();
-        subject_Save = _subject;
-        topic_Save = _topic;
-        difficulty_Save = _difficulty;
+        if (!messageUI.activeSelf &&
+            !infoUI.activeSelf &&
+            !pauseUI.activeSelf &&
+            mainCam.activeSelf)
+        {
+            passiveUI.SetActive(false);
+            IsQuizManagerActive = false;
+            ui.transform.GetChild(2).gameObject.SetActive(true);
+            player.GetComponent<PlayerController>().suspendMovement();
+            subject_Save = _subject;
+            topic_Save = _topic;
+            difficulty_Save = _difficulty;
+        }
     }
 
     /// <summary>
@@ -172,6 +199,7 @@ public class QuizManager : MonoBehaviour
         ui.transform.GetChild(2).gameObject.SetActive(false);
         player.GetComponent<PlayerController>().resumeMovement();
         input_Subject.GetComponent<TMP_Dropdown>().options.Clear();
+        passiveUI.SetActive(true);
         IsQuizManagerActive = false;
     }
 

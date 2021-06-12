@@ -17,6 +17,11 @@ public class PlayerController : MonoBehaviour
     public PauseManager pauseManager;
     public InformationUIManager infoUIManager;
     public GameObject infoUI;
+    public GameObject messageUI;
+    public GameObject quizUI;
+    public GameObject pauseUI;
+    public GameObject mainCam;
+    public GameObject minimapCam;
     private bool controlallowed;
     private Vector2 boxSize = new Vector2(0.1f, 0.1f);
     #endregion
@@ -62,9 +67,7 @@ public class PlayerController : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Escape))
             {
                 pauseManager.WakePauseMenu();
-            }
-
-            
+            } 
         }
         else
         {
@@ -77,13 +80,44 @@ public class PlayerController : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Tab))
         {
-            if (infoUI.activeSelf)
+            if (!quizUI.transform.GetChild(0).gameObject.activeSelf &&
+                !quizUI.transform.GetChild(1).gameObject.activeSelf &&
+                !quizUI.transform.GetChild(2).gameObject.activeSelf &&
+                !messageUI.activeSelf &&
+                !pauseUI.activeSelf &&
+                mainCam.activeSelf)
             {
-                infoUIManager.CloseInfoMenu();
+                if (infoUI.activeSelf)
+                {
+                    infoUIManager.CloseInfoMenu();
+                }
+                else
+                {
+                    infoUIManager.WakeInfoMenu();
+                }
             }
-            else
+        }
+        if (Input.GetKeyDown(KeyCode.M))
+        {
+            if (!quizUI.transform.GetChild(0).gameObject.activeSelf &&
+                !quizUI.transform.GetChild(1).gameObject.activeSelf &&
+                !quizUI.transform.GetChild(2).gameObject.activeSelf &&
+                !messageUI.activeSelf &&
+                !pauseUI.activeSelf &&
+                !infoUI.activeSelf)
             {
-                infoUIManager.WakeInfoMenu();
+                if (mainCam.activeSelf)
+                {
+                    mainCam.SetActive(false);
+                    minimapCam.SetActive(true);
+                    suspendMovement();
+                }
+                else
+                {
+                    mainCam.SetActive(true);
+                    minimapCam.SetActive(false);
+                    resumeMovement();
+                }
             }
         }
     }
